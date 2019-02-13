@@ -11,11 +11,40 @@ library(foreign)
 library(igraph)
 
 # read data
-data_occ_SUF <- data.frame(read.dta("data/MR_04-17_EN_data/occ_SUF.DTA"))
+data_occ_SUF <- data.frame(read.dta("../data/MR_04-17_EN_data/occ_SUF.DTA"))
 
 # select edges where the flow is higher than random
-data_occ_SUF_matrix <- data_occ_SUF[data_occ_SUF$SRt>0,]
+data_occ_SUF_df <- data_occ_SUF[data_occ_SUF$SRt>0,]
 
+```
+Top 20 flows:
+
+```{r}
+library(knitr)
+
+top_occ_SUF_df <- data_occ_SUF_df[order(-data_occ_SUF_df$SRt),]
+
+kable(top_occ_SUF_df[top_occ_SUF_df$SRt!=1,][1:20,])
+
+```
+
+```{r fig.width=10, fig.height=8, echo=FALSE}
+library(ggplot2)
+ggplot(data = top_occ_SUF_df, aes(x=occ_SUF_1, y=occ_SUF_2, fill=SRt)) + 
+  geom_tile() + scale_fill_gradient(low = "orange",     high = "darkorange4") +  
+  theme(axis.text.x = element_text(color = "grey20", size = 6.2, angle = 90, hjust = 1, vjust = .5, face = "plain"),
+        axis.text.y = element_text(color = "grey20", size = 6.2, angle = 0, hjust = 1, vjust = 0, face = "plain"),  
+        axis.title.x = element_text(color = "grey20", size =6.2, angle = 45, hjust = .5, vjust = 0, face = "plain"),
+        axis.title.y = element_text(color = "grey20", size = 6.2, angle = 45, hjust = .5, vjust = .5, face = "plain")
+  )
+
+ 
+```
+
+
+
+
+```{r}
 #build the graph
 occ_SUF_net <- graph_from_data_frame(data_occ_SUF_matrix)
 ```
@@ -30,19 +59,7 @@ occ_SUF_net
 V(occ_SUF_net)       # The vertices of the "occ_SUF_net" object
 
 ```
-## Network visualisation
 
-This is a large network, dificult to visualise. More work (and a better library) must be used to get anything out of the visualsation. 
-```{r}
-plot(occ_SUF_net, edge.arrow.size=.02, edge.curved=0,
-
-     vertex.color="orange", vertex.frame.color="#555555",
-
-     vertex.label.color="black",
-
-     vertex.label=NA,vertex.size=10.2)
-
-```
 ## Network and node descriptives
 
  The proportion of present edges from all possible edges in the network.
@@ -55,17 +72,9 @@ The proportion of reciprocated ties.
 ```{r}
 reciprocity(occ_SUF_net)
 ```
-Trasitivity:
-  * global - ratio of triangles (direction disregarded) to connected triples.
-  * local - ratio of triangles to connected triples each vertex is part of.
+Trasitivity (clustering): measures that probability that adjacent nodes of a network are connected. In other words, if i is connected to j, and j is connected to k, what is the probability that i is also connected to k?
 ```{r}
 transitivity(occ_SUF_net, type="global")  # net is treated as an undirected network
-
-transitivity(as.undirected(occ_SUF_net, mode="collapse")) # same as above
-
-transitivity(occ_SUF_net, type="local")
-
-triad_census(occ_SUF_net) # for directed networks 
 ```
 
 Diameter (length of the shortest path between two nodes) in the network, get_diameter() returns the nodes along the first found path of that distance.
@@ -77,11 +86,21 @@ get_diameter(occ_SUF_net, directed=F, weights=NA)
 
 ```
 
-Node degrees:
+Node degrees: the number of adjacent edges to each node. 
 ```{r}
 deg <- degree(occ_SUF_net, mode="all")
 
-hist(deg,  main="Histogram of node degree")
+# Ocuppations with higher incoming/outgoing flows
+print (sort(deg)[1:10])
+```
+
+```{r}
+# Ocuppations with lowest incoming/outgoing flows
+print (sort(-deg)[1:10])
+```
+
+```{r}
+hist(deg,  main="Network Node degree",)
 
 ```
 
@@ -93,44 +112,50 @@ deg.dist <- degree_distribution(occ_SUF_net, cumulative=T, mode="all")
 plot( x=0:max(deg), y=1-deg.dist, pch=19, cex=1.2, col="orange",  xlab="Degree", ylab="Cumulative Frequency")
 ```
 
-```{r}
-degree(occ_SUF_net, mode="in")
+Strength is a weighted measure of degree that takes into account the number of edges that go from one node to another. 
 
+In this example we use the mode "out", showing the number of job changes leaving the occupation.
+```{r}
+sort(strength(occ_SUF_net,mode="out"))[1:5]
+
+```
+
+```{r}
+sort(-strength(occ_SUF_net))[1:5]
+
+```
+```{r}
+hist(centr_degree(occ_SUF_net, mode="in", normalized=T)$res,  main='Centrality',xlab="Node Centrality")
 centr_degree(occ_SUF_net, mode="in", normalized=T)
+
 ```
-
-Closeness (centrality based on distance to others in the graph)
-Inverse of the node’s average geodesic distance to others in the network.
-
-```{r}
-closeness(occ_SUF_net, mode="all", weights=NA) 
-
-centr_clo(occ_SUF_net, mode="all", normalized=T) 
-```
-Eigenvector (centrality proportional to the sum of connection centralities)
+Eigenvector (centrality proportional to the sum of connection centralities), is a measure of being well-connected connected to the well-connected. 
 Values of the first eigenvector of the graph matrix.
 
 ```{r}
-eigen_centrality(occ_SUF_net, directed=T, weights=NA)
+hist(centr_eigen(occ_SUF_net, directed=T, normalized=T)$vector,  main='Eigenvector Centrality',xlab="Node Eigenvector Centrality")
 
-centr_eigen(occ_SUF_net, directed=T, normalized=T) 
 
 ```
-Betweenness (centrality based on a broker position connecting others)
-Number of geodesics that pass through the node or the edge.
+
+Closeness (centrality based on distance to others in the graph), measures how many steps are required to access every other node from a given node.
+It’s a measure of how long information takes to arrive. Higher values mean less centrality.
+Inverse of the node’s average geodesic distance to others in the network.
 
 ```{r}
-betweenness(occ_SUF_net, directed=T, weights=NA)
 
-edge_betweenness(occ_SUF_net, directed=T, weights=NA)
+centr_clo(occ_SUF_net, mode="all", normalized=T) 
 
-centr_betw(occ_SUF_net, directed=T, normalized=T)
+hist(centr_clo(occ_SUF_net, mode="all", normalized=T)$res,  main='Centrality scores',xlab="The node-level centrality scores.")
+
 ```
 
-Average path length: the mean of the shortest distance between each pair of nodes in the network (in both directions for directed graphs).
 
 ```{r}
-mean_distance(occ_SUF_net, directed=F)
+# All centralisation types
+centr_degree(occ_SUF_net)$centralization
+centr_clo(occ_SUF_net, mode = "all")$centralization
+centr_betw(occ_SUF_net, directed = FALSE)$centralization
+centr_eigen(occ_SUF_net, directed = FALSE)$centralization
+
 ```
-
-
