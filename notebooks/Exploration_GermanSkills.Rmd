@@ -1,0 +1,136 @@
+---
+title: "Exploration of German Skills matrices"
+output: html_notebook
+---
+
+Quick initial exploration of main characteristics from the German skills matrices. The dataset used in this case is the 'occ_SUF.DTA', a 3-digit occupation matrix. 
+
+Reading the data into a network object:
+```{r}
+library(foreign)
+library(igraph)
+
+# read data
+data_occ_SUF <- data.frame(read.dta("data/MR_04-17_EN_data/occ_SUF.DTA"))
+
+# select edges where the flow is higher than random
+data_occ_SUF_matrix <- data_occ_SUF[data_occ_SUF$SRt>0,]
+
+#build the graph
+occ_SUF_net <- graph_from_data_frame(data_occ_SUF_matrix)
+```
+
+```{r}
+# network object
+occ_SUF_net
+
+```
+
+```{r}
+V(occ_SUF_net)       # The vertices of the "occ_SUF_net" object
+
+```
+## Network visualisation
+
+This is a large network, dificult to visualise. More work (and a better library) must be used to get anything out of the visualsation. 
+```{r}
+plot(occ_SUF_net, edge.arrow.size=.02, edge.curved=0,
+
+     vertex.color="orange", vertex.frame.color="#555555",
+
+     vertex.label.color="black",
+
+     vertex.label=NA,vertex.size=10.2)
+
+```
+## Network and node descriptives
+
+ The proportion of present edges from all possible edges in the network.
+
+```{r}
+edge_density(occ_SUF_net, loops=F)
+```
+The proportion of reciprocated ties.
+
+```{r}
+reciprocity(occ_SUF_net)
+```
+Trasitivity:
+  * global - ratio of triangles (direction disregarded) to connected triples.
+  * local - ratio of triangles to connected triples each vertex is part of.
+```{r}
+transitivity(occ_SUF_net, type="global")  # net is treated as an undirected network
+
+transitivity(as.undirected(occ_SUF_net, mode="collapse")) # same as above
+
+transitivity(occ_SUF_net, type="local")
+
+triad_census(occ_SUF_net) # for directed networks 
+```
+
+Diameter (length of the shortest path between two nodes) in the network, get_diameter() returns the nodes along the first found path of that distance.
+
+```{r}
+diameter(occ_SUF_net, directed=F, weights=NA)
+
+get_diameter(occ_SUF_net, directed=F, weights=NA) 
+
+```
+
+Node degrees:
+```{r}
+deg <- degree(occ_SUF_net, mode="all")
+
+hist(deg,  main="Histogram of node degree")
+
+```
+
+Degree distribution
+
+```{r}
+deg.dist <- degree_distribution(occ_SUF_net, cumulative=T, mode="all")
+
+plot( x=0:max(deg), y=1-deg.dist, pch=19, cex=1.2, col="orange",  xlab="Degree", ylab="Cumulative Frequency")
+```
+
+```{r}
+degree(occ_SUF_net, mode="in")
+
+centr_degree(occ_SUF_net, mode="in", normalized=T)
+```
+
+Closeness (centrality based on distance to others in the graph)
+Inverse of the node’s average geodesic distance to others in the network.
+
+```{r}
+closeness(occ_SUF_net, mode="all", weights=NA) 
+
+centr_clo(occ_SUF_net, mode="all", normalized=T) 
+```
+Eigenvector (centrality proportional to the sum of connection centralities)
+Values of the first eigenvector of the graph matrix.
+
+```{r}
+eigen_centrality(occ_SUF_net, directed=T, weights=NA)
+
+centr_eigen(occ_SUF_net, directed=T, normalized=T) 
+
+```
+Betweenness (centrality based on a broker position connecting others)
+Number of geodesics that pass through the node or the edge.
+
+```{r}
+betweenness(occ_SUF_net, directed=T, weights=NA)
+
+edge_betweenness(occ_SUF_net, directed=T, weights=NA)
+
+centr_betw(occ_SUF_net, directed=T, normalized=T)
+```
+
+Average path length: the mean of the shortest distance between each pair of nodes in the network (in both directions for directed graphs).
+
+```{r}
+mean_distance(occ_SUF_net, directed=F)
+```
+
+
