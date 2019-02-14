@@ -11,7 +11,7 @@ library(foreign)
 library(igraph)
 
 # read data
-data_occ_SUF <- data.frame(read.dta("../data/MR_04-17_EN_data/occ_SUF.DTA"))
+data_occ_SUF <- data.frame(read.dta("../data/MR_04-17_EN_data_GermanySkillsMatrix/occ_SUF.DTA"))
 
 # select edges where the flow is higher than random
 data_occ_SUF_df <- data_occ_SUF[data_occ_SUF$SRt>0,]
@@ -20,6 +20,7 @@ data_occ_SUF_df <- data_occ_SUF[data_occ_SUF$SRt>0,]
 Top 20 flows:
 
 ```{r}
+
 library(knitr)
 
 top_occ_SUF_df <- data_occ_SUF_df[order(-data_occ_SUF_df$SRt),]
@@ -46,7 +47,7 @@ ggplot(data = top_occ_SUF_df, aes(x=occ_SUF_1, y=occ_SUF_2, fill=SRt)) +
 
 ```{r}
 #build the graph
-occ_SUF_net <- graph_from_data_frame(data_occ_SUF_matrix)
+occ_SUF_net <- graph_from_data_frame(top_occ_SUF_df)
 ```
 
 ```{r}
