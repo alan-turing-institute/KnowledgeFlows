@@ -162,27 +162,29 @@ centr_eigen(occ_SUF_net, directed = FALSE)$centralization
 
 ```
 
-```{r fig.width=6, fig.height=10, echo=FALSE}
-library(GGally)
+```{r fig.width=6, fig.height=8, echo=FALSE}
 
+occ_SUF_net_noself <- graph_from_data_frame(top_occ_SUF_df[top_occ_SUF_df$SRt!=1,],directed = FALSE)
 
-ggnet2(occ_SUF_net, node.size = 10, node.color = "steelblue", edge.size = 'SRt', edge.color = "lightgrey",size = "degree",label = TRUE,label.size = 3,size.cut = 6, label.color = 'black',mode = "fruchtermanreingold")
+E(occ_SUF_net_noself)$width <- E(occ_SUF_net_noself)$SRt
+layout <- layout.fruchterman.reingold(occ_SUF_net_noself)
+V(occ_SUF_net_noself)$size=degree(occ_SUF_net_noself)/10
 
-
+plot(occ_SUF_net_noself, vertex.label.cex=0.5, layout = layout,vertex.label.font=0.5, vertex.label.color="black",
+     edge.color="grey", edge.curved=.1)
 
 ```
 
 
 
-```{r fig.width=6, fig.height=5, echo=FALSE}
+```{r fig.width=6, fig.height=8, echo=FALSE}
 
-occ_SUF_net_noself <- graph_from_data_frame(top_occ_SUF_df[top_occ_SUF_df$SRt!=1,],directed = FALSE)
 
 ceb <- cluster_louvain(occ_SUF_net_noself) 
 V(occ_SUF_net_noself)$community <- ceb$membership
-E(occ_SUF_net_noself)$width <- E(occ_SUF_net_noself)$SRt/3
 
 
-plot(ceb,occ_SUF_net_noself,vertex.size=deg/10,labels=NA,  vertex.label.cex=.7)
+plot(ceb,occ_SUF_net_noself, vertex.label.cex=.5, layout = layout,vertex.label.font=0.5, vertex.label.color="black",
+     edge.color="grey", edge.curved=.1)
 
 ```
