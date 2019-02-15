@@ -47,7 +47,8 @@ ggplot(data = top_occ_SUF_df, aes(x=occ_SUF_1, y=occ_SUF_2, fill=SRt)) +
 
 ```{r}
 #build the graph
-occ_SUF_net <- graph_from_data_frame(top_occ_SUF_df)
+
+occ_SUF_net <- graph_from_data_frame(top_occ_SUF_df,directed = FALSE)
 ```
 
 ```{r}
@@ -158,5 +159,30 @@ centr_degree(occ_SUF_net)$centralization
 centr_clo(occ_SUF_net, mode = "all")$centralization
 centr_betw(occ_SUF_net, directed = FALSE)$centralization
 centr_eigen(occ_SUF_net, directed = FALSE)$centralization
+
+```
+
+```{r fig.width=6, fig.height=10, echo=FALSE}
+library(GGally)
+
+
+ggnet2(occ_SUF_net, node.size = 10, node.color = "steelblue", edge.size = 'SRt', edge.color = "lightgrey",size = "degree",label = TRUE,label.size = 3,size.cut = 6, label.color = 'black',mode = "fruchtermanreingold")
+
+
+
+```
+
+
+
+```{r fig.width=6, fig.height=5, echo=FALSE}
+
+occ_SUF_net_noself <- graph_from_data_frame(top_occ_SUF_df[top_occ_SUF_df$SRt!=1,],directed = FALSE)
+
+ceb <- cluster_louvain(occ_SUF_net_noself) 
+V(occ_SUF_net_noself)$community <- ceb$membership
+E(occ_SUF_net_noself)$width <- E(occ_SUF_net_noself)$SRt/3
+
+
+plot(ceb,occ_SUF_net_noself,vertex.size=deg/10,labels=NA,  vertex.label.cex=.7)
 
 ```
