@@ -163,11 +163,23 @@ centr_betw(nace2_net, directed = FALSE)$centralization
 centr_eigen(nace2_net, directed = FALSE)$centralization
 
 ```
+```{r}
+dg <- decompose.graph(nace2_net) # returns a list of three graphs
+
+dg[[2]]
+dg[[3]]
+dg[[4]]
+dg[[5]]
+dg[[6]]
+
+nace2_net_noself <- simplify(dg[[1]],remove.multiple = FALSE)
+
+```
 
 ```{r fig.width=6, fig.height=8, echo=FALSE}
+length(which(degree(nace2_net_noself)==0)) # says 0
 
-nace2_net_noself <- graph_from_data_frame(top_nace2_df[top_nace2_df$SRt!=1,],directed = FALSE)
-#top_nace2_df[top_nace2_df$SRt!=1,]
+
 E(nace2_net_noself)$width <- (E(nace2_net_noself)$SRt)
 layout <- layout.fruchterman.reingold(nace2_net_noself)
 V(nace2_net_noself)$size=degree(nace2_net_noself)/50
@@ -182,89 +194,145 @@ plot(nace2_net_noself, vertex.label=NA, layout = layout,vertex.label.font=0.5, v
 ```{r fig.width=10, fig.height=8, echo=FALSE}
 
 
-ceb <- cluster_louvain(nace2_net_noself) 
+ceb <- cluster_louvain(nace2_net_noself,nace2_net_noself$SRt) 
 V(nace2_net_noself)$community <- ceb$membership
+V(nace2_net_noself)$crossing <- crossing(ceb,nace2_net_noself)
+
 colrs <- adjustcolor( c("gray50", "tomato", "gold", "yellowgreen","blue",'orange'), alpha=.6)
+
 
 
 plot(nace2_net_noself, vertex.label=NA, layout = layout,vertex.label.font=0.5, vertex.label.color="black",
      edge.color="grey", edge.curved=.1, vertex.label.cex=0.5,vertex.color=colrs[V(nace2_net_noself)$community])
 
-wt <- walktrap.community(nace2_net_noself, modularity=TRUE)
-dend <- as.dendrogram(wt, use.modularity=TRUE)
-plot(dend, nodePar=list(pch=c(NA, 20)))
 
 node_list <- get.data.frame(nace2_net_noself, what = "vertices")
 
 
 
-```
-
-```{r fig.width=6, fig.height=8, echo=FALSE}
-
-unique(node_list[node_list$community==1,]$name)
-
-subg1 <- induced.subgraph(nace2_net_noself, which(membership(ceb) == 1))
-
-plot(subg1,  layout = layout,vertex.label.font=0.4, vertex.label.color="black",
-     edge.color="grey", edge.curved=.1,vertex.label.cex=0.2)
 
 ```
 
-```{r fig.width=6, fig.height=8, echo=FALSE}
-subg2 <- induced.subgraph(nace2_net_noself, which(membership(ceb) == 2))
+```{r fig.width=8, fig.height=8, echo=FALSE}
 
-unique(node_list[node_list$community==2,]$name)
+df1 <- node_list[node_list$community==1,]
+unique(df1$name)
 
-
-plot(subg2,  layout = layout,vertex.label.font=0.4, vertex.label.color="black",
-     edge.color="grey", edge.curved=.1,vertex.label.cex=0.2)
-```
-
-```{r fig.width=6, fig.height=8, echo=FALSE}
-subg3 <- induced.subgraph(nace2_net_noself, which(membership(ceb) == 3))
-
-unique(node_list[node_list$community==3,]$name)
+length(which(df1$crossing==TRUE))/length(which(df1$crossing!=TRUE))
 
 
-plot(subg3,  layout = layout,vertex.label.font=0.4, vertex.label.color="black",
-     edge.color="grey", edge.curved=.1,vertex.label.cex=0.2)
-```
+
+subg1 <- induced.subgraph(nace2_net_noself, which(V(nace2_net_noself)$community== 1))
+layout <- layout.fruchterman.reingold(subg1)
+
+ceb_sub1 <- cluster_louvain(subg1,subg1$SRt) 
+V(subg1)$community <- ceb_sub1$membership
+colrs <- adjustcolor( c("gray50", "tomato", "gold", "yellowgreen","blue",'orange'), alpha=.6)
 
 
-```{r fig.width=6, fig.height=8, echo=FALSE}
-subg4 <- induced.subgraph(nace2_net_noself, which(membership(ceb) == 4))
 
-unique(node_list[node_list$community==4,]$name)
+plot(subg1, layout=layout, vertex.label.cex=0.8,vertex.label.font=0.4, vertex.label.color="black",
+     edge.color="grey", edge.curved=.1,,vertex.color=colrs[V(subg1)$community])
 
-
-plot(subg4,  layout = layout,vertex.label.font=0.4, vertex.label.color="black",
-     edge.color="grey", edge.curved=.1,vertex.label.cex=0.2)
-```
-
-
-```{r fig.width=6, fig.height=8, echo=FALSE}
-subg5 <- induced.subgraph(nace2_net_noself, which(membership(ceb) == 5))
-
-unique(node_list[node_list$community==5,]$name)
-
-plot(subg5,  layout = layout,vertex.label.font=0.4, vertex.label.color="black",
-     edge.color="grey", edge.curved=.1,vertex.label.cex=0.2)
+subg1_df <- get.data.frame(subg1, what = "Edges")
 
 ```
-```{r fig.width=6, fig.height=8, echo=FALSE}
-subg6 <- induced.subgraph(nace2_net_noself, which(membership(ceb) == 6))
 
-unique(node_list[node_list$community==6,]$name)
+```{r fig.width=8, fig.height=8, echo=FALSE}
+subg2 <- induced.subgraph(nace2_net_noself, which(V(nace2_net_noself)$community== 2))
+
+df2 <- node_list[node_list$community==2,]
+unique(df2$name)
+
+length(which(df2$crossing==TRUE))/length(which(df2$crossing!=TRUE))
 
 
-plot(subg6,  layout = layout,vertex.label.font=0.4, vertex.label.color="black",
-     edge.color="grey", edge.curved=.1,vertex.label.cex=0.2)
+
+layout <- layout.fruchterman.reingold(subg2)
+
+ceb_sub2 <- cluster_louvain(subg2,subg2$SRt) 
+V(subg2)$community <- ceb_sub2$membership
+colrs <- adjustcolor( c("gray50", "tomato", "gold", "yellowgreen","blue",'orange'), alpha=.6)
+
+
+
+plot(subg2, layout=layout, vertex.label.cex=0.8,vertex.label.font=0.4, vertex.label.color="black",
+     edge.color="grey", edge.curved=.1,,vertex.color=colrs[V(subg2)$community])
+
+```
+
+```{r fig.width=8, fig.height=8, echo=FALSE}
+subg3 <- induced.subgraph(nace2_net_noself, which(V(nace2_net_noself)$community== 3))
+
+df3 <- node_list[node_list$community==3,]
+unique(df3$name)
+
+length(which(df3$crossing==TRUE))/length(which(df3$crossing!=TRUE))
+
+layout <- layout.fruchterman.reingold(subg3)
+
+ceb_sub3 <- cluster_louvain(subg3,subg3$SRt) 
+V(subg3)$community <- ceb_sub3$membership
+
+
+
+plot(subg3, layout=layout, vertex.label.cex=0.8,vertex.label.font=0.4, vertex.label.color="black",
+     edge.color="grey", edge.curved=.1,,vertex.color=colrs[V(subg3)$community])
+
+```
+
+
+```{r fig.width=8, fig.height=8, echo=FALSE}
+subg4 <- induced.subgraph(nace2_net_noself, which(V(nace2_net_noself)$community== 4))
+
+df4 <- node_list[node_list$community==4,]
+unique(df4$name)
+
+length(which(df4$crossing==TRUE))/length(which(df4$crossing!=TRUE))
+
+layout <- layout.fruchterman.reingold(subg4)
+
+ceb_sub4 <- cluster_louvain(subg4,subg5$SRt) 
+V(subg4)$community <- ceb_sub4$membership
+colrs <- adjustcolor( c("gray50", "tomato", "gold", "yellowgreen","blue",'orange'), alpha=.6)
+
+
+
+plot(subg4, layout=layout, vertex.label.cex=0.8,vertex.label.font=0.4, vertex.label.color="black",
+     edge.color="grey", edge.curved=.1,,vertex.color=colrs[V(subg4)$community])
+
+
+```
+
+
+```{r fig.width=8, fig.height=8, echo=FALSE}
+subg5 <- induced.subgraph(nace2_net_noself, which(V(nace2_net_noself)$community== 5))
+
+df5 <- node_list[node_list$community==5,]
+unique(df5$name)
+
+length(which(df5$crossing==TRUE))/length(which(df5$crossing!=TRUE))
+
+layout <- layout.fruchterman.reingold(subg5)
+
+ceb_sub5 <- cluster_louvain(subg5,subg5$SRt) 
+V(subg5)$community <- ceb_sub5$membership
+
+plot(subg5, layout=layout, vertex.label.cex=0.8,vertex.label.font=0.4, vertex.label.color="black",
+     edge.color="grey", edge.curved=.1,,vertex.color=colrs[V(subg5)$community])
+```
+
+
+```{r fig.width=26, fig.height=18, echo=FALSE}
+
+
+wt <- walktrap.community(nace2_net_noself, modularity=TRUE)
+dend <- as.dendrogram(wt, use.modularity=TRUE)
+
+plot(dend, nodePar=list(pch=c(NA, 20)))
 ```
 
 ```{r}
-
-
 all_nodes <- sort(node_list$name)
 
 edge_list <- get.data.frame(nace2_net_noself, what = "edges") %>% inner_join(node_list %>% select(name,  community), by = c("from" = "name")) %>% inner_join(node_list %>% select(name, community), by = c("to" = "name")) %>% mutate(group = ifelse(community.x == community.y, community.x, NA) %>% factor())
@@ -282,3 +350,9 @@ ggplot(data = edge_list, aes(x=from, y=to, fill=SRt)) +
   )
 
 ```
+
+```{python}
+import pandas as pd
+top_nace2_df_p = pd.read_stata("../data/MR_04-17_EN_data_GermanySkillsMatrix/wz08.dta")
+```
+
