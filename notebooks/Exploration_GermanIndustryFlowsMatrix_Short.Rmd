@@ -135,15 +135,35 @@ node_list <- get.data.frame(nace2_net_noself, what = "vertices")
 
 ```{r fig.width=8, fig.height=8, echo=FALSE}
 
-df1 <- node_list[node_list$community==1,]
+print_cummunity_vertex <- function(node_list,community, percentage){
+  
+  print(paste("Community: ",community))
+  
+  df1 <- node_list[node_list$community==community,]
+  communitynames1 <- unique(df1$name)
+  
+  print (paste("Total number of vertices:",length(communitynames1)))
 
-length(which(df1$crossing==TRUE))/length(which(df1$crossing!=TRUE))
+
+  print(paste("% of vertices connected to other communities",length(which(df1$crossing==TRUE))/length(which(df1$crossing!=TRUE))))
 
 
-
-unique(df1$name)
+  sample(communitynames1, length(communitynames1)*percentage)
+}
 
 ```
+```{r}
+
+print_cummunity_vertex(node_list,1, 0.2)
+```
+```{r}
+
+print_cummunity_vertex(node_list,2, 0.2)
+```
+
+
+
+
 
 ```{r fig.width=8, fig.height=8, echo=FALSE}
 subg1 <- induced.subgraph(nace2_net_noself, which(V(nace2_net_noself)$community== 1))
