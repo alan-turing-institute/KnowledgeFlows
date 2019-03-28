@@ -18,5 +18,11 @@
 #' @export
 empty_transition_matrix <- function(data, colname) {
 
-  # data[[colname]]
+  index <- unique(data[[colname]])
+
+  mat <- matrix(0, nrow = length(index), ncol = length(index))
+  dimnames(mat) <- list(index, index)
+
+  return (mat)
+
 }
