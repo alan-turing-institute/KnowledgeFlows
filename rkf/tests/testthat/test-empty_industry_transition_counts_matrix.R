@@ -1,9 +1,9 @@
 require(testthat)
-context("empty_transition_matrix function")
+context("empty_industry_transition_counts_matrix function")
 
-test_that("the empty_transition_matrix function works", {
+test_that("the empty_industry_transition_counts_matrix function works", {
 
-  result <- empty_transition_matrix(ashe_sic_5dig, colname = "sic07")
+  result <- empty_industry_transition_counts_matrix(ashe_sic_5dig, colname = "sic07")
 
   expect_true(is.matrix(result))
 
