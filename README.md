@@ -1,3 +1,3 @@
 # KnowledgeFlows
 
-Repo for the Knowledge Flows project
+Repo for the Knowledge Flows project.
