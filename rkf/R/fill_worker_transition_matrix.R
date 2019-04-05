@@ -11,7 +11,7 @@
 #'
 #' @examples
 #' \dontrun{
-#' fill_worker_transition_matrix(ashe_sic_5dig, piden = 1)
+#' fill_worker_transition_matrix(transitionmatrix,workermatrix)
 #' }
 #' @import httr
 #' @export
@@ -19,16 +19,12 @@ fill_worker_transition_matrix <- function(transitionmatrix, workermatrix) {
 
   filledmatrix <- transitionmatrix
 
-  for(row in 1:nrow(filledmatrix)) {
+  for(row in 1:nrow(workermatrix)) {
 
-    sic_index_col <- workermatrix[row,1]
-    sic_index_row <- workermatrix[row,2]
+    sic_index_col <- toString(workermatrix[row,1])[[1]]
+    sic_index_row <- toString(workermatrix[row,2])[[1]]
 
-    print (sic_index_col)
-    print (sic_index_row)
-
-    filledmatrix[sic_index_row,sic_index_col] <- filledmatrix[sic_index_row,sic_index_col] +1
-
+    filledmatrix[[sic_index_row, sic_index_col]] <- filledmatrix[[sic_index_row,sic_index_col]] +1
   }
 
   return (filledmatrix)

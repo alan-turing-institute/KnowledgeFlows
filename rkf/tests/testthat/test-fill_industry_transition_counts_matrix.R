@@ -12,8 +12,15 @@ test_that("the fill_worker_transition_matrix function works", {
   matrix_worker <- fill_worker_transition_matrix(empty_matrix,worker_matrix)
 
   expect_true(is.matrix(matrix_worker))
-  expect_false(is.empty(matrix_worker))
-  expect_true(nnzero(matrix_worker))
+
+  transition <- sample(1:nrow(worker_matrix),1)
+
+  sic_index_col <- toString(worker_matrix[transition,1])[[1]]
+  sic_index_row <- toString(worker_matrix[transition,2])[[1]]
+
+  value <- matrix_worker[[sic_index_row, sic_index_col]]
+
+  expect_true(value>0)
 
 
 
