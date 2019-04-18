@@ -19,6 +19,6 @@ TODO: For a particular worker fill the transition matrix.
 }
 \examples{
 \dontrun{
-fill_worker_transition_matrix(ashe_sic_5dig, piden = 1)
+fill_worker_transition_matrix(transitionmatrix,workermatrix)
 }
 }
