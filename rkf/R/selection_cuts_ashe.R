@@ -16,7 +16,8 @@
 #' }
 #' @import httr
 #' @export
-selection_custs_ashe <- function(data, cut) {
+selection_cuts_ashe <- function(data, cut, cutName='') {
+
 
   print ("Summary stats before cuts:")
   run_ashe_sample_summary(data)
@@ -24,7 +25,7 @@ selection_custs_ashe <- function(data, cut) {
   # subset the data
   data_subset <- subset(data,cut)
 
-  run_ashe_sample_summary(data,paste0("selection/log_ashe_ashe_sic_5dig_",toString(cut)),toString(cut))
+  run_ashe_sample_summary(data_subset,"log/log_ashe_ashe_sic_5dig_",cutName)
 
   return (data_subset)
 

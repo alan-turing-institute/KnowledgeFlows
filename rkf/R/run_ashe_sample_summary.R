@@ -105,6 +105,7 @@ run_ashe_sample_summary <- function(sample, name = '', selection_cuts = '') {
   file_name <- paste0(name,selection_cuts,sep="_")
   file_name <- paste0(file_name,".txt")
 
+  print(file_name)
   log_con <- file(file_name, 'w')
 
   cat(format(Sys.time(), "%a %b %d %X %Y"), file = log_con, append=TRUE, sep = "\n")
