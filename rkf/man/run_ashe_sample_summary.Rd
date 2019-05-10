@@ -4,7 +4,7 @@
 \alias{run_ashe_sample_summary}
 \title{Sample summary values}
 \usage{
-run_ashe_sample_summary(sample, name, selection_cuts = "")
+run_ashe_sample_summary(sample, name = "", selection_cuts = "")
 }
 \arguments{
 \item{sample}{A data frame.}
