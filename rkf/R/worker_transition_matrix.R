@@ -27,31 +27,45 @@ worker_transition_matrix <- function(data, piden,colname) {
   data_piden <- data_piden[order(data_piden$year),]
 
   flow_list <- list()
+  flow_year_list <- list()
+
   index <- 0
 
-  # loop year by year and get transitions between industries into a vector
+  # loop year by year and get transitions between industries into a matrix, record year of transitions.
   for (i in 1:(nrow(data_piden)-1)){
 
-    if ((data_piden[i+1,"year"] - data_piden[i,"year"])==1){
 
     index <- index +1
     flow_list[index] <- data_piden[i,colname]
+    flow_year_list[index] <- data_piden[i,"year"]
 
     index <- index +1
     flow_list[index] <- data_piden[i+1,colname]
+    flow_year_list[index] <- data_piden[i+1,"year"]
+
+    if ((data_piden[i,"year"]-data_piden[i+1,"year"])==0 && (data_piden[i,colname]!=data_piden[i+1,colname])){
+
+      warning(paste("Warning: There is a flow ocurring in the same year ",data_piden[i,"year"]))
 
     }
-    else{
-      next
+    if ((data_piden[i+1,"year"]-data_piden[i,"year"])>1)
+    {
+      warning_message = paste0("Warning: There is a flow ocurring after worker absence in the data between years: ",data_piden[i,"year"])
+      warning_message = paste0(warning_message," and ")
+
+      warning(paste0(warning_message,data_piden[i+1,"year"]))
+
     }
 
   }
 
-  # turn vector into a matrix of industry transitions for the worker
-  flow_mat <- matrix(flow_list, ncol = 2, nrow = nrow(data_piden)-1,byrow = TRUE)
+  # turn vector into a matrix of industry transitions for the worker, add years that the worker was last and first recorded in each industry
+  flow_mat <- matrix(flow_list, ncol = 2, nrow = nrow(data_piden)-1,byrow = TRUE, dimnames = list(NULL, c("inds_ini","inda_final")))
+  flow_year_mat <- matrix(flow_year_list, ncol = 2, nrow = nrow(data_piden)-1,byrow = TRUE, dimnames = list(NULL, c("year_inds_ini","year_inds_final")))
 
+  final_mat <- cbind2(flow_mat,flow_year_mat)
 
-  return (flow_mat)
+  return (final_mat)
 
 }
 
