@@ -21,6 +21,10 @@ fill_worker_transition_matrix <- function(transitionmatrix, workermatrix) {
 
   for(row in 1:nrow(workermatrix)) {
 
+    if (nrow(workermatrix)<1){
+      break
+    }
+
     sic_index_col <- toString(workermatrix[row,1])[[1]]
     sic_index_row <- toString(workermatrix[row,2])[[1]]
 

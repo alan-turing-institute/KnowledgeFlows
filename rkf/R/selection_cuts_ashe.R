@@ -20,7 +20,7 @@ selection_cuts_ashe <- function(data, cut, cutName='') {
 
 
   print ("Summary stats before cuts:")
-  run_ashe_sample_summary(data)
+  run_ashe_sample_summary(data,"log/log_ashe_ashe_sic_5dig_","nocuts")
 
   # subset the data
   data_subset <- subset(data,cut)

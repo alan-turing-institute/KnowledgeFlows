@@ -34,6 +34,9 @@ worker_transition_matrix <- function(data, piden,colname) {
   # loop year by year and get transitions between industries into a matrix, record year of transitions.
   for (i in 1:(nrow(data_piden)-1)){
 
+    if ((nrow(data_piden))<=1){
+      break
+    }
 
     index <- index +1
     flow_list[index] <- data_piden[i,colname]

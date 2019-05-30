@@ -133,6 +133,7 @@ run_ashe_sample_summary <- function(sample, name = '', selection_cuts = '') {
   cat(paste0("Ratio of apprentices: ", ratio_app), file = log_con, append=TRUE, sep = "\n")
   cat(paste0("Ratio of workers with more than 1 job: ", ratio_more1job), file = log_con, append=TRUE, sep = "\n")
 
+  on.exit(close(log_con))
 
   return(file_name)
 }
