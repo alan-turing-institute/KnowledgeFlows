@@ -25,8 +25,11 @@ fill_worker_transition_matrix <- function(transitionmatrix, workermatrix) {
       break
     }
 
-    sic_index_col <- toString(workermatrix[row,1])[[1]]
-    sic_index_row <- toString(workermatrix[row,2])[[1]]
+    # starting industry
+    sic_index_row <- toString(workermatrix[row,1])[[1]]
+
+    # finish industry
+    sic_index_col <- toString(workermatrix[row,2])[[1]]
 
     filledmatrix[[sic_index_row, sic_index_col]] <- filledmatrix[[sic_index_row,sic_index_col]] +1
   }

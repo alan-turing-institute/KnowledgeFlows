@@ -24,7 +24,7 @@ selection_cuts_ashe <- function(data, cut, cutName='') {
 
   # subset the data
   data_subset <- subset(data,cut)
-
+  print ("Summary stats after cuts:")
   run_ashe_sample_summary(data_subset,"log/log_ashe_ashe_sic_5dig_",cutName)
 
   return (data_subset)

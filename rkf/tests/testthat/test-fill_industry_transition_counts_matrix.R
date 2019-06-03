@@ -19,8 +19,8 @@ test_that("the fill_worker_transition_matrix function works", {
 
   transition <- sample(1:nrow(worker_matrix),1)
 
-  sic_index_col <- toString(worker_matrix[transition,1])[[1]]
-  sic_index_row <- toString(worker_matrix[transition,2])[[1]]
+  sic_index_row <- toString(worker_matrix[transition,1])[[1]]
+  sic_index_col <- toString(worker_matrix[transition,2])[[1]]
 
   value <- matrix_worker[[sic_index_row, sic_index_col]]
 

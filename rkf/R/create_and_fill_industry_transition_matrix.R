@@ -15,10 +15,10 @@
 #' }
 #' @import httr
 #' @export
-create_and_fill_industry_transition_matrix <- function(sample, cuts, cutsString,indClass) {
+create_and_fill_industry_transition_matrix <- function(sample, cuts, cutsString, indClass) {
 
   # make cuts on inital sample
-  selected_sample <- selection_cuts_ashe(sample,cuts,cutsString)
+  selected_sample <- selection_cuts_ashe(sample, cuts, cutsString)
 
   print('test')
   # get all workers on selected sample
