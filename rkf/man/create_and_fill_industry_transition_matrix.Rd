@@ -2,7 +2,8 @@
 % Please edit documentation in R/create_and_fill_industry_transition_matrix.R
 \name{create_and_fill_industry_transition_matrix}
 \alias{create_and_fill_industry_transition_matrix}
-\title{Run all steps to create a filled worker matrix}
+\title{Run all steps to create a filled worker matrix
+#'}
 \usage{
 create_and_fill_industry_transition_matrix(sample, cuts, cutsString,
   indClass)
@@ -16,7 +17,8 @@ create_and_fill_industry_transition_matrix(sample, cuts, cutsString,
 An updated matrix.
 }
 \description{
-TODO: For a particular sample run cuts and fill the transition matrix.
+Run all steps to create a filled worker matrix
+#'
 }
 \examples{
 \dontrun{
