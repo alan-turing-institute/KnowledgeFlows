@@ -5,8 +5,8 @@
 \title{Run all steps to create a filled worker matrix
 #'}
 \usage{
-create_and_fill_industry_transition_matrix(sample, cuts, cutsString,
-  indClass)
+create_and_fill_industry_transition_matrix(sample, cuts, cuts_name,
+  ind_class)
 }
 \arguments{
 \item{sample}{A data frame.}
@@ -22,6 +22,6 @@ Run all steps to create a filled worker matrix
 }
 \examples{
 \dontrun{
-create_and_fill_industry_transition_matrix <- function(sample, cuts, cutsString,indClass)
+create_and_fill_industry_transition_matrix <- function(sample, cuts, cutsName,indClass)
 }
 }

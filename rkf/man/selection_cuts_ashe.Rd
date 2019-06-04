@@ -4,7 +4,7 @@
 \alias{selection_cuts_ashe}
 \title{Selection cut function for ASHE dataset}
 \usage{
-selection_cuts_ashe(data, cut, cutName = "")
+selection_cuts_ashe(data, cut, cut_name = "")
 }
 \arguments{
 \item{data}{A data frame.}
