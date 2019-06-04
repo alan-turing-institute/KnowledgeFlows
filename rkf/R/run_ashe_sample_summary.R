@@ -17,7 +17,6 @@
 run_ashe_sample_summary <- function(sample, name = '', selection_cuts = '') {
 
 
-
   # get total number of rows
   n_rows <- nrow(sample)
   print(paste0("Number of entries: ", n_rows))
@@ -101,8 +100,9 @@ run_ashe_sample_summary <- function(sample, name = '', selection_cuts = '') {
   ratio_app <-  nrow(sample[sample$App==1,])/n_rows
   print(paste0("Ratio of apprentices: ", ratio_app))
 
-
-  file_name <- paste0(name,selection_cuts,sep="_")
+  file_name <- paste0(getwd(),"/log/")
+  file_name <- paste0(file_name,name)
+  file_name <- paste0(file_name,selection_cuts)
   file_name <- paste0(file_name,".txt")
 
   print(file_name)
