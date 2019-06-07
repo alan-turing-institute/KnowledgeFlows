@@ -20,18 +20,18 @@ create_reduced_transition_matrix <- function(transitionmatrix, min_counts) {
   colnames(reduced_matrix) <- c("StartIndst", "FinalIndst", "Counts") #no specific order predictable here
 
   # get all industries indexed in the initial matrix
-  trans_matrix_column <- colnames(result)
-  trans_matrix_rows <- rownames(result)
+  trans_matrix_column <- colnames(transitionmatrix)
+  trans_matrix_rows <- rownames(transitionmatrix)
 
   c <- 1
 
   # start looping on the rows (starting industry in a flow)
   for(row in 1:length(trans_matrix_rows)) {
 
-    row_name <- trans_matrix_column[row]
+    row_name <- trans_matrix_rows[row]
 
   # loop on the columns (final industry in a flow)
-  for(column in 1:nrow(trans_matrix_column)) {
+  for(column in 1:length(trans_matrix_column)) {
 
      col_name <- trans_matrix_column[column]
 
