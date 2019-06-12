@@ -23,45 +23,34 @@ create_reduced_transition_matrix <- function(transitionmatrix, min_counts) {
   trans_matrix_column <- colnames(transitionmatrix)
   trans_matrix_rows <- rownames(transitionmatrix)
 
-  c <- 1
 
   # count remaining flows
   missing_flows <- 0
 
+  reduced_matrix2 <- as.data.frame(matrix(ncol=3, nrow=0))
+
+  index <- which(transitionmatrix>(min_counts-1), arr.ind = TRUE)
+
   # start looping on the rows (starting industry in a flow)
-  for(row in 1:length(trans_matrix_rows)) {
+  for(i in 1:nrow(index)) {
 
-    row_name <- trans_matrix_rows[row]
+    row <- index[i,1]
+    col <- index[i,2]
 
-  # loop on the columns (final industry in a flow)
-  for(column in 1:length(trans_matrix_column)) {
-
-     col_name <- trans_matrix_column[column]
-
-    # apply minimum cut
-    if (transitionmatrix[row_name,col_name]<min_counts){
-
-      # keep track of flows that could not be reported due to min counts
-      missing_flows <- missing_flows+ transitionmatrix[row_name,col_name]
-
-      next()
-
-    }
-
-    # fill new matrix with the flows and counts
-    reduced_matrix[c,1] <- row_name
-    reduced_matrix[c,2] <- col_name
-    reduced_matrix[c,3] <- transitionmatrix[row_name,col_name]
-
-    c <- c + 1
+    reduced_matrix[i,1] <- trans_matrix_rows[row]
+    reduced_matrix[i,2] <- trans_matrix_column[col]
+    reduced_matrix[i,3] <- transitionmatrix[trans_matrix_rows[row],trans_matrix_column[col]]
 
   }
-  }
+  index_min <- which((transitionmatrix>0&transitionmatrix<min_counts), arr.ind = TRUE)
+
+  missing_flows <- sum(transitionmatrix[index_min])
+
 
   # fill new matrix with the flows and counts
-  reduced_matrix[c,1] <- "0000"
-  reduced_matrix[c,2] <- "0000"
-  reduced_matrix[c,3] <- missing_flows
+  reduced_matrix[i+1,1] <- "0000"
+  reduced_matrix[i+1,2] <- "0000"
+  reduced_matrix[i+1,3] <- missing_flows
 
 
   # return reduced matrix
