@@ -31,6 +31,7 @@ create_reduced_transition_matrix <- function(transitionmatrix, min_counts) {
 
   index <- which(transitionmatrix>(min_counts-1), arr.ind = TRUE)
 
+  if (nrow(index)>0){
   # start looping on the rows (starting industry in a flow)
   for(i in 1:nrow(index)) {
 
@@ -42,15 +43,22 @@ create_reduced_transition_matrix <- function(transitionmatrix, min_counts) {
     reduced_matrix[i,3] <- transitionmatrix[trans_matrix_rows[row],trans_matrix_column[col]]
 
   }
+  }
+
   index_min <- which((transitionmatrix>0&transitionmatrix<min_counts), arr.ind = TRUE)
+
+  missing_flows <- 0
+  if (nrow(index_min)>0){
 
   missing_flows <- sum(transitionmatrix[index_min])
 
+  }
 
   # fill new matrix with the flows and counts
-  reduced_matrix[i+1,1] <- "0000"
-  reduced_matrix[i+1,2] <- "0000"
-  reduced_matrix[i+1,3] <- missing_flows
+  reduced_matrix[nrow(index)+1,1] <- "0000"
+  reduced_matrix[nrow(index)+1,2] <- "0000"
+  reduced_matrix[nrow(index)+1,3] <- missing_flows
+
 
 
   # return reduced matrix
