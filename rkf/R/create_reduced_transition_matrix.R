@@ -27,9 +27,7 @@ create_reduced_transition_matrix <- function(transitionmatrix, min_counts) {
   # count remaining flows
   missing_flows <- 0
 
-  reduced_matrix2 <- as.data.frame(matrix(ncol=3, nrow=0))
-
-  index <- which(transitionmatrix>(min_counts-1), arr.ind = TRUE)
+  index <- which(transitionmatrix>=(min_counts), arr.ind = TRUE)
 
   if (nrow(index)>0){
   # start looping on the rows (starting industry in a flow)
