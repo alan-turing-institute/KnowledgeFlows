@@ -76,12 +76,17 @@ sort(-strength(nace2_net))[1:5]
 
 ```
 ```{r}
-p1 <- hist(degree(nace2_net),breaks=50,main="Degree")
-p2 <- hist(strength(nace2_net),breaks=30,main="Streght Degree")
+p1 <- hist(degree(nace2_net),breaks=50,plot=FALSE)
+p2 <- hist(strength(nace2_net),breaks=30,plot=FALSE)
 
 plot( p2, col=rgb(0,0,1,1/4), xlim=c(0,250),main ="Streght Degree")
 plot( p1, col=rgb(1,0,0,1/4), xlim=c(0,250), add=T)  # second
+legend(200,50,legend=c("degree","strength"), col=c(rgb(0,0,1,1/4),rgb(1,0,0,1/4)), bty = "n",ncol=1, pch=c(15,15),lty=c(1,2,3))
+
+
 ```
+
+`
 The graph is disconected. There are vertex that are only conected to themselves. 
 ```{r}
 dg <- decompose.graph(nace2_net) # returns a list of three graphs
@@ -101,7 +106,7 @@ for (i in 2:length(dg)){
 nace2_net_noself <- simplify(dg[[1]],remove.multiple = FALSE)
 
 E(nace2_net_noself)$width <- (E(nace2_net_noself)$SRt)
-V(nace2_net_noself)$size <- strength(nace2_net_noself)/50
+V(nace2_net_noself)$size <- strength(nace2_net_noself)/20
 
 E(nace2_net_noself)$weight <- (E(nace2_net_noself)$SRt)
 
@@ -129,7 +134,10 @@ plot(nace2_net_noself, vertex.label=NA, layout = layout,vertex.label.font=0.5, v
 
 
 node_list <- get.data.frame(nace2_net_noself, what = "vertices")
+```
 
+```{r}
+print (ceb$modularity)
 
 ```
 
@@ -138,6 +146,9 @@ node_list <- get.data.frame(nace2_net_noself, what = "vertices")
 print_cummunity_vertex <- function(node_list,community, percentage){
   
   print(paste("Community: ",community))
+  
+  col <- c("gray50", "tomato", "gold", "yellowgreen","blue",'orange','black')
+  print (paste("Color:",col[community]))
   
   df1 <- node_list[node_list$community==community,]
   communitynames1 <- unique(df1$name)
@@ -161,12 +172,36 @@ print_cummunity_vertex(node_list,1, 0.2)
 print_cummunity_vertex(node_list,2, 0.2)
 ```
 
+```{r}
 
+print_cummunity_vertex(node_list,3, 0.3)
+```
+
+```{r}
+
+print_cummunity_vertex(node_list,4, 0.7)
+```
+
+```{r}
+
+print_cummunity_vertex(node_list,5, 0.25)
+```
+
+```{r}
+print_cummunity_vertex(node_list,6, 0.5)
+```
+
+```{r}
+
+print_cummunity_vertex(node_list,7, 0.2)
+```
 
 
 
 ```{r fig.width=8, fig.height=8, echo=FALSE}
-subg1 <- induced.subgraph(nace2_net_noself, which(V(nace2_net_noself)$community== 1))
+plot_community <- function(nace2_net_noself,community){
+
+subg1 <- induced.subgraph(nace2_net_noself, which(V(nace2_net_noself)$community== community))
 
 ceb_sub1 <- cluster_louvain(subg1,subg1$weight) 
 V(subg1)$community <- ceb_sub1$membership
@@ -174,133 +209,53 @@ colrs <- adjustcolor( c("gray50", "tomato", "gold", "yellowgreen","blue",'orange
 layout <- layout.fruchterman.reingold(subg1)
 
 
-
-plot(subg1, layout=layout, vertex.label.cex=0.8,vertex.label.font=0.4, vertex.label.color="black",
+plot(subg1, layout=layout, vertex.label.cex=0.7,vertex.label.font=0.4, vertex.label.color="black",
      edge.color="grey", edge.curved=.1,,vertex.color=colrs[V(subg1)$community])
 
-subg1_df <- get.data.frame(subg1, what = "Edges")
+}
+
+plot_community(nace2_net_noself,1)
+
 
 ```
 
 ```{r fig.width=8, fig.height=8, echo=FALSE}
-subg2 <- induced.subgraph(nace2_net_noself, which(V(nace2_net_noself)$community== 2))
+plot_community(nace2_net_noself,2)
 
-df2 <- node_list[node_list$community==2,]
-unique(df2$name)
-
-length(which(df2$crossing==TRUE))/length(which(df2$crossing!=TRUE))
-
-
-ceb_sub2 <- cluster_louvain(subg2,subg2$weight) 
-V(subg2)$community <- ceb_sub2$membership
-colrs <- adjustcolor( c("gray50", "tomato", "gold", "yellowgreen","blue",'orange'), alpha=.6)
-
-layout <- layout.fruchterman.reingold(subg2)
-
-
-plot(subg2, layout=layout, vertex.label.cex=0.8,vertex.label.font=0.4, vertex.label.color="black",
-     edge.color="grey", edge.curved=.1,,vertex.color=colrs[V(subg2)$community])
 
 ```
 
 ```{r fig.width=8, fig.height=8, echo=FALSE}
-subg3 <- induced.subgraph(nace2_net_noself, which(V(nace2_net_noself)$community== 3))
 
-df3 <- node_list[node_list$community==3,]
-unique(df3$name)
-
-length(which(df3$crossing==TRUE))/length(which(df3$crossing!=TRUE))
-
-
-ceb_sub3 <- cluster_louvain(subg3,subg3$weight) 
-V(subg3)$community <- ceb_sub3$membership
-
-layout <- layout.fruchterman.reingold(subg3)
-
-
-
-plot(subg3, layout=layout, vertex.label.cex=0.8,vertex.label.font=0.4, vertex.label.color="black",edge.color="grey", edge.curved=.1,vertex.color=colrs[V(subg3)$community])
+plot_community(nace2_net_noself,3)
 
 ```
 
 
 ```{r fig.width=8, fig.height=8, echo=FALSE}
-subg4 <- induced.subgraph(nace2_net_noself, which(V(nace2_net_noself)$community== 4))
-
-df4 <- node_list[node_list$community==4,]
-unique(df4$name)
-
-length(which(df4$crossing==TRUE))/length(which(df4$crossing!=TRUE))
-
-layout <- layout.fruchterman.reingold(subg4)
-
-ceb_sub4 <- cluster_louvain(subg4,subg5$weight) 
-V(subg4)$community <- ceb_sub4$membership
-colrs <- adjustcolor( c("gray50", "tomato", "gold", "yellowgreen","blue",'orange'), alpha=.6)
-
-
-
-plot(subg4, layout=layout, vertex.label.cex=0.8,vertex.label.font=0.4, vertex.label.color="black",
-     edge.color="grey", edge.curved=.1,,vertex.color=colrs[V(subg4)$community])
-
+plot_community(nace2_net_noself,4)
 
 ```
 
 
 ```{r fig.width=8, fig.height=8, echo=FALSE}
-subg5 <- induced.subgraph(nace2_net_noself, which(V(nace2_net_noself)$community== 5))
+plot_community(nace2_net_noself,5)
 
-df5 <- node_list[node_list$community==5,]
-unique(df5$name)
-
-length(which(df5$crossing==TRUE))/length(which(df5$crossing!=TRUE))
-
-layout <- layout.fruchterman.reingold(subg5)
-
-ceb_sub5 <- cluster_louvain(subg5,subg5$weight) 
-V(subg5)$community <- ceb_sub5$membership
-
-plot(subg5, layout=layout, vertex.label.cex=0.8,vertex.label.font=0.4,
-     edge.color="grey", edge.curved=.1,,vertex.color=colrs[V(subg5)$community])
 ```
 
 ```{r fig.width=8, fig.height=8, echo=FALSE}
-subg6 <- induced.subgraph(nace2_net_noself, which(V(nace2_net_noself)$community== 6))
 
-df6 <- node_list[node_list$community==6,]
-unique(df6$name)
+plot_community(nace2_net_noself,6)
 
-length(which(df6$crossing==TRUE))/length(which(df6$crossing!=TRUE))
-
-layout <- layout.fruchterman.reingold(subg6)
-
-ceb_sub6 <- cluster_louvain(subg6,subg6$weight) 
-V(subg6)$community <- ceb_sub6$membership
-
-plot(subg6, layout=layout, vertex.label.cex=0.8,vertex.label.font=0.4,
-     edge.color="grey", edge.curved=.1,,vertex.color=colrs[V(subg6)$community])
 ```
 
 ```{r fig.width=8, fig.height=8, echo=FALSE}
-subg7 <- induced.subgraph(nace2_net_noself, which(V(nace2_net_noself)$community== 7))
+plot_community(nace2_net_noself,7)
 
-df7 <- node_list[node_list$community==7,]
-unique(df7$name)
-
-length(which(df7$crossing==TRUE))/length(which(df7$crossing!=TRUE))
-
-
-ceb_sub7 <- cluster_louvain(subg7,subg7$weight) 
-V(subg7)$community <- ceb_sub7$membership
-
-layout <- layout.fruchterman.reingold(subg7)
-
-plot(subg7, layout=layout, vertex.label.cex=0.8,vertex.label.font=0.4,
-     edge.color="grey", edge.curved=.1,,vertex.color=colrs[V(subg7)$community])
 ```
 
 
-```{r fig.width=8, fig.height=8, echo=FALSE}
+```{r fig.width=20, fig.height=8, echo=FALSE}
 
 
 wt <- cluster_walktrap(nace2_net_noself, modularity=TRUE)
@@ -310,8 +265,7 @@ layout <- layout.fruchterman.reingold(dg[[1]])
 
 plot(dend, nodePar=list(pch=c(NA, 20)))
 
-plot(wt,nace2_net_noself, layout=layout, vertex.label.cex=0.1,vertex.label.font=0.4, vertex.label.color="black",
-     edge.color="grey", edge.curved=.1,)
+
 ```
 
 ```{r fig.width=15, fig.height=12, echo=FALSE}
@@ -333,17 +287,28 @@ E(nace2_net_dend)$weight <- (E(nace2_net_dend)$SRt)
 edge_list <- get.data.frame(nace2_net_dend, what = "edges") %>% inner_join(label_order_df %>% select(name,  index), by = c("from" = "name")) %>% inner_join(label_order_df %>% select(name, index), by = c("to" = "name")) %>% mutate(group = ifelse(index.x == index.y, index.x, NA) %>% factor())
 
 
-
 library(ggplot2)
 ggplot(data = edge_list, aes(x=factor(from, level = labels_dend), y=factor(to, level = labels_dend), fill=SRt)) + 
   geom_tile() + scale_fill_gradient(low = "orange",     high = "darkorange4") +  
-  theme(axis.text.x = element_text(color = "grey20", size = 1.6, angle = 90, hjust = 1, vjust = .5, face = "plain"),
-        axis.text.y = element_text(color = "grey20", size = 1.6, angle = 0, hjust = 1, vjust = 0, face = "plain"),  
-        axis.title.x = element_text(color = "grey20", size =1.6, angle = 45, hjust = .5, vjust = 0, face = "plain"),
-        axis.title.y = element_text(color = "grey20", size = 1.6, angle = 45, hjust = .5, vjust = .5, face = "plain")
+  theme(axis.text.x = element_text(color = "grey20", size = 2.6, angle = 90, hjust = 1, vjust = .5, face = "plain"),
+        axis.text.y = element_text(color = "grey20", size = 2.6, angle = 0, hjust = 1, vjust = 0, face = "plain"),  
+        axis.title.x = element_text(color = "grey20", size =2.6, angle = 45, hjust = .5, vjust = 0, face = "plain"),
+        axis.title.y = element_text(color = "grey20", size = 2.6, angle = 45, hjust = .5, vjust = .5, face = "plain")
+       
   )
+
+labels_dend_df <- data.frame(labels_dend)
 
 ```
 
-
+```{r}
+library("DT")
+df = data.frame(
+  first.quarter = labels_dend[1:150], 
+  second.quarter = labels_dend[151:300],
+  third.quarter = labels_dend[301:450],
+  fourth.quarter = labels_dend[451:600]
+)
+DT::datatable(df)
+```
 
