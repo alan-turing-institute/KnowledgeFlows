@@ -28,18 +28,17 @@ create_reduced_transition_matrix <- function(transitionmatrix, min_counts) {
   missing_flows <- 0
 
   index <- which(transitionmatrix>=(min_counts), arr.ind = TRUE)
+  telliter <- 1000
 
   if (nrow(index)>0){
   # start looping on the rows (starting industry in a flow)
   for(i in 1:nrow(index)) {
 
-    row <- index[i,1]
-    col <- index[i,2]
+    reduced_matrix[i,1] <- trans_matrix_rows[index[i,1]]
+    reduced_matrix[i,2] <- trans_matrix_column[index[i,2]]
+    reduced_matrix[i,3] <- transitionmatrix[trans_matrix_rows[index[i,1]],trans_matrix_column[index[i,2]]]
 
-    reduced_matrix[i,1] <- trans_matrix_rows[row]
-    reduced_matrix[i,2] <- trans_matrix_column[col]
-    reduced_matrix[i,3] <- transitionmatrix[trans_matrix_rows[row],trans_matrix_column[col]]
-
+    if( i %% telliter == 0 ) cat(paste("iteration", i, "complete\n"))
   }
   }
 
