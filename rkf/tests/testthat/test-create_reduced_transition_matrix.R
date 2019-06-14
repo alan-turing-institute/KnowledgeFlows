@@ -8,7 +8,7 @@ test_that("the create_reduced_transition_matrix function works", {
 
   transitionmatrix <- create_and_fill_industry_transition_matrix(sub_ashe_sample,(sub_ashe_sample$piden>0),"sub_ashe_sample$piden>0","sic07")
 
-  min_counts <- 3
+  min_counts <- 6
   reduced_matrix_func <- create_reduced_transition_matrix(transitionmatrix,min_counts)
 
 
