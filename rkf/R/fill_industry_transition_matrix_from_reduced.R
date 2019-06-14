@@ -24,12 +24,11 @@ fill_industry_transition_matrix_from_reduced <- function(reduced_matrix,industry
   # loop by workers
   for (flow in 1:nrow(reduced_matrix)) {
 
-    row_index <- reduced_matrix[flow,1]
-    col_index <- reduced_matrix[flow,2]
-    value <-    reduced_matrix[flow,3]
+    if (reduced_matrix[flow,1]=="0000"){
+      next()
+    }
 
-    transition_matrix[[row_index, col_index]] <- value
-
+    transition_matrix[[reduced_matrix[flow,1], reduced_matrix[flow,2]]] <-  reduced_matrix[flow,3]
   }
 
   # return filled matrix
