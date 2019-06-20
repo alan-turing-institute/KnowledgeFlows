@@ -18,10 +18,16 @@
 #' }
 #' @import httr
 #' @export
-worker_transition_matrix <- function(data, piden,colname) {
+worker_transition_matrix <- function(data, piden) {
+
+  config <- config::get()
+
+  person_id <- config$person_id
+  year <- config$year
+  colname <- config$industry_var
 
   # get datafram only for the explicit worker
-  data_piden <- data[data$piden==piden,][c("year",colname)]
+  data_piden <- data[data$person_id == piden,][c(config$year,config$industry_var)]
 
   # make sure the resulting dataframe is sorted in ascending order
   data_piden <- data_piden[order(data_piden$year),]
@@ -40,23 +46,23 @@ worker_transition_matrix <- function(data, piden,colname) {
 
     index <- index +1
     flow_list[index] <- data_piden[i,colname]
-    flow_year_list[index] <- data_piden[i,"year"]
+    flow_year_list[index] <- data_piden[i,year]
 
     index <- index +1
     flow_list[index] <- data_piden[i+1,colname]
-    flow_year_list[index] <- data_piden[i+1,"year"]
+    flow_year_list[index] <- data_piden[i+1,year]
 
-    if ((data_piden[i,"year"]-data_piden[i+1,"year"])==0 && (data_piden[i,colname]!=data_piden[i+1,colname])){
+    if ((data_piden[i,year]-data_piden[i+1,year])==0 && (data_piden[i,colname]!=data_piden[i+1,colname])){
 
-      warning(paste("Warning: There is a flow ocurring in the same year ",data_piden[i,"year"]))
+      warning(paste("Warning: There is a flow ocurring in the same year ",data_piden[i,year]))
 
     }
-    if ((data_piden[i+1,"year"]-data_piden[i,"year"])>1)
+    if ((data_piden[i+1,year]-data_piden[i,year])>1)
     {
-      warning_message = paste0("Warning: There is a flow ocurring after worker absence in the data between years: ",data_piden[i,"year"])
+      warning_message = paste0("Warning: There is a flow ocurring after worker absence in the data between years: ",data_piden[i,year])
       warning_message = paste0(warning_message," and ")
 
-      warning(paste0(warning_message,data_piden[i+1,"year"]))
+      warning(paste0(warning_message,data_piden[i+1,year]))
 
     }
 

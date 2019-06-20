@@ -4,7 +4,7 @@
 \alias{worker_transition_matrix}
 \title{Create a vector of worker transitions}
 \usage{
-worker_transition_matrix(data, piden, colname)
+worker_transition_matrix(data, piden)
 }
 \arguments{
 \item{data}{A data frame.}

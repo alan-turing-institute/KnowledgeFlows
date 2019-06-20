@@ -16,8 +16,11 @@
 #' }
 #' @import httr
 #' @export
-empty_industry_transition_counts_matrix <- function(data, colname) {
+empty_industry_transition_counts_matrix <- function(data) {
 
+  config <- config::get()
+
+  colname <- config$industry_var
   # get the industry codes
   index <- unique(data[[colname]])
 

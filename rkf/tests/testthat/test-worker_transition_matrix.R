@@ -3,8 +3,9 @@ context("worker transition matrix function")
 
 test_that("the worker_transition_matrix function works", {
 
+
   piden <- sample(1:1000,1)
-  result <- worker_transition_matrix(ashe_sic_5dig, piden = piden,colname='sic07')
+  result <- worker_transition_matrix(ashe_sic_5dig, piden = piden)
 
   expect_true(is.matrix(result))
 

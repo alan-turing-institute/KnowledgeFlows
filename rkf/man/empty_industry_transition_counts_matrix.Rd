@@ -4,7 +4,7 @@
 \alias{empty_industry_transition_counts_matrix}
 \title{Create an empty industry transition counts matrix}
 \usage{
-empty_industry_transition_counts_matrix(data, colname)
+empty_industry_transition_counts_matrix(data)
 }
 \arguments{
 \item{data}{A data frame.}
