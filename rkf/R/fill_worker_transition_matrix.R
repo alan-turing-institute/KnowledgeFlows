@@ -19,6 +19,10 @@ fill_worker_transition_matrix <- function(transitionmatrix, workermatrix) {
 
   filledmatrix <- transitionmatrix
 
+  workermatrix <- subset(workermatrix, workermatrix$samejob_inds_final == 2)
+
+
+
   for(row in 1:nrow(workermatrix)) {
 
     if (nrow(workermatrix)<1){
@@ -30,6 +34,12 @@ fill_worker_transition_matrix <- function(transitionmatrix, workermatrix) {
 
     # finish industry
     sic_index_col <- toString(workermatrix[row,2])[[1]]
+
+    if ((sic_index_row!=sic_index_col) & (workermatrix[row,6][[1]]==1)){
+
+      print ("Warning: conflicting information in flows.")
+    }
+
 
     filledmatrix[[sic_index_row, sic_index_col]] <- filledmatrix[[sic_index_row,sic_index_col]] +1
   }

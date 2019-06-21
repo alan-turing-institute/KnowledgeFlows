@@ -4,6 +4,8 @@ context("test_fill_industry_transition_matrix_from_reduced function")
 test_that("the fill_industry_transition_matrix_from_reduced function works", {
 
   sub_ashe_sample <- ashe_sic_5dig[1:1000,]
+  sub_ashe_sample$sjd <- 2
+
 
   transitionmatrix <- create_and_fill_industry_transition_matrix(sub_ashe_sample,(sub_ashe_sample$piden>0),"sub_ashe_sample$piden>0","sic07")
 

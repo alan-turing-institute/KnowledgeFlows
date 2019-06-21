@@ -21,13 +21,14 @@
 worker_transition_matrix <- function(data, piden,colname) {
 
   # get datafram only for the explicit worker
-  data_piden <- data[data$piden==piden,][c("year",colname)]
+  data_piden <- data[data$piden==piden,][c("year",colname,"sjd")]
 
   # make sure the resulting dataframe is sorted in ascending order
   data_piden <- data_piden[order(data_piden$year),]
 
   flow_list <- list()
   flow_year_list <- list()
+  flow_sjob_list <- list()
 
   index <- 0
 
@@ -41,10 +42,13 @@ worker_transition_matrix <- function(data, piden,colname) {
     index <- index +1
     flow_list[index] <- data_piden[i,colname]
     flow_year_list[index] <- data_piden[i,"year"]
+    flow_sjob_list[index] <- data_piden[i,"sjd"]
 
     index <- index +1
     flow_list[index] <- data_piden[i+1,colname]
     flow_year_list[index] <- data_piden[i+1,"year"]
+    flow_sjob_list[index] <- data_piden[i+1,"sjd"]
+
 
     if ((data_piden[i,"year"]-data_piden[i+1,"year"])==0 && (data_piden[i,colname]!=data_piden[i+1,colname])){
 
@@ -63,10 +67,13 @@ worker_transition_matrix <- function(data, piden,colname) {
   }
 
   # turn vector into a matrix of industry transitions for the worker, add years that the worker was last and first recorded in each industry
-  flow_mat <- matrix(flow_list, ncol = 2, nrow = nrow(data_piden)-1,byrow = TRUE, dimnames = list(NULL, c("inds_ini","inda_final")))
+  flow_mat <- matrix(flow_list, ncol = 2, nrow = nrow(data_piden)-1,byrow = TRUE, dimnames = list(NULL, c("inds_ini","inds_final")))
   flow_year_mat <- matrix(flow_year_list, ncol = 2, nrow = nrow(data_piden)-1,byrow = TRUE, dimnames = list(NULL, c("year_inds_ini","year_inds_final")))
+  flow_sjob_mat <- matrix(flow_sjob_list, ncol = 2, nrow = nrow(data_piden)-1,byrow = TRUE, dimnames = list(NULL, c("samejob_inds_ini","samejob_inds_final")))
 
-  final_mat <- cbind2(flow_mat,flow_year_mat)
+  final_mat_ <- cbind2(flow_mat,flow_year_mat)
+  final_mat <- as.data.frame(cbind2(final_mat_,flow_sjob_mat))
+
 
   return (final_mat)
 

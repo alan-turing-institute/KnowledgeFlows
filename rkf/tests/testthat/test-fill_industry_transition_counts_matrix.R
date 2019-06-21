@@ -4,6 +4,8 @@ context("fill worker transition matrix function")
 test_that("the fill_worker_transition_matrix function works", {
 
   piden <- sample(1:1000,1)
+  ashe_sic_5dig$sjd <- 2
+
 
   # initiallize the matrix
   matrix_worker <- empty_industry_transition_counts_matrix(ashe_sic_5dig, colname = "sic07")
