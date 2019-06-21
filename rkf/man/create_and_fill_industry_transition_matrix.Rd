@@ -5,8 +5,7 @@
 \title{Run all steps to create a filled worker matrix
 #'}
 \usage{
-create_and_fill_industry_transition_matrix(sample, cuts, cuts_name,
-  ind_class)
+create_and_fill_industry_transition_matrix(sample, ind_class)
 }
 \arguments{
 \item{sample}{A data frame.}

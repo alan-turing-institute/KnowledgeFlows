@@ -4,13 +4,13 @@
 \alias{selection_cuts_ashe}
 \title{Selection cut function for ASHE dataset}
 \usage{
-selection_cuts_ashe(data, cut, cut_name = "")
+selection_cuts_ashe(sample_df, cut, cut_name, path = "")
 }
 \arguments{
-\item{data}{A data frame.}
-
 \item{cut}{string
 The selection cut requested.}
+
+\item{data}{A data frame.}
 }
 \value{
 A data frame.

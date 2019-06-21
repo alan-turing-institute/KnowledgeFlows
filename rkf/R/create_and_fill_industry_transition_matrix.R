@@ -13,10 +13,7 @@
 #' }
 #' @import httr
 #' @export
-create_and_fill_industry_transition_matrix <- function(sample, cuts, cuts_name, ind_class) {
-
-  # make cuts on inital sample
-  selected_sample <- selection_cuts_ashe(sample, cuts, cuts_name)
+create_and_fill_industry_transition_matrix <- function(sample, ind_class) {
 
   # get all workers on selected sample
   unique_workers <- unique(selected_sample$piden)
