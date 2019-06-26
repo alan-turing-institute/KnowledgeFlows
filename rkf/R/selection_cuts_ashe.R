@@ -16,16 +16,18 @@
 #' }
 #' @import httr
 #' @export
-selection_cuts_ashe <- function(sample_df, cut, cut_name,path ='') {
+selection_cuts_ashe <- function(data, cut, cut_name, path_log) {
 
+  file_path <- paste0(path_log,"log_ashe_sample_")
 
   print ("Summary stats before cuts:")
-  run_ashe_sample_summary(data,paste0(path,"log_ashe_sample_"),"nocuts")
+  run_ashe_sample_summary(data,file_path,"nocuts")
 
   # subset the data
-  data_subset <- subset(sample_df,cut)
+  data_subset <- subset(data,cut)
+
   print ("Summary stats after cuts:")
-  run_ashe_sample_summary(data_subset,paste0(path,"log_ashe_sample_"),cut_name)
+  run_ashe_sample_summary(data_subset,file_path,cut_name)
 
   return (data_subset)
 

@@ -5,19 +5,17 @@ test_that("the run_all function works", {
 
     input_path_file ="/Users/crangelsmith/PycharmProjects/KnowledgeFlows/rkf/data/ashe_sic_5dig.csv"
     output_path_file ="/Users/crangelsmith/PycharmProjects/KnowledgeFlows/rkf/data/reduced_matrix.csv"
-    log_path ="/Users/crangelsmith/PycharmProjects/KnowledgeFlows/rkf/log/"
-
+    log_path ="/Users/crangelsmith/PycharmProjects/KnowledgeFlows/rkf/tests/testthat/log/"
     colname <- "sic07"
     labelcut <- "piden_morethan_0_and_sjd_not0"
-    min_counts <- 6
+    min_counts <- 1
 
-    sample_df <- read.csv(input_path_file)
-    #cuts <- sample$piden>0 & sample$sjd!=0
+    data <- read.csv(input_path_file)
 
-    # make cuts on inital sample
-    selected_sample <- selection_cuts_ashe(ashe_sic_5dig,(ashe_sic_5dig$piden>0 & ashe_sic_5dig$year==2004), labelcut,path)
+    data <- selection_cuts_ashe(data, (data$piden>0 & data$year>2008), labelcut, log_path)
 
-    run_all(input_path_file,output_path_file,log_path,colname, sample_df["piden"]>0 & sample_df["year"]==2004, labelcut, min_counts)
+    run_all(data, output_path_file, colname, min_counts)
 
+    expect_true(file.exists(output_path_file))
 
 })

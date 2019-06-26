@@ -18,7 +18,7 @@
 #' }
 #' @import httr
 #' @export
-worker_transition_matrix <- function(data, piden,colname) {
+worker_transition_matrix <- function(data, piden, colname) {
 
   # get datafram only for the explicit worker
   data_piden <- data[data$piden==piden,][c("year",colname,"sjd")]

@@ -1,7 +1,5 @@
 #' Run all steps to create a reduced matrix
 #'
-#' TODO: For a particular worker id, produce a vector of all transitions.
-#'
 #' @param input_path
 #' Input path.
 #' @param output_path
@@ -18,24 +16,25 @@
 #' Path to write output
 #'
 #' @return
-#' A data frame
+#' Nothing
 #'
 #' @examples
 #' \dontrun{
-#' run_all(ashe_sic_5dig, piden = 1)
+#' run_all(input_path, output_path, log_path, colname, cuts, labelcut, min_counts)
 #' }
 #' @import httr
 #' @export
-run_all <- function(input_path, output_path, log_path, colname, cuts, labelcut, min_counts){
+run_all <- function(selected_sample, output_path, colname, min_counts){
 
-  sample_df <- read.csv(input_path)
 
-  selected_sample <- selection_cuts_ashe(sample_df, cuts, labelcut, log_path)
-
+  # build matrix
   transitionmatrix <- create_and_fill_industry_transition_matrix(selected_sample,colname)
 
+  # reduce matrix to 2D of source target
   reduced_matrix <- create_reduced_transition_matrix(transitionmatrix,min_counts)
 
   write.csv(reduced_matrix,output_path)
+
+  return (0)
 
 }

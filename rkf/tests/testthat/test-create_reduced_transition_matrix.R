@@ -4,11 +4,11 @@ context("test_create_reduced_transition_matrix function")
 test_that("the create_reduced_transition_matrix function works", {
 
 
-  sub_ashe_sample <- ashe_sic_5dig
-  sub_ashe_sample$sjd <- 2
+  data <- ashe_sic_5dig
+  data$sjd <- 2
 
 
-  transitionmatrix <- create_and_fill_industry_transition_matrix(sub_ashe_sample,(sub_ashe_sample$piden>0),"sub_ashe_sample$piden>0","sic07")
+  transitionmatrix <- create_and_fill_industry_transition_matrix(data,"sic07")
 
   min_counts <- 6
   reduced_matrix_func <- create_reduced_transition_matrix(transitionmatrix,min_counts)

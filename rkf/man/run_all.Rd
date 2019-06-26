@@ -4,32 +4,31 @@
 \alias{run_all}
 \title{Run all steps to create a reduced matrix}
 \usage{
-run_all(input_path, output_path, log_path, colname, cuts, labelcut,
-  min_counts)
+run_all(selected_sample, output_path, colname, min_counts)
 }
 \arguments{
-\item{input_path}{Input path.}
-
 \item{output_path}{Input path.}
-
-\item{log_path}{Path to write output}
 
 \item{colname}{The name of the industry code column in the data.}
 
-\item{cuts}{The cuts to be applied to the sample}
-
 \item{min_counts}{Labels to name the outputs}
 
+\item{input_path}{Input path.}
+
+\item{cuts}{The cuts to be applied to the sample}
+
 \item{labelcuts}{Labels to name the outputs}
+
+\item{log_path}{Path to write output}
 }
 \value{
-A data frame
+Nothing
 }
 \description{
-TODO: For a particular worker id, produce a vector of all transitions.
+Run all steps to create a reduced matrix
 }
 \examples{
 \dontrun{
-run_all(ashe_sic_5dig, piden = 1)
+run_all(input_path, output_path, log_path, colname, cuts, labelcut, min_counts)
 }
 }
