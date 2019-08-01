@@ -15,10 +15,19 @@
 #' }
 #' @import httr
 #' @export
-fill_industry_transition_matrix_from_reduced <- function(reduced_matrix,industry_data,ind_class) {
+fill_industry_transition_matrix_from_reduced <- function(reduced_matrix) {
 
   # create initial empty transition matrix
-  transition_matrix <- empty_industry_transition_counts_matrix(industry_data, ind_class)
+  index1 <- reduced_matrix[['StartIndst']]
+  index2 <- reduced_matrix[['FinalIndst']]
+
+  index <- unique(c(index1,index2))
+
+  # create the empty matrix
+  transition_matrix <- matrix(0, nrow = length(index), ncol = length(index))
+  # give the industry name as index for the empty matrix
+  dimnames(transition_matrix) <- list(index, index)
+
 
 
   # loop by workers
