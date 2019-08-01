@@ -12,7 +12,10 @@ test_that("the run_all function works", {
 
     data <- read.csv(input_path_file)
 
-    data <- selection_cuts_ashe(data, (data$piden>0 & data$year>2008), labelcut, log_path)
+    #subset(ashe_sic_5dig,ashe_sic_5dig$adr == 1 & ashe_sic_5dig$agp > 0 & ashe_sic_5dig$wgor > 0
+    #& ashe_sic_5dig$age > 18 & ashe_sic_5dig$age<66 & ashe_sic_5dig$ft==1 & ashe_sic_5dig$djob=="One job")
+
+    data <- selection_cuts_ashe(data, (data$piden>0), labelcut, log_path)
 
     run_all(data, output_path_file, colname, min_counts)
 

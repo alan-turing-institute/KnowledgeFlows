@@ -18,15 +18,19 @@
 #' }
 #' @import httr
 #' @export
-worker_transition_matrix_2 <- function(data, id, colname) {
+worker_transition_matrix <- function(data, piden, colname) {
 
   # get datafram only for the explicit worker
-  data_piden <- data[data$piden==id,][c("year",colname,"wpost","empsta","djob","wgor","ft","age","sex","piden")]
+  data_piden <- data[data$piden==piden,][c("year",colname,"sjd")]
 
-  # make sure the resulting dataframe is sorted in ascending orderaz
+  # make sure the resulting dataframe is sorted in ascending order
   data_piden <- data_piden[order(data_piden$year),]
 
-  conections_lists <- list()
+  flow_list <- list()
+  flow_year_list <- list()
+  flow_sjob_list <- list()
+
+  index <- 0
 
   # loop year by year and get transitions between industries into a matrix, record year of transitions.
   for (i in 1:(nrow(data_piden)-1)){
@@ -35,23 +39,43 @@ worker_transition_matrix_2 <- function(data, id, colname) {
       break
     }
 
+    index <- index +1
+    flow_list[index] <- data_piden[i,colname]
+    flow_year_list[index] <- data_piden[i,"year"]
+    flow_sjob_list[index] <- data_piden[i,"sjd"]
 
-    source_df <- data_piden[i,]
-    target_dfs <- data_piden[i+1,]
+    index <- index +1
+    flow_list[index] <- data_piden[i+1,colname]
+    flow_year_list[index] <- data_piden[i+1,"year"]
+    flow_sjob_list[index] <- data_piden[i+1,"sjd"]
 
-    source_df <- source_df[, ! names(source_df) %in% "sex", drop = F]
 
-    names(source_df) <-c("year_inds_ini","inds_ini","wpost_inds_ini","start_date_inds_ini","double_job_ini","wgor_inds_ini","ft_inds_ini","age_init","piden")
-    names(target_dfs) <-c("year_inds_final","inds_final","wpost_inds_final","start_date_inds_final","double_job_final","wgor_inds_final","ft_inds_final","age_final","sex","piden")
+    if ((data_piden[i,"year"]-data_piden[i+1,"year"])==0 && (data_piden[i,colname]!=data_piden[i+1,colname])){
 
-    conection_df <- merge(source_df, target_dfs, by = "piden")
+      warning(paste("Warning: There is a flow ocurring in the same year ",data_piden[i,"year"]))
 
-    conections_lists <- rbind(conections_lists,conection_df)
+    }
+    if ((data_piden[i+1,"year"]-data_piden[i,"year"])>1)
+    {
+      warning_message = paste0("Warning: There is a flow ocurring after worker absence in the data between years: ",data_piden[i,"year"])
+      warning_message = paste0(warning_message," and ")
+
+      warning(paste0(warning_message,data_piden[i+1,"year"]))
+
+    }
 
   }
-  # turn vector into a matrix of industry transitions for the worker, add years that the worker was last and first recorded in each industry
 
-  return (conections_lists)
+  # turn vector into a matrix of industry transitions for the worker, add years that the worker was last and first recorded in each industry
+  flow_mat <- matrix(flow_list, ncol = 2, nrow = nrow(data_piden)-1,byrow = TRUE, dimnames = list(NULL, c("inds_ini","inds_final")))
+  flow_year_mat <- matrix(flow_year_list, ncol = 2, nrow = nrow(data_piden)-1,byrow = TRUE, dimnames = list(NULL, c("year_inds_ini","year_inds_final")))
+  flow_sjob_mat <- matrix(flow_sjob_list, ncol = 2, nrow = nrow(data_piden)-1,byrow = TRUE, dimnames = list(NULL, c("samejob_inds_ini","samejob_inds_final")))
+
+  final_mat_ <- cbind2(flow_mat,flow_year_mat)
+  final_mat <- as.data.frame(cbind2(final_mat_,flow_sjob_mat))
+
+
+  return (final_mat)
 
 }
 
