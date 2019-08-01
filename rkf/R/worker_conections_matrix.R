@@ -1,4 +1,4 @@
-#' Create a vector of worker transitions
+#' Create a vector of worker conections
 #'
 #' TODO: For a particular worker id, produce a vector of all transitions.
 #'
@@ -18,26 +18,24 @@
 #' }
 #' @import httr
 #' @export
-worker_transition_matrix_2 <- function(data, id, colname) {
+worker_conections_matrix <- function(data, id, colname) {
 
   # get datafram only for the explicit worker
   data_piden <- data[data$piden==id,][c("year",colname,"wpost","empsta","djob","wgor","ft","age","sex","piden")]
 
-  # make sure the resulting dataframe is sorted in ascending orderaz
-  data_piden <- data_piden[order(data_piden$year),]
+  # make sure the resulting dataframe is sorted in ascending order
+  data_piden_combinations <- combn(nrow(data_piden),2)
 
   conections_lists <- list()
 
   # loop year by year and get transitions between industries into a matrix, record year of transitions.
-  for (i in 1:(nrow(data_piden)-1)){
+  for (i in 1:ncol(data_piden_combinations)){
 
-    if ((nrow(data_piden))<=1){
-      break
-    }
+    index_i <- data_piden_combinations[,i][1]
+    index_j <- data_piden_combinations[,i][2]
 
-
-    source_df <- data_piden[i,]
-    target_dfs <- data_piden[i+1,]
+    source_df <- data_piden[index_i,]
+    target_dfs <- data_piden[index_j,]
 
     source_df <- source_df[, ! names(source_df) %in% "sex", drop = F]
 
@@ -49,7 +47,7 @@ worker_transition_matrix_2 <- function(data, id, colname) {
     conections_lists <- rbind(conections_lists,conection_df)
 
   }
-  # turn vector into a matrix of industry transitions for the worker, add years that the worker was last and first recorded in each industry
+
 
   return (conections_lists)
 
