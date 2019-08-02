@@ -11,7 +11,7 @@
 #' }
 #' @import httr
 #' @export
-create_normalised_transition_matrix_from_reduced <- function(reduced_matrix) {
+create_normalised_transition_matrix_from_reduced <- function(reduced_matrix,labelmatrix,mincuts) {
 
   transition_matrix <- fill_industry_transition_matrix_from_reduced(reduced_matrix)
 
@@ -27,12 +27,14 @@ create_normalised_transition_matrix_from_reduced <- function(reduced_matrix) {
   rownames(SR_normalised_transformed) <- rownames(transition_matrix)
   colnames(SR_normalised_transformed) <- colnames(transition_matrix)
 
-  new_reduced_matrix <- create_reduced_transition_matrix(SR_normalised_transformed,-100000)
+  new_reduced_matrix <- create_reduced_transition_matrix(SR_normalised_transformed,mincuts)
+
+  reduced_matrix_withlabels <- add_labels_to_reduced_matrix(new_reduced_matrix,labelmatrix)
 
   # add labels
 
   # return filled matrix
-  return (new_reduced_matrix)
+  return (reduced_matrix_withlabels)
 
 }
 

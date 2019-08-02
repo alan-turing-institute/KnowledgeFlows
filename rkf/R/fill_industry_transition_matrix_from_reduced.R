@@ -37,7 +37,7 @@ fill_industry_transition_matrix_from_reduced <- function(reduced_matrix) {
       next()
     }
 
-    transition_matrix[[reduced_matrix[flow,1], reduced_matrix[flow,2]]] <-  reduced_matrix[flow,3]
+    transition_matrix[toString(reduced_matrix[flow,1]), toString(reduced_matrix[flow,2])] <-  reduced_matrix[flow,3]
   }
 
   # return filled matrix

@@ -42,7 +42,7 @@ create_reduced_transition_matrix <- function(transitionmatrix, min_counts) {
   }
   }
 
-  index_min <- which((transitionmatrix>0&transitionmatrix<min_counts), arr.ind = TRUE)
+  index_min <- which(transitionmatrix<min_counts, arr.ind = TRUE)
 
   missing_flows <- 0
   if (nrow(index_min)>0){

@@ -5,8 +5,7 @@
 \title{Run all steps to create a filled worker matrix
 #'}
 \usage{
-fill_industry_transition_matrix_from_reduced(reduced_matrix, industry_data,
-  ind_class)
+fill_industry_transition_matrix_from_reduced(reduced_matrix)
 }
 \arguments{
 \item{reduced_matrix}{A matrix}
