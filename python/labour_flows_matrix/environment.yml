@@ -1,0 +1,19 @@
+name: kf
+channels:
+- defaults
+dependencies:
+- numpy=1.13.3=py35hfd7066c_0
+- pandas=0.21.0=py35h4431f20_1
+- pandoc=1.19.2.1=ha5e8f32_1
+- python=3.6
+- scipy=0.19.1=py35hf362045_3
+- seaborn=0.8.0=py35h997229a_0
+- setuptools=36.5.0=py35h52cde6a_0
+- statsmodels=0.8.0=py35ha7c9052_0
+- pip:
+  - corner==2.0.1
+  - emcee==2.2.1
+  - python-utils==2.2.0
+  - python-igraph
+prefix: /anaconda3/envs/kf
+
