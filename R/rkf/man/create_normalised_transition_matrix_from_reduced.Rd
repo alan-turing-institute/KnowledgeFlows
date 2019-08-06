@@ -6,8 +6,7 @@
 \title{Run all steps to create a filled worker matrix
 #'}
 \usage{
-create_normalised_transition_matrix_from_reduced(reduced_matrix,
-  labelmatrix, mincuts)
+create_normalised_transition_matrix_from_reduced(reduced_matrix, mincuts)
 }
 \arguments{
 \item{transition_matrix}{A matrix}

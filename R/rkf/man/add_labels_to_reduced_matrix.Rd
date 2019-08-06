@@ -5,7 +5,7 @@
 \title{Run all steps to create a filled worker matrix
 #'}
 \usage{
-add_labels_to_reduced_matrix(reduced_matrix, label_matrix)
+add_labels_to_reduced_matrix(reduced_matrix, old_matrix)
 }
 \arguments{
 \item{reduced_matrix}{A matrix}

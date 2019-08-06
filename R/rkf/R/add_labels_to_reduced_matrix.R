@@ -15,11 +15,11 @@
 #' }
 #' @import httr
 #' @export
-add_labels_to_reduced_matrix <- function(reduced_matrix,label_matrix) {
+add_labels_to_reduced_matrix <- function(reduced_matrix,old_matrix) {
+
+  label_matrix <- read.csv('data/sic-industry-structure.csv')
 
   # create initial empty transition matrix
-
-
 
   # loop by workers
   for (flow in 1:nrow(reduced_matrix)) {
@@ -27,12 +27,35 @@ add_labels_to_reduced_matrix <- function(reduced_matrix,label_matrix) {
    inds1 <- toString(reduced_matrix[flow,1])
    inds2 <- toString(reduced_matrix[flow,2])
 
-   label1 <- toString(label_matrix[label_matrix$Code==inds1,]$Description)
-   label2 <- toString(label_matrix[label_matrix$Code==inds2,]$Description)
+   inds1_ <- sprintf("%04d",strtoi(reduced_matrix[flow,1]))
+   inds2_ <- sprintf("%04d",strtoi(reduced_matrix[flow,2]))
 
-   reduced_matrix[flow,"LabelStartIndst"] <- label1
-   reduced_matrix[flow,"LabelFinalIndst"] <- label2
+   if (inds1=='0000'){
+     next()
+   }
 
+   old_matrix_counts <- old_matrix[old_matrix$StartIndst==inds1,]
+   counts <- (old_matrix_counts[old_matrix_counts$FinalIndst==inds2,]$Counts)
+
+   label_subactivity1 <- toString(label_matrix[label_matrix$SIC2007==inds1_,]$SubActivity)
+   label_subactivity2 <- toString(label_matrix[label_matrix$SIC2007==inds2_,]$SubActivity)
+
+   label_mainactivity1 <- toString(label_matrix[label_matrix$SIC2007==inds1_,]$MainActivity)
+   label_mainactivity2 <- toString(label_matrix[label_matrix$SIC2007==inds2_,]$MainActivity)
+
+   label_mainindustry1 <- toString(label_matrix[label_matrix$SIC2007==inds1_,]$MainIndustry)
+   label_mainindustry2 <- toString(label_matrix[label_matrix$SIC2007==inds2_,]$MainIndustry)
+
+   reduced_matrix[flow,"SubActivity_StartIndst"] <- label_subactivity1
+   reduced_matrix[flow,"SubActivity_FinalIndst"] <- label_subactivity2
+
+   reduced_matrix[flow,"MainActivity_StartIndst"] <- label_mainactivity1
+   reduced_matrix[flow,"MainActivity_FinalIndst"] <- label_mainactivity2
+
+   reduced_matrix[flow,"MainIndustry_StartIndst"] <- label_mainindustry1
+   reduced_matrix[flow,"MainIndustry_FinalIndst"] <- label_mainindustry2
+
+   reduced_matrix[flow,"Initial_Counts"] <- counts[[1]]
   }
 
   # return filled matrix
