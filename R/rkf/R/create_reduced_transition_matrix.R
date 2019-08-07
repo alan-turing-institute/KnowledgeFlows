@@ -36,8 +36,13 @@ create_reduced_transition_matrix <- function(transitionmatrix, min_counts) {
 
     reduced_matrix[i,1] <- trans_matrix_rows[index[i,1]]
     reduced_matrix[i,2] <- trans_matrix_column[index[i,2]]
-    reduced_matrix[i,3] <- transitionmatrix[trans_matrix_rows[index[i,1]],trans_matrix_column[index[i,2]]]
 
+    if (reduced_matrix[i,1]==reduced_matrix[i,2]){
+      reduced_matrix[i,3] <- 1.0
+    }
+    else{
+    reduced_matrix[i,3] <- transitionmatrix[trans_matrix_rows[index[i,1]],trans_matrix_column[index[i,2]]]
+    }
     if( i %% telliter == 0 ) cat(paste("iteration", i, "complete\n"))
   }
   }

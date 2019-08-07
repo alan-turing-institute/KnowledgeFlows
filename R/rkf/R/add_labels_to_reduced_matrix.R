@@ -35,7 +35,15 @@ add_labels_to_reduced_matrix <- function(reduced_matrix,old_matrix) {
    }
 
    old_matrix_counts <- old_matrix[old_matrix$StartIndst==inds1,]
-   counts <- (old_matrix_counts[old_matrix_counts$FinalIndst==inds2,]$Counts)
+   old_count <- (old_matrix_counts[old_matrix_counts$FinalIndst==inds2,])
+
+   if (nrow(old_count)==0){
+     counts <- 0
+
+   }
+   else{
+     counts <- old_count$Counts
+   }
 
    label_subactivity1 <- toString(label_matrix[label_matrix$SIC2007==inds1_,]$SubActivity)
    label_subactivity2 <- toString(label_matrix[label_matrix$SIC2007==inds2_,]$SubActivity)
@@ -55,7 +63,8 @@ add_labels_to_reduced_matrix <- function(reduced_matrix,old_matrix) {
    reduced_matrix[flow,"MainIndustry_StartIndst"] <- label_mainindustry1
    reduced_matrix[flow,"MainIndustry_FinalIndst"] <- label_mainindustry2
 
-   reduced_matrix[flow,"Initial_Counts"] <- counts[[1]]
+
+   reduced_matrix[flow,"Initial_Counts"] <- counts
   }
 
   # return filled matrix
