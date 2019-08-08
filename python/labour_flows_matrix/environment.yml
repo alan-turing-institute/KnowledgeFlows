@@ -41,7 +41,9 @@ dependencies:
 - urllib3=1.24.1
 - pip
 - setuptools
+- cairocffi
 - pip:
+  - weasyprint
   - civis==1.9.4
   - civisml-extensions==0.1.10
   - ftputil==3.4
@@ -51,5 +53,5 @@ dependencies:
   - pubnub==4.1.2
   - pysftp==0.2.9
   - requests-toolbelt==0.9.1
-  - python-igraph
+  - python-igraph==0.7.1.post6
 prefix: /anaconda3/envs/kflows

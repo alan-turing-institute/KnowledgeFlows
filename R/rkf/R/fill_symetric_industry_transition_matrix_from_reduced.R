@@ -57,12 +57,8 @@ fill_symetric_industry_transition_matrix_from_reduced <- function(reduced_matrix
       transition_matrix[column_label, row_label] <-  (count1+count2)
     }
     else {
-      if (nrow(subset_reduced)==0){
-        count2 <- 0
-      }
+      transition_matrix[row_label, column_label] <-  (count1)
 
-      transition_matrix[row_label, column_label] <-  (count1+count2)/2
-      transition_matrix[column_label, row_label] <-  (count1+count2)/2
     }
 
   }
