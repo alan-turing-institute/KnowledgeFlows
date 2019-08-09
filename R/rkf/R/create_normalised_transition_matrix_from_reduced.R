@@ -13,7 +13,7 @@
 #' @export
 create_normalised_transition_matrix_from_reduced <- function(reduced_matrix,mincuts,algorithm) {
 
-  transition_matrix <- fill_symetric_industry_transition_matrix_from_reduced(reduced_matrix,algorithm)
+  transition_matrix <- fill_industry_transition_matrix_from_reduced(reduced_matrix,algorithm)
 
   # the null model
   null_model_matrix <- create_null_model_transition_matrix(transition_matrix)

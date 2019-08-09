@@ -355,4 +355,3 @@ ggplot(data = edge_list, aes(x=from, y=to, fill=SRt)) +
 import pandas as pd
 top_nace2_df_p = pd.read_stata("../data/MR_04-17_EN_data_GermanySkillsMatrix/wz08.dta")
 ```
-

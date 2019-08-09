@@ -15,7 +15,7 @@
 #' }
 #' @import httr
 #' @export
-fill_industry_transition_matrix_from_reduced <- function(reduced_matrix) {
+fill_industry_transition_matrix_from_reduced <- function(reduced_matrix,algorithm) {
 
   # create initial empty transition matrix
   index1 <- reduced_matrix[['StartIndst']]
@@ -37,7 +37,37 @@ fill_industry_transition_matrix_from_reduced <- function(reduced_matrix) {
       next()
     }
 
-    transition_matrix[toString(reduced_matrix[flow,1]), toString(reduced_matrix[flow,2])] <-  reduced_matrix[flow,3]
+    row_label <- toString(reduced_matrix[flow,1])
+    column_label <- toString(reduced_matrix[flow,2])
+    count1 <- reduced_matrix[flow,3]
+
+    subset_reduced <- subset(reduced_matrix,reduced_matrix$FinalIndst==row_label)
+    subset_reduced <- subset(subset_reduced,subset_reduced$StartIndst==column_label)
+
+    count2 <- subset_reduced$Counts
+
+    if (nrow(subset_reduced)==0){
+      count2 <- 10
+    }
+
+
+    if (algorithm=='CONN'){
+
+      if (row_label==column_label){
+        count2 <- 0
+      }
+
+      transition_matrix[row_label, column_label] <-  (count1+count2)
+      transition_matrix[column_label, row_label] <-  (count1+count2)
+    }
+    else {
+
+      transition_matrix[row_label, column_label] <-  (count1)
+      transition_matrix[column_label, row_label] <-  (count2)
+
+
+    }
+
   }
 
   # return filled matrix
