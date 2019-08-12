@@ -10,7 +10,7 @@ def draw_adjacency_matrix(reduced_matrix, columns_to_be_sorted, label):
 
     label_matrix['SIC2007'] = pd.to_numeric(label_matrix['SIC2007'])
 
-    selected_reduced_matrix = reduced_matrix[['StartIndst', 'FinalIndst', 'MainIndustry_StartIndst', 'Counts']]
+    selected_reduced_matrix = reduced_matrix[['StartIndst', 'FinalIndst', 'MainIndustry_StartIndst', 'weight']]
 
     reduced_matrix_sorted = selected_reduced_matrix.sort_values(by=columns_to_be_sorted, ascending=True)
 
@@ -40,7 +40,7 @@ def draw_adjacency_matrix(reduced_matrix, columns_to_be_sorted, label):
     y_axis = sorted_inds
     x_axis = sorted_inds
 
-    fig, ax = plt.subplots(figsize=(300, 300))
+    fig, ax = plt.subplots(figsize=(180, 180))
     im = ax.imshow(list_row)
 
     # We want to show all ticks...
@@ -50,11 +50,11 @@ def draw_adjacency_matrix(reduced_matrix, columns_to_be_sorted, label):
     ax.set_xticklabels(list_industry)
     ax.set_yticklabels(list_industry)
 
-    ax.xaxis.set_major_locator(plt.MaxNLocator(150))
-    ax.yaxis.set_major_locator(plt.MaxNLocator(150))
+    ax.xaxis.set_major_locator(plt.MaxNLocator(120))
+    ax.yaxis.set_major_locator(plt.MaxNLocator(120))
 
-    plt.xticks(fontsize=100, rotation=90)
-    plt.yticks(fontsize=100, rotation=0)
+    plt.xticks(fontsize=110, rotation=90)
+    plt.yticks(fontsize=110, rotation=0)
 
     plt.show()
 

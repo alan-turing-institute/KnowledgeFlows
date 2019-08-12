@@ -17,7 +17,7 @@ create_reduced_transition_matrix <- function(transitionmatrix, min_counts) {
 
   # define empty dataframe
   reduced_matrix <- as.data.frame(matrix(ncol=3, nrow=0))
-  colnames(reduced_matrix) <- c("StartIndst", "FinalIndst", "Counts") #no specific order predictable here
+  colnames(reduced_matrix) <- c("StartIndst", "FinalIndst", "weight") #no specific order predictable here
 
   # get all industries indexed in the initial matrix
   trans_matrix_column <- colnames(transitionmatrix)

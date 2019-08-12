@@ -5,7 +5,7 @@ import igraph
 
 
 
-def draw_network_by_classification(network,classification):
+def draw_network_by_classification(network,classification,output):
 
 
     # get classes for drawing
@@ -24,7 +24,7 @@ def draw_network_by_classification(network,classification):
     edge_width = [(2 * l) for l in network.es["weight"]]
 
     #draw figure
-    figur_graph = igraph.plot(network, "../img/network_industry.png", vertex_label=network.vs['subactivity'], edge_width=edge_width, vertex_size=20, vertex_label_size=12, layout=layout, bbox=(2200, 1200))
+    figur_graph = igraph.plot(network, output, vertex_label=network.vs['subactivity'], edge_width=edge_width, vertex_size=20, vertex_label_size=12, layout=layout, bbox=(2200, 1200))
     figur_graph.show()
 
     # draw labels in a separate figure (this is a temporary solution)

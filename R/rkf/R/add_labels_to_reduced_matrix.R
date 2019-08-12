@@ -38,7 +38,7 @@ add_labels_to_reduced_matrix <- function(reduced_matrix,old_matrix) {
    old_count <- (old_matrix_counts[old_matrix_counts$FinalIndst==inds2,])
 
    if (nrow(old_count)==0){
-     counts <- 0
+     counts <- 10
 
    }
    else{
@@ -64,7 +64,7 @@ add_labels_to_reduced_matrix <- function(reduced_matrix,old_matrix) {
    reduced_matrix[flow,"MainIndustry_FinalIndst"] <- label_mainindustry2
 
 
-   reduced_matrix[flow,"Initial_Counts"] <- counts
+   reduced_matrix[flow,"Counts"] <- counts
   }
 
   # return filled matrix

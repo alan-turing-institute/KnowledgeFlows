@@ -4,11 +4,10 @@ import pandas as pd
 
 def build_network_object(matrix_df, label):
     # select only connections that are relevant
-    matrix_df_connections = matrix_df[matrix_df[label] != 1]
-    matrix_df_connections_no_noise = matrix_df_connections[matrix_df_connections[label] > 0]
-    matrix_df_connections_no_noise['weight'] = matrix_df_connections_no_noise[label]
+    matrix_df_connections = matrix_df.loc[matrix_df[label] != 1]
+    matrix_df_connections_no_noise = matrix_df_connections.loc[matrix_df_connections[label] > 0]
 
-    tuples = [tuple(x) for x in matrix_df_connections_no_noise[['StartIndst', 'FinalIndst', 'weight']].values]
+    tuples = [tuple(x) for x in matrix_df_connections_no_noise[['StartIndst', 'FinalIndst', label]].values]
 
     network = igraph.Graph.TupleList(tuples, directed=False, edge_attrs=['weight'])
     network.vs['label'] = network.vs["name"]

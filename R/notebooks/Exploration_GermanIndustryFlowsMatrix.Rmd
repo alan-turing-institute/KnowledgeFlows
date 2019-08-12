@@ -13,7 +13,7 @@ library(dplyr)
 
 
 # read data
-data_nace2 <- data.frame(read.dta("../data/MR_04-17_EN_data_GermanySkillsMatrix/wz08.dta"))
+data_nace2 <- data.frame(read.dta("../../data/MR_04-17_EN_data_GermanySkillsMatrix/wz08.dta"))
 
 # select edges where the flow is higher than random
 data_nace2_df <- data_nace2[data_nace2$SRt>0,]
