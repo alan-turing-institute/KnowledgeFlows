@@ -14,6 +14,7 @@ def build_network_object(matrix_df, label):
 
     network_simple = network.simplify(combine_edges="mean")
 
+
     label_subactivity_df = matrix_df[
         ['StartIndst', 'FinalIndst', 'SubActivity_StartIndst', 'MainActivity_StartIndst', 'MainIndustry_StartIndst',
          'SubActivity_FinalIndst', 'MainActivity_FinalIndst', 'MainIndustry_FinalIndst']]
