@@ -84,8 +84,6 @@ def correlation_adjacency_matrix(reduced_matrix1, reduced_matrix2,label):
             list_row1.append(count1)
             list_row2.append(count2)
 
-
-
     pearson_corr = stats.pearsonr(list_row1, list_row2)
 
 
