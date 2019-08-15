@@ -86,6 +86,9 @@ def correlation_adjacency_matrix(reduced_matrix1, reduced_matrix2,label):
 
     pearson_corr = stats.pearsonr(list_row1, list_row2)
 
+    j = sns.jointplot(x=list_row1, y=list_row2, kind='scatter', s=50, color='blue', edgecolor="skyblue",linewidth=2)
+    j.annotate(stats.pearsonr)
+    plt.show()
 
     print (pearson_corr)
 
