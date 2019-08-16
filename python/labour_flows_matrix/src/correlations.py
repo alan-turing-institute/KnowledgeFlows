@@ -90,8 +90,15 @@ def correlation_adjacency_matrix(reduced_matrix1, reduced_matrix2,label):
     j.annotate(stats.pearsonr)
     plt.show()
 
+    print ('adjacency matrix correlation')
     print (pearson_corr)
 
+    list_zip_ = list(zip(list_row1, list_row2))
+    comparison_df = pd.DataFrame(list_zip_,columns=['x','y'])
 
+    sub1 = comparison_df[((comparison_df['x'] != -1) & (comparison_df['y'] == -1)) | ((comparison_df['y'] != -1) & (comparison_df['x'] == -1))]
+
+    print ('percentage of the entries with non-symetrical missigness')
+    print (sub1.shape[0]/comparison_df.shape[0]*100)
 
 

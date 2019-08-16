@@ -1,5 +1,5 @@
 import igraph
-
+import numpy as np
 
 
 
@@ -18,6 +18,6 @@ def draw_and_print_communities(network, net_community, output):
     count = 1
     for c in net_community:
         print('Community :', count)
-        print(network.vs[c]['subactivity'])
+        print(np.unique(network.vs[c]['mainindustry']))
         print()
         count = count + 1
