@@ -6,4 +6,4 @@
 rkf.Rcheck/
 .DS_Store
 data/
-img/
+img/*.png
