@@ -55,6 +55,24 @@ test_that("the create_normalised_transition_matrix_from_reduced function works",
   write.csv(normalised_output,paste0("/Users/camilarangelsmith/Code/KnowledgeFlows/python/labour_flows_matrix/data/",name_2009_2018_connections))
 
 
+  ###### 10 YEAR MATRICES 1997-2008 ###########################################
+
+  name_1997_2008_flows <- "Table1_Reduced_matrix_1997_2008_flows.csv"
+  algorithm_flows <- "FLOWS"
+  reduced_matrix <- read.csv(paste0('/Users/crangelsmith/PycharmProjects/KnowledgeFlows/secure_lab_outputs/128770_2019_08_29/',name_1997_2008_flows))
+
+  normalised_output <- create_normalised_transition_matrix_from_reduced(reduced_matrix,-0.99,algorithm_flows,'sic03')
+  write.csv(normalised_output,paste0("/Users/crangelsmith/PycharmProjects/KnowledgeFlows/python/labour_flows_matrix/data/",name_1997_2008_flows))
+
+
+  name_1997_2008_connections <- "Table2_Reduced_matrix_1997_2008_connections.csv"
+  algorithm_conn <- "CONN"
+  reduced_matrix <- read.csv(paste0('/Users/crangelsmith/PycharmProjects/KnowledgeFlows/secure_lab_outputs/128770_2019_08_29/',name_1997_2008_connections))
+
+  normalised_output <- create_normalised_transition_matrix_from_reduced(reduced_matrix,-0.99,algorithm_conn,'sic03')
+  write.csv(normalised_output,paste0("/Users/crangelsmith/PycharmProjects/KnowledgeFlows/python/labour_flows_matrix/data/",name_1997_2008_connections))
+
+
 
   expect_equal(dim(normalised_output),5)
 

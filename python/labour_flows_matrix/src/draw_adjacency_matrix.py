@@ -5,12 +5,12 @@ import igraph
 import pandas as pd
 
 
-def draw_adjacency_matrix(reduced_matrix, columns_to_be_sorted, label):
+def draw_adjacency_matrix(reduced_matrix, columns_to_be_sorted, label,axis_label='MainActivity'):
     label_matrix = pd.read_csv('../data/sic-industry-structure.csv')
 
     label_matrix['SIC2007'] = pd.to_numeric(label_matrix['SIC2007'])
 
-    selected_reduced_matrix = reduced_matrix[['StartIndst', 'FinalIndst', 'MainIndustry_StartIndst', 'weight']]
+    selected_reduced_matrix = reduced_matrix[['StartIndst', 'FinalIndst', 'MainIndustry_StartIndst', 'weight','MainActivity_StartIndst','SubActivity_StartIndst']]
 
     reduced_matrix_sorted = selected_reduced_matrix.sort_values(by=columns_to_be_sorted, ascending=True)
 
@@ -35,7 +35,7 @@ def draw_adjacency_matrix(reduced_matrix, columns_to_be_sorted, label):
             column_row.append(count)
 
         list_row.append(column_row)
-        list_industry.append(str(label_matrix[label_matrix['SIC2007'] == startInd]['MainActivity'].values[0]))
+        list_industry.append(str(label_matrix[label_matrix['SIC2007'] == startInd][axis_label].values[0]))
 
     y_axis = sorted_inds
     x_axis = sorted_inds
@@ -52,6 +52,54 @@ def draw_adjacency_matrix(reduced_matrix, columns_to_be_sorted, label):
 
     ax.xaxis.set_major_locator(plt.MaxNLocator(120))
     ax.yaxis.set_major_locator(plt.MaxNLocator(120))
+
+    plt.xticks(fontsize=110, rotation=90)
+    plt.yticks(fontsize=110, rotation=0)
+
+    plt.show()
+
+
+
+def draw_adjacency_matrix_nolabel(reduced_matrix, columns_to_be_sorted, label):
+
+
+    selected_reduced_matrix = reduced_matrix[['StartIndst', 'FinalIndst', 'MainIndustry_StartIndst', 'weight','MainActivity_StartIndst','SubActivity_StartIndst']]
+
+    reduced_matrix_sorted = selected_reduced_matrix.sort_values(by=columns_to_be_sorted, ascending=True)
+
+    sorted_inds = np.unique(reduced_matrix_sorted[columns_to_be_sorted[0]].values)
+
+    list_industry = []
+    list_row = []
+    for startInd in sorted_inds:
+
+        if (startInd == 0):
+            continue
+
+        start_df = reduced_matrix_sorted[reduced_matrix_sorted[columns_to_be_sorted[0]] == startInd]
+        column_row = []
+        for finalInd in sorted_inds:
+            final_df = start_df[start_df[columns_to_be_sorted[1]] == finalInd]
+            if final_df.shape[0] == 0:
+                count = -1
+            else:
+                count = start_df[start_df[columns_to_be_sorted[1]] == finalInd][label].values[0]
+
+            column_row.append(count)
+
+        list_row.append(column_row)
+
+    y_axis = sorted_inds
+    x_axis = sorted_inds
+
+    fig, ax = plt.subplots(figsize=(180, 180))
+    im = ax.imshow(list_row)
+
+    # We want to show all ticks...
+    ax.set_xticks(np.arange(len(x_axis)))
+    ax.set_yticks(np.arange(len(y_axis)))
+    # ... and label them with the respective list entries
+
 
     plt.xticks(fontsize=110, rotation=90)
     plt.yticks(fontsize=110, rotation=0)

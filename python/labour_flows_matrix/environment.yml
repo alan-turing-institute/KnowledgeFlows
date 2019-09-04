@@ -53,4 +53,5 @@ dependencies:
   - pysftp==0.2.9
   - requests-toolbelt==0.9.1
   - python-igraph==0.7.1.post6
+  - hoggorm
 prefix: /anaconda3/envs/kflows

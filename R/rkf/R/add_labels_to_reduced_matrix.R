@@ -15,9 +15,14 @@
 #' }
 #' @import httr
 #' @export
-add_labels_to_reduced_matrix <- function(reduced_matrix,old_matrix) {
+add_labels_to_reduced_matrix <- function(reduced_matrix,old_matrix,sic='sic07') {
 
-  label_matrix <- read.csv('data/sic-industry-structure.csv')
+  if (sic=='sic07'){
+    label_matrix <- read.csv('data/sic-industry-structure.csv')
+  }
+  else {
+  label_matrix <- read.csv('data/sic03-industry-structure.csv')
+  }
 
   # create initial empty transition matrix
 
@@ -45,14 +50,14 @@ add_labels_to_reduced_matrix <- function(reduced_matrix,old_matrix) {
      counts <- old_count$Counts
    }
 
-   label_subactivity1 <- toString(label_matrix[label_matrix$SIC2007==inds1_,]$SubActivity)
-   label_subactivity2 <- toString(label_matrix[label_matrix$SIC2007==inds2_,]$SubActivity)
+   label_subactivity1 <- toString(label_matrix[label_matrix$sic_code==inds1_,]$SubActivity)
+   label_subactivity2 <- toString(label_matrix[label_matrix$sic_code==inds2_,]$SubActivity)
 
-   label_mainactivity1 <- toString(label_matrix[label_matrix$SIC2007==inds1_,]$MainActivity)
-   label_mainactivity2 <- toString(label_matrix[label_matrix$SIC2007==inds2_,]$MainActivity)
+   label_mainactivity1 <- toString(label_matrix[label_matrix$sic_code==inds1_,]$MainActivity)
+   label_mainactivity2 <- toString(label_matrix[label_matrix$sic_code==inds2_,]$MainActivity)
 
-   label_mainindustry1 <- toString(label_matrix[label_matrix$SIC2007==inds1_,]$MainIndustry)
-   label_mainindustry2 <- toString(label_matrix[label_matrix$SIC2007==inds2_,]$MainIndustry)
+   label_mainindustry1 <- toString(label_matrix[label_matrix$sic_code==inds1_,]$MainIndustry)
+   label_mainindustry2 <- toString(label_matrix[label_matrix$sic_code==inds2_,]$MainIndustry)
 
    reduced_matrix[flow,"SubActivity_StartIndst"] <- label_subactivity1
    reduced_matrix[flow,"SubActivity_FinalIndst"] <- label_subactivity2

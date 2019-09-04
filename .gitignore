@@ -5,5 +5,4 @@
 .idea/
 rkf.Rcheck/
 .DS_Store
-data/
 img/*.png
