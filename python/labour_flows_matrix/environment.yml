@@ -42,6 +42,7 @@ dependencies:
 - pip
 - setuptools
 - cairocffi
+- networkx
 - pip:
   - weasyprint
   - civis==1.9.4
