@@ -18,7 +18,7 @@ def draw_network_by_classification(network,classification,output):
     network.vs['color'] = [color_dict[industry] for industry in network.vs[classification]]
 
     #define layout
-    layout = network.layout("fr")
+    layout = network.layout("graphopt")
 
     #define edge width
     edge_width = [(2 * l) for l in network.es["weight"]]
