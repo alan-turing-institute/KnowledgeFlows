@@ -43,6 +43,7 @@ dependencies:
 - setuptools
 - cairocffi
 - networkx
+- pygraphviz
 - pip:
   - weasyprint
   - civis==1.9.4
