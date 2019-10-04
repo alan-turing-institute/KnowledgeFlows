@@ -57,3 +57,5 @@ def build_network_object(matrix_df, label):
     network_simple.vs['mainindustry'] = mainindustry
 
     return network_simple
+
+

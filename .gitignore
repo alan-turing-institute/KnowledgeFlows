@@ -5,4 +5,4 @@
 .idea/
 rkf.Rcheck/
 .DS_Store
-img/*.png
+python/labour_flows_matrix/img/*.png
