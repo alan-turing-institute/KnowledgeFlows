@@ -28,6 +28,7 @@ create_normalised_transition_matrix_from_reduced <- function(reduced_matrix,minc
   rownames(SR_normalised_transformed) <- rownames(transition_matrix)
   colnames(SR_normalised_transformed) <- colnames(transition_matrix)
 
+  diag(SR_normalised_transformed) <- 1
 
   new_reduced_matrix <- create_reduced_transition_matrix(SR_normalised_transformed,mincuts)
 

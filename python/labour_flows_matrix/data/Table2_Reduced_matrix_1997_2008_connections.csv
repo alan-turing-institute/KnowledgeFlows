@@ -6867,76 +6867,83 @@
 "6866","7511","7521",0.859571884460692,"General (overall) public service activities","Foreign affairs","NA","NA","NA","NA",17
 "6867","7414","7521",0.936948687437187,"Business and management consultancy activities, n.e.c., Public relations activities,Financial management,General management consultancy activities","Foreign affairs","NA, NA","NA","NA, NA","NA",10
 "6868","6713","7521",0.981543731005947,"Activities auxiliary to financial intermediation n.e.c.","Foreign affairs","NA","NA","NA","NA",15
-"6869","2232","2232",1,"Reproduction of video recording","Reproduction of video recording","NA","NA","NA","NA",24
-"6870","2470","2470",1,"Manufacture of man-made fibres","Manufacture of man-made fibres","NA","NA","NA","NA",24
-"6871","1716","1716",1,"Manufacture of sewing threads","Manufacture of sewing threads","NA","NA","NA","NA",24
-"6872","1711","1711",1,"Preparation and spinning of cotton-type fibres","Preparation and spinning of cotton-type fibres","NA","NA","NA","NA",23
-"6873","5153","5113",0.988047082155415,"Wholesale of wood, construction materials and sanitary equipment","Agents involved in the sale of timber and building materials","NA","NA","NA","NA",10
-"6874","5113","5113",1,"Agents involved in the sale of timber and building materials","Agents involved in the sale of timber and building materials","NA","NA","NA","NA",23
-"6875","502","501",0.999751731572176,"","","","","","",10
-"6876","501","501",1,"","","","","","",23
-"6877","5112","5112",1,"Agents involved in the sale of fuels, ores, metals and industrial chemicals","Agents involved in the sale of fuels, ores, metals and industrial chemicals","NA","NA","NA","NA",22
-"6878","9262","6120",0.981784430275803,"Other sporting activities not elsewhere classified, Activities of racehorse owners","Passenger inland water transport, Other inland water transport","NA, NA","NA","NA, NA","NA",23
-"6879","6110","6120",0.995882242494481,"Passenger sea and coastal water transport, Freight sea and coastal water transport","Passenger inland water transport, Other inland water transport","NA","NA","NA","NA",10
-"6880","6120","6120",1,"Passenger inland water transport, Other inland water transport","Passenger inland water transport, Other inland water transport","NA","NA","NA","NA",22
-"6881","7420","113",0.954157354558504,"Architectural,Urban planning and landscape architectural activities, Engineering design activities for industrial process and production, Engineering related scientific and technical consulting activities,Engineering consultative and design activities, Other engineering activities, Quantity surveying activities","","NA, NA, NA","","NA, NA, NA","",10
-"6882","113","113",1,"","","","","","",21
-"6883","7415","1412",0.896772028284957,"Management activities of other non-financial holding companies,production holding companies, construction holding companies, wholesale holding companies, motor trades holding companies, retail holding companies, Management activities of transport holding companies, catering holding companies, service trades holding companies","Quarrying of limestone, gypsum and chalk","NA, NA","NA","NA, NA","NA",12
-"6884","1421","1412",0.997259005052688,"Operation of gravel and sand pits","Quarrying of limestone, gypsum and chalk","NA","NA","NA","NA",27
-"6885","1412","1412",1,"Quarrying of limestone, gypsum and chalk","Quarrying of limestone, gypsum and chalk","NA","NA","NA","NA",21
-"6886","130","123",0.996410324624214,"","","","","","",28
-"6887","123","123",1,"","","","","","",21
-"6888","2743","2743",1,"Lead, zinc and tin production","Lead, zinc and tin production","NA","NA","NA","NA",20
-"6889","3543","3543",1,"Manufacture of invalid carriages","Manufacture of invalid carriages","NA","NA","NA","NA",19
-"6890","5134","1594",0.996843738926636,"Wholesale of wine, beer, spirits and other alcoholic beverages, Wholesale of fruit and vegetable juices, mineral water and soft drinks","Manufacture of cider and perry Manufacture of other fermented fruit beverages","NA, NA","NA","NA, NA","NA",10
-"6891","1594","1594",1,"Manufacture of cider and perry Manufacture of other fermented fruit beverages","Manufacture of cider and perry Manufacture of other fermented fruit beverages","NA","NA","NA","NA",19
-"6892","202","202",1,"","","","","","",19
-"6893","2411","2411",1,"Manufacture of industrial gases","Manufacture of industrial gases","NA","NA","NA","NA",19
-"6894","4100","4200",0.995421454864003,"Collection, purification and distribution of water","","NA","","NA","",10
-"6895","2733","2733",1,"Cold forming or folding","Cold forming or folding","NA","NA","NA","NA",18
-"6896","2461","2461",1,"Manufacture of explosives","Manufacture of explosives","NA","NA","NA","NA",18
-"6897","1562","1562",1,"Manufacture of starches and starch products","Manufacture of starches and starch products","NA","NA","NA","NA",18
-"6898","2310","2310",1,"Manufacture of coke oven products","Manufacture of coke oven products","NA","NA","NA","NA",18
-"6899","5511","5512",0.987584548985738,"","","","","","",12
-"6900","5512","5512",1,"","","","","","",14
-"6901","2735","2735",1,"","","","","","",17
-"6902","2661","2666",0.998204879980444,"Manufacture of concrete products for construction purposes","Manufacture of other articles of concrete, plaster and cement","NA","NA","NA","NA",10
-"6903","2666","2666",1,"Manufacture of other articles of concrete, plaster and cement","Manufacture of other articles of concrete, plaster and cement","NA","NA","NA","NA",16
-"6904","5115","5115",1,"Agents involved in the sale of furniture, household goods, hardware and ironmongery","Agents involved in the sale of furniture, household goods, hardware and ironmongery","NA","NA","NA","NA",16
-"6905","1752","1752",1,"Manufacture of cordage, rope, twine and netting","Manufacture of cordage, rope, twine and netting","NA","NA","NA","NA",16
-"6906","3630","3630",1,"Manufacture of musical instruments","Manufacture of musical instruments","NA","NA","NA","NA",16
-"6907","2741","2741",1,"Precious metals production","Precious metals production","NA","NA","NA","NA",16
-"6908","4521","1450",0.96545821055551,"Construction of commercial buildings, Construction of domestic buildings, Construction of civil engineering constructions","Other mining and quarrying n.e.c.","NA, NA, NA","NA","NA, NA, NA","NA",10
-"6909","1589","1543",0.996564771289156,"Manufacture of soups Manufacture of other food products n.e.c.","Manufacture of margarine and similar edible fats","NA","NA","NA","NA",10
-"6910","1543","1543",1,"Manufacture of margarine and similar edible fats","Manufacture of margarine and similar edible fats","NA","NA","NA","NA",14
-"6911","6220","7123",0.998852314984422,"Other non-scheduled air transport","Renting of passenger air transport equipment,Renting of other air transport equipment","NA","NA","NA","NA",10
-"6912","1430","1430",1,"Mining of chemical and fertilizer minerals","Mining of chemical and fertilizer minerals","NA","NA","NA","NA",15
-"6913","2624","2624",1,"Manufacture of other technical ceramic products","Manufacture of other technical ceramic products","NA","NA","NA","NA",15
-"6914","3350","3350",1,"Manufacture of watches and clocks","Manufacture of watches and clocks","NA","NA","NA","NA",14
-"6915","5124","5124",1,"Wholesale of furskins, Wholesale of hides, skins and leather n.e.c.","Wholesale of furskins, Wholesale of hides, skins and leather n.e.c.","NA, NA","NA, NA","NA, NA","NA, NA",14
-"6916","1588","1588",1,"Manufacture of homogenized food preparations and dietetic food","Manufacture of homogenized food preparations and dietetic food","NA","NA","NA","NA",14
-"6917","9000","9003",0.996003991237815,"","Sanitation, remediation and similar activities","","NA","","NA",28
-"6918","9003","9003",1,"Sanitation, remediation and similar activities","Sanitation, remediation and similar activities","NA","NA","NA","NA",14
-"6919","2122","2111",0.999331977832041,"Manufacture of household and sanitary goods and of toilet requisites","Manufacture of pulp","NA","NA","NA","NA",10
-"6920","2665","2665",1,"Manufacture of fibre cement","Manufacture of fibre cement","NA","NA","NA","NA",13
-"6921","2465","2465",1,"Manufacture of prepared unrecorded media","Manufacture of prepared unrecorded media","NA","NA","NA","NA",13
-"6922","7131","7131",1,"Renting of agricultural machinery and equipment","Renting of agricultural machinery and equipment","NA","NA","NA","NA",12
-"6923","1715","1715",1,"Throwing and preparation of silk, including from noils, and throwing and texturing of synthetic or artificial filament yarns","Throwing and preparation of silk, including from noils, and throwing and texturing of synthetic or artificial filament yarns","NA","NA","NA","NA",12
-"6924","4512","4512",1,"Test drilling and boring","Test drilling and boring","NA","NA","NA","NA",12
-"6925","7012","7012",1,"Buying and selling of own real estate","Buying and selling of own real estate","NA","NA","NA","NA",12
-"6926","2664","2664",1,"Manufacture of mortars","Manufacture of mortars","NA","NA","NA","NA",12
-"6927","2940","2943",0.997799061547761,"","Manufacture of other machine tools n.e.c.","","NA","","NA",68
-"6928","2943","2943",1,"Manufacture of other machine tools n.e.c.","Manufacture of other machine tools n.e.c.","NA","NA","NA","NA",12
-"6929","1542","1542",1,"Manufacture of refined oils and fats","Manufacture of refined oils and fats","NA","NA","NA","NA",11
-"6930","7122","7122",1,"Renting of passenger water transport equipment,Renting of other water transport equipment","Renting of passenger water transport equipment,Renting of other water transport equipment","NA","NA","NA","NA",11
-"6931","150","150",1,"","","","","","",11
-"6932","5161","5181",0.999542649754543,"","Wholesale of machine tools","","NA","","NA",41
-"6933","5181","5181",1,"Wholesale of machine tools","Wholesale of machine tools","NA","NA","NA","NA",11
-"6934","7420","4030",0.966775875112784,"Architectural,Urban planning and landscape architectural activities, Engineering design activities for industrial process and production, Engineering related scientific and technical consulting activities,Engineering consultative and design activities, Other engineering activities, Quantity surveying activities","Steam and hot water supply","NA, NA, NA","NA","NA, NA, NA","NA",11
-"6935","4030","4030",1,"Steam and hot water supply","Steam and hot water supply","NA","NA","NA","NA",10
-"6936","1440","1440",1,"Production of salt","Production of salt","NA","NA","NA","NA",10
-"6937","2940","2942",0.997774633886591,"","Manufacture of other metalworking machine tools","","NA","","NA",50
-"6938","2942","2942",1,"Manufacture of other metalworking machine tools","Manufacture of other metalworking machine tools","NA","NA","NA","NA",10
-"6939","2940","2941",0.998092240083916,"","Manufacture of portable hand held power tools","","NA","","NA",27
-"6940","4021","4022",0.999228247440732,"Manufacture of gas","Distribution and trade of gaseous fuels through mains","NA","NA","NA","NA",27
-"6941","0000","0000",-240069,NA,NA,NA,NA,NA,NA,NA
+"6869","7521","7521",1,"Foreign affairs","Foreign affairs","NA","NA","NA","NA",10
+"6870","2232","2232",1,"Reproduction of video recording","Reproduction of video recording","NA","NA","NA","NA",24
+"6871","2470","2470",1,"Manufacture of man-made fibres","Manufacture of man-made fibres","NA","NA","NA","NA",24
+"6872","1716","1716",1,"Manufacture of sewing threads","Manufacture of sewing threads","NA","NA","NA","NA",24
+"6873","1711","1711",1,"Preparation and spinning of cotton-type fibres","Preparation and spinning of cotton-type fibres","NA","NA","NA","NA",23
+"6874","5153","5113",0.988047082155415,"Wholesale of wood, construction materials and sanitary equipment","Agents involved in the sale of timber and building materials","NA","NA","NA","NA",10
+"6875","5113","5113",1,"Agents involved in the sale of timber and building materials","Agents involved in the sale of timber and building materials","NA","NA","NA","NA",23
+"6876","502","501",0.999751731572176,"","","","","","",10
+"6877","501","501",1,"","","","","","",23
+"6878","5112","5112",1,"Agents involved in the sale of fuels, ores, metals and industrial chemicals","Agents involved in the sale of fuels, ores, metals and industrial chemicals","NA","NA","NA","NA",22
+"6879","9262","6120",0.981784430275803,"Other sporting activities not elsewhere classified, Activities of racehorse owners","Passenger inland water transport, Other inland water transport","NA, NA","NA","NA, NA","NA",23
+"6880","6110","6120",0.995882242494481,"Passenger sea and coastal water transport, Freight sea and coastal water transport","Passenger inland water transport, Other inland water transport","NA","NA","NA","NA",10
+"6881","6120","6120",1,"Passenger inland water transport, Other inland water transport","Passenger inland water transport, Other inland water transport","NA","NA","NA","NA",22
+"6882","7420","113",0.954157354558504,"Architectural,Urban planning and landscape architectural activities, Engineering design activities for industrial process and production, Engineering related scientific and technical consulting activities,Engineering consultative and design activities, Other engineering activities, Quantity surveying activities","","NA, NA, NA","","NA, NA, NA","",10
+"6883","113","113",1,"","","","","","",21
+"6884","7415","1412",0.896772028284957,"Management activities of other non-financial holding companies,production holding companies, construction holding companies, wholesale holding companies, motor trades holding companies, retail holding companies, Management activities of transport holding companies, catering holding companies, service trades holding companies","Quarrying of limestone, gypsum and chalk","NA, NA","NA","NA, NA","NA",12
+"6885","1421","1412",0.997259005052688,"Operation of gravel and sand pits","Quarrying of limestone, gypsum and chalk","NA","NA","NA","NA",27
+"6886","1412","1412",1,"Quarrying of limestone, gypsum and chalk","Quarrying of limestone, gypsum and chalk","NA","NA","NA","NA",21
+"6887","130","123",0.996410324624214,"","","","","","",28
+"6888","123","123",1,"","","","","","",21
+"6889","2743","2743",1,"Lead, zinc and tin production","Lead, zinc and tin production","NA","NA","NA","NA",20
+"6890","3543","3543",1,"Manufacture of invalid carriages","Manufacture of invalid carriages","NA","NA","NA","NA",19
+"6891","5134","1594",0.996843738926636,"Wholesale of wine, beer, spirits and other alcoholic beverages, Wholesale of fruit and vegetable juices, mineral water and soft drinks","Manufacture of cider and perry Manufacture of other fermented fruit beverages","NA, NA","NA","NA, NA","NA",10
+"6892","1594","1594",1,"Manufacture of cider and perry Manufacture of other fermented fruit beverages","Manufacture of cider and perry Manufacture of other fermented fruit beverages","NA","NA","NA","NA",19
+"6893","202","202",1,"","","","","","",19
+"6894","2411","2411",1,"Manufacture of industrial gases","Manufacture of industrial gases","NA","NA","NA","NA",19
+"6895","4100","4200",0.995421454864003,"Collection, purification and distribution of water","","NA","","NA","",10
+"6896","4200","4200",1,"","","","","","",10
+"6897","2733","2733",1,"Cold forming or folding","Cold forming or folding","NA","NA","NA","NA",18
+"6898","2461","2461",1,"Manufacture of explosives","Manufacture of explosives","NA","NA","NA","NA",18
+"6899","1562","1562",1,"Manufacture of starches and starch products","Manufacture of starches and starch products","NA","NA","NA","NA",18
+"6900","2310","2310",1,"Manufacture of coke oven products","Manufacture of coke oven products","NA","NA","NA","NA",18
+"6901","5511","5512",0.987584548985738,"","","","","","",12
+"6902","5512","5512",1,"","","","","","",14
+"6903","2735","2735",1,"","","","","","",17
+"6904","2661","2666",0.998204879980444,"Manufacture of concrete products for construction purposes","Manufacture of other articles of concrete, plaster and cement","NA","NA","NA","NA",10
+"6905","2666","2666",1,"Manufacture of other articles of concrete, plaster and cement","Manufacture of other articles of concrete, plaster and cement","NA","NA","NA","NA",16
+"6906","5115","5115",1,"Agents involved in the sale of furniture, household goods, hardware and ironmongery","Agents involved in the sale of furniture, household goods, hardware and ironmongery","NA","NA","NA","NA",16
+"6907","1752","1752",1,"Manufacture of cordage, rope, twine and netting","Manufacture of cordage, rope, twine and netting","NA","NA","NA","NA",16
+"6908","3630","3630",1,"Manufacture of musical instruments","Manufacture of musical instruments","NA","NA","NA","NA",16
+"6909","2741","2741",1,"Precious metals production","Precious metals production","NA","NA","NA","NA",16
+"6910","4521","1450",0.96545821055551,"Construction of commercial buildings, Construction of domestic buildings, Construction of civil engineering constructions","Other mining and quarrying n.e.c.","NA, NA, NA","NA","NA, NA, NA","NA",10
+"6911","1450","1450",1,"Other mining and quarrying n.e.c.","Other mining and quarrying n.e.c.","NA","NA","NA","NA",10
+"6912","1589","1543",0.996564771289156,"Manufacture of soups Manufacture of other food products n.e.c.","Manufacture of margarine and similar edible fats","NA","NA","NA","NA",10
+"6913","1543","1543",1,"Manufacture of margarine and similar edible fats","Manufacture of margarine and similar edible fats","NA","NA","NA","NA",14
+"6914","6220","7123",0.998852314984422,"Other non-scheduled air transport","Renting of passenger air transport equipment,Renting of other air transport equipment","NA","NA","NA","NA",10
+"6915","7123","7123",1,"Renting of passenger air transport equipment,Renting of other air transport equipment","Renting of passenger air transport equipment,Renting of other air transport equipment","NA","NA","NA","NA",10
+"6916","1430","1430",1,"Mining of chemical and fertilizer minerals","Mining of chemical and fertilizer minerals","NA","NA","NA","NA",15
+"6917","2624","2624",1,"Manufacture of other technical ceramic products","Manufacture of other technical ceramic products","NA","NA","NA","NA",15
+"6918","3350","3350",1,"Manufacture of watches and clocks","Manufacture of watches and clocks","NA","NA","NA","NA",14
+"6919","5124","5124",1,"Wholesale of furskins, Wholesale of hides, skins and leather n.e.c.","Wholesale of furskins, Wholesale of hides, skins and leather n.e.c.","NA, NA","NA, NA","NA, NA","NA, NA",14
+"6920","1588","1588",1,"Manufacture of homogenized food preparations and dietetic food","Manufacture of homogenized food preparations and dietetic food","NA","NA","NA","NA",14
+"6921","9000","9003",0.996003991237815,"","Sanitation, remediation and similar activities","","NA","","NA",28
+"6922","9003","9003",1,"Sanitation, remediation and similar activities","Sanitation, remediation and similar activities","NA","NA","NA","NA",14
+"6923","2122","2111",0.999331977832041,"Manufacture of household and sanitary goods and of toilet requisites","Manufacture of pulp","NA","NA","NA","NA",10
+"6924","2111","2111",1,"Manufacture of pulp","Manufacture of pulp","NA","NA","NA","NA",10
+"6925","2665","2665",1,"Manufacture of fibre cement","Manufacture of fibre cement","NA","NA","NA","NA",13
+"6926","2465","2465",1,"Manufacture of prepared unrecorded media","Manufacture of prepared unrecorded media","NA","NA","NA","NA",13
+"6927","7131","7131",1,"Renting of agricultural machinery and equipment","Renting of agricultural machinery and equipment","NA","NA","NA","NA",12
+"6928","1715","1715",1,"Throwing and preparation of silk, including from noils, and throwing and texturing of synthetic or artificial filament yarns","Throwing and preparation of silk, including from noils, and throwing and texturing of synthetic or artificial filament yarns","NA","NA","NA","NA",12
+"6929","4512","4512",1,"Test drilling and boring","Test drilling and boring","NA","NA","NA","NA",12
+"6930","7012","7012",1,"Buying and selling of own real estate","Buying and selling of own real estate","NA","NA","NA","NA",12
+"6931","2664","2664",1,"Manufacture of mortars","Manufacture of mortars","NA","NA","NA","NA",12
+"6932","2940","2943",0.997799061547761,"","Manufacture of other machine tools n.e.c.","","NA","","NA",68
+"6933","2943","2943",1,"Manufacture of other machine tools n.e.c.","Manufacture of other machine tools n.e.c.","NA","NA","NA","NA",12
+"6934","1542","1542",1,"Manufacture of refined oils and fats","Manufacture of refined oils and fats","NA","NA","NA","NA",11
+"6935","7122","7122",1,"Renting of passenger water transport equipment,Renting of other water transport equipment","Renting of passenger water transport equipment,Renting of other water transport equipment","NA","NA","NA","NA",11
+"6936","150","150",1,"","","","","","",11
+"6937","5161","5181",0.999542649754543,"","Wholesale of machine tools","","NA","","NA",41
+"6938","5181","5181",1,"Wholesale of machine tools","Wholesale of machine tools","NA","NA","NA","NA",11
+"6939","7420","4030",0.966775875112784,"Architectural,Urban planning and landscape architectural activities, Engineering design activities for industrial process and production, Engineering related scientific and technical consulting activities,Engineering consultative and design activities, Other engineering activities, Quantity surveying activities","Steam and hot water supply","NA, NA, NA","NA","NA, NA, NA","NA",11
+"6940","4030","4030",1,"Steam and hot water supply","Steam and hot water supply","NA","NA","NA","NA",10
+"6941","1440","1440",1,"Production of salt","Production of salt","NA","NA","NA","NA",10
+"6942","2940","2942",0.997774633886591,"","Manufacture of other metalworking machine tools","","NA","","NA",50
+"6943","2942","2942",1,"Manufacture of other metalworking machine tools","Manufacture of other metalworking machine tools","NA","NA","NA","NA",10
+"6944","2940","2941",0.998092240083916,"","Manufacture of portable hand held power tools","","NA","","NA",27
+"6945","2941","2941",1,"Manufacture of portable hand held power tools","Manufacture of portable hand held power tools","NA","NA","NA","NA",10
+"6946","4021","4022",0.999228247440732,"Manufacture of gas","Distribution and trade of gaseous fuels through mains","NA","NA","NA","NA",27
+"6947","4022","4022",1,"Distribution and trade of gaseous fuels through mains","Distribution and trade of gaseous fuels through mains","NA","NA","NA","NA",10
+"6948","0000","0000",-240062,NA,NA,NA,NA,NA,NA,NA

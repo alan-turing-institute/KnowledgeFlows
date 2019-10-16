@@ -7,7 +7,7 @@
 #'}
 \usage{
 create_normalised_transition_matrix_from_reduced(reduced_matrix, mincuts,
-  algorithm)
+  algorithm, sic = "sic07")
 }
 \arguments{
 \item{transition_matrix}{A matrix}

@@ -2,6 +2,7 @@
 
 export(add_labels_to_reduced_matrix)
 export(check_ashe_bres_ratio)
+export(create_all_normalised_transition_matrix)
 export(create_and_fill_industry_transition_matrix)
 export(create_normalised_transition_matrix)
 export(create_normalised_transition_matrix_from_reduced)

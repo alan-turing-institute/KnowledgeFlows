@@ -4802,20 +4802,28 @@
 "4801","2624","2624",1,"Manufacture of other technical ceramic products","Manufacture of other technical ceramic products","NA","NA","NA","NA",14
 "4802","5124","5124",1,"Wholesale of furskins, Wholesale of hides, skins and leather n.e.c.","Wholesale of furskins, Wholesale of hides, skins and leather n.e.c.","NA, NA","NA, NA","NA, NA","NA, NA",13
 "4803","4100","4200",0.995099845258271,"Collection, purification and distribution of water","","NA","","NA","",10
-"4804","3350","3350",1,"Manufacture of watches and clocks","Manufacture of watches and clocks","NA","NA","NA","NA",12
-"4805","2665","2665",1,"Manufacture of fibre cement","Manufacture of fibre cement","NA","NA","NA","NA",12
-"4806","1715","1715",1,"Throwing and preparation of silk, including from noils, and throwing and texturing of synthetic or artificial filament yarns","Throwing and preparation of silk, including from noils, and throwing and texturing of synthetic or artificial filament yarns","NA","NA","NA","NA",12
-"4807","1430","1430",1,"Mining of chemical and fertilizer minerals","Mining of chemical and fertilizer minerals","NA","NA","NA","NA",12
-"4808","1588","1588",1,"Manufacture of homogenized food preparations and dietetic food","Manufacture of homogenized food preparations and dietetic food","NA","NA","NA","NA",12
-"4809","7131","7131",1,"Renting of agricultural machinery and equipment","Renting of agricultural machinery and equipment","NA","NA","NA","NA",11
-"4810","1542","1542",1,"Manufacture of refined oils and fats","Manufacture of refined oils and fats","NA","NA","NA","NA",11
-"4811","7511","7521",0.89019813553151,"General (overall) public service activities","Foreign affairs","NA","NA","NA","NA",16
-"4812","7414","7521",0.969073968502671,"Business and management consultancy activities, n.e.c., Public relations activities,Financial management,General management consultancy activities","Foreign affairs","NA, NA","NA","NA, NA","NA",10
-"4813","4512","4512",1,"Test drilling and boring","Test drilling and boring","NA","NA","NA","NA",10
-"4814","2940","2943",0.997610371724508,"","Manufacture of other machine tools n.e.c.","","NA","","NA",55
-"4815","2940","2942",0.997610371724508,"","Manufacture of other metalworking machine tools","","NA","","NA",48
-"4816","5161","5181",0.999589709083225,"","Wholesale of machine tools","","NA","","NA",32
-"4817","4021","4022",0.999556893081993,"Manufacture of gas","Distribution and trade of gaseous fuels through mains","NA","NA","NA","NA",27
-"4818","2940","2941",0.997610371724508,"","Manufacture of portable hand held power tools","","NA","","NA",21
-"4819","9000","9003",0.996481080173201,"","Sanitation, remediation and similar activities","","NA","","NA",17
-"4820","0000","0000",-232350,NA,NA,NA,NA,NA,NA,NA
+"4804","4200","4200",1,"","","","","","",10
+"4805","3350","3350",1,"Manufacture of watches and clocks","Manufacture of watches and clocks","NA","NA","NA","NA",12
+"4806","2665","2665",1,"Manufacture of fibre cement","Manufacture of fibre cement","NA","NA","NA","NA",12
+"4807","1715","1715",1,"Throwing and preparation of silk, including from noils, and throwing and texturing of synthetic or artificial filament yarns","Throwing and preparation of silk, including from noils, and throwing and texturing of synthetic or artificial filament yarns","NA","NA","NA","NA",12
+"4808","1430","1430",1,"Mining of chemical and fertilizer minerals","Mining of chemical and fertilizer minerals","NA","NA","NA","NA",12
+"4809","1588","1588",1,"Manufacture of homogenized food preparations and dietetic food","Manufacture of homogenized food preparations and dietetic food","NA","NA","NA","NA",12
+"4810","7131","7131",1,"Renting of agricultural machinery and equipment","Renting of agricultural machinery and equipment","NA","NA","NA","NA",11
+"4811","1542","1542",1,"Manufacture of refined oils and fats","Manufacture of refined oils and fats","NA","NA","NA","NA",11
+"4812","7511","7521",0.89019813553151,"General (overall) public service activities","Foreign affairs","NA","NA","NA","NA",16
+"4813","7414","7521",0.969073968502671,"Business and management consultancy activities, n.e.c., Public relations activities,Financial management,General management consultancy activities","Foreign affairs","NA, NA","NA","NA, NA","NA",10
+"4814","7521","7521",1,"Foreign affairs","Foreign affairs","NA","NA","NA","NA",10
+"4815","4512","4512",1,"Test drilling and boring","Test drilling and boring","NA","NA","NA","NA",10
+"4816","2940","2943",0.997610371724508,"","Manufacture of other machine tools n.e.c.","","NA","","NA",55
+"4817","2943","2943",1,"Manufacture of other machine tools n.e.c.","Manufacture of other machine tools n.e.c.","NA","NA","NA","NA",10
+"4818","2940","2942",0.997610371724508,"","Manufacture of other metalworking machine tools","","NA","","NA",48
+"4819","2942","2942",1,"Manufacture of other metalworking machine tools","Manufacture of other metalworking machine tools","NA","NA","NA","NA",10
+"4820","5161","5181",0.999589709083225,"","Wholesale of machine tools","","NA","","NA",32
+"4821","5181","5181",1,"Wholesale of machine tools","Wholesale of machine tools","NA","NA","NA","NA",10
+"4822","4021","4022",0.999556893081993,"Manufacture of gas","Distribution and trade of gaseous fuels through mains","NA","NA","NA","NA",27
+"4823","4022","4022",1,"Distribution and trade of gaseous fuels through mains","Distribution and trade of gaseous fuels through mains","NA","NA","NA","NA",10
+"4824","2940","2941",0.997610371724508,"","Manufacture of portable hand held power tools","","NA","","NA",21
+"4825","2941","2941",1,"Manufacture of portable hand held power tools","Manufacture of portable hand held power tools","NA","NA","NA","NA",10
+"4826","9000","9003",0.996481080173201,"","Sanitation, remediation and similar activities","","NA","","NA",17
+"4827","9003","9003",1,"Sanitation, remediation and similar activities","Sanitation, remediation and similar activities","NA","NA","NA","NA",10
+"4828","0000","0000",-232342,NA,NA,NA,NA,NA,NA,NA

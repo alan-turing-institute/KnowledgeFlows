@@ -1,4 +1,4 @@
-#' Run all steps to create a filled worker matrix
+ #' Run all steps to create a filled worker matrix
 #'#'
 #' @param transition_matrix
 #' A matrix
