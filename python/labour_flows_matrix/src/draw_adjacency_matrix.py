@@ -26,6 +26,9 @@ def draw_adjacency_matrix(reduced_matrix, columns_to_be_sorted, label,axis_label
         start_df = reduced_matrix_sorted[reduced_matrix_sorted[columns_to_be_sorted[0]] == startInd]
         column_row = []
         for finalInd in sorted_inds:
+            if (finalInd == 0):
+                continue
+
             final_df = start_df[start_df[columns_to_be_sorted[1]] == finalInd]
             if final_df.shape[0] == 0:
                 count = -1
@@ -58,6 +61,7 @@ def draw_adjacency_matrix(reduced_matrix, columns_to_be_sorted, label,axis_label
 
     plt.show()
 
+    return (list_row,sorted_inds)
 
 
 def draw_adjacency_matrix_nolabel(reduced_matrix, columns_to_be_sorted, label):
