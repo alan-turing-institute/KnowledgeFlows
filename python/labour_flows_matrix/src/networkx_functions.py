@@ -48,8 +48,9 @@ def build_networx_from_df(input_df):
         v1 = input_df.iloc[edge]['StartIndst']
         v2 = input_df.iloc[edge]['FinalIndst']
         weight = input_df.iloc[edge]['weight']
+        counts = input_df.iloc[edge]['Counts']
 
-        network_nx.add_edge(v1, v2, weight=weight)
+        network_nx.add_edge(v1, v2, weight=weight,count=counts)
 
 
     return network_nx
