@@ -1,0 +1,1269 @@
+MainIndustry,MainActivity,SubActivity,SIC2007
+"Agriculture, Forestry, Fishing, Veterinary",Growing crops,"Cereals, leguminous crops, oilseeds",0111
+"Agriculture, Forestry, Fishing, Veterinary",Growing crops,Rice,0112
+"Agriculture, Forestry, Fishing, Veterinary",Growing crops,"Vegetables, melons, roots, tubers",0113
+"Agriculture, Forestry, Fishing, Veterinary",Growing crops,Sugar cane,0114
+"Agriculture, Forestry, Fishing, Veterinary",Growing crops,Tobacco,0115
+"Agriculture, Forestry, Fishing, Veterinary",Growing crops,Fibre crops,0116
+"Agriculture, Forestry, Fishing, Veterinary",Growing crops,Other non-perennial crops,0119
+"Agriculture, Forestry, Fishing, Veterinary",Growing crops,Grapes,0121
+"Agriculture, Forestry, Fishing, Veterinary",Growing crops,Tropical and subtropical fruits,0122
+"Agriculture, Forestry, Fishing, Veterinary",Growing crops,Citrus fruits,0123
+"Agriculture, Forestry, Fishing, Veterinary",Growing crops,Pome fruits and stone fruits,0124
+"Agriculture, Forestry, Fishing, Veterinary",Growing crops,"Other tree, bush fruits, nuts",0125
+"Agriculture, Forestry, Fishing, Veterinary",Growing crops,Oleaginous fruits,0126
+"Agriculture, Forestry, Fishing, Veterinary",Growing crops,Beverage,0127
+"Agriculture, Forestry, Fishing, Veterinary",Growing crops,"Spices, drug, pharmaceutical",0128
+"Agriculture, Forestry, Fishing, Veterinary",Growing crops,Other perennial,0129
+"Agriculture, Forestry, Fishing, Veterinary","Crop, plant support activities",Crop production support activities,0161
+"Agriculture, Forestry, Fishing, Veterinary","Crop, plant support activities",Post-harvest crop activities,0163
+"Agriculture, Forestry, Fishing, Veterinary","Crop, plant support activities",Seed propogation for propogation,0164
+"Agriculture, Forestry, Fishing, Veterinary","Crop, plant support activities",Plant propagation,0130
+"Agriculture, Forestry, Fishing, Veterinary","Animal production, hunting",Raising of dairy cattle,0141
+"Agriculture, Forestry, Fishing, Veterinary","Animal production, hunting","Raising of other cattle, buffaloes",0142
+"Agriculture, Forestry, Fishing, Veterinary","Animal production, hunting","Raising of horses, equines",0143
+"Agriculture, Forestry, Fishing, Veterinary","Animal production, hunting","Raising of camels, camelids",0144
+"Agriculture, Forestry, Fishing, Veterinary","Animal production, hunting","Raising of sheep, goats",0145
+"Agriculture, Forestry, Fishing, Veterinary","Animal production, hunting","Raising of swine, pigs",0146
+"Agriculture, Forestry, Fishing, Veterinary","Animal production, hunting",Raising of poultry,0147
+"Agriculture, Forestry, Fishing, Veterinary","Animal production, hunting",Raising of other animals,0149
+"Agriculture, Forestry, Fishing, Veterinary","Animal production, hunting",Mixed farming,0150
+"Agriculture, Forestry, Fishing, Veterinary","Animal production, hunting",Animal production support activities,0162
+"Agriculture, Forestry, Fishing, Veterinary","Animal production, hunting","Hunting, trapping, related activities",0170
+"Agriculture, Forestry, Fishing, Veterinary",Forestry and logging,"Silviculture, other forestry activities",0210
+"Agriculture, Forestry, Fishing, Veterinary",Forestry and logging,Logging,0220
+"Agriculture, Forestry, Fishing, Veterinary",Forestry and logging,Gathering wild growing non-wood,0230
+"Agriculture, Forestry, Fishing, Veterinary",Forestry and logging,Support services to forestry,0240
+"Agriculture, Forestry, Fishing, Veterinary",Fishing and aquaculture,Marine fishing,0311
+"Agriculture, Forestry, Fishing, Veterinary",Fishing and aquaculture,Freshwater fishing,0312
+"Agriculture, Forestry, Fishing, Veterinary",Fishing and aquaculture,Marine aquaculture,0321
+"Agriculture, Forestry, Fishing, Veterinary",Fishing and aquaculture,Freshwater aquaculture,0322
+"Agriculture, Forestry, Fishing, Veterinary",Veterinary activities,Veterinary activities,7500
+"Mining, Quarrying (inc extraction of petroleum and gas)",Mining of coal and lignite,Hard coal,0510
+"Mining, Quarrying (inc extraction of petroleum and gas)",Mining of coal and lignite,Ignite,0520
+"Mining, Quarrying (inc extraction of petroleum and gas)","Crude petroleum, natural gas",Crude petroleum extraction,0610
+"Mining, Quarrying (inc extraction of petroleum and gas)","Crude petroleum, natural gas",Natural gas extraction,0620
+"Mining, Quarrying (inc extraction of petroleum and gas)",Mining of metal ores,Iron,0710
+"Mining, Quarrying (inc extraction of petroleum and gas)",Mining of metal ores,Non ferrous,0720
+"Mining, Quarrying (inc extraction of petroleum and gas)",Mining of metal ores,Uranium and thorium ores,0721
+"Mining, Quarrying (inc extraction of petroleum and gas)",Mining of metal ores,Other non-ferrous,0729
+"Mining, Quarrying (inc extraction of petroleum and gas)","Mining, Quarrying and other","Ornamental, building stone etc",0811
+"Mining, Quarrying (inc extraction of petroleum and gas)","Mining, Quarrying and other","Gravel, sand pits; clays, kaolin",0812
+"Mining, Quarrying (inc extraction of petroleum and gas)","Mining, Quarrying and other","Mining of chemical, fertiliser minerals",0891
+"Mining, Quarrying (inc extraction of petroleum and gas)","Mining, Quarrying and other",Extraction of peat,0892
+"Mining, Quarrying (inc extraction of petroleum and gas)","Mining, Quarrying and other",Extraction of salt,0893
+"Mining, Quarrying (inc extraction of petroleum and gas)","Mining, Quarrying and other",Other mining and quarrying nec,0899
+"Mining, Quarrying (inc extraction of petroleum and gas)",Mining support activities,"Petroleum, natural gas extraction",0910
+"Mining, Quarrying (inc extraction of petroleum and gas)",Mining support activities,Other mining and quarrying,0990
+"Manufacture food, drink, tobacco","Food products - meat, fish","Meat processing, preserving",1011
+"Manufacture food, drink, tobacco","Food products - meat, fish","Poultry meat processing, preserving",1012
+"Manufacture food, drink, tobacco","Food products - meat, fish","Meat, poultry meat production",1013
+"Manufacture food, drink, tobacco","Food products - meat, fish","Fish processing, preserving",1020
+"Manufacture food, drink, tobacco","Food products - fruit, vegetables","Potato processing, preserving",1031
+"Manufacture food, drink, tobacco","Food products - fruit, vegetables","Fruit, vegetable juice",1032
+"Manufacture food, drink, tobacco","Food products - fruit, vegetables","Other fruit, vegetable",1039
+"Manufacture food, drink, tobacco",Food products - other,"Oil, fat manufacture",1041
+"Manufacture food, drink, tobacco",Food products - other,"Margarine, edible fats",1042
+"Manufacture food, drink, tobacco",Food products - other,"Dairies, cheese making",1051
+"Manufacture food, drink, tobacco",Food products - other,Ice cream,1052
+"Manufacture food, drink, tobacco",Food products - other,Grain mill products,1061
+"Manufacture food, drink, tobacco",Food products - other,Starches and starch products,1062
+"Manufacture food, drink, tobacco",Food products - other,"Bread; pastry goods, cakes",1071
+"Manufacture food, drink, tobacco",Food products - other,"Rusks, biscuits; preserved pastry",1072
+"Manufacture food, drink, tobacco",Food products - other,"Pasta, other farinaceous",1073
+"Manufacture food, drink, tobacco",Food products - other,Sugar,1081
+"Manufacture food, drink, tobacco",Food products - other,"Cocoa, choc, sugar confectionery",1082
+"Manufacture food, drink, tobacco",Food products - other,"Tea, coffee processing",1083
+"Manufacture food, drink, tobacco",Food products - other,Condiments and seasonings,1084
+"Manufacture food, drink, tobacco",Food products - other,Prepared meals and dishes,1085
+"Manufacture food, drink, tobacco",Food products - other,Homogenised/dietetic food,1086
+"Manufacture food, drink, tobacco",Food products - other,Other food products nec,1089
+"Manufacture food, drink, tobacco",Food products - other,Prepared farm animals feeds,1091
+"Manufacture food, drink, tobacco",Food products - other,Prepared pet foods,1092
+"Manufacture food, drink, tobacco",Beverages,"Spirits distilling, rectifying etc",1101
+"Manufacture food, drink, tobacco",Beverages,Wine from grape,1102
+"Manufacture food, drink, tobacco",Beverages,"Cider, other fruit wines",1103
+"Manufacture food, drink, tobacco",Beverages,Other non-distilled fermented,1104
+"Manufacture food, drink, tobacco",Beverages,Beer,1105
+"Manufacture food, drink, tobacco",Beverages,Malt,1106
+"Manufacture food, drink, tobacco",Beverages,Soft drinks; waters,1107
+"Manufacture food, drink, tobacco",Tobacco,Tobacco products,1200
+"Manufacture textiles, leather",Textiles ,"Textile fibres preparation, spinning",1310
+"Manufacture textiles, leather",Textiles ,Weaving of textiles,1320
+"Manufacture textiles, leather",Textiles ,Finishing of textiles,1330
+"Manufacture textiles, leather",Textiles ,Knitted and crocheted fabrics,1391
+"Manufacture textiles, leather",Textiles ,Made-up textile exc apparel,1392
+"Manufacture textiles, leather",Textiles ,Carpets and rugs,1393
+"Manufacture textiles, leather",Textiles ,"Cordage, rope, twine, netting",1394
+"Manufacture textiles, leather",Textiles ,Non-wovens exc. apparel,1395
+"Manufacture textiles, leather",Textiles ,"Other technical, industrial textiles",1396
+"Manufacture textiles, leather",Textiles ,Other textiles nec,1399
+"Manufacture textiles, leather",Wearing apparel,"Other wearing apparel, accessories",1419
+"Manufacture textiles, leather",Wearing apparel,Articles of fur,1420
+"Manufacture textiles, leather",Wearing apparel,"Knitted, crocheted hosiery",1431
+"Manufacture textiles, leather",Wearing apparel,"Other knitted, crocheted",1439
+"Manufacture textiles, leather",Wearing apparel,Leather clothes,1411
+"Manufacture textiles, leather",Wearing apparel,Workwear,1412
+"Manufacture textiles, leather",Wearing apparel,Other outerwear,1413
+"Manufacture textiles, leather",Wearing apparel,Underwear,1414
+"Manufacture textiles, leather",Leather goods,"Leather tanning, dressing",1510
+"Manufacture textiles, leather",Leather goods,Dyeing of fur,1511
+"Manufacture textiles, leather",Leather goods,"Luggage, handbags, bridlewear",1512
+"Manufacture textiles, leather",Leather goods,Footwear,1520
+"Manufacture coke, petroleum, chemicals, pharmaceuticals","Coke, refined petroleum",Coke oven products,1910
+"Manufacture coke, petroleum, chemicals, pharmaceuticals","Coke, refined petroleum",Refined petroleum products,1920
+"Manufacture coke, petroleum, chemicals, pharmaceuticals","Chemicals, chemical products",Industrial gases,2011
+"Manufacture coke, petroleum, chemicals, pharmaceuticals","Chemicals, chemical products",Dyes and pigments,2012
+"Manufacture coke, petroleum, chemicals, pharmaceuticals","Chemicals, chemical products",Other inorganic basic chemicals,2013
+"Manufacture coke, petroleum, chemicals, pharmaceuticals","Chemicals, chemical products",Other organic basic chemicals,2014
+"Manufacture coke, petroleum, chemicals, pharmaceuticals","Chemicals, chemical products",Fertilisers and nitrogen compounds,2015
+"Manufacture coke, petroleum, chemicals, pharmaceuticals","Chemicals, chemical products",Plastics in primary forms,2016
+"Manufacture coke, petroleum, chemicals, pharmaceuticals","Chemicals, chemical products",Synthetic rubber in primary forms,2017
+"Manufacture coke, petroleum, chemicals, pharmaceuticals","Chemicals, chemical products","Pesticides, other agrochemical",2020
+"Manufacture coke, petroleum, chemicals, pharmaceuticals","Chemicals, chemical products","Paints, varnishes, printing ink etc",2030
+"Manufacture coke, petroleum, chemicals, pharmaceuticals","Chemicals, chemical products",Explosives,2051
+"Manufacture coke, petroleum, chemicals, pharmaceuticals","Chemicals, chemical products",Glues,2052
+"Manufacture coke, petroleum, chemicals, pharmaceuticals","Chemicals, chemical products",Essential oils,2053
+"Manufacture coke, petroleum, chemicals, pharmaceuticals","Chemicals, chemical products",Other chemical products nec,2059
+"Manufacture coke, petroleum, chemicals, pharmaceuticals","Chemicals, chemical products",Man-made fibres,2060
+"Manufacture coke, petroleum, chemicals, pharmaceuticals","Chemicals, chemical products","Soap and detergents, cleaning",2041
+"Manufacture coke, petroleum, chemicals, pharmaceuticals","Chemicals, chemical products","Perfumes, toilet preparations",2042
+"Manufacture coke, petroleum, chemicals, pharmaceuticals",Basic pharmaceutical products,Basic pharmaceutical products,2110
+"Manufacture coke, petroleum, chemicals, pharmaceuticals",Basic pharmaceutical products,Pharmaceutical preparations,2120
+"Manufacture computer, electronic, light electrical","Computer, electronic, optical",Electronic components,2611
+"Manufacture computer, electronic, light electrical","Computer, electronic, optical",Loaded electronic boards,2612
+"Manufacture computer, electronic, light electrical","Computer, electronic, optical","Computers, peripheral equipment",2620
+"Manufacture computer, electronic, light electrical","Computer, electronic, optical",Communication equipment,2630
+"Manufacture computer, electronic, light electrical","Computer, electronic, optical",Consumer electronics,2640
+"Manufacture computer, electronic, light electrical","Computer, electronic, optical","Measuring, testing appliances",2651
+"Manufacture computer, electronic, light electrical","Computer, electronic, optical",Watches and clocks,2652
+"Manufacture computer, electronic, light electrical","Computer, electronic, optical","Irradiation, electromedical equip",2660
+"Manufacture computer, electronic, light electrical","Computer, electronic, optical","Optical, photographic equip",2670
+"Manufacture computer, electronic, light electrical","Computer, electronic, optical",Magnetic and optical media,2680
+"Manufacture computer, electronic, light electrical",Electrical equipment,"Electric motors, generators etc",2711
+"Manufacture computer, electronic, light electrical",Electrical equipment,"Electricity distn, control apparatus",2712
+"Manufacture computer, electronic, light electrical",Electrical equipment,"Batteries, accumulators",2720
+"Manufacture computer, electronic, light electrical",Electrical equipment,Fibre optic cables,2731
+"Manufacture computer, electronic, light electrical",Electrical equipment,"Other electronic, electric wires",2732
+"Manufacture computer, electronic, light electrical",Electrical equipment,Wiring devices,2733
+"Manufacture computer, electronic, light electrical",Electrical equipment,Electric lighting equipment,2740
+"Manufacture computer, electronic, light electrical",Electrical equipment,Electric domestic appliances,2751
+"Manufacture computer, electronic, light electrical",Electrical equipment,Non-electric domestic appliances,2752
+"Manufacture computer, electronic, light electrical",Electrical equipment,Other electrical equipment,2790
+"Manufacture machinery, vehicle, transport",General machinery,"Engines, turbines",2811
+"Manufacture machinery, vehicle, transport",General machinery,Fluid power equipment,2812
+"Manufacture machinery, vehicle, transport",General machinery,"Other pumps, compressors",2813
+"Manufacture machinery, vehicle, transport",General machinery,"Other taps, valves",2814
+"Manufacture machinery, vehicle, transport",General machinery,"Bearings, gears, driving elements",2815
+"Manufacture machinery, vehicle, transport",General machinery,"Ovens, furnaces",2821
+"Manufacture machinery, vehicle, transport",General machinery,"Lifting, handling equipment",2822
+"Manufacture machinery, vehicle, transport",General machinery,"Office machinery, equipment",2823
+"Manufacture machinery, vehicle, transport",General machinery,Power-driven hand tools,2824
+"Manufacture machinery, vehicle, transport",General machinery,Non-domestic cooling/ventilation eq,2825
+"Manufacture machinery, vehicle, transport",General machinery,Other,2829
+"Manufacture machinery, vehicle, transport",Special purpose machinery,"Metal forming m/c, machine tools",2840
+"Manufacture machinery, vehicle, transport",Special purpose machinery,Metal forming machinery,2841
+"Manufacture machinery, vehicle, transport",Special purpose machinery,Other machine tools,2849
+"Manufacture machinery, vehicle, transport",Special purpose machinery,Machinery for metallurgy,2891
+"Manufacture machinery, vehicle, transport",Special purpose machinery,"Mining, quarrying, construction",2892
+"Manufacture machinery, vehicle, transport",Special purpose machinery,"Food, beverage, tobacco processing",2893
+"Manufacture machinery, vehicle, transport",Special purpose machinery,"Textile, apparel, leather production",2894
+"Manufacture machinery, vehicle, transport",Special purpose machinery,"Paper, paperboard production",2895
+"Manufacture machinery, vehicle, transport",Special purpose machinery,"Plastics, rubber machinery",2896
+"Manufacture machinery, vehicle, transport",Special purpose machinery,Other,2899
+"Manufacture machinery, vehicle, transport",Special purpose machinery,"Agricultural, forestry machinery",2830
+"Manufacture machinery, vehicle, transport","Motor vehicles,trailers/semitrailer",Manufacture of motor vehicles,2910
+"Manufacture machinery, vehicle, transport","Motor vehicles,trailers/semitrailer","Motor vehicle coachwork,trailer",2920
+"Manufacture machinery, vehicle, transport","Motor vehicles,trailers/semitrailer","Motor vehicle parts, accessories",2930
+"Manufacture machinery, vehicle, transport","Motor vehicles,trailers/semitrailer",Motor vehicle electrical/electronic,2931
+"Manufacture machinery, vehicle, transport","Motor vehicles,trailers/semitrailer",Motor vehicle other parts,2932
+"Manufacture machinery, vehicle, transport",Other transport equipment,Ships and floating structures,3011
+"Manufacture machinery, vehicle, transport",Other transport equipment,Pleasure and sporting boats,3012
+"Manufacture machinery, vehicle, transport",Other transport equipment,"Railway locomotives, rolling stock",3020
+"Manufacture machinery, vehicle, transport",Other transport equipment,"Air, spacecraft and related m/c",3030
+"Manufacture machinery, vehicle, transport",Other transport equipment,Military fighting vehicles,3040
+"Manufacture machinery, vehicle, transport",Other transport equipment,Motorcycles,3091
+"Manufacture machinery, vehicle, transport",Other transport equipment,"Bicycles, invalid carriages",3092
+"Manufacture machinery, vehicle, transport",Other transport equipment,Other transport equipment nec,3099
+Machinery repair excluding motor vehicles,Repair/installation excl. household,Fabricated metal products,3311
+Machinery repair excluding motor vehicles,Repair/installation excl. household,Machinery,3312
+Machinery repair excluding motor vehicles,Repair/installation excl. household,"Electronic, optical equipment",3313
+Machinery repair excluding motor vehicles,Repair/installation excl. household,Electrical equipment,3314
+Machinery repair excluding motor vehicles,Repair/installation excl. household,Ships and boats,3315
+Machinery repair excluding motor vehicles,Repair/installation excl. household,Aircraft and spacecraft,3316
+Machinery repair excluding motor vehicles,Repair/installation excl. household,Transport equipment nec,3317
+Machinery repair excluding motor vehicles,Repair/installation excl. household,Other equipment,3319
+Machinery repair excluding motor vehicles,Repair/installation excl. household,"Industrial machinery, equipment",3320
+All other Manufacturing,"Wood,cork, straw,plaiting materials","Sawmilling, planing of wood",1610
+All other Manufacturing,"Wood,cork, straw,plaiting materials",Products of these materials,1620
+All other Manufacturing,"Wood,cork, straw,plaiting materials","Veneer sheets, wood-based panels",1621
+All other Manufacturing,"Wood,cork, straw,plaiting materials",Assembled parquet floors,1622
+All other Manufacturing,"Wood,cork, straw,plaiting materials","Other builders  carpentry, joinery",1623
+All other Manufacturing,"Wood,cork, straw,plaiting materials",Wooden containers,1624
+All other Manufacturing,"Wood,cork, straw,plaiting materials",Other products,1629
+All other Manufacturing,Paper and paper products,Pulp,1711
+All other Manufacturing,Paper and paper products,"Paper, paperboard",1712
+All other Manufacturing,Paper and paper products,"Corrugated paper, containers",1721
+All other Manufacturing,Paper and paper products,"Household, sanitary, toilet goods",1722
+All other Manufacturing,Paper and paper products,Paper stationery,1723
+All other Manufacturing,Paper and paper products,Wallpaper,1724
+All other Manufacturing,Paper and paper products,Other,1729
+All other Manufacturing,Printing,"Printing,related service activities",1810
+All other Manufacturing,Printing,Newspapers,1811
+All other Manufacturing,Printing,Other,1812
+All other Manufacturing,Printing,"Pre-press, pre-media services",1813
+All other Manufacturing,Printing,"Binding, related services",1814
+All other Manufacturing,Reproduction of recorded media,Reproduction of recorded media,1820
+All other Manufacturing,Rubber and plastic products,"Rubber tyres, tubes, retreading",2211
+All other Manufacturing,Rubber and plastic products,Other rubber,2219
+All other Manufacturing,Rubber and plastic products,"Plastic plates, sheets, tubes etc",2221
+All other Manufacturing,Rubber and plastic products,Plastic packing goods,2222
+All other Manufacturing,Rubber and plastic products,Builders' ware of plastic,2223
+All other Manufacturing,Rubber and plastic products,Other plastic,2229
+All other Manufacturing,Glass products,Flat glass manufacture,2311
+All other Manufacturing,Glass products,"Flat glass shaping, processing",2312
+All other Manufacturing,Glass products,Hollow glass,2313
+All other Manufacturing,Glass products,Glass fibres,2314
+All other Manufacturing,Glass products,Other,2319
+All other Manufacturing,Porcelain and ceramic products,Other,2340
+All other Manufacturing,Porcelain and ceramic products,"Ceramic household, ornamental",2341
+All other Manufacturing,Porcelain and ceramic products,Ceramic sanitary fixtures,2342
+All other Manufacturing,Porcelain and ceramic products,"Ceramic insulators,insulating",2343
+All other Manufacturing,Porcelain and ceramic products,Other technical ceramic products,2344
+All other Manufacturing,Porcelain and ceramic products,Other ceramic products,2349
+All other Manufacturing,"Concrete, cement and plaster",Concrete products for construction,2361
+All other Manufacturing,"Concrete, cement and plaster",Plaster products for construction,2362
+All other Manufacturing,"Concrete, cement and plaster",Ready-mixed concrete,2363
+All other Manufacturing,"Concrete, cement and plaster",Mortars,2364
+All other Manufacturing,"Concrete, cement and plaster",Fibre cement,2365
+All other Manufacturing,"Concrete, cement and plaster",Other,2369
+All other Manufacturing,Other non-metallic mineral products,Refractory products,2320
+All other Manufacturing,Other non-metallic mineral products,Ceramic tiles and flags,2331
+All other Manufacturing,Other non-metallic mineral products,"Bricks, tiles etc in baked clay",2332
+All other Manufacturing,Other non-metallic mineral products,Cement,2351
+All other Manufacturing,Other non-metallic mineral products,"Lime, plaster",2352
+All other Manufacturing,Other non-metallic mineral products,"Stone cutting, shaping, finishing",2370
+All other Manufacturing,Other non-metallic mineral products,Abrasive products,2391
+All other Manufacturing,Other non-metallic mineral products,Non-metallic mineral nec,2399
+All other Manufacturing,Basic metals,"Iron, steel, ferro-alloys",2410
+All other Manufacturing,Basic metals,"Steel tubes,pipes,hollow profiles",2420
+All other Manufacturing,Basic metals,Other first processing of steel,2430
+All other Manufacturing,Basic metals,Cold drawing of bars,2431
+All other Manufacturing,Basic metals,Cold rolling of narrow strip,2432
+All other Manufacturing,Basic metals,"Cold forming, folding",2433
+All other Manufacturing,Basic metals,Cold drawing of wire,2434
+All other Manufacturing,Basic metals,Precious metals,2441
+All other Manufacturing,Basic metals,Aluminium,2442
+All other Manufacturing,Basic metals,"Lead, zinc and tin",2443
+All other Manufacturing,Basic metals,Copper,2444
+All other Manufacturing,Basic metals,Other non-ferrous metal,2445
+All other Manufacturing,Basic metals,Nuclear fuel processing,2446
+All other Manufacturing,Casting of metals,Iron,2451
+All other Manufacturing,Casting of metals,Steel,2452
+All other Manufacturing,Casting of metals,Light metals,2453
+All other Manufacturing,Casting of metals,Other non-ferrous,2454
+All other Manufacturing,"Cutlery, tools, general hardware",Cutlery,2571
+All other Manufacturing,"Cutlery, tools, general hardware","Locks, hinges",2572
+All other Manufacturing,"Cutlery, tools, general hardware",Tools,2573
+All other Manufacturing,Other fabricated metal products,"Metal structures, parts of",2511
+All other Manufacturing,Other fabricated metal products,"Doors, windows",2512
+All other Manufacturing,Other fabricated metal products,"Central heating radiators, boilers",2521
+All other Manufacturing,Other fabricated metal products,"Other tanks, reservoirs, containers",2529
+All other Manufacturing,Other fabricated metal products,Steam generators,2530
+All other Manufacturing,Other fabricated metal products,"Weapons, ammunition",2540
+All other Manufacturing,Other fabricated metal products,"Forging, pressing, roll-forming etc",2550
+All other Manufacturing,Other fabricated metal products,Treatment and coating of metals,2561
+All other Manufacturing,Other fabricated metal products,Machining,2562
+All other Manufacturing,Other fabricated metal products,"Steel drums, similar containers",2591
+All other Manufacturing,Other fabricated metal products,Light metal packaging,2592
+All other Manufacturing,Other fabricated metal products,"Wire products, chain,springs",2593
+All other Manufacturing,Other fabricated metal products,"Fasteners, screw machine products",2594
+All other Manufacturing,Other fabricated metal products,Other fabricated metal products nec,2599
+All other Manufacturing,Furniture,"Office, shop furniture",3101
+All other Manufacturing,Furniture,Kitchen furniture,3102
+All other Manufacturing,Furniture,Mattresses,3103
+All other Manufacturing,Furniture,Other,3109
+All other Manufacturing,Other manufacturing,"Jewellery, bijouterie, related",3210
+All other Manufacturing,Other manufacturing,Striking of coins,3211
+All other Manufacturing,Other manufacturing,"Jewellery, related articles",3212
+All other Manufacturing,Other manufacturing,"Imitation jewellery, related",3213
+All other Manufacturing,Other manufacturing,Musical instruments,3220
+All other Manufacturing,Other manufacturing,Sports goods,3230
+All other Manufacturing,Other manufacturing,"Games, toys",3240
+All other Manufacturing,Other manufacturing,"Medical, dental instruments",3250
+All other Manufacturing,Other manufacturing,Other manufacturing,3290
+All other Manufacturing,Other manufacturing,"Brooms, brushes",3291
+All other Manufacturing,Other manufacturing,Other manufacturing nec,3299
+"Utilities, sewerage, waste and recycling","Electricity, gas, steam, air con",Electricity production,3511
+"Utilities, sewerage, waste and recycling","Electricity, gas, steam, air con",Electricity transmission,3512
+"Utilities, sewerage, waste and recycling","Electricity, gas, steam, air con",Electricity distribution,3513
+"Utilities, sewerage, waste and recycling","Electricity, gas, steam, air con",Trade of electricity,3514
+"Utilities, sewerage, waste and recycling","Electricity, gas, steam, air con",Gas manufacture,3521
+"Utilities, sewerage, waste and recycling","Electricity, gas, steam, air con",Mains gaseous fuels distribution,3522
+"Utilities, sewerage, waste and recycling","Electricity, gas, steam, air con",Trade of mains gas,3523
+"Utilities, sewerage, waste and recycling","Electricity, gas, steam, air con","Steam, air conditioning supply",3530
+"Utilities, sewerage, waste and recycling",Water and sewerage,"Water collection, treatment, supply",3600
+"Utilities, sewerage, waste and recycling",Water and sewerage,Sewerage,3700
+"Utilities, sewerage, waste and recycling",Waste,Non-hazardous waste collection,3811
+"Utilities, sewerage, waste and recycling",Waste,Hazardous waste collection,3812
+"Utilities, sewerage, waste and recycling",Waste,"Non-hazardous treatment, disposal",3821
+"Utilities, sewerage, waste and recycling",Waste,"Hazardous treatment, disposal",3822
+"Utilities, sewerage, waste and recycling",Materials recovery/recycling,Dismantling of wrecks,3831
+"Utilities, sewerage, waste and recycling",Materials recovery/recycling,Recovery of sorted materials,3832
+"Utilities, sewerage, waste and recycling",Other,"Remediation, waste, decontaminationetc",3900
+Construction (including development of real estate),Construction of buildings,Building projects development,4110
+Construction (including development of real estate),Construction of buildings,"Residential, non-residential buildings",4120
+Construction (including development of real estate),Civil engineering,"Roads, motorways",4211
+Construction (including development of real estate),Civil engineering,"Railways, underground railways",4212
+Construction (including development of real estate),Civil engineering,"Bridges, tunnels",4213
+Construction (including development of real estate),Civil engineering,Utility - fluids,4221
+Construction (including development of real estate),Civil engineering,"Utility - electricity, telecomms",4222
+Construction (including development of real estate),Civil engineering,Water projects,4291
+Construction (including development of real estate),Civil engineering,Other civil engineering nec,4299
+Construction (including development of real estate),Specialised activities,Demolition,4311
+Construction (including development of real estate),Specialised activities,Site preparation,4312
+Construction (including development of real estate),Specialised activities,"Test drilling, boring",4313
+Construction (including development of real estate),Specialised activities,Electrical installation,4321
+Construction (including development of real estate),Specialised activities,"Plumbing, heat, air con inst",4322
+Construction (including development of real estate),Specialised activities,Other construction installation,4329
+Construction (including development of real estate),Specialised activities,Plastering,4331
+Construction (including development of real estate),Specialised activities,Joinery installation,4332
+Construction (including development of real estate),Specialised activities,"Floor, wall covering",4333
+Construction (including development of real estate),Specialised activities,"Painting, glazing",4334
+Construction (including development of real estate),Specialised activities,"Other building completion,finishing",4339
+Construction (including development of real estate),Specialised activities,Roofing activities,4391
+Construction (including development of real estate),Specialised activities,Other,4399
+"Wholesale and retail,motor vehicle repair,sale of fuel","Motor vehicle/cycle trade, repair","Sale of cars, light motor vehicles",4511
+"Wholesale and retail,motor vehicle repair,sale of fuel","Motor vehicle/cycle trade, repair",Sale of other motor vehicles,4519
+"Wholesale and retail,motor vehicle repair,sale of fuel","Motor vehicle/cycle trade, repair",Maintenance/repair of vehicles,4520
+"Wholesale and retail,motor vehicle repair,sale of fuel","Motor vehicle/cycle trade, repair","Wholesale trade parts, accessories",4531
+"Wholesale and retail,motor vehicle repair,sale of fuel","Motor vehicle/cycle trade, repair","Retail trade parts, accessories",4532
+"Wholesale and retail,motor vehicle repair,sale of fuel","Motor vehicle/cycle trade, repair","Motorcycle sale, repair",4540
+"Wholesale and retail,motor vehicle repair,sale of fuel",Fee/contract - wholesale,"Agriculture, animals, raw goods",4611
+"Wholesale and retail,motor vehicle repair,sale of fuel",Fee/contract - wholesale,"Fuels, ores, metals, ind. chemicals",4612
+"Wholesale and retail,motor vehicle repair,sale of fuel",Fee/contract - wholesale,"Timber, building materials",4613
+"Wholesale and retail,motor vehicle repair,sale of fuel",Fee/contract - wholesale,"Machinery, industrial equipment",4614
+"Wholesale and retail,motor vehicle repair,sale of fuel",Fee/contract - wholesale,"Furniture, household goods",4615
+"Wholesale and retail,motor vehicle repair,sale of fuel",Fee/contract - wholesale,"Textiles, clothing, leather goods",4616
+"Wholesale and retail,motor vehicle repair,sale of fuel",Fee/contract - wholesale,"Food, beverages,tobacco",4617
+"Wholesale and retail,motor vehicle repair,sale of fuel",Fee/contract - wholesale,Other particular products,4618
+"Wholesale and retail,motor vehicle repair,sale of fuel",Fee/contract - wholesale,Variety of goods,4619
+"Wholesale and retail,motor vehicle repair,sale of fuel",Agricultural wholesale,"Grain, tobacco, seeds, animal feeds",4621
+"Wholesale and retail,motor vehicle repair,sale of fuel",Agricultural wholesale,"Flowers, plants",4622
+"Wholesale and retail,motor vehicle repair,sale of fuel",Agricultural wholesale,Live animals,4623
+"Wholesale and retail,motor vehicle repair,sale of fuel",Agricultural wholesale,"Hides, skins, leather",4624
+"Wholesale and retail,motor vehicle repair,sale of fuel","Food, beverages, tobacco wholesale",Fruit and vegetables,4631
+"Wholesale and retail,motor vehicle repair,sale of fuel","Food, beverages, tobacco wholesale","Meat, meat products",4632
+"Wholesale and retail,motor vehicle repair,sale of fuel","Food, beverages, tobacco wholesale",Dairy products,4633
+"Wholesale and retail,motor vehicle repair,sale of fuel","Food, beverages, tobacco wholesale",Beverages,4634
+"Wholesale and retail,motor vehicle repair,sale of fuel","Food, beverages, tobacco wholesale",Tobacco products,4635
+"Wholesale and retail,motor vehicle repair,sale of fuel","Food, beverages, tobacco wholesale","Sugar, chocolate",4636
+"Wholesale and retail,motor vehicle repair,sale of fuel","Food, beverages, tobacco wholesale","Coffee, tea, cocoa, spices",4637
+"Wholesale and retail,motor vehicle repair,sale of fuel","Food, beverages, tobacco wholesale",Other food,4638
+"Wholesale and retail,motor vehicle repair,sale of fuel","Food, beverages, tobacco wholesale",Other non-specialised,4639
+"Wholesale and retail,motor vehicle repair,sale of fuel",Household goods wholesale,Textiles,4641
+"Wholesale and retail,motor vehicle repair,sale of fuel",Household goods wholesale,"Clothing, footwear",4642
+"Wholesale and retail,motor vehicle repair,sale of fuel",Household goods wholesale,Electrical appliances,4643
+"Wholesale and retail,motor vehicle repair,sale of fuel",Household goods wholesale,"China, glassware, cleaning materials",4644
+"Wholesale and retail,motor vehicle repair,sale of fuel",Household goods wholesale,"Perfume, cosmetics",4645
+"Wholesale and retail,motor vehicle repair,sale of fuel",Household goods wholesale,Pharmaceutical goods,4646
+"Wholesale and retail,motor vehicle repair,sale of fuel",Household goods wholesale,"Furniture, carpets, lighting",4647
+"Wholesale and retail,motor vehicle repair,sale of fuel",Household goods wholesale,"Watches, jewellery",4648
+"Wholesale and retail,motor vehicle repair,sale of fuel",Household goods wholesale,Other,4649
+"Wholesale and retail,motor vehicle repair,sale of fuel",Information/comms equip wholesale,"Computers, peripherals, software",4651
+"Wholesale and retail,motor vehicle repair,sale of fuel",Information/comms equip wholesale,"Electronic, telecomms",4652
+"Wholesale and retail,motor vehicle repair,sale of fuel","Other m/c, equipment wholesale",Agricultural,4661
+"Wholesale and retail,motor vehicle repair,sale of fuel","Other m/c, equipment wholesale",Machine tools,4662
+"Wholesale and retail,motor vehicle repair,sale of fuel","Other m/c, equipment wholesale","Mining, construction, civil eng",4663
+"Wholesale and retail,motor vehicle repair,sale of fuel","Other m/c, equipment wholesale","Textile, sewing, knitting m/c",4664
+"Wholesale and retail,motor vehicle repair,sale of fuel","Other m/c, equipment wholesale",Office furniture,4665
+"Wholesale and retail,motor vehicle repair,sale of fuel","Other m/c, equipment wholesale","Other office m/c, equipment",4666
+"Wholesale and retail,motor vehicle repair,sale of fuel","Other m/c, equipment wholesale",Other,4669
+"Wholesale and retail,motor vehicle repair,sale of fuel",Other wholesale,"Fuels, related products",4671
+"Wholesale and retail,motor vehicle repair,sale of fuel",Other wholesale,"Metals, metal ores",4672
+"Wholesale and retail,motor vehicle repair,sale of fuel",Other wholesale,"Wood, construction, sanitary equip",4673
+"Wholesale and retail,motor vehicle repair,sale of fuel",Other wholesale,"Hardware, plumbing, heating equip",4674
+"Wholesale and retail,motor vehicle repair,sale of fuel",Other wholesale,Chemical products,4675
+"Wholesale and retail,motor vehicle repair,sale of fuel",Other wholesale,Other intermediate products,4676
+"Wholesale and retail,motor vehicle repair,sale of fuel",Other wholesale,"Waste, scrap",4677
+"Wholesale and retail,motor vehicle repair,sale of fuel",Other wholesale,Non-specialised wholesale trade,4690
+"Wholesale and retail,motor vehicle repair,sale of fuel",Non specialised retail stores,"Food, beverages, tobacco mainly",4711
+"Wholesale and retail,motor vehicle repair,sale of fuel",Non specialised retail stores,Other non specialised,4719
+"Wholesale and retail,motor vehicle repair,sale of fuel",Specialised retail - food etc,"Fruit, vegetables",4721
+"Wholesale and retail,motor vehicle repair,sale of fuel",Specialised retail - food etc,"Meat, meat products",4722
+"Wholesale and retail,motor vehicle repair,sale of fuel",Specialised retail - food etc,"Fish, crustaceans, molluscs",4723
+"Wholesale and retail,motor vehicle repair,sale of fuel",Specialised retail - food etc,"Bread, cakes, confectionery",4724
+"Wholesale and retail,motor vehicle repair,sale of fuel",Specialised retail - food etc,Beverages,4725
+"Wholesale and retail,motor vehicle repair,sale of fuel",Specialised retail - food etc,Tobacco products,4726
+"Wholesale and retail,motor vehicle repair,sale of fuel",Specialised retail - food etc,Other food in specialised stores,4729
+"Wholesale and retail,motor vehicle repair,sale of fuel",Specialised retail - auto fuel,Automotive fuel (in petrol stations),4730
+"Wholesale and retail,motor vehicle repair,sale of fuel",Specialised retail - info/comms,"Computers, peripherals, software",4741
+"Wholesale and retail,motor vehicle repair,sale of fuel",Specialised retail - info/comms,Telecommunications equipment,4742
+"Wholesale and retail,motor vehicle repair,sale of fuel",Specialised retail - info/comms,"Audio, video equipment",4743
+"Wholesale and retail,motor vehicle repair,sale of fuel",Specialised retail - household,Textiles,4751
+"Wholesale and retail,motor vehicle repair,sale of fuel",Specialised retail - household,"Hardware, paints, glass",4752
+"Wholesale and retail,motor vehicle repair,sale of fuel",Specialised retail - household,"Carpets, rugs, wall/floor coverings",4753
+"Wholesale and retail,motor vehicle repair,sale of fuel",Specialised retail - household,Electrical household appliances,4754
+"Wholesale and retail,motor vehicle repair,sale of fuel",Specialised retail - household,"Furniture, lighting, other",4759
+"Wholesale and retail,motor vehicle repair,sale of fuel",Specialised retail - other,Books,4761
+"Wholesale and retail,motor vehicle repair,sale of fuel",Specialised retail - other,"Newspapers, stationery",4762
+"Wholesale and retail,motor vehicle repair,sale of fuel",Specialised retail - other,"Music, video recordings",4763
+"Wholesale and retail,motor vehicle repair,sale of fuel",Specialised retail - other,Sporting equipment,4764
+"Wholesale and retail,motor vehicle repair,sale of fuel",Specialised retail - other,"Games, toys",4765
+"Wholesale and retail,motor vehicle repair,sale of fuel",Specialised retail - other,Clothing,4771
+"Wholesale and retail,motor vehicle repair,sale of fuel",Specialised retail - other,"Footwear, leather goods",4772
+"Wholesale and retail,motor vehicle repair,sale of fuel",Specialised retail - other,Dispensing chemist,4773
+"Wholesale and retail,motor vehicle repair,sale of fuel",Specialised retail - other,"Medical, orthopaedic goods",4774
+"Wholesale and retail,motor vehicle repair,sale of fuel",Specialised retail - other,"Cosmetic, toilet articles",4775
+"Wholesale and retail,motor vehicle repair,sale of fuel",Specialised retail - other,"Flowers, plants, pet animals/food",4776
+"Wholesale and retail,motor vehicle repair,sale of fuel",Specialised retail - other,"Watches, jewellery",4777
+"Wholesale and retail,motor vehicle repair,sale of fuel",Specialised retail - other,Other new goods,4778
+"Wholesale and retail,motor vehicle repair,sale of fuel",Specialised retail - other,Other second hand goods,4779
+"Wholesale and retail,motor vehicle repair,sale of fuel","Stall, Markets - retail","Food, beverages, tobacco products",4781
+"Wholesale and retail,motor vehicle repair,sale of fuel","Stall, Markets - retail","Textiles, clothing, footwear",4782
+"Wholesale and retail,motor vehicle repair,sale of fuel","Stall, Markets - retail",Other goods,4789
+"Wholesale and retail,motor vehicle repair,sale of fuel",Other retail,"Via mail order houses, Internet",4791
+"Wholesale and retail,motor vehicle repair,sale of fuel",Other retail,Other retail,4799
+Transportation and Storage,"Land, pipeline transport","Passenger rail, interurban",4910
+Transportation and Storage,"Land, pipeline transport",Freight rail,4920
+Transportation and Storage,"Land, pipeline transport",Urban/suburban passenger transport,4931
+Transportation and Storage,"Land, pipeline transport",Taxi operation,4932
+Transportation and Storage,"Land, pipeline transport",Other passenger land transport,4939
+Transportation and Storage,"Land, pipeline transport",Road freight transport,4941
+Transportation and Storage,"Land, pipeline transport",Removal services,4942
+Transportation and Storage,"Land, pipeline transport",Transport via pipeline,4950
+Transportation and Storage,Water transport,"Sea, coastal passenger transport",5010
+Transportation and Storage,Water transport,"Sea, coastal freight transport",5020
+Transportation and Storage,Water transport,Inland passenger transport,5030
+Transportation and Storage,Water transport,Inland freight transport,5040
+Transportation and Storage,Air transport,Passenger air transport,5110
+Transportation and Storage,Air transport,Freight air transport,5121
+Transportation and Storage,Air transport,Space transport,5122
+Transportation and Storage,"Warehousing, transport support",Warehousing and storage,5210
+Transportation and Storage,"Warehousing, transport support",Transportation support activities,5220
+Transportation and Storage,"Warehousing, transport support",Incidental inland service,5221
+Transportation and Storage,"Warehousing, transport support",Incidental water service,5222
+Transportation and Storage,"Warehousing, transport support",Incidental air service,5223
+Transportation and Storage,"Warehousing, transport support",Cargo handling,5224
+Transportation and Storage,"Warehousing, transport support",Other support activities,5229
+Transportation and Storage,"Postal, courier activities",Under universal service obligation,5310
+Transportation and Storage,"Postal, courier activities",Other,5320
+Information and Communication,Publishing activities,Books,5811
+Information and Communication,Publishing activities,"Directories, mailing lists",5812
+Information and Communication,Publishing activities,Newspapers,5813
+Information and Communication,Publishing activities,"Journals, periodicals",5814
+Information and Communication,Publishing activities,Other publishing activities,5819
+Information and Communication,Publishing activities,Computer games,5821
+Information and Communication,Publishing activities,Other software,5829
+Information and Communication,"Motion picture, video, radio, TV",Production activities,5911
+Information and Communication,"Motion picture, video, radio, TV",Post-production activities,5912
+Information and Communication,"Motion picture, video, radio, TV",Distribution activities,5913
+Information and Communication,"Motion picture, video, radio, TV",Motion picture projection,5914
+Information and Communication,"Motion picture, video, radio, TV","Sound recording, music publishing",5920
+Information and Communication,"Motion picture, video, radio, TV",Radio broadcasting,6010
+Information and Communication,"Motion picture, video, radio, TV","Television programming, broadcasting",6020
+Information and Communication,Telecommunications,Wired telecomms activities,6110
+Information and Communication,Telecommunications,Wireless telecomms activities,6120
+Information and Communication,Telecommunications,Satellite telecomms activities,6130
+Information and Communication,Telecommunications,Other,6190
+Information and Communication,"Computer programming, consultancy",Programming activities,6201
+Information and Communication,"Computer programming, consultancy",Consultancy activities,6202
+Information and Communication,"Computer programming, consultancy",Facilities management activities,6203
+Information and Communication,"Computer programming, consultancy",Other,6209
+Information and Communication,Information service activities,"Data processing, hosting",6311
+Information and Communication,Information service activities,Web portals,6312
+Information and Communication,Information service activities,News agency activities,6391
+Information and Communication,Information service activities,Other,6399
+Business services,"Financial, insurance, pension",Central banking,6411
+Business services,"Financial, insurance, pension",Other monetary intermediation,6419
+Business services,"Financial, insurance, pension",Holding companies activities,6420
+Business services,"Financial, insurance, pension","Trusts, funds, similar financial",6430
+Business services,"Financial, insurance, pension",Financial leasing,6491
+Business services,"Financial, insurance, pension",Other credit granting,6492
+Business services,"Financial, insurance, pension",Other financial services nec,6499
+Business services,"Financial, insurance, pension",Life insurance,6511
+Business services,"Financial, insurance, pension",Non-life insurance,6512
+Business services,"Financial, insurance, pension",Reinsurance,6520
+Business services,"Financial, insurance, pension",Pension funding,6530
+Business services,Auxiliary financial services,Administration of financial markets,6611
+Business services,Auxiliary financial services,"Security,commodity contract broking",6612
+Business services,Auxiliary financial services,Other financial services,6619
+Business services,Auxiliary financial services,Risk and damage evaluation,6621
+Business services,Auxiliary financial services,Insurance agents/brokers activities,6622
+Business services,Auxiliary financial services,Other insurance & pension services,6629
+Business services,Auxiliary financial services,Fund management activities,6630
+Business services,Real estate activities ,"Buying, selling own real estate",6810
+Business services,Real estate activities,"Renting, operating own or leased ",6820
+Business services,Real estate activities,Agencies fee/contract basis,6831
+Business services,Real estate activities,Managament of fee/contract basis,6832
+Business services,Legal and accounting activities,Legal activities,6910
+Business services,Legal and accounting activities,"Accounting, auditing; tax consltcy",6920
+Business services,Head offices; mgment consultancy,Head office activities,7010
+Business services,Head offices; mgment consultancy,"Public relations, communication",7021
+Business services,Head offices; mgment consultancy,"Business, other management",7022
+Business services,"Architectural, eng/tech testing",Architectural activities,7111
+Business services,"Architectural, eng/tech testing",Engineering/tech consultancy,7112
+Business services,"Architectural, eng/tech testing",Technical testing/analysis,7120
+Business services,"Scientific research, development",Biotechnology,7211
+Business services,"Scientific research, development","Other natural sciences, engineering",7219
+Business services,"Scientific research, development","Social sciences, humanities",7220
+Business services,"Advertising,market research",Advertising,7310
+Business services,"Advertising,market research",Advertising agencies,7311
+Business services,"Advertising,market research",Media representation,7312
+Business services,"Advertising,market research","Market research, public polling",7320
+Business services,"Other professional, scientific/tech",Specialised design activities,7410
+Business services,"Other professional, scientific/tech",Photographic activities,7420
+Business services,"Other professional, scientific/tech","Translation, interpretation",7430
+Business services,"Other professional, scientific/tech",Other,7490
+Business services,"Rental, leasing activities","Cars, light motor vehicles",7711
+Business services,"Rental, leasing activities",Trucks,7712
+Business services,"Rental, leasing activities","Recreational, sports goods",7721
+Business services,"Rental, leasing activities","Video tapes,disks",7722
+Business services,"Rental, leasing activities","Other personal, household goods",7729
+Business services,"Rental, leasing activities","Other machinery, equipment",7730
+Business services,"Rental, leasing activities","Agricultural machinery, equipment",7731
+Business services,"Rental, leasing activities","Construction machinery, equipment",7732
+Business services,"Rental, leasing activities","Office machinery, equipment",7733
+Business services,"Rental, leasing activities",Water transport equipment,7734
+Business services,"Rental, leasing activities",Air transport equipment,7735
+Business services,"Rental, leasing activities","Other machinery, equipment nec",7739
+Business services,"Rental, leasing activities",Intellectual property leasing,7740
+Business services,Employment activities,Employment placement agencies,7810
+Business services,Employment activities,Temporary employment agencies,7820
+Business services,Employment activities,Other human resources provision,7830
+Business services,"Travel agency, tour operators",Travel agency activities,7911
+Business services,"Travel agency, tour operators",Tour operator activities,7912
+Business services,"Travel agency, tour operators",Other reservation service,7990
+Business services,"Security, investigation activities",Private security,8010
+Business services,"Security, investigation activities",Security systems services,8020
+Business services,"Security, investigation activities",Investigation activities,8030
+Business services,"Buildings, landscape activities",Combined facilities support,8110
+Business services,"Buildings, landscape activities",General cleaning of buildings,8121
+Business services,"Buildings, landscape activities",Other industrial cleaning,8122
+Business services,"Buildings, landscape activities",Other cleaning activities,8129
+Business services,"Buildings, landscape activities",Landscape service activities,8130
+Business services,"Office admin, business support",Combined office admin service,8211
+Business services,"Office admin, business support",Specialised office support,8219
+Business services,"Office admin, business support",Activities of call centres,8220
+Business services,"Office admin, business support","Convention, trade show organisers",8230
+Business services,"Office admin, business support","Collection agencies, credit bureaus",8291
+Business services,"Office admin, business support",Packaging activities,8292
+Business services,"Office admin, business support",Other,8299
+"Government administrative functions, Education, Health",Central/Local Gov. administration,"State, economic and social policy",8410
+"Government administrative functions, Education, Health",Central/Local Gov. administration,General public administration,8411
+"Government administrative functions, Education, Health",Central/Local Gov. administration,"Health care, education etc",8412
+"Government administrative functions, Education, Health",Central/Local Gov. administration,Regulation business efficient ops,8413
+"Government administrative functions, Education, Health",Central/Local Gov. administration,Provision of community services,8420
+"Government administrative functions, Education, Health",Central/Local Gov. administration,Foreign affairs,8421
+"Government administrative functions, Education, Health",Central/Local Gov. administration,Defence activities,8422
+"Government administrative functions, Education, Health",Central/Local Gov. administration,"Justice, judicial activities",8423
+"Government administrative functions, Education, Health",Central/Local Gov. administration,"Police, public order, safety activ.",8424
+"Government administrative functions, Education, Health",Central/Local Gov. administration,Fire service activities,8425
+"Government administrative functions, Education, Health",Central/Local Gov. administration,Compulsory social security activities,8430
+"Government administrative functions, Education, Health",Education,Pre-primary,8510
+"Government administrative functions, Education, Health",Education,Primary,8520
+"Government administrative functions, Education, Health",Education,Secondary,8530
+"Government administrative functions, Education, Health",Education,General secondary,8531
+"Government administrative functions, Education, Health",Education,"Technical, vocational secondary",8532
+"Government administrative functions, Education, Health",Education,Higher education,8540
+"Government administrative functions, Education, Health",Education,Post-secondary non-tertiary,8541
+"Government administrative functions, Education, Health",Education,Tertiary,8542
+"Government administrative functions, Education, Health","Sports, recreation education","Sports, recreation education",8551
+"Government administrative functions, Education, Health",Other education,Cultural education,8552
+"Government administrative functions, Education, Health",Other education,Driving school activities,8553
+"Government administrative functions, Education, Health",Other education,Other education nec,8559
+"Government administrative functions, Education, Health",Other education,Educational support activities,8560
+"Government administrative functions, Education, Health",Human health activities,Hospital activities,8610
+"Government administrative functions, Education, Health",Human health activities,"Medical, dental practice activities",8620
+"Government administrative functions, Education, Health",Human health activities,General medical practices,8621
+"Government administrative functions, Education, Health",Human health activities,Specialist medical practices,8622
+"Government administrative functions, Education, Health",Human health activities,Dental practices,8623
+"Government administrative functions, Education, Health",Human health activities,Other,8690
+"Government administrative functions, Education, Health",Residential care activities,Residential nursing care,8710
+"Government administrative functions, Education, Health",Residential care activities,"Learning, mental, substance abuse",8720
+"Government administrative functions, Education, Health",Residential care activities,"Elderly, disabled",8730
+"Government administrative functions, Education, Health",Residential care activities,Other,8790
+"Government administrative functions, Education, Health",Non residential social work,"Elderly, disabled",8810
+"Government administrative functions, Education, Health",Non residential social work,Child day-care,8891
+"Government administrative functions, Education, Health",Non residential social work,Other,8899
+Other Service activities,Accommodation,Hotels and similar,5510
+Other Service activities,Accommodation,Holiday and other short stay,5520
+Other Service activities,Accommodation,"Camping, vehicle/trailer parks",5530
+Other Service activities,Accommodation,Other,5590
+Other Service activities,"Food, beverage service","Restaurants, mobile food service",5610
+Other Service activities,"Food, beverage service","Event catering, other food service",5620
+Other Service activities,"Food, beverage service",Event catering,5621
+Other Service activities,"Food, beverage service",Other food service,5629
+Other Service activities,"Food, beverage service",Beverage serving,5630
+Other Service activities,"Creative, arts and entertainment",Performing arts,9001
+Other Service activities,"Creative, arts and entertainment",Performing arts support activities,9002
+Other Service activities,"Creative, arts and entertainment",Artistic creation,9003
+Other Service activities,"Creative, arts and entertainment",Operation of arts facilities,9004
+Other Service activities,"Libraries, archives, museums",Library and archive activities,9101
+Other Service activities,"Libraries, archives, museums",Museum activities,9102
+Other Service activities,"Libraries, archives, museums",Operating historical sites/buildings,9103
+Other Service activities,"Libraries, archives, museums",Botanical/zoo gardens/reserves,9104
+Other Service activities,"Gambling, betting","Gambling, betting activities",9200
+Other Service activities,Sports activities and recreation,Operation of sports facilities,9311
+Other Service activities,Sports activities and recreation,Activities of sport clubs,9312
+Other Service activities,Sports activities and recreation,Fitness facilities,9313
+Other Service activities,Sports activities and recreation,Other sports activities,9319
+Other Service activities,Sports activities and recreation,"Amusement, recreation activities",9320
+Other Service activities,Sports activities and recreation,"Amusement parks, theme parks",9321
+Other Service activities,Sports activities and recreation,"Other amusement, recreation",9329
+Other Service activities,Membership organisations activities,"Business, employers",9411
+Other Service activities,Membership organisations activities,Professional,9412
+Other Service activities,Membership organisations activities,Trade unions,9420
+Other Service activities,Membership organisations activities,Other business,9490
+Other Service activities,Membership organisations activities,Religious organisations,9491
+Other Service activities,Membership organisations activities,Political organisations,9492
+Other Service activities,Membership organisations activities,Other nec,9499
+Other Service activities,"Repair computers,personal,household","Computers, communication equipment",9510
+Other Service activities,"Repair computers,personal,household","Computers, peripheral equipment",9511
+Other Service activities,"Repair computers,personal,household",Communication equipment,9512
+Other Service activities,"Repair computers,personal,household",Personal and household goods,9520
+Other Service activities,"Repair computers,personal,household",Consumer electronics,9521
+Other Service activities,"Repair computers,personal,household",Household/garden appliances/equip,9522
+Other Service activities,"Repair computers,personal,household",Footwear and leather goods,9523
+Other Service activities,"Repair computers,personal,household","Furniture, home furnishings",9524
+Other Service activities,"Repair computers,personal,household","Watches, clocks, jewellery",9525
+Other Service activities,"Repair computers,personal,household",Other,9529
+Other Service activities,Other personal service activities,Washing and (dry-)cleaning,9601
+Other Service activities,Other personal service activities,"Hairdressing, beauty treatment",9602
+Other Service activities,Other personal service activities,Funeral and related activities,9603
+Other Service activities,Other personal service activities,Physical well-being activities,9604
+Other Service activities,Other personal service activities,Other,9609
+Other Service activities,Domestic personnel employment,Households as employers,9700
+Other Service activities,Undiff. home goods - producing,By households for own use,9810
+Other Service activities,Undiff. home service - producing,By households for own use,9820
+Other Service activities,Extraterritorial organisations,Activities,9900
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

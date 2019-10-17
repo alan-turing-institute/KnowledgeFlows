@@ -1,0 +1,39 @@
+#' Run all steps to create a filled worker matrix
+#'#'
+#' @param sample
+#' A data frame.
+#' @param cuts
+#' The cuts to be applied to the sample
+#' @return
+#' An updated matrix.
+#'
+#' @examples
+#' \dontrun{
+#' create_and_fill_industry_transition_matrix <- function(sample, cuts, cutsName,indClass)
+#' }
+#' @import httr
+#' @export
+create_and_fill_industry_transition_matrix <- function(data, ind_class) {
+
+  # get all workers on selected sample
+  unique_workers <- unique(data$piden)
+
+  # create initial empty transition matrix
+  transition_matrix <- empty_industry_transition_counts_matrix(data, ind_class)
+
+
+  # loop by workers
+  for (worker in unique_workers) {
+
+    # create the transition matrix for a particular worker
+    trans_matrix_worker <- worker_transition_matrix(data, worker, ind_class)
+
+    # fill  matrix with transitions from the worker
+    transition_matrix <- fill_worker_transition_matrix(transition_matrix,trans_matrix_worker)
+
+  }
+
+  # return filled matrix
+  return (transition_matrix)
+
+}
