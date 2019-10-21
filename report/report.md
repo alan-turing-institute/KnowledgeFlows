@@ -25,11 +25,30 @@ described and a preliminary network analysis is shown.
 # Data
 \label{data}
 
-Descripition of the ASHE dataset and SIC codes (1997-2008 with SIC03 and 2008-2018 with SIC07) .
+The skill-relatedness matrices are based on the Annual Survey of Hours and Earnings dataset, which is 
+is the most comprehensive source of earnings information in the United Kingdom. This dataset contains 
+anonymised demographic and employment information of 1% of the total employee jobs in the HM Revenue & Customs (HMRC) Pay
+As You Earn (PAYE) records, covering the years between 1997 to 2018[REFERENCE]. 
 
+The sample is drawn in such a way that 
+many of the same individuals are included from year to year, allowing longitudinal analysis of the data which is fundamental
+for the construction of the skill-relatedness matrices.
+
+Some of the available information in the dataset is the workers’s wage, occupation, 
+employment status, industry classification, location of their work establishment,etc. 
+From 1997 to 2008 the data uses the Standard Industrial Classification from 2003 (SIC2003) whilst in the perdiod from 2009 to 2018 
+the industrial classification has been updated to the 2007 version (SIC2007). As there is not a trivial concordance method 
+for converting these codes,in the process of building the matrices the samples has to be treated separately into two parts, 
+depending on the industrial classification avalaible at the year of collections.
+   
 ## Data selection
 
-Selection of the workers.
+As the size of the ASHE dataset is small (only 1%), the selection process of the workers that are going to be used in the 
+measurement of job trasitions is kept to the minimum. The selection criteria are the following:
+
+* Between 16 and 65 years of age;
+* Without missing information on industry, occupation, region of work, gender or age.
+
 
 # Method
  \label{method}
