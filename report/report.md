@@ -28,7 +28,7 @@ described and a preliminary network analysis is shown.
 The skill-relatedness matrices are based on the Annual Survey of Hours and Earnings dataset, which is 
 is the most comprehensive source of earnings information in the United Kingdom. This dataset contains 
 anonymised demographic and employment information of 1% of the total employee jobs in the HM Revenue & Customs (HMRC) Pay
-As You Earn (PAYE) records, covering the years between 1997 to 2018[REFERENCE]. 
+As You Earn (PAYE) records, covering the years between 1997 to 2018[@ASHE]. 
 
 The sample is drawn in such a way that 
 many of the same individuals are included from year to year, allowing longitudinal analysis of the data which is fundamental
