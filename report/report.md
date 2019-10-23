@@ -122,6 +122,7 @@ In the example case of Table 1, the **connections** will be the following:
  job issue. Furthermore, the **connection** approach creates an undirected network and increases the size of the sample.
 
 ## Transitions Count Matrix
+\label{countmatrices}
 
 For each time period (1997-2008 and 2009-2018) and observed worker, the transitions are obtained with the process explained above.
 Then, industry classifications are agreggated into a 4-digit code and all transitions tables are added into a single matrix
@@ -134,15 +135,39 @@ total transitions summed across the entire period exceeds 10 observations are ke
 # Statistical method
 \label{SR}
 
-Frank Neffke method of symmetrisation.  
+
+
+The resulting matrices described in section \ref{countmatrices} countain the raw counts of trasition observed between pairs
+industries. In order to infer how related two industries are in terms of skill- relatedness, a statistical procedure is
+applied to the matrices. The mathematical details of this method are found in [@GermanyMatricesReport], in this section
+a high level general description of the method is presented.. 
+
+First, the raw count matrices is
+compared to a null model where the transitions occur at random. In particular, a ratio (**SR**) is calculated
+between the observed transitions and the ones expected in the null model. 
+
+[REWRITE]: Values of the **SR** ratio between 0 and 1 
+show that the observed flows are below expected flows, whereas values from 1 to infinity indicate that observed 
+flows are above expected flows. 
+
+One disadvantage of the (**SR**) metric is that it has a highly skewed distribution to high values, to deal with this 
+problem the **SR** is symmetrised around 0. 
+
+[REWRITE]: As a consequence, a given
+degree of overrepresentation of labor flows has the same, yet opposite value as the same
+degree of underrepresentation of such flows~~.
+
 
 # Results
+
 
 ## Descriptive tables
 
 ## Comparison between "flows" and "connections"
 
 ## Adjajency matrices
+
+# Community detection
 
 ## Network figures 
 
