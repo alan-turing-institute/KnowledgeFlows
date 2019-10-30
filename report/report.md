@@ -144,31 +144,187 @@ a high level general description of the method is presented..
 
 First, the raw count matrices is
 compared to a null model where the transitions occur at random. In particular, a ratio (**SR**) is calculated
-between the observed transitions and the ones expected in the null model. 
-
-[REWRITE]: Values of the **SR** ratio between 0 and 1 
-show that the observed flows are below expected flows, whereas values from 1 to infinity indicate that observed 
-flows are above expected flows. 
+between the observed transitions and the ones expected in the null model.  Values of the **SR** ratio between 0 and 1 
+show that the observed transitions are below the expected values on random transitions, whereas values from 1 to infinity 
+indicate that observed transition are over expected in the null model. 
 
 One disadvantage of the (**SR**) metric is that it has a highly skewed distribution to high values, to deal with this 
 problem the **SR** is symmetrised around 0. 
 
-[REWRITE]: As a consequence, a given
-degree of overrepresentation of labor flows has the same, yet opposite value as the same
-degree of underrepresentation of such flows~~.
-
 
 # Results
 
+## Skill relatedness matrices
 
-## Descriptive tables
+Tables 3 and 4 show the total number of transitions observed in the ASHE dataset in each year from 1997 to 2018 for the
+**flows** and **connection** algorithm. [WRITE OBSERVATION ABOUT THE TABLES]
 
-## Comparison between "flows" and "connections"
+
+        | Year | Total transitions observed | N. Female | N. Male | N. Regions |
+        | X    |                      X     |           |         |            |
+
+
+For the period of 2009-2018 the resulting skill relatedness matrix contain 1153 (1507) transitions between 356 (369) industries with positive
+**SR** values in the **flows** (**connections**) algorithms.
+
+For the period of 1997-2008 the resulting skill relatedness matrix contain 1146 (1989) transitions between 367 (429) industries with positive
+**SR** values in the **flows** (**connections**) algorithms.
+
+The top 5 transitions observed in the periods of 1997 and 2008  and 2009 - 2018 are shown in Tables 5 and 6. As shown in these tables,
+industries with higher number of transitions belong to the education and health sectors. This is expected ad these industries are the
+ones with highest employment in the UK.
+
+
+Table 5. Top 5 transitions observed in the ASHE dataset in the period of 2009 to 2018 for both the **flows** and **connections**
+algorithms.
+
+|Stating Industry|	Final Industry |Counts |SR Weight|
+|----------------|-----------------|-------|---------|
+|   **Flows**    |                 |                 |
+|----------------|-----------------|-------|---------|
+|Primary         |General secondary| 2790  |0.64     |
+|Primary	     |General public administration|2522|0.50|
+|Hospital activities|Other human health activities|1403|0.53|
+|General public administration|Primary|	1365|0.37|
+|Other human health activities|	Hospital activities|1360|0.51|
+|----------------|-----------------|--------|--------|
+| **Connections**|                 |                 |
+|----------------|-----------------|--------|--------|
+|Primary         |General secondary| 3284   |0.66   |
+|Primary	     |General public administration|3067|0.56|
+|Hospital activities|	Other human health activities|1855|0.65|
+|Other human health activities|	Hospital activities|1724|0.65|
+|General public administration|	Primary|1552|	0.56|
+|----------------|-----------------|--------|-------|
+
+
+Table 6. Top 5 transitions observed in the ASHE dataset in the period of 1997 to 2008 for both the **flows** and **connections**
+algorithms.
+
+|Stating Industry|	Final Industry |Counts |SR Weight|
+|-------------------------|-------------------------|--------------------------|---------------------|
+|   **Flows**             |                       |                        |                   |
+|-------------------------|-------------------------|--------------------------|---------------------|
+|General (overall) public service activities|Primary education|3304|0.28|
+|General secondary education|Primary education|2262|0.51|
+|Public sector hospital activities, including NHS Trusts|Other human health activities|1893|0.69|
+|Other human health activities|Public sector hospital activities, including NHS Trusts|	1561|0.65|
+|Charitable social work activities without accommodation|Primary education|1412|	0.21|
+|-------------------------|-------------------------|--------------------------|---------------------|
+| **Connections**         |                         |                          |                     |
+|-------------------------|-------------------------|--------------------------|---------------------|
+|General (overall) public service activities|Primary education|5452|0.38|
+|General secondary education|Primary education|3969|0.61|
+|Public sector hospital activities, including NHS Trusts|Other human health activities|3028|0.76|
+|Other human health activities|Public sector hospital activities, including NHS Trusts|	2572|0.76|
+|Charitable social work activities without accommodation|	Primary education|2466|	0.32|
+|-------------------------|-------------------------|--------------------------|---------------------|
+
+
+The 5 transitions with top **SR** average weights observed in the periods of 1997 and 2008  and 2009 - 2018 are shown in Tables 5 and 6.
+As seen in these tables, the highest weighted transitions have a low count of entries, most of them around of the 10 counts limit.
+
+Table 7. Top 5 transitions with highest *SR* average weight observed in the ASHE dataset in the period of 2009 to 2018
+for both the **flows** and **connections** algorithms.
+
+|Stating Industry|	Final Industry |Avg. Counts | Avg. SR Weight|
+|-------------------------|-------------------------|--------------------------|---------------------|
+|   **Flows**             |                         |                          |                     |
+|-------------------------|-------------------------|--------------------------|---------------------|
+|Live animals    |Agriculture, animals, raw goods| 10  |0.99     |
+|Other electronic, electric wires|Fibre optic cables|11|0.99|
+|Pre-press, pre-media services|Paper, paperboard	|14|0.99|
+|Military fighting vehicles|Fabricated metal products|	10|	0.99|
+|Manufacture of other special-purpose machinery n.e.c.|	Computers, peripheral equipment|14|	0.99|
+|-------------------------|-------------------------|--------------------------|---------------------|
+| **Connections**         |                         |                          |                     |
+|-------------------------|-------------------------|--------------------------|---------------------|
+|Live animals    |Agriculture, animals, raw goods| 11  |0.99     |
+|Other electronic, electric wires|Fibre optic cables|11|0.99|
+|Raising of other cattle, buffaloes	|Raising of dairy cattle|11|0.99|
+|Pre-press, pre-media services|Paper, paperboard	|14|0.99|
+|Plaster products for construction|	Gravel, sand pits; clays, kaolin|18|0.99|
+|-------------------------|-------------------------|--------------------------|---------------------|
+
+
+
+Table 8. Top 5 transitions with highest *SR* average weight observed in the ASHE dataset in the period of 2009 to 2018
+for both the **flows** and **connections** algorithms.
+
+|Stating Industry|	Final Industry |Avg. Counts | Avg. SR Weight|
+|-------------------------|-------------------------|--------------------------|---------------------|
+| **Flows**               |                         |                          |                     |
+|-------------------------|-------------------------|--------------------------|---------------------|
+|Manufacture of gas    |Distribution and trade of gaseous fuels| 19  |0.99     |
+|Repair of boots,  shoes and other articles|Repair n.e.c.	|11|0.99|
+|Production of electricity|Transmission of electricity	|54|0.99|
+|Casting of other non-ferrous metals|Casting of light metals|	27|	0.99|
+|Manufacture of central heating radiators |	Manufacture of ceramic sanitary fixtures|13|	0.99|
+|-------------------------|-------------------------|--------------------------|---------------------|
+| **Connections**         |                         |                          |                     |
+|-------------------------|-------------------------|--------------------------|---------------------|
+|Repair of boots,  shoes and other articles|Repair n.e.c.	|13| 0.99|
+|Cotton-type weaving |	Worsted-type weaving| 12  |0.99     |
+|Manufacture of pulp	| Manufacture of household and sanitary goods |12|0.99|
+|Silk-type weaving	| Other textile weaving|16|0.99|
+|Manufacture of gas    |Distribution and trade of gaseous fuels| 19  |0.99     |
+|Casting of other non-ferrous metals |	Casting of light metals	|44|0.99|
+|-------------------------|-------------------------|--------------------------|---------------------|
+
+
+
+### Comparison between "flows" and "connections"
+
+As seen in the previous tables, both connections and flows have compatible general results, the correlation between the
+SR weight between transition pairs observed in both samples for the same period of time is in the order of 0.98.
+
+The connection algorithm provides around 350 more pairs of industries than the **flow** algorithm, this is caused by the
+intrinsic property of the **connection** algorithm that considers all possible transitions in the period of 2 years, then increasing the probability of
+pairs of industries with more than 10 events.
+
+Figure \ref{Missing} shows the distribution of weights for the transitions found on the **connection** matrix and non existing on the **flows** matrix,
+in this sample 95% of the missing entries have less than 15 counts, showing that the transitions not pass the 10 count cut in the flow matrix.
+
+Table 9 shows the top transitions in the **connection** matrix and missing in the **flow** matrix (ordered by **SR** weight).
+
+[Missing]: figures/MissingWeightsFlowsConns.png
+![Distribution of weights for the transitions found on the **connection** matrix and non existing on the **flows** matrix, \label{Missing}][Missing]
+
+Table 9. Top transitions observed in the **connection** matrix and missing in the **flow** matrix
+
+|Stating Industry|	Final Industry | Avg. SR Weight|
+|-----------------------------------|-------------------------------|---------------------|---|
+|Raising of dairy cattle	| Raising of other cattle, buffaloes | 0.99|
+|Manufacture tobacco products |	Retail of tobacco products| 0.99|
+|Special purpose machinery | Other	Special purpose machinery Plastics, rubber|0.99|
+|Irradiation, electro-medical equipment|	Electronic, optical equipment|0.99|
+|Manufacture Fruit, vegetable juice	| Manufacture Soft drinks; waters|0.99|
+|------------------------------|-------------------------------|--------------------------|--|
+
+## Network analysis
 
 ## Adjajency matrices
 
-# Community detection
+    * 1997 - 2009 adjacency flow/conn matrix 
+    * 2009 - 2008 adjacency flow/conn matrix
+        
+        
+## Network descriptors 
 
-## Network figures 
+        * Top 5 centrality (flows and connection)
+        * Top 5 degree (flows and connection)
+        
+        * Network visualisations (nodes colored by industry) (4 figures)
+        
+
+## Community detection for the 2009 - 2018 period
+
+    - Method description (figures from Mattie)
+    
+    - Network community evolution figures
+    
+    - Dendogram???
+
+# Summary 
 
 
