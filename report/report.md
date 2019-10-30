@@ -154,7 +154,7 @@ problem the **SR** is symmetrised around 0.
 
 # Results
 
-## Skill relatedness matrices
+## Descriptive statistics
 
 Tables 3 and 4 show the total number of transitions observed in the ASHE dataset in each year from 1997 to 2018 for the
 **flows** and **connection** algorithm. [WRITE OBSERVATION ABOUT THE TABLES]
@@ -163,12 +163,23 @@ Tables 3 and 4 show the total number of transitions observed in the ASHE dataset
         | Year | Total transitions observed | N. Female | N. Male | N. Regions |
         | X    |                      X     |           |         |            |
 
+## Skill relatedness matrices
 
-For the period of 2009-2018 the resulting skill relatedness matrix contain 1153 (1507) transitions between 356 (369) industries with positive
-**SR** values in the **flows** (**connections**) algorithms.
+For this report, four matrices have been exported from the [UK Data Service Secure Lab](https://www.ukdataservice.ac.uk/). These matrices contain all the
+observed transitions between pairs of industries (including transition within the same industry), with at least 10 counts. Some general characteristics of
+these matrices are the following:
 
-For the period of 1997-2008 the resulting skill relatedness matrix contain 1146 (1989) transitions between 367 (429) industries with positive
-**SR** values in the **flows** (**connections**) algorithms.
+* For the period of 2009-2018 the resulting skill relatedness matrix contain a total 4341 (5141) individual directed transitions between 439 (445) industries in the **flows**
+ (**connections**) algorithms. These results include transitions within the same industry.
+
+* For the period of 1997-2008 the resulting skill relatedness matrix contain a total 4828 (6947) individual directed transitions between 488 (497) industries in the **flows**
+ (**connections**) algorithms. These results include transitions within the same industry.
+
+* For the period of 2009-2018 the resulting skill relatedness matrix contain 2306 (3014) directed transitions between 356 (369) industries with positive
+**SR** values in the **flows** (**connections**) algorithms.  These results do not include transitions within the same industry.
+
+* For the period of 1997-2008 the resulting skill relatedness matrix contain 2292 (3978) directed transitions between 367 (429) industries with positive
+**SR** values in the **flows** (**connections**) algorithms.  These results do not include transitions within the same industry.
 
 The top 5 transitions observed in the periods of 1997 and 2008  and 2009 - 2018 are shown in Tables 5 and 6. As shown in these tables,
 industries with higher number of transitions belong to the education and health sectors. This is expected ad these industries are the
@@ -221,8 +232,11 @@ algorithms.
 |-------------------------|-------------------------|--------------------------|---------------------|
 
 
-The 5 transitions with top **SR** average weights observed in the periods of 1997 and 2008  and 2009 - 2018 are shown in Tables 5 and 6.
-As seen in these tables, the highest weighted transitions have a low count of entries, most of them around of the 10 counts limit.
+The five transitions with top **SR** average weights observed in the periods of 1997 and 2008  and 2009 - 2018 are shown in Tables 5 and 6.
+As seen in these tables, the highest weighted transitions have a low count of entries, most of them around the 10 counts limit. This is no surprised,
+as the ASHE dataset represents only 1% of the total employment population, the resulting transition samples are low in the
+count values (eg. 81% of the transitions between different industries have less than 35 counts), this can be observed in the
+case of the **flows** algorithm for Figure \ref{CountsFlows}.
 
 Table 7. Top 5 transitions with highest *SR* average weight observed in the ASHE dataset in the period of 2009 to 2018
 for both the **flows** and **connections** algorithms.
@@ -272,18 +286,21 @@ for both the **flows** and **connections** algorithms.
 |-------------------------|-------------------------|--------------------------|---------------------|
 
 
+[CountsFlows]: figures/CountsIndustriesBetweenTransitions.png
+![Distribution of the observed transitions between industries in the period from 2009 to 2018 and using the flow algorithm. \label{CountsFlows}][CountsFlows]
+
 
 ### Comparison between "flows" and "connections"
 
 As seen in the previous tables, both connections and flows have compatible general results, the correlation between the
 SR weight between transition pairs observed in both samples for the same period of time is in the order of 0.98.
 
-The connection algorithm provides around 350 more pairs of industries than the **flow** algorithm, this is caused by the
+The connection algorithm provides around 350 more pairs of industries than the **flow** algorithm (undirected transitions), this is caused by the
 intrinsic property of the **connection** algorithm that considers all possible transitions in the period of 2 years, then increasing the probability of
 pairs of industries with more than 10 events.
 
 Figure \ref{Missing} shows the distribution of weights for the transitions found on the **connection** matrix and non existing on the **flows** matrix,
-in this sample 95% of the missing entries have less than 15 counts, showing that the transitions not pass the 10 count cut in the flow matrix.
+for the period form 2009 to 2018. In this sample 95% of the missing entries have less than 15 counts.
 
 Table 9 shows the top transitions in the **connection** matrix and missing in the **flow** matrix (ordered by **SR** weight).
 
@@ -300,6 +317,10 @@ Table 9. Top transitions observed in the **connection** matrix and missing in th
 |Irradiation, electro-medical equipment|	Electronic, optical equipment|0.99|
 |Manufacture Fruit, vegetable juice	| Manufacture Soft drinks; waters|0.99|
 |------------------------------|-------------------------------|--------------------------|--|
+
+In order to avoid overcharing this report with information, all results corresponding to the **connections** algorithm will be presented in the
+Anex secion XXX.
+
 
 ## Network analysis
 
