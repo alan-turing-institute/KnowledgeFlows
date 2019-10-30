@@ -5,10 +5,17 @@ import igraph
 import pandas as pd
 
 
-def draw_adjacency_matrix(reduced_matrix, columns_to_be_sorted, label,axis_label='MainActivity'):
-    label_matrix = pd.read_csv('../data/sic-industry-structure.csv')
+def draw_adjacency_matrix(reduced_matrix, columns_to_be_sorted, label,axis_label='MainActivity',sic07=True):
 
-    label_matrix['SIC2007'] = pd.to_numeric(label_matrix['SIC2007'])
+    if sic07 == True:
+        label_matrix = pd.read_csv('../data/sic-industry-structure.csv')
+
+        label_matrix['SIC2007'] = pd.to_numeric(label_matrix['SIC2007'])
+    else:
+        label_matrix = pd.read_csv('../data/sic03-industry-structure.csv')
+        label_matrix['SIC2007'] = pd.to_numeric(label_matrix['sic_code'])
+
+
 
     selected_reduced_matrix = reduced_matrix[['StartIndst', 'FinalIndst', 'MainIndustry_StartIndst', 'weight','MainActivity_StartIndst','SubActivity_StartIndst']]
 
@@ -38,7 +45,13 @@ def draw_adjacency_matrix(reduced_matrix, columns_to_be_sorted, label,axis_label
             column_row.append(count)
 
         list_row.append(column_row)
-        list_industry.append(str(label_matrix[label_matrix['SIC2007'] == startInd][axis_label].values[0]))
+
+        try:
+            name = str(label_matrix[label_matrix['SIC2007'] == startInd][axis_label].values[0])
+        except:
+            name = ''
+
+        list_industry.append(name)
 
     y_axis = sorted_inds
     x_axis = sorted_inds
@@ -53,8 +66,8 @@ def draw_adjacency_matrix(reduced_matrix, columns_to_be_sorted, label,axis_label
     ax.set_xticklabels(list_industry)
     ax.set_yticklabels(list_industry)
 
-    ax.xaxis.set_major_locator(plt.MaxNLocator(120))
-    ax.yaxis.set_major_locator(plt.MaxNLocator(120))
+    ax.xaxis.set_major_locator(plt.MaxNLocator(100))
+    ax.yaxis.set_major_locator(plt.MaxNLocator(100))
 
     plt.xticks(fontsize=110, rotation=90)
     plt.yticks(fontsize=110, rotation=0)
@@ -73,7 +86,6 @@ def draw_adjacency_matrix_nolabel(reduced_matrix, columns_to_be_sorted, label):
 
     sorted_inds = np.unique(reduced_matrix_sorted[columns_to_be_sorted[0]].values)
 
-    list_industry = []
     list_row = []
     for startInd in sorted_inds:
 
@@ -96,17 +108,20 @@ def draw_adjacency_matrix_nolabel(reduced_matrix, columns_to_be_sorted, label):
     y_axis = sorted_inds
     x_axis = sorted_inds
 
-    fig, ax = plt.subplots(figsize=(180, 180))
+    fig, ax = plt.subplots(figsize=(30, 30))
+
     im = ax.imshow(list_row)
+    cb = fig.colorbar(im, ax=ax)
+    cb.ax.tick_params(labelsize=20, width=2)
+    ax.set(ylabel='Industries',xlabel='Industries')
+    plt.setp(ax.get_xticklabels(), visible=False)
+    plt.setp(ax.get_yticklabels(), visible=False)
+    ax.tick_params(axis='both', which='both', length=0)
+    cb.set_ticklabels([0,0.2,0.4,0.6,0.8,1.0])
+
+    ax.xaxis.label.set_size(30)
+    ax.yaxis.label.set_size(30)
 
     # We want to show all ticks...
-    ax.set_xticks(np.arange(len(x_axis)))
-    ax.set_yticks(np.arange(len(y_axis)))
-    # ... and label them with the respective list entries
-
-
-    plt.xticks(fontsize=110, rotation=90)
-    plt.yticks(fontsize=110, rotation=0)
-
     plt.show()
 

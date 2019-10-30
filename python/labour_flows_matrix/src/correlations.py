@@ -48,16 +48,19 @@ def correlation_network_degree(Gm_simple_1,Gm_simple_2,label):
 
 def correlation_adjacency_matrix(reduced_matrix1, reduced_matrix2,label):
 
-    selected_reduced_matrix1 = reduced_matrix1[['StartIndst', 'FinalIndst', 'MainIndustry_StartIndst', 'weight']]
-    reduced_matrix_sorted1 = selected_reduced_matrix1.sort_values(by=['StartIndst', 'FinalIndst'], ascending=True)
+    selected_reduced_matrix1 = reduced_matrix1[['StartIndst', 'FinalIndst', 'MainIndustry_StartIndst', 'weight','Counts']]
+    reduced_matrix_sorted1 = selected_reduced_matrix1.sort_values(by=['StartIndst', 'FinalIndst','Counts'], ascending=True)
 
-    selected_reduced_matrix2 = reduced_matrix2[['StartIndst', 'FinalIndst', 'MainIndustry_StartIndst', 'weight']]
-    reduced_matrix_sorted2 = selected_reduced_matrix2.sort_values(by=['StartIndst', 'FinalIndst'], ascending=True)
+    selected_reduced_matrix2 = reduced_matrix2[['StartIndst', 'FinalIndst', 'MainIndustry_StartIndst', 'weight','Counts']]
+    reduced_matrix_sorted2 = selected_reduced_matrix2.sort_values(by=['StartIndst', 'FinalIndst','Counts'], ascending=True)
 
     sorted_inds = np.unique(reduced_matrix_sorted1['StartIndst'].values)
 
     list_row1 = []
     list_row2 = []
+
+    list_row1_name = []
+    list_row2_name = []
 
     for startInd in sorted_inds:
 
@@ -67,7 +70,11 @@ def correlation_adjacency_matrix(reduced_matrix1, reduced_matrix2,label):
         start_df1 = reduced_matrix_sorted1[reduced_matrix_sorted1['StartIndst'] == startInd]
         start_df2 = reduced_matrix_sorted2[reduced_matrix_sorted2['StartIndst'] == startInd]
 
+        name1= startInd
+
         for finalInd in sorted_inds:
+
+            name2 = finalInd
             final_df1 = start_df1[start_df1['FinalIndst'] == finalInd]
             final_df2 = start_df2[start_df2['FinalIndst'] == finalInd]
 
@@ -84,6 +91,10 @@ def correlation_adjacency_matrix(reduced_matrix1, reduced_matrix2,label):
             list_row1.append(count1)
             list_row2.append(count2)
 
+            list_row1_name.append(name1)
+            list_row2_name.append(name2)
+
+
     pearson_corr = stats.pearsonr(list_row1, list_row2)
 
     j = sns.jointplot(x=list_row1, y=list_row2, kind='scatter', s=50, color='blue', edgecolor="skyblue",linewidth=2)
@@ -96,9 +107,20 @@ def correlation_adjacency_matrix(reduced_matrix1, reduced_matrix2,label):
     list_zip_ = list(zip(list_row1, list_row2))
     comparison_df = pd.DataFrame(list_zip_,columns=['x','y'])
 
+    list_zip_2 = list(zip(list_row1, list_row2,list_row1_name,list_row2_name))
+    comparison_df2 = pd.DataFrame(list_zip_2,columns=['x','y','namex','namey'])
+
+
     sub1 = comparison_df[((comparison_df['x'] != -1) & (comparison_df['y'] == -1)) | ((comparison_df['y'] != -1) & (comparison_df['x'] == -1))]
 
     print ('percentage of the entries with non-symetrical missigness')
     print (sub1.shape[0]/comparison_df.shape[0]*100)
+    print (sub1.shape[0])
+    print (comparison_df.shape[0])
+
+    print (reduced_matrix1.shape[0])
+    print (reduced_matrix2.shape[0])
+
+    return comparison_df, comparison_df2
 
 

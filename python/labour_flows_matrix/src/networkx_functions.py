@@ -98,9 +98,9 @@ def prepare_dataframe_for_gephi(input_dataframe, include_mst=False):
 
     if include_mst:
 
-        output = input_dataframe[['Source', 'Target', 'Weight', 'mst_Weight', 'is_mstree','is_mtree_or_weight']]
+        output = input_dataframe[['Source', 'Target', 'Weight', 'mst_Weight', 'is_mstree','is_mtree_or_weight','Counts']]
 
     else:
-        output = input_dataframe[['Source', 'Target', 'Weight']]
+        output = input_dataframe[['Source', 'Target', 'Weight','Counts']]
 
     return output
