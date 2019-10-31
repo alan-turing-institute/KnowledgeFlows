@@ -235,7 +235,7 @@ algorithms.
 The five transitions with top **SR** average weights observed in the periods of 1997 and 2008  and 2009 - 2018 are shown in Tables 5 and 6.
 As seen in these tables, the highest weighted transitions have a low count of entries, most of them around the 10 counts limit. This is no surprised,
 as the ASHE dataset represents only 1% of the total employment population, the resulting transition samples are low in the
-count values (eg. 81% of the transitions between different industries have less than 35 counts), this can be observed in the
+count values (eg. 80% of the transitions between different industries have less than 35 counts), this can be observed in the
 case of the **flows** algorithm for Figure \ref{CountsFlows}.
 
 Table 7. Top 5 transitions with highest *SR* average weight observed in the ASHE dataset in the period of 2009 to 2018
@@ -290,6 +290,37 @@ for both the **flows** and **connections** algorithms.
 ![Distribution of the observed transitions between industries in the period from 2009 to 2018 and using the flow algorithm. \label{CountsFlows}][CountsFlows]
 
 
+### Adjajency matrices
+
+The adjacency matrix for the United Kingdom skill-relatedness network constructed using using the ASHE dataset and both the connection and flows algorithms is
+shown in Figures \ref{Adjacency1997_2008} and Figures \ref{Adjacency2009_2018}. The matrices are sorted by their 4-digit classification code, and only
+entries with **SR** values higher than zero are kept. As expected, the matrix is sparse and clusters of values are observed 
+near the diagonals, showing that there is a high degree of skill-relatedness between industries in similar sectors.The largest 
+clusters are observed in the right inferior part of the figure, where the services and public administration 
+industries are found.
+
+    * 1997 - 2009 adjacency flow/conn matrix
+    * 2009 - 2008 adjacency flow/conn matrix
+
+![](figures/adjacencyFlows1997_2008.png){width=50%}
+![](figures/adjacencyConn1997_2008.png){width=50%}
+\begin{figure}[!h]
+\caption{The adjacency matrix of the skill-relatedness network of the period from 1997 to 2008. The matrix built with the
+ the **flows** algorithm is shown on the left, and **connections** algorithm on the right.The matrix only contains
+only positive **SR** weight values.}
+\label{Adjacency1997_2008}
+\end{figure}
+
+![](figures/adjacencyFlows2009_2018.png){width=50%}
+![](figures/adjacencyConn2009_2018.png){width=50%}
+\begin{figure}[!h]
+\caption{The adjacency matrix of the skill-relatedness network of the period from 2009 to 2018. The matrix built with the
+ the **flows** algorithm is shown on the left, and **connections** algorithm on the right. The matrix only contains
+only positive **SR** weight values.}
+\label{Adjacency2009_2018}
+\end{figure}
+
+
 ### Comparison between "flows" and "connections"
 
 As seen in the previous tables, both connections and flows have compatible general results, the correlation between the
@@ -322,14 +353,9 @@ In order to avoid overcharing this report with information, all results correspo
 Anex secion XXX.
 
 
-## Network analysis
+## Network analysis for the period from 2009 to 2018
 
-## Adjajency matrices
 
-    * 1997 - 2009 adjacency flow/conn matrix 
-    * 2009 - 2008 adjacency flow/conn matrix
-        
-        
 ## Network descriptors 
 
         * Top 5 centrality (flows and connection)

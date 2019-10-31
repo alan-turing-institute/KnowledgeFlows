@@ -77,7 +77,7 @@ def draw_adjacency_matrix(reduced_matrix, columns_to_be_sorted, label,axis_label
     return (list_row,sorted_inds)
 
 
-def draw_adjacency_matrix_nolabel(reduced_matrix, columns_to_be_sorted, label):
+def draw_adjacency_matrix_nolabel(reduced_matrix, columns_to_be_sorted, label,min_value=0):
 
 
     selected_reduced_matrix = reduced_matrix[['StartIndst', 'FinalIndst', 'MainIndustry_StartIndst', 'weight','MainActivity_StartIndst','SubActivity_StartIndst']]
@@ -97,7 +97,7 @@ def draw_adjacency_matrix_nolabel(reduced_matrix, columns_to_be_sorted, label):
         for finalInd in sorted_inds:
             final_df = start_df[start_df[columns_to_be_sorted[1]] == finalInd]
             if final_df.shape[0] == 0:
-                count = -1
+                count = min_value
             else:
                 count = start_df[start_df[columns_to_be_sorted[1]] == finalInd][label].values[0]
 

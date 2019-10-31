@@ -70,11 +70,11 @@ def correlation_adjacency_matrix(reduced_matrix1, reduced_matrix2,label):
         start_df1 = reduced_matrix_sorted1[reduced_matrix_sorted1['StartIndst'] == startInd]
         start_df2 = reduced_matrix_sorted2[reduced_matrix_sorted2['StartIndst'] == startInd]
 
-        name1= startInd
+        name1= reduced_matrix_sorted1[reduced_matrix_sorted1['StartIndst'] == startInd]['MainIndustry_StartIndst']
 
         for finalInd in sorted_inds:
 
-            name2 = finalInd
+            name2 = start_df1[start_df1['FinalIndst'] == finalInd]['MainIndustry_StartIndst']
             final_df1 = start_df1[start_df1['FinalIndst'] == finalInd]
             final_df2 = start_df2[start_df2['FinalIndst'] == finalInd]
 
