@@ -353,22 +353,86 @@ In order to avoid overcharing this report with information, all results correspo
 Anex secion XXX.
 
 
-## Network analysis for the period from 2009 to 2018
+## Network analysis
+
+The skill-relatedness matrices are used  to construct an undirected weighted network. This network can now be used 
+to identify industry clusters.
+
+In this section the skill-relatedness networks built using the **flows** algorithm for the periods of 1997-2008 and 
+ 2009-2018 are discussed. The equivalent networks built with the **connection** algorithm are presented in Annex \ref{Annex}
+
+### Network descriptors 
 
 
-## Network descriptors 
+Table X. Top five nodes for the network of the period from 1997 to 2008 using the **flows** algorithm in different
+degrees and centrality metrics.
 
-        * Top 5 centrality (flows and connection)
-        * Top 5 degree (flows and connection)
-        
-        * Network visualisations (nodes colored by industry) (4 figures)
+|Degree |	Weighted Degree	| Centrality |	Betweeness |
+|-------|-------------------|------------|-------------|
+|Labour recruitment and provision of personnel	|Management activities of other non-financial holding companies	| Labour recruitment and provision of personnel |Management activities of other non-financial holding companies |
+|Management activities of other non-financial holding companies |	Other software consultancy and supply |Management activities of other non-financial holding companies|	Labour recruitment and provision of personnel |
+|Construction of commercial buildings	|Construction of commercial buildings|Business and management consultancy activities, n.e.c.|	Construction of commercial buildings|
+|Clubs, public houses and bars|	Manufacture of electronic instruments and appliances for measuring, checking, testing, navigating and other purposes, except industrial process control equipment|Other business activities not elsewhere classified	|Other business activities not elsewhere classified|
+|Retail sale |	Other business activities not elsewhere classified	|Clubs, public houses and bars|Other software consultancy and supply|
+|-------|-------------------|------------|-------------|
+
+
+
+Table X. Top five nodes for the network of the period from 2009 to 2018 using the **flows** algorithm in different
+degrees and centrality metrics.
+
+|Degree |	Weighted Degree	| Centrality |	Betweeness |
+|-------|-------------------|------------|-------------|
+|Temporary employment agencies|	Temporary employment agencies|	Temporary employment agencies|	Temporary employment agencies|
+|Food, beverages, tobacco mainly|	Business, other management|	Office admin, business support|	Primary|
+|Beverage serving|	Engineering/tech consultancy|	Beverage serving	Food, beverages, tobacco| mainly|
+|Restaurants, mobile food service|	Office admin, business support|	Food, beverages, tobacco mainly|	Office admin, business support|
+|Office admin, business support|	Head office activities|	Restaurants, mobile food service|	Engineering/tech consultancy|
+|-------|-------------------|------------|-------------|
+
+
+
+[Network20092018]: figures/network_2009_2018_flows.png
+![Visualisation of the skill-relatedness network for the United Kingdom using the **flows** algorithm in the period from
+2009 to 2018. Each node represents a 4-digit industry and each edge the skill-relatedness between the corresponding industry pair. Nodes are sized by the total
+employment size in the United Kingdom during 2015 and coloured according to their industry cluster detected according to the Markov
+Stability Algorithm (t=1). Only positive edges are shown. The node layout is based on a spring
+algorithm called ‘Force Atlas’ in Gephi. \label{Network20092018}][Network20092018]
+
+
+[Network19972008]: figures/network_1997_2008_flows.png
+![Visualisation of the skill-relatedness network for the United Kingdom using the **flows** algorithm n the period from 1997
+to 2008. Each node represents a 4-digit industry and each edge the skill-relatedness between the corresponding industry pair. Nodes are sized by the total
+employment size in the United Kingdom during 2015 and coloured according to their industry cluster detected according to the Louvain algorithm implemented
+in Gephi. Only positive edges are shown. The node layout is based on a spring
+algorithm called ‘Force Atlas’ in Gephi. \label{Network19972008}][Network19972008]
         
 
 ## Community detection for the 2009 - 2018 period
 
     - Method description (figures from Mattie)
     
-    - Network community evolution figures
+    
+[MarkovTimeFlows]: figures/MarkovTimeFigureFlows2009_2018_flows.jpg
+![A graph showing the number of communities and the variation of information of the node partition generated
+by the Markov Stability Algorithm at different Markov times. This is shown for both the skill-relatedness network (blue) and a
+shuffled edge version of this network (orange). \label{MarkovTimeFlows}][MarkovTimeFlows]
+
+
+![](figures/2009_2018_flows.png){width=50%}
+![](figures/2009_2018_flows_4.png){width=50%}
+![](figures/2009_2018_flows_25.png){width=50%}
+![](figures/2009_2018_flows_50.png){width=50%}
+\begin{figure}[!h]
+\caption{Visualisation of the skill-relatedness network for the United Kingdom using the **flows** algorithm in the period from
+2009 to 2018. The communities are coloured according to their industry cluster detected according to the Markov
+Stability Algorithm which is estimated at different resolutions (t=1, 4, 25 and 50).  Each node represents a 4-digit industry and each 
+edge the skill-relatedness between the corresponding industry pair. Nodes are sized by the total
+employment size in the United Kingdom during 2015. Only positive edges are shown. The node layout is based on a spring
+algorithm called ‘Force Atlas’ in Gephi.}
+\label{CommunityEvolution}
+\end{figure}
+
     
     - Dendogram???
 
