@@ -2,7 +2,7 @@
 % Please edit documentation in R/fill_industry_transition_matrix_from_reduced.R
 \name{fill_industry_transition_matrix_from_reduced}
 \alias{fill_industry_transition_matrix_from_reduced}
-\title{Run all steps to create a filled worker matrix
+\title{Read a reduced transition matrix and build an ND x ND adjacency matrix
 #'}
 \usage{
 fill_industry_transition_matrix_from_reduced(reduced_matrix, algorithm)
@@ -10,19 +10,17 @@ fill_industry_transition_matrix_from_reduced(reduced_matrix, algorithm)
 \arguments{
 \item{reduced_matrix}{A matrix}
 
-\item{industry_data}{A data frame wit the indusry classification.}
-
-\item{ind_class}{The label for the industry classification}
+\item{algorithm}{The algorithm used to build the matrix (in order to decide symetrisation strategy)}
 }
 \value{
 An updated matrix.
 }
 \description{
-Run all steps to create a filled worker matrix
+Read a reduced transition matrix and build an ND x ND adjacency matrix
 #'
 }
 \examples{
 \dontrun{
-fill_industry_transition_matrix_from_reduced <- function(sample, cuts, cutsName,indClass)
+fill_industry_transition_matrix_from_reduced <- function(reduced_matrix,algorithm)
 }
 }

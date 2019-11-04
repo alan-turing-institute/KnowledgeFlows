@@ -2,7 +2,7 @@
 % Please edit documentation in R/create_reduced_transition_matrix.R
 \name{create_reduced_transition_matrix}
 \alias{create_reduced_transition_matrix}
-\title{Convert worker transition matrix to a 3-column form}
+\title{Convert worker adjacency matrix to a 3-column form}
 \usage{
 create_reduced_transition_matrix(transitionmatrix, min_counts)
 }
@@ -15,7 +15,7 @@ create_reduced_transition_matrix(transitionmatrix, min_counts)
 An 3 column x N rows matrix (N is number of flows)
 }
 \description{
-Convert worker transition matrix to a 3-column form
+Convert worker adjacency matrix to a 3-column form
 }
 \examples{
 \dontrun{

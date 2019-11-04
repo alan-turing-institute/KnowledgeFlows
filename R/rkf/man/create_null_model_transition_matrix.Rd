@@ -2,7 +2,7 @@
 % Please edit documentation in R/create_null_model_transition_matrix.R
 \name{create_null_model_transition_matrix}
 \alias{create_null_model_transition_matrix}
-\title{Run all steps to create a filled worker matrix
+\title{Starting from input adjacency matrix, create a null hypothesis matrix based on Nefkke method.
 #'}
 \usage{
 create_null_model_transition_matrix(transition_matrix)
@@ -14,7 +14,7 @@ create_null_model_transition_matrix(transition_matrix)
 A matrix.
 }
 \description{
-Run all steps to create a filled worker matrix
+Starting from input adjacency matrix, create a null hypothesis matrix based on Nefkke method.
 #'
 }
 \examples{

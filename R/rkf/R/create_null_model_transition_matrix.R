@@ -1,4 +1,4 @@
-#' Run all steps to create a filled worker matrix
+#' Starting from input adjacency matrix, create a null hypothesis matrix based on Nefkke method.
 #'#'
 #' @param transition_matrix
 #' A matrix
@@ -36,8 +36,8 @@ create_null_model_transition_matrix <- function(transition_matrix) {
     # loop on the columns (final industry in a flow)
     for(j in 1:n_trans_matrix_column) {
 
+      # definne the value
       term_2 <- sum(transition_matrix[,j])
-
       null_matrix[i,j] <- term_1*term_2/summ_all
 
 

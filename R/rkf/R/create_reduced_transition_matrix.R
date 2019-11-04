@@ -1,4 +1,4 @@
-#' Convert worker transition matrix to a 3-column form
+#' Convert worker adjacency matrix to a 3-column form
 #'
 #' @param transitionmatrix
 #' A matrix.

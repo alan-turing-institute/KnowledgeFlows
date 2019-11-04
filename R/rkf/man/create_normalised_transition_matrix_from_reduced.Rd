@@ -3,7 +3,7 @@
 %   R/create_normalised_transition_matrix_from_reduced.R
 \name{create_normalised_transition_matrix_from_reduced}
 \alias{create_normalised_transition_matrix_from_reduced}
-\title{Run all steps to create a filled worker matrix
+\title{Run all steps to create a normalised worker matrix from an input raw count matrix
 #'}
 \usage{
 create_normalised_transition_matrix_from_reduced(reduced_matrix, mincuts,
@@ -16,11 +16,11 @@ create_normalised_transition_matrix_from_reduced(reduced_matrix, mincuts,
 A matrix.
 }
 \description{
-Run all steps to create a filled worker matrix
+Run all steps to create a normalised worker matrix from an input raw count matrix
 #'
 }
 \examples{
 \dontrun{
-create_normalised_transition_matrix <- function(transition_matrix)
+create_normalised_transition_matrix_from_reduced <- function(reduced_matrix,mincuts,algorithm,sic='sic07')
 }
 }
