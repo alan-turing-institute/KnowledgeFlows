@@ -25,7 +25,7 @@ described and a preliminary network analysis is shown.
 # Data
 \label{data}
 
-The skill-relatedness matrices are based on the Annual Survey of Hours and Earnings dataset, which is 
+The skill-relatedness matrices are based on the Annual Survey of Hours and Earnings dataset (ASHE), which is 
 is the most comprehensive source of earnings information in the United Kingdom. This dataset contains 
 anonymised demographic and employment information of 1% of the total employee jobs in the HM Revenue & Customs (HMRC) Pay
 As You Earn (PAYE) records, covering the years between 1997 to 2018[@ASHE]. 
@@ -133,7 +133,7 @@ of transitions between industries observed.  For statistical disclosure control 
 total transitions summed across the entire period exceeds 10 observations are kept. 
 
 # Statistical method
-\label{SR}
+\label{SR} 
 
 
 
@@ -154,14 +154,30 @@ problem the **SR** is symmetrised around 0.
 
 # Results
 
-## Descriptive statistics
+Following the methodology described in sections \label{dataselection} and \label{SR}, the flows and connections from the ASHE
+are obtained and used to build the skill-relatedness matrices. The total number of transitions observed in the ASHE dataset from 1997 to 2018 for the
+**flows** and **connection** algorithms are shown in Tables 3 and 4. The number of connections is
+larger than the number of flows by a factor of X, which is expected. An interesting observation shown in these tables is that the transitions 
+are dominated by female workers (number of transition of female workers is X times larger than the male workers on average).
+ [WRITE OBSERVATION ABOUT THE TABLES]
 
-Tables 3 and 4 show the total number of transitions observed in the ASHE dataset in each year from 1997 to 2018 for the
-**flows** and **connection** algorithm. [WRITE OBSERVATION ABOUT THE TABLES]
 
+Table 3. 
+        
+| Year | Total workers observed | Number Female Transitions | Number Male Transitions | N. Regions |Total transitions observed |
+|------|------------------------|---------------------------|-------------------------|------------|---------------------------|
+| X    |                      X |                     X     |               X         |            |                           |
+         
+               
+        
+Table 4. 
 
-        | Year | Total transitions observed | N. Female | N. Male | N. Regions |
-        | X    |                      X     |           |         |            |
+| Year | Total workers observed | Number Female Transitions | Number Male Transitions | N. Regions |Total transitions observed |
+|------|------------------------|---------------------------|-------------------------|------------|---------------------------|
+| X    |                      X |                     X     |               X         |            |                           |
+         
+        
+     
 
 ## Skill relatedness matrices
 
@@ -181,7 +197,7 @@ these matrices are the following:
 * For the period of 1997-2008 the resulting skill relatedness matrix contain 2292 (3978) directed transitions between 367 (429) industries with positive
 **SR** values in the **flows** (**connections**) algorithms.  These results do not include transitions within the same industry.
 
-The top 5 transitions observed in the periods of 1997 and 2008  and 2009 - 2018 are shown in Tables 5 and 6. As shown in these tables,
+The top 5 transitions observed in the periods of 1997 to 2008  and 2009 to 2018 are shown in Tables 5 and 6. As shown in these tables,
 industries with higher number of transitions belong to the education and health sectors. This is expected ad these industries are the
 ones with highest employment in the UK.
 
@@ -232,11 +248,16 @@ algorithms.
 |-------------------------|-------------------------|--------------------------|---------------------|
 
 
-The five transitions with top **SR** average weights observed in the periods of 1997 and 2008  and 2009 - 2018 are shown in Tables 5 and 6.
-As seen in these tables, the highest weighted transitions have a low count of entries, most of them around the 10 counts limit. This is no surprised,
-as the ASHE dataset represents only 1% of the total employment population, the resulting transition samples are low in the
+The five transitions with top **SR** average weights observed in both periods of interest are shown in Tables 5 and 6.
+As seen in these tables, the highest weighted transitions have a low count of entries, most of them around the 10 counts limit. 
+This is no surprise,
+as the ASHE dataset represents only 1% of the total employee jobs in the HMRC PAYE records, the resulting transition samples are low in the
 count values (eg. 80% of the transitions between different industries have less than 35 counts), this can be observed in the
-case of the **flows** algorithm for Figure \ref{CountsFlows}.
+distribution of counts for case of the **flows** algorithm for Figure \ref{CountsFlows}.
+
+It is important to have in mind that due to the typical low count of the samples some highly related pair of industries
+present in the UK economy can be missing completely in the resulting matrices (eg. the average count in the pair of industries is 9, not passing statistical
+disclosure control from the UK data service).
 
 Table 7. Top 5 transitions with highest *SR* average weight observed in the ASHE dataset in the period of 2009 to 2018
 for both the **flows** and **connections** algorithms.
@@ -292,15 +313,12 @@ for both the **flows** and **connections** algorithms.
 
 ### Adjajency matrices
 
-The adjacency matrix for the United Kingdom skill-relatedness network constructed using using the ASHE dataset and both the connection and flows algorithms is
+The adjacency matrix for the UK skill-relatedness network constructed with both the connection and flows algorithms is
 shown in Figures \ref{Adjacency1997_2008} and Figures \ref{Adjacency2009_2018}. The matrices are sorted by their 4-digit classification code, and only
 entries with **SR** values higher than zero are kept. As expected, the matrix is sparse and clusters of values are observed 
 near the diagonals, showing that there is a high degree of skill-relatedness between industries in similar sectors.The largest 
 clusters are observed in the right inferior part of the figure, where the services and public administration 
 industries are found.
-
-    * 1997 - 2009 adjacency flow/conn matrix
-    * 2009 - 2008 adjacency flow/conn matrix
 
 ![](figures/adjacencyFlows1997_2008.png){width=50%}
 ![](figures/adjacencyConn1997_2008.png){width=50%}
@@ -327,10 +345,10 @@ As seen in the previous tables, both connections and flows have compatible gener
 SR weight between transition pairs observed in both samples for the same period of time is in the order of 0.98.
 
 The connection algorithm provides around 350 more pairs of industries than the **flow** algorithm (undirected transitions), this is caused by the
-intrinsic property of the **connection** algorithm that considers all possible transitions in the period of 2 years, then increasing the probability of
-pairs of industries with more than 10 events.
+ property of the **connection** algorithm of considering all possible transitions in the period of 2 years, then increasing the probability of
+pairs of industries with more than 10 counts.
 
-Figure \ref{Missing} shows the distribution of weights for the transitions found on the **connection** matrix and non existing on the **flows** matrix,
+Figure \ref{Missing} shows the distribution of weights for the transitions found on the **connection** matrix but non existing on the **flows** matrix,
 for the period form 2009 to 2018. In this sample 95% of the missing entries have less than 15 counts.
 
 Table 9 shows the top transitions in the **connection** matrix and missing in the **flow** matrix (ordered by **SR** weight).
@@ -349,8 +367,8 @@ Table 9. Top transitions observed in the **connection** matrix and missing in th
 |Manufacture Fruit, vegetable juice	| Manufacture Soft drinks; waters|0.99|
 |------------------------------|-------------------------------|--------------------------|--|
 
-In order to avoid overcharing this report with information, all results corresponding to the **connections** algorithm will be presented in the
-Anex secion XXX.
+In order to avoid over-loading this report with information, all results corresponding to the **connections** algorithm are 
+ going to be be presented in the Annex \ref{Annex}.
 
 
 ## Network analysis
@@ -359,9 +377,13 @@ The skill-relatedness matrices are used  to construct an undirected weighted net
 to identify industry clusters.
 
 In this section the skill-relatedness networks built using the **flows** algorithm for the periods of 1997-2008 and 
- 2009-2018 are discussed. The equivalent networks built with the **connection** algorithm are presented in Annex \ref{Annex}
+ 2009-2018 are discussed. The equivalent networks built with the **connection** algorithm are presented Annex \ref{Annex}.
 
 ### Network descriptors 
+
+The top 5 industry nodes by degree, centrality and betweeness are shown in Tables 10 and 11 for both time periods. As expected
+in each time period there is a consistency in which are the nodes ranking higher in these metrics. However, it is important to
+notice that the top nodes in the 1997-2008 period are different to the 2009-2018 one.
 
 
 Table X. Top five nodes for the network of the period from 1997 to 2008 using the **flows** algorithm in different
@@ -378,6 +400,7 @@ degrees and centrality metrics.
 
 
 
+
 Table X. Top five nodes for the network of the period from 2009 to 2018 using the **flows** algorithm in different
 degrees and centrality metrics.
 
@@ -390,6 +413,17 @@ degrees and centrality metrics.
 |Office admin, business support|	Head office activities|	Restaurants, mobile food service|	Engineering/tech consultancy|
 |-------|-------------------|------------|-------------|
 
+
+The UK skill-relatedness networks are illustrated in Figures \ref{Network20092018} and \ref{Network19972008}.
+In these figures each node represents an industry and each edge its skill-relatedness index. The node layout is
+built with a spring algorithm called "Force Atlas" in Gephi. In both figures, labels indicating the general
+position of different industries are shown, and is possible to observe that industries that are more skill-related
+tend to be position closer toguether (eg. gouverment, services and finance tend to be in one side of the network, whilst
+manufacture related industries is in the other side).
+
+In figure \ref{Network20092018} the size of each node represents the total employment in each industry during 2015, 
+which is obtained using the open access Business Register and Employment Survey (BRES) provided by the [Nomis](https://www.nomisweb.co.uk/query/construct/summary.asp?mode=construct&version=0&dataset=189)
+ service from the Office of National Stistics (ONS).
 
 
 [Network20092018]: figures/network_2009_2018_flows.png
@@ -408,9 +442,7 @@ in Gephi. Only positive edges are shown. The node layout is based on a spring
 algorithm called ‘Force Atlas’ in Gephi. \label{Network19972008}][Network19972008]
         
 
-## Community detection for the 2009 - 2018 period
-
-    - Method description (figures from Mattie)
+## Skill-related industry clusters for the 2009 - 2018 period
     
     
 [MarkovTimeFlows]: figures/MarkovTimeFigureFlows2009_2018_flows.jpg
