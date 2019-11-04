@@ -4,13 +4,14 @@ context("test_create_reduced_transition_matrix function")
 test_that("the create_reduced_transition_matrix function works", {
 
 
-  data <- ashe_sic_5dig
-  data$sjd <- 2
+  name_2009_2018_flows <- "Table1_Reduced_matrix_2009_2018_flows.csv"
+  dir_secure_lab <- "../../securelab_data_outputs/128770_2019_08_23/"
+  algorithm_flows <- "FLOWS"
+  reduced_matrix <- read.csv(paste0(dir_secure_lab,name_2009_2018_flows,sep=''))
+  transitionmatrix <- fill_industry_transition_matrix_from_reduced(reduced_matrix,algorithm_flows)
 
 
-  transitionmatrix <- create_and_fill_industry_transition_matrix(data,"sic07")
-
-  min_counts <- 6
+  min_counts <- 10
   reduced_matrix_func <- create_reduced_transition_matrix(transitionmatrix,min_counts)
 
 

@@ -1,83 +1,17 @@
 require(testthat)
-context("test_create_normalised_transition_matrix function")
+context("create_normalised_transition_matrix_from_reduced function")
 
 test_that("the create_normalised_transition_matrix_from_reduced function works", {
 
-  browser()
-
-  name_2009_2013_flows <- "Table1_Reduced_matrix_2009_2013_flows.csv"
-  algorithm_flows <- "FLOWS"
-  reduced_matrix <- read.csv(paste0('/Users/crangelsmith/PycharmProjects/KnowledgeFlows/secure_lab_outputs/128770_2019_08_05/',name_2009_2013_flows))
-
-  normalised_output <- create_normalised_transition_matrix_from_reduced(reduced_matrix,-0.99,algorithm_flows)
-  write.csv(normalised_output,paste0("/Users/crangelsmith/PycharmProjects/KnowledgeFlows/python/labour_flows_matrix/data/",name_2009_2013_flows))
-
-
-  name_2009_2013_connections <- "Table2_Reduced_matrix_2009_2013_connections.csv"
-  algorithm_conn <- "CONN"
-  reduced_matrix <- read.csv(paste0('/Users/crangelsmith/PycharmProjects/KnowledgeFlows/secure_lab_outputs/128770_2019_08_05/',name_2009_2013_connections))
-
-  normalised_output <- create_normalised_transition_matrix_from_reduced(reduced_matrix,-0.99,algorithm_conn)
-  write.csv(normalised_output,paste0("/Users/crangelsmith/PycharmProjects/KnowledgeFlows/python/labour_flows_matrix/data/",name_2009_2013_connections))
-
-
-  name_2014_2018_flows <- "Table3_Reduced_matrix_2014_2018_flows.csv"
-  algorithm_flows <- "FLOWS"
-  reduced_matrix <- read.csv(paste0('/Users/crangelsmith/PycharmProjects/KnowledgeFlows/secure_lab_outputs/128770_2019_08_05/',name_2014_2018_flows))
-
-  normalised_output <- create_normalised_transition_matrix_from_reduced(reduced_matrix,-0.99,algorithm_flows)
-  write.csv(normalised_output,paste0("/Users/crangelsmith/PycharmProjects/KnowledgeFlows/python/labour_flows_matrix/data/",name_2014_2018_flows))
-
-
-  name_2014_2018_connections <- "Table4_Reduced_matrix_2014_2018_connections.csv"
-  algorithm_conn <- "CONN"
-  reduced_matrix <- read.csv(paste0('/Users/crangelsmith/PycharmProjects/KnowledgeFlows/secure_lab_outputs/128770_2019_08_05/',name_2014_2018_connections))
-
-  normalised_output <- create_normalised_transition_matrix_from_reduced(reduced_matrix,-0.99,algorithm_conn)
-  write.csv(normalised_output,paste0("/Users/crangelsmith/PycharmProjects/KnowledgeFlows/python/labour_flows_matrix/data/",name_2014_2018_connections))
-
-
-  ###### 10 YEAR MATRICES ###########################################
-
   name_2009_2018_flows <- "Table1_Reduced_matrix_2009_2018_flows.csv"
+  dir_secure_lab <- "../../securelab_data_outputs/128770_2019_08_23/"
   algorithm_flows <- "FLOWS"
-  reduced_matrix <- read.csv(paste0('/Users/camilarangelsmith/Code/KnowledgeFlows/secure_lab_outputs/128770_2019_08_23/',name_2009_2018_flows))
-
+  reduced_matrix <- read.csv(paste0(dir_secure_lab,name_2009_2018_flows,sep=''))
   normalised_output <- create_normalised_transition_matrix_from_reduced(reduced_matrix,-0.99,algorithm_flows)
-  write.csv(normalised_output,paste0("/Users/camilarangelsmith/Code/KnowledgeFlows/python/labour_flows_matrix/data/",name_2009_2018_flows))
 
 
-  name_2009_2018_connections <- "Table2_Reduced_matrix_2009_2018_connections.csv"
-  algorithm_conn <- "CONN"
-  reduced_matrix <- read.csv(paste0('/Users/camilarangelsmith/Code/KnowledgeFlows/secure_lab_outputs/128770_2019_08_23/',name_2009_2018_connections))
-
-  normalised_output <- create_normalised_transition_matrix_from_reduced(reduced_matrix,-0.99,algorithm_conn)
-  write.csv(normalised_output,paste0("/Users/camilarangelsmith/Code/KnowledgeFlows/python/labour_flows_matrix/data/",name_2009_2018_connections))
-
-
-  ###### 10 YEAR MATRICES 1997-2008 ###########################################
-
-  name_1997_2008_flows <- "Table1_Reduced_matrix_1997_2008_flows.csv"
-  algorithm_flows <- "FLOWS"
-  reduced_matrix <- read.csv(paste0('/Users/crangelsmith/PycharmProjects/KnowledgeFlows/secure_lab_outputs/128770_2019_08_29/',name_1997_2008_flows))
-
-  normalised_output <- create_normalised_transition_matrix_from_reduced(reduced_matrix,-0.99,algorithm_flows,'sic03')
-  write.csv(normalised_output,paste0("/Users/crangelsmith/PycharmProjects/KnowledgeFlows/python/labour_flows_matrix/data/",name_1997_2008_flows))
-
-
-  name_1997_2008_connections <- "Table2_Reduced_matrix_1997_2008_connections.csv"
-  algorithm_conn <- "CONN"
-  reduced_matrix <- read.csv(paste0('/Users/crangelsmith/PycharmProjects/KnowledgeFlows/secure_lab_outputs/128770_2019_08_29/',name_1997_2008_connections))
-
-  normalised_output <- create_normalised_transition_matrix_from_reduced(reduced_matrix,-0.99,algorithm_conn,'sic03')
-  write.csv(normalised_output,paste0("/Users/crangelsmith/PycharmProjects/KnowledgeFlows/python/labour_flows_matrix/data/",name_1997_2008_connections))
-
-
-
-  expect_equal(dim(normalised_output),5)
-
-
-
+  expect_equal(dim(normalised_output)[2],10)
+  expect_equal(dim(normalised_output)[1],4342)
 
 })
 
