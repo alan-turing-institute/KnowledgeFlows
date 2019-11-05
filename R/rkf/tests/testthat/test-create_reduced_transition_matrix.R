@@ -5,9 +5,9 @@ test_that("the create_reduced_transition_matrix function works", {
 
 
   name_2009_2018_flows <- "Table1_Reduced_matrix_2009_2018_flows.csv"
-  dir_secure_lab <- "../../securelab_data_outputs/128770_2019_08_23/"
+  dir_secure_lab <- "../../../../securelab_data_outputs/128770_2019_08_23/"
   algorithm_flows <- "FLOWS"
-  reduced_matrix <- read.csv(paste0(dir_secure_lab,name_2009_2018_flows,sep=''))
+  reduced_matrix <- read.csv(paste0(dir_secure_lab,name_2009_2018_flows,sep=''))[1:100,]
   transitionmatrix <- fill_industry_transition_matrix_from_reduced(reduced_matrix,algorithm_flows)
 
 
@@ -63,13 +63,19 @@ test_that("the create_reduced_transition_matrix function works", {
   expect_equal(length(which(transitionmatrix>=min_counts)),nrow(reduced_matrix_func)-1)
 
 
+  # create a null model from the adjacency matrix
+  null_model_matrix <- create_null_model_transition_matrix(transitionmatrix)
 
-  normalised_matrix <- create_normalised_transition_matrix(transitionmatrix)
-  reduced_matrix_norm <- create_reduced_transition_matrix(normalised_matrix,-0.999999)
+  # normalised matrix
+  SR_normalised <- transitionmatrix/null_model_matrix
+
+  # normalised and transformed (centered)
+
+  reduced_matrix_norm <- create_reduced_transition_matrix(SR_normalised,-0.999999)
 
   expect_equal(dim(reduced_matrix_norm)[2],3)
 
-  expect_equal(length(which(normalised_matrix!=-1)),nrow(reduced_matrix_norm)-1)
+  expect_equal(length(which(SR_normalised!=-1)),nrow(reduced_matrix_norm)-1)
 
 
 

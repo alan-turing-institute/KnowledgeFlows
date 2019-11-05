@@ -2,15 +2,15 @@
 % Please edit documentation in R/add_labels_to_reduced_matrix.R
 \name{add_labels_to_reduced_matrix}
 \alias{add_labels_to_reduced_matrix}
-\title{Run all steps to create a filled worker matrix
-#'}
+\title{Augment a reduced matrix with label information and transition counts from original dataset}
 \usage{
-add_labels_to_reduced_matrix(reduced_matrix, old_matrix, sic = "sic07")
+add_labels_to_reduced_matrix(reduced_matrix, previous_matrix,
+  ind_class = "sic07")
 }
 \arguments{
-\item{reduced_matrix}{A matrix}
+\item{reduced_matrix}{A matrix with 3 columns from industry transitions}
 
-\item{industry_data}{A data frame wit the indusry classification.}
+\item{previous_matrix}{A data frame with the raw counts transition daya}
 
 \item{ind_class}{The label for the industry classification}
 }
@@ -18,11 +18,10 @@ add_labels_to_reduced_matrix(reduced_matrix, old_matrix, sic = "sic07")
 An updated matrix.
 }
 \description{
-Run all steps to create a filled worker matrix
-#'
+Augment a reduced matrix with label information and transition counts from original dataset
 }
 \examples{
-\dontrun{
-fill_industry_transition_matrix_from_reduced <- function(sample, cuts, cutsName,indClass)
-}
+
+add_labels_to_reduced_matrix(reduced_matrix,old_matrix,'sic07')
+
 }

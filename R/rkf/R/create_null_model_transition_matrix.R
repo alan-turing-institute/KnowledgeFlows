@@ -1,14 +1,14 @@
 #' Starting from input adjacency matrix, create a null hypothesis matrix based on Nefkke method.
 #'#'
 #' @param transition_matrix
-#' A matrix
+#' An adjacency matrix
 #' @return
 #' A matrix.
 #'
 #' @examples
-#' \dontrun{
-#' create_null_model_transition_matrix <- function(transition_matrix)
-#' }
+#'
+#' create_null_model_transition_matrix(transition_matrix)
+#'
 #' @import httr
 #' @export
 create_null_model_transition_matrix <- function(transition_matrix) {

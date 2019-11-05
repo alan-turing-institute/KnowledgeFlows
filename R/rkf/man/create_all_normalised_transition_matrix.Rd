@@ -2,24 +2,24 @@
 % Please edit documentation in R/create_all_normalised_transition_matrix.R
 \name{create_all_normalised_transition_matrix}
 \alias{create_all_normalised_transition_matrix}
-\title{Run all steps to create all the normalised worker matrices from the secure lab inputs
-#'}
+\title{Run all steps to create all the normalised worker matrices from the Secure Lab inputs}
 \usage{
-create_all_normalised_transition_matrix(input_path = "")
+create_all_normalised_transition_matrix(input_path = "../../",
+  output_path = "")
 }
 \arguments{
-\item{the}{input path where all the secure lab outputs are
-No input}
+\item{input_path}{The input path where all the secure lab outputs are}
+
+\item{output_path}{The path where to write the datasets}
 }
 \value{
-No output all the matrices get writen in the python/labour_flows_matrix/data/ directory
+No output, all the matrices gets writen in the output directory
 }
 \description{
-Run all steps to create all the normalised worker matrices from the secure lab inputs
-#'
+Run all steps to create all the normalised worker matrices from the Secure Lab inputs
 }
 \examples{
-\dontrun{
-create_all_normalised_transition_matrix <- function(input_path)
-}
+
+create_all_normalised_transition_matrix('inputdirectory/','data/')
+
 }

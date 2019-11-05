@@ -1,16 +1,16 @@
-#' Read a reduced transition matrix and build an ND x ND adjacency matrix
-#'#'
+#' Read a reduced transition matrix and build an adjacency matrix
+#'
 #' @param reduced_matrix
-#' A matrix
+#' A 3 column matrix (start industry, final industry, counts/weight)
 #' @param algorithm
 #' The algorithm used to build the matrix (in order to decide symetrisation strategy)
 #' @return
 #' An updated matrix.
 #'
 #' @examples
-#' \dontrun{
-#' fill_industry_transition_matrix_from_reduced <- function(reduced_matrix,algorithm)
-#' }
+#'
+#' fill_industry_transition_matrix_from_reduced(reduced_matrix,'CONN')
+#'
 #' @import httr
 #' @export
 fill_industry_transition_matrix_from_reduced <- function(reduced_matrix,algorithm) {

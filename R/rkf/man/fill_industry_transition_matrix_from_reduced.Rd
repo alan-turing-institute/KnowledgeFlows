@@ -2,13 +2,12 @@
 % Please edit documentation in R/fill_industry_transition_matrix_from_reduced.R
 \name{fill_industry_transition_matrix_from_reduced}
 \alias{fill_industry_transition_matrix_from_reduced}
-\title{Read a reduced transition matrix and build an ND x ND adjacency matrix
-#'}
+\title{Read a reduced transition matrix and build an adjacency matrix}
 \usage{
 fill_industry_transition_matrix_from_reduced(reduced_matrix, algorithm)
 }
 \arguments{
-\item{reduced_matrix}{A matrix}
+\item{reduced_matrix}{A 3 column matrix (start industry, final industry, counts/weight)}
 
 \item{algorithm}{The algorithm used to build the matrix (in order to decide symetrisation strategy)}
 }
@@ -16,11 +15,10 @@ fill_industry_transition_matrix_from_reduced(reduced_matrix, algorithm)
 An updated matrix.
 }
 \description{
-Read a reduced transition matrix and build an ND x ND adjacency matrix
-#'
+Read a reduced transition matrix and build an adjacency matrix
 }
 \examples{
-\dontrun{
-fill_industry_transition_matrix_from_reduced <- function(reduced_matrix,algorithm)
-}
+
+fill_industry_transition_matrix_from_reduced(reduced_matrix,'CONN')
+
 }

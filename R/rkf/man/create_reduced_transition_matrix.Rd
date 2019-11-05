@@ -2,12 +2,12 @@
 % Please edit documentation in R/create_reduced_transition_matrix.R
 \name{create_reduced_transition_matrix}
 \alias{create_reduced_transition_matrix}
-\title{Convert worker adjacency matrix to a 3-column form}
+\title{Convert worker adjacency matrix to a 3-column edge list}
 \usage{
 create_reduced_transition_matrix(transitionmatrix, min_counts)
 }
 \arguments{
-\item{transitionmatrix}{A matrix.}
+\item{transitionmatrix}{An adjacency matrix.}
 
 \item{min_counts}{Minimum number of counts in the matrix to be considered}
 }
@@ -15,10 +15,10 @@ create_reduced_transition_matrix(transitionmatrix, min_counts)
 An 3 column x N rows matrix (N is number of flows)
 }
 \description{
-Convert worker adjacency matrix to a 3-column form
+Convert worker adjacency matrix to a 3-column edge list
 }
 \examples{
-\dontrun{
-create_reduced_transition_matrix(transitionmatrix, min_counts)
-}
+
+create_reduced_transition_matrix(transitionmatrix, 10)
+
 }

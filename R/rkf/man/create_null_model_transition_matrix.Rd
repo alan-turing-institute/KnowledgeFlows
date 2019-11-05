@@ -8,7 +8,7 @@
 create_null_model_transition_matrix(transition_matrix)
 }
 \arguments{
-\item{transition_matrix}{A matrix}
+\item{transition_matrix}{An adjacency matrix}
 }
 \value{
 A matrix.
@@ -18,7 +18,7 @@ Starting from input adjacency matrix, create a null hypothesis matrix based on N
 #'
 }
 \examples{
-\dontrun{
-create_null_model_transition_matrix <- function(transition_matrix)
-}
+
+create_null_model_transition_matrix(transition_matrix)
+
 }

@@ -3,24 +3,28 @@
 %   R/create_normalised_transition_matrix_from_reduced.R
 \name{create_normalised_transition_matrix_from_reduced}
 \alias{create_normalised_transition_matrix_from_reduced}
-\title{Run all steps to create a normalised worker matrix from an input raw count matrix
-#'}
+\title{Run all steps to create a normalised worker matrix from an input raw count matrix}
 \usage{
 create_normalised_transition_matrix_from_reduced(reduced_matrix, mincuts,
-  algorithm, sic = "sic07")
+  algorithm, ind_class = "sic07")
 }
 \arguments{
-\item{transition_matrix}{A matrix}
+\item{reduced_matrix}{A 3 column matrix (start industry, final industry, counts/weight)}
+
+\item{mincuts}{A minimum number of counts for entry to be included}
+
+\item{algorithm}{The algorithm used to build the matrix (in order to decide symetrisation strategy)}
+
+\item{ind_class}{The label for the industry classification}
 }
 \value{
 A matrix.
 }
 \description{
 Run all steps to create a normalised worker matrix from an input raw count matrix
-#'
 }
 \examples{
-\dontrun{
-create_normalised_transition_matrix_from_reduced <- function(reduced_matrix,mincuts,algorithm,sic='sic07')
-}
+
+create_normalised_transition_matrix_from_reduced (reduced_matrix,10,'CONN','sic07')
+
 }
