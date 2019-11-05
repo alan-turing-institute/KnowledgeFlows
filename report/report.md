@@ -62,15 +62,14 @@ post code of the work establishment associated to that job.
 
  Table 1: An example of a *job table* for a particular individual with anonymised id=1.
         
-    | Id | Year | Indsutrial     | Work        |
-    |    |      | Classification | Post code   |
-    |----|------|----------------|-------------|
-    | 1  | 2009 | A              | A1          |
-    | 1  | 2010 | A              | A1           |
-    | 1  | 2010 | B              | B1           |
-    | 1  | 2011 | C              | C1           |
-    | 1  | 2013 | D              | D1           |
-    | 1  | 2013 | D              | D2           |
+| Id | Year | Indsutrial Classification    | Work Post code       |
+|----|------|----------------|-------------|
+| 1  | 2009 | A              | A1          |
+| 1  | 2010 | A              | A1          |
+| 1  | 2010 | B              | B1          |
+| 1  | 2011 | C              | C1          |
+| 1  | 2013 | D              | D1          |
+| 1  | 2013 | D              | D2          |
 
 
 Using this table, two approaches can be followed to measure the actual "job transition". These methods are explained next.
@@ -86,13 +85,12 @@ defined as any two consecutive job entries that comply with the following rules:
 
 For Table 1, the **flows** are the following:
 
-        | Id    | Flow | Year     |Work     |
-        |       |      |Difference|Postcodes|
-        |-------|------|----------|---------|
-        | 1     | A-B  |2010-2010 | A1-B1   | 
-        | 1     | B-C  |2010-2011 | B1-C1   | 
-        | 1     | C-D  |2011-2013 | C1-D1   | 
-        | 1     | D-D  |2013-2013 | D1-D2   | 
+| Id    | Flow | Year   Difference  |Work  Postcodes   |
+|-------|------|----------|---------|
+| 1     | A-B  |2010-2010 | A1-B1   | 
+| 1     | B-C  |2010-2011 | B1-C1   | 
+| 1     | C-D  |2011-2013 | C1-D1   | 
+| 1     | D-D  |2013-2013 | D1-D2   | 
 
 
 ## Transitions as "connections"
@@ -106,22 +104,21 @@ Define a **connection** as all possible unique combinations found in the *job ta
 
 In the example case of Table 1, the **connections** will be the following:
 
-        | Id    | Connection | Year     |Work     |
-        |       |            |Difference|Postcodes|
-        |-------|------------|----------|---------|
-        | 1     | A-B        |2009-2010 | A1-B1   | 
-        | 1     | A-C        |2009-2011 | A1-C1   | 
-        | 1     | B-C        |2010-2011 | B1-C1   | 
-        | 1     | C-D        |2011-2013 | C1-D1   | 
-        | 1     | C-D        |2011-2013 | C1-D2   | 
-        | 1     | D-D        |2013-2013 | D1-D2   | 
+| Id    | Connection | Year Difference    |Work  Postcodes   |
+|-------|------------|----------|---------|
+| 1     | A-B        |2009-2010 | A1-B1   | 
+| 1     | A-C        |2009-2011 | A1-C1   | 
+| 1     | B-C        |2010-2011 | B1-C1   | 
+| 1     | C-D        |2011-2013 | C1-D1   | 
+| 1     | C-D        |2011-2013 | C1-D2   | 
+| 1     | D-D        |2013-2013 | D1-D2   | 
         
 
  The **flow** approach does not handle properly what happens when someone has more than one job at the same time, given that 
  it does not  considered all combination between the jobs. The **connection** algorithm addresses this multiple part-time 
  job issue. Furthermore, the **connection** approach creates an undirected network and increases the size of the sample.
 
-## Transitions Count Matrix
+## Matrix of transition counts
 \label{countmatrices}
 
 For each time period (1997-2008 and 2009-2018) and observed worker, the transitions are obtained with the process explained above.
@@ -228,24 +225,24 @@ algorithms.
 Table 6. Top 5 transitions observed in the ASHE dataset in the period of 1997 to 2008 for both the **flows** and **connections**
 algorithms.
 
-|Stating Industry|	Final Industry |Counts |SR Weight|
-|-------------------------|-------------------------|--------------------------|---------------------|
-|   **Flows**             |                       |                        |                   |
-|-------------------------|-------------------------|--------------------------|---------------------|
-|General (overall) public service activities|Primary education|3304|0.28|
+|Stating Industry             |	Final Industry          |Counts                |SR Weight    |
+|-------------------------|-------------------------|--------------------------|-------------|
+|   **Flows**                 |                         |                      |             |
+|-------------------------|-------------------------|--------------------------|-------------|
+|General public service activities        |Primary education|3304|0.28|
 |General secondary education|Primary education|2262|0.51|
-|Public sector hospital activities, including NHS Trusts|Other human health activities|1893|0.69|
-|Other human health activities|Public sector hospital activities, including NHS Trusts|	1561|0.65|
+|Public sector hospital activities|Other human health activities|1893|0.69|
+|Other human health activities|Public sector hospital activities|1561|0.65|
 |Charitable social work activities without accommodation|Primary education|1412|	0.21|
-|-------------------------|-------------------------|--------------------------|---------------------|
-| **Connections**         |                         |                          |                     |
-|-------------------------|-------------------------|--------------------------|---------------------|
-|General (overall) public service activities|Primary education|5452|0.38|
+|-------------------------|-------------------------|--------------------------|-------------|
+| **Connections**             |                         |                      |             |
+|-------------------------|-------------------------|--------------------------|-------------|
+|General public service activities|Primary education|5452|0.38|
 |General secondary education|Primary education|3969|0.61|
-|Public sector hospital activities, including NHS Trusts|Other human health activities|3028|0.76|
-|Other human health activities|Public sector hospital activities, including NHS Trusts|	2572|0.76|
-|Charitable social work activities without accommodation|	Primary education|2466|	0.32|
-|-------------------------|-------------------------|--------------------------|---------------------|
+|Public sector hospital activities|Other human health activities|3028|0.76|
+|Other human health activities|Public sector hospital activities|2572|0.76|
+|Charitable social work activities without accommodation|Primary education|2466|0.32|
+|-------------------------|-------------------------|--------------------------|-------------|
 
 
 The five transitions with top **SR** average weights observed in both periods of interest are shown in Tables 5 and 6.
@@ -263,23 +260,23 @@ Table 7. Top 5 transitions with highest *SR* average weight observed in the ASHE
 for both the **flows** and **connections** algorithms.
 
 |Stating Industry|	Final Industry |Avg. Counts | Avg. SR Weight|
-|-------------------------|-------------------------|--------------------------|---------------------|
-|   **Flows**             |                         |                          |                     |
-|-------------------------|-------------------------|--------------------------|---------------------|
+|-------------------------|-------------------------|--------------------------|-------------|
+|   **Flows**             |                         |                          |             |
+|-------------------------|-------------------------|--------------------------|-------------|
 |Live animals    |Agriculture, animals, raw goods| 10  |0.99     |
 |Other electronic, electric wires|Fibre optic cables|11|0.99|
 |Pre-press, pre-media services|Paper, paperboard	|14|0.99|
 |Military fighting vehicles|Fabricated metal products|	10|	0.99|
-|Manufacture of other special-purpose machinery n.e.c.|	Computers, peripheral equipment|14|	0.99|
-|-------------------------|-------------------------|--------------------------|---------------------|
-| **Connections**         |                         |                          |                     |
-|-------------------------|-------------------------|--------------------------|---------------------|
+|Manufacture of other special-purpose machinery|	Computers, peripheral equipment|14|	0.99|
+|-------------------------|-------------------------|--------------------------|-------------|
+| **Connections**         |                         |                          |                  |
+|-------------------------|-------------------------|--------------------------|-------------|
 |Live animals    |Agriculture, animals, raw goods| 11  |0.99     |
 |Other electronic, electric wires|Fibre optic cables|11|0.99|
 |Raising of other cattle, buffaloes	|Raising of dairy cattle|11|0.99|
 |Pre-press, pre-media services|Paper, paperboard	|14|0.99|
 |Plaster products for construction|	Gravel, sand pits; clays, kaolin|18|0.99|
-|-------------------------|-------------------------|--------------------------|---------------------|
+|-------------------------|-------------------------|--------------------------|-------------|
 
 
 
@@ -287,24 +284,24 @@ Table 8. Top 5 transitions with highest *SR* average weight observed in the ASHE
 for both the **flows** and **connections** algorithms.
 
 |Stating Industry|	Final Industry |Avg. Counts | Avg. SR Weight|
-|-------------------------|-------------------------|--------------------------|---------------------|
-| **Flows**               |                         |                          |                     |
-|-------------------------|-------------------------|--------------------------|---------------------|
+|-------------------------|-------------------------|--------------------------|------------|
+| **Flows**               |                         |                          |            |
+|-------------------------|-------------------------|--------------------------|------------|
 |Manufacture of gas    |Distribution and trade of gaseous fuels| 19  |0.99     |
-|Repair of boots,  shoes and other articles|Repair n.e.c.	|11|0.99|
+|Repair of boots,  shoes and other articles|Repair |11|0.99|
 |Production of electricity|Transmission of electricity	|54|0.99|
 |Casting of other non-ferrous metals|Casting of light metals|	27|	0.99|
-|Manufacture of central heating radiators |	Manufacture of ceramic sanitary fixtures|13|	0.99|
-|-------------------------|-------------------------|--------------------------|---------------------|
-| **Connections**         |                         |                          |                     |
-|-------------------------|-------------------------|--------------------------|---------------------|
-|Repair of boots,  shoes and other articles|Repair n.e.c.	|13| 0.99|
+|Manufacture of central heating radiators |	Manufacture of ceramic sanitary fixtures|13|0.99|
+|-------------------------|-------------------------|--------------------------|-------------|
+| **Connections**         |                         |                          |             |
+|-------------------------|-------------------------|--------------------------|-------------|
+|Repair of boots,  shoes and other articles|Repair|13| 0.99|
 |Cotton-type weaving |	Worsted-type weaving| 12  |0.99     |
 |Manufacture of pulp	| Manufacture of household and sanitary goods |12|0.99|
 |Silk-type weaving	| Other textile weaving|16|0.99|
 |Manufacture of gas    |Distribution and trade of gaseous fuels| 19  |0.99     |
 |Casting of other non-ferrous metals |	Casting of light metals	|44|0.99|
-|-------------------------|-------------------------|--------------------------|---------------------|
+|-------------------------|-------------------------|--------------------------|-------------|
 
 
 [CountsFlows]: figures/CountsIndustriesBetweenTransitions.png
@@ -390,13 +387,13 @@ Table 10. Top five nodes for the network of the period from 1997 to 2008 using t
 degrees and centrality metrics.
 
 |Degree |	Weighted Degree	| Centrality |	Betweeness |
-|-------|-------------------|------------|-------------|
+|-------------------------|-------------------------|-----------------------------|---------------|
 |Labour recruitment and provision of personnel	|Management activities of other non-financial holding companies	| Labour recruitment and provision of personnel |Management activities of other non-financial holding companies |
 |Management activities of other non-financial holding companies |	Other software consultancy and supply |Management activities of other non-financial holding companies|	Labour recruitment and provision of personnel |
-|Construction of commercial buildings	|Construction of commercial buildings|Business and management consultancy activities, n.e.c.|	Construction of commercial buildings|
+|Construction of commercial buildings	|Construction of commercial buildings|Business and management consultancy activities|	Construction of commercial buildings|
 |Clubs, public houses and bars|	Manufacture of electronic instruments and appliances for measuring, checking, testing, navigating and other purposes, except industrial process control equipment|Other business activities not elsewhere classified	|Other business activities not elsewhere classified|
 |Retail sale |	Other business activities not elsewhere classified	|Clubs, public houses and bars|Other software consultancy and supply|
-|-------|-------------------|------------|-------------|
+|-------------------------|-------------------------|-----------------------------|---------------|
 
 
 
@@ -405,13 +402,13 @@ Table 11. Top five nodes for the network of the period from 2009 to 2018 using t
 degrees and centrality metrics.
 
 |Degree |	Weighted Degree	| Centrality |	Betweeness |
-|-------|-------------------|------------|-------------|
+|-------------------------|-------------------------|-----------------------------|---------------|
 |Temporary employment agencies|	Temporary employment agencies|	Temporary employment agencies|	Temporary employment agencies|
 |Food, beverages, tobacco mainly|	Business, other management|	Office admin, business support|	Primary|
 |Beverage serving|	Engineering/tech consultancy|	Beverage serving	Food, beverages, tobacco| mainly|
 |Restaurants, mobile food service|	Office admin, business support|	Food, beverages, tobacco mainly|	Office admin, business support|
 |Office admin, business support|	Head office activities|	Restaurants, mobile food service|	Engineering/tech consultancy|
-|-------|-------------------|------------|-------------|
+|-------------------------|-------------------------|-----------------------------|---------------|
 
 
 The UK skill-relatedness networks are illustrated in Figures \ref{Network20092018} and \ref{Network19972008}.
