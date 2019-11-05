@@ -96,8 +96,7 @@ and other business activities are now part of another group, whilst in the other
 hand heavy manufacture (chemicals, plastics, metals), construction and mining become another larger group. In the final step, the network is splits in 4 parts:
 one large groupcontains services, government and general business activities and another covering the manufacturing industries, a third small
  group is representing agriculture activities plus a final group with the transportation industries. 
- 
- plus two small parts. 
+
  
 
 ![](figures/2009_2018_conn.png){width=50%}
