@@ -386,7 +386,7 @@ in each time period there is a consistency in which are the nodes ranking higher
 notice that the top nodes in the 1997-2008 period are different to the 2009-2018 one.
 
 
-Table X. Top five nodes for the network of the period from 1997 to 2008 using the **flows** algorithm in different
+Table 10. Top five nodes for the network of the period from 1997 to 2008 using the **flows** algorithm in different
 degrees and centrality metrics.
 
 |Degree |	Weighted Degree	| Centrality |	Betweeness |
@@ -401,7 +401,7 @@ degrees and centrality metrics.
 
 
 
-Table X. Top five nodes for the network of the period from 2009 to 2018 using the **flows** algorithm in different
+Table 11. Top five nodes for the network of the period from 2009 to 2018 using the **flows** algorithm in different
 degrees and centrality metrics.
 
 |Degree |	Weighted Degree	| Centrality |	Betweeness |
@@ -443,13 +443,33 @@ algorithm called ‘Force Atlas’ in Gephi. \label{Network19972008}][Network199
         
 
 ## Skill-related industry clusters for the 2009 - 2018 period
-    
-    
-[MarkovTimeFlows]: figures/MarkovTimeFigureFlows2009_2018_flows.jpg
-![A graph showing the number of communities and the variation of information of the node partition generated
-by the Markov Stability Algorithm at different Markov times. This is shown for both the skill-relatedness network (blue) and a
-shuffled edge version of this network (orange). \label{MarkovTimeFlows}][MarkovTimeFlows]
+\label{CommunitySection}
 
+The Markov Stability Algorithm[@MarkovTime] its used as community detection algorithm to subdivide industries
+into groups with high skill-relatedness. 
+
+The Markov Stability algorithm uses a dynamical random walk process in order to study the structure of a network,
+it has an intrinsic resolution parameter that represents the time a random walker is allowed to wander on the network.
+The time resolution parameter allows for the algorithm to produce network partitions at a range of scales 
+(from a few large clusters to many well-defined clusters).
+ 
+Figure \ref{MarkovTimeFlows} shows  the number of communities, the stability function and the variance in information obtained when 
+running the Markov Stability algorithm on the **flows** network for the 2009-2018 period for different time resolution
+parameters. The information variation figure shows 
+that there are several Markov times where there are local minimum, where are relative stable partition is found (eg. times 4, 15). 
+
+[MarkovTimeFlows]: figures/MarkovTimeFigureFlows2009_2018_flows.jpg
+![A graph showing the number of communities, the stability function and the variation of information of the node partition generated
+by the Markov Stability Algorithm at different Markov times. \label{MarkovTimeFlows}][MarkovTimeFlows]
+
+According to the methodology of O’Clery et al. the different node partitions obtained at different markov time resolutions are
+used to understand the nested structure of the UK labour market, this is shown in Figure \ref{CommunityEvolution} for markov times 1, 4,
+25 and 50. This evolution shows how first, most clusters contain very similar industries and is generally compatible with 
+their SIC 2007 classification. In the next step, the government and services industries join together into a larger group and finance, law, technology
+and other business activities are now part of another bigger group, whilst in the other
+hand food manufacture and agriculture and retail become another larger group. In the final step, the network is splits in two parts, one
+containing services, government and general business activities and the other covering the manufacturing industries. 
+ 
 
 ![](figures/2009_2018_flows.png){width=50%}
 ![](figures/2009_2018_flows_4.png){width=50%}
@@ -466,8 +486,5 @@ algorithm called ‘Force Atlas’ in Gephi.}
 \end{figure}
 
     
-    - Dendogram???
-
-# Summary 
 
 

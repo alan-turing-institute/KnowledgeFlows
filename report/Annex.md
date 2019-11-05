@@ -11,8 +11,11 @@ In this section annex the skill-relatedness networks built using the **connectio
 
 ### Network descriptors 
 
+The top 5 industry nodes by degree, centrality and betweeness are shown in Tables 12 and 13 for both time periods. As expected
+in each time period there is a consistency in which are the nodes ranking higher in these metrics. 
 
-Table X. Top five nodes for the network of the period from 1997 to 2008 using the **connection** algorithm in different
+
+Table 12. Top five nodes for the network of the period from 1997 to 2008 using the **connection** algorithm in different
 degrees and centrality metrics.
 
 |Degree |	Weighted Degree	| Centrality |	Betweeness |
@@ -26,7 +29,7 @@ degrees and centrality metrics.
 
 
 
-Table X. Top five nodes for the network of the period from 2009 to 2018 using the **connections** algorithm in different
+Table 13. Top five nodes for the network of the period from 2009 to 2018 using the **connections** algorithm in different
 degrees and centrality metrics.
 
 |Degree |	Weighted Degree	| Centrality |	Betweeness |
@@ -37,6 +40,19 @@ degrees and centrality metrics.
 |Restaurants, mobile food service|	Office admin, business support|	Food, beverages, tobacco mainly|	Office admin, business support|
 |Office admin, business support|	Head office activities|	Restaurants, mobile food service|	Engineering/tech consultancy|
 |-------|-------------------|------------|-------------|
+
+
+
+The UK skill-relatedness networks are illustrated in Figures \ref{Network20092018_conn} and \ref{Network19972008_conn}.
+In these figures each node represents an industry and each edge its skill-relatedness index. The node layout is
+built with a spring algorithm called "Force Atlas" in Gephi. In both figures, labels indicating the general
+position of different industries are shown, and is possible to observe that industries that are more skill-related
+tend to be position closer toguether (eg. government, services and finance tend to be in one side of the network, whilst
+manufacture related industries is in the other side).
+
+In figure \ref{Network20092018_conn} the size of each node represents the total employment in each industry during 2015, 
+which is obtained using the open access Business Register and Employment Survey (BRES) provided by the [Nomis](https://www.nomisweb.co.uk/query/construct/summary.asp?mode=construct&version=0&dataset=189)
+ service from the Office of National Stistics (ONS).
 
 
 
@@ -56,16 +72,33 @@ in Gephi. Only positive edges are shown. The node layout is based on a spring
 algorithm called ‘Force Atlas’ in Gephi. \label{Network19972008}][Network19972008_conn]
         
 
-## Community detection for the 2009 - 2018 period
+## Skill-related industry clusters for the 2009 - 2018 period
 
-    - Method description (figures from Mattie)
-    
+Similarly to the the results shown in \ref{CommunitySection}, the Markov Stability Algorithm[@MarkovTime] its used as 
+community detection algorithm to subdivide industries into groups with high skill-relatedness. 
+ 
+Figure \ref{MarkovTimeconnection} shows  the number of communities, the stability function and the variance in information obtained when 
+running the Markov Stability algorithm on the **connections** network for the 2009-2018 period for different time resolution
+parameters. The information variation figure shows 
+that there are several Markov times where there are local minimum, where are relative stable partition is found (eg. times 3, 7, 15). 
+   
     
 [MarkovTimeconnection]: figures/MarkovTimeFigureFlows2009_2018_conns.jpg
 ![A graph showing the number of communities and the variation of information of the node partition generated
-by the Markov Stability Algorithm at different Markov times. This is shown for both the skill-relatedness network (blue) and a
-shuffled edge version of this network (orange). \label{MarkovTimeconnection}][MarkovTimeconnection]
+by the Markov Stability Algorithm at different Markov times. \label{MarkovTimeconnection}][MarkovTimeconnection]
 
+The different node partitions obtained at different markov time resolutions are
+used to understand the nested structure of the UK labour market, this is shown in Figure \ref{CommunityEvolution}.
+
+Following the same pattern as the results using the **flows** network, at first, most clusters contain very similar industries and is generally compatible with 
+their nominal industriasl classification. In the next step, the government and services industries join together into a larger group and finance, law, technology
+and other business activities are now part of another group, whilst in the other
+hand heavy manufacture (chemicals, plastics, metals), construction and mining become another larger group. In the final step, the network is splits in 4 parts:
+one large groupcontains services, government and general business activities and another covering the manufacturing industries, a third small
+ group is representing agriculture activities plus a final group with the transportation industries. 
+ 
+ plus two small parts. 
+ 
 
 ![](figures/2009_2018_conn.png){width=50%}
 ![](figures/2009_2018_conn_4.png){width=50%}
