@@ -49,9 +49,9 @@ library(rkf)
 
 algorithm <- "FLOWS"  # or "CONN"
 
-reduced_matrix <- read.csv('path_to_raw_data/matrix_file.csv')
+raw_matrix <- read.csv('path_to_raw_data/matrix_file.csv')
 
-normalised_output <- create_normalised_transition_matrix_from_reduced(reduced_matrix,-0.99,algorithm)
+normalised_output <- create_normalised_transition_matrix_from_reduced(raw_matrix,-0.99,algorithm)
 ```
 
 
