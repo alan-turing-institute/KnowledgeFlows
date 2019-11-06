@@ -8,42 +8,41 @@ date: Draft (not for distribution)
 # Introduction 
 
 This report describes the procedure of constructing skill-relatedness matrices for
-the United Kingdom. Skill-relatedness aims to provide a quantitative estimate of similarities between two industries
+the United Kingdom (UK). Skill-relatedness aims to provide a quantitative estimate of similarities between two industries
  in terms of their human capital requirements [@GermanyMatricesReport].
  
-The matrices are built over two periods of time (1997-2008 and 2009-2018), and two industrial classifications (SI2003 and 
- SIC2007).  For each period of time, a sample of employee jobs is taken from HM Revenue & Customs PAYE records, and
- their transitions between industries are recorded. These transitions are then used to build the skill-relatedness matrices.
+The matrices are built over two periods of time (1997-2008 and 2009-2018), using two standard industrial classifications codes.  For each period of time, a sample of employee jobs is taken from HM Revenue & Customs PAYE records, and
+ the employee transitions between industries are recorded. These transitions are then used to build the skill-relatedness matrices.
  
-The structure of this report is as follows. The dataset used to build the skill-relatedness matrices are described in 
-section \ref{data}. Then, the method to measure the transitions between industries is described in section \ref{method}.
-A statistical procedure is applied to convert the observed labor transitions to a metric that reflect the skill relatedness
-between the industries, this is described in section \ref{SR}. Finally, in section \ref{results} the resulting matrices are
+The structure of this report is as follows: the dataset used to build the skill-relatedness matrices is described in 
+Section \ref{data}. Then, the method to measure the transitions between industries is described in Section \ref{method}.
+A statistical procedure is applied to convert the observed labor transitions to a metric that reflects the skill relatedness
+between the industries, this is described in Section \ref{SR}. Finally, in Section \ref{results} the resulting matrices are
 described and a preliminary network analysis is shown.
 
 
 # Data
 \label{data}
 
-The skill-relatedness matrices are based on the Annual Survey of Hours and Earnings dataset (ASHE), which is 
+The skill-relatedness matrices are based on the Annual Survey of Hours and Earnings dataset (ASHE), which 
 is the most comprehensive source of earnings information in the United Kingdom. This dataset contains 
 anonymised demographic and employment information of 1% of the total employee jobs in the HM Revenue & Customs (HMRC) Pay
-As You Earn (PAYE) records, covering the years between 1997 to 2018[@ASHE]. 
+As You Earn (PAYE) records, covering the years between 1997 to 2018 [@ASHE]. 
 
 The sample is drawn in such a way that 
-many of the same individuals are included from year to year, allowing longitudinal analysis of the data which is fundamental
+many of the same individuals are included from year to year, allowing a longitudinal analysis of the data. This is fundamental
 for the construction of the skill-relatedness matrices.
 
 Some of the available information in the dataset is the workers’s wage, occupation, 
-employment status, industry classification (5-digit), location of their work establishment,etc. 
-From 1997 to 2008 the data uses the Standard Industrial Classification from 2003 (SIC2003) whilst in the perdiod from 2009 to 2018 
+employment status, industry classification (5-digit level), location of their work establishment, etc. 
+From 1997 to 2008 the data uses the Standard Industrial Classification from 2003 (SIC2003) whilst in the period from 2009 to 2018 
 the industrial classification has been updated to the 2007 version (SIC2007). As there is not a trivial concordance method 
-for converting these codes,in the process of building the matrices the samples has to be treated separately into two parts, 
-depending on the industrial classification avalaible at the year of collections.
+for converting these codes, in the process of building the matrices the samples had to be treated separately into two parts, 
+depending on the industrial classification available at the year of collection.
    
 ## Data selection
  \label{dataselection}
-As the size of the ASHE dataset is small (only 1%), the selection process of the workers that are going to be used in the 
+As the size of the ASHE dataset is small (only 1%), the selection cut of the workers that are going to be used in the 
 measurement of job trasitions is kept to the minimum. The selection criteria are the following:
 
 * Between 16 and 65 years of age;
@@ -56,11 +55,11 @@ measurement of job trasitions is kept to the minimum. The selection criteria are
 The job transitions are measured in a per-worker basis. 
 
 For each worker found in the ASHE dataset that passes the selection
-steps described in section \ref{dataselection}, a table of all the jobs recorded is extracted. This *job table* contains 
+steps described in Section \ref{dataselection}, a table of all the jobs recorded is extracted. This *job table* contains 
 information of each job found for that individual: year of employment, the industry classification of each job and the 
 post code of the work establishment associated to that job. 
 
- Table 1: An example of a *job table* for a particular individual with anonymised id=1.
+ Table 1. An example of a *job table* for a particular individual with anonymised id = 1.
         
 | Id | Year | Indsutrial Classification    | Work Post code       |
 |----|------|----------------|-------------|
@@ -72,7 +71,7 @@ post code of the work establishment associated to that job.
 | 1  | 2013 | D              | D2          |
 
 
-Using this table, two approaches can be followed to measure the actual "job transition". These methods are explained next.
+Using this table, two approaches can be followed to measure the actual job transition. These methods are explained next.
 
 ## Transitions as "flows" 
 
@@ -80,10 +79,9 @@ For a particular *job table* belonging to an individual, the table is sorted by 
 defined as any two consecutive job entries that comply with the following rules:
 
    * A valid **flow** can not be separated by more than 2 years.
-   * A **flow** can not happen within the same job in 2 different years (if the **flow** industry code and the work postcode,
-    it is assumed that it is the same job).
+   * A **flow** can not happen within the same job in 2 different years.
 
-For Table 1, the **flows** are the following:
+For Table 1, the resulting **flows** would be the following:
 
 | Id    | Flow | Year   Difference  |Work  Postcodes   |
 |-------|------|----------|---------|
@@ -95,8 +93,8 @@ For Table 1, the **flows** are the following:
 
 ## Transitions as "connections"
 
-Define a **connection** as all possible unique combinations found in the *job table* for that individual, that comply with the following rules
-(these are the same as the ones described in the **flow** procedure ):
+Define a **connection** as all possible unique combinations found in the *job table* for that individual worker, that comply with the following rules
+(note that these are the same as the ones described in the **flow** procedure):
 
    * A valid **connection** can not be separated by more than 2 years.
    * A "**connection**" can not happen within the same job in 2 different years (if the industry code and the work postcode,
@@ -114,44 +112,44 @@ In the example case of Table 1, the **connections** will be the following:
 | 1     | D-D        |2013-2013 | D1-D2   | 
         
 
- The **flow** approach does not handle properly what happens when someone has more than one job at the same time, given that 
- it does not  considered all combination between the jobs. The **connection** algorithm addresses this multiple part-time 
+ The **flow** approach does not handle properly the case of a worker having more than one job at the same time (eg. two part time jobs
+ then transitioning to one full time job), given that 
+ it does not considers all combination between the jobs. The **connection** algorithm addresses this multiple part-time 
  job issue. Furthermore, the **connection** approach creates an undirected network and increases the size of the sample.
 
-## Matrix of transition counts
+## Result: a matrix of transition counts
 \label{countmatrices}
 
-For each time period (1997-2008 and 2009-2018) and observed worker, the transitions are obtained with the process explained above.
+For each time period (1997-2008 and 2009-2018) and worker observed in the ASHE dataset, the transitions are obtained with the process explained above.
 Then, industry classifications are agreggated into a 4-digit code and all transitions tables are added into a single matrix
-(both **flows** and **conection** methods are applied separatedly).
+(both **flows** and **conections** methods are applied separately for the same samples).
 
-Finally, four matrices are created (2 time periods times 2 methods to measure the transitions) reflecting the total values
-of transitions between industries observed.  For statistical disclosure control reasons, only industries in which the
-total transitions summed across the entire period exceeds 10 observations are kept. 
+Finally, four matrices are created (2 time periods times 2 methods to measure the transitions).  For statistical disclosure control reasons, only pairs of 
+industries in which the total transitions summed across the entire period exceeds 10 observations are kept. 
 
 # Statistical method
 \label{SR} 
 
 
 
-The resulting matrices described in section \ref{countmatrices} countain the raw counts of trasition observed between pairs
+The resulting matrices described in Section \ref{countmatrices} countain the raw counts of transitions observed between pairs
 industries. In order to infer how related two industries are in terms of skill- relatedness, a statistical procedure is
 applied to the matrices. The mathematical details of this method are found in [@GermanyMatricesReport], in this section
-a high level general description of the method is presented.. 
+a high level general description of the method is presented.
 
-First, the raw count matrices is
-compared to a null model where the transitions occur at random. In particular, a ratio (**SR**) is calculated
-between the observed transitions and the ones expected in the null model.  Values of the **SR** ratio between 0 and 1 
+First, the raw transition count matrix is
+compared to a null model where the transitions occur at random. In particular, a ratio ( $SR$ ) is calculated
+between the observed transitions and the ones expected in the null model.  Values of the $SR$ ratio between 0 and 1 
 show that the observed transitions are below the expected values on random transitions, whereas values from 1 to infinity 
-indicate that observed transition are over expected in the null model. 
+indicate that observed transition are more than the ones expected in the null model. 
 
-One disadvantage of the (**SR**) metric is that it has a highly skewed distribution to high values, to deal with this 
-problem the **SR** is symmetrised around 0. 
+One disadvantage of the ( $SR$ ) metric is that it has a highly skewed distribution to high values, to deal with this 
+problem the the metric is symmetrised around 0, for a final weight variable $SR_{sym}$. 
 
 
 # Results
 
-Following the methodology described in sections \label{dataselection} and \label{SR}, the flows and connections from the ASHE
+Following the methodology described in Sections \label{dataselection} and \label{SR}, the flows and connections from the ASHE
 are obtained and used to build the skill-relatedness matrices. The total number of transitions observed in the ASHE dataset from 1997 to 2018 for the
 **flows** and **connection** algorithms are shown in Tables 3 and 4. The number of connections is
 larger than the number of flows by a factor of X, which is expected. An interesting observation shown in these tables is that the transitions 
@@ -189,10 +187,10 @@ these matrices are the following:
  (**connections**) algorithms. These results include transitions within the same industry.
 
 * For the period of 2009-2018 the resulting skill relatedness matrix contain 2306 (3014) directed transitions between 356 (369) industries with positive
-**SR** values in the **flows** (**connections**) algorithms.  These results do not include transitions within the same industry.
+$SR_{sym}$ weight values in the **flows** (**connections**) algorithms.  These results do not include transitions within the same industry.
 
 * For the period of 1997-2008 the resulting skill relatedness matrix contain 2292 (3978) directed transitions between 367 (429) industries with positive
-**SR** values in the **flows** (**connections**) algorithms.  These results do not include transitions within the same industry.
+$SR_{sym}$ weight values in the **flows** (**connections**) algorithms.  These results do not include transitions within the same industry.
 
 The top 5 transitions observed in the periods of 1997 to 2008  and 2009 to 2018 are shown in Tables 5 and 6. As shown in these tables,
 industries with higher number of transitions belong to the education and health sectors. This is expected ad these industries are the
@@ -202,9 +200,9 @@ ones with highest employment in the UK.
 Table 5. Top 5 transitions observed in the ASHE dataset in the period of 2009 to 2018 for both the **flows** and **connections**
 algorithms.
 
-|Stating Industry|	Final Industry |Counts |SR Weight|
-|----------------|-----------------|-------|---------|
-|   **Flows**    |                 |                 |
+|Stating Industry|	Final Industry |Counts |$SR_{sym}$ weight|
+|----------------|-----------------|-------|----------|
+|   **Flows**    |                 |                  |
 |----------------|-----------------|-------|---------|
 |Primary         |General secondary| 2790  |0.64     |
 |Primary	     |General public administration|2522|0.50|
@@ -225,7 +223,7 @@ algorithms.
 Table 6. Top 5 transitions observed in the ASHE dataset in the period of 1997 to 2008 for both the **flows** and **connections**
 algorithms.
 
-|Stating Industry             |	Final Industry          |Counts                |SR Weight    |
+|Stating Industry             |	Final Industry          |Counts                |$SR_{sym}$ weight    |
 |-------------------------|-------------------------|--------------------------|-------------|
 |   **Flows**                 |                         |                      |             |
 |-------------------------|-------------------------|--------------------------|-------------|
@@ -245,7 +243,7 @@ algorithms.
 |-------------------------|-------------------------|--------------------------|-------------|
 
 
-The five transitions with top **SR** average weights observed in both periods of interest are shown in Tables 5 and 6.
+The five transitions with top $SR_{sym}$  weights observed in both periods of interest are shown in Tables 5 and 6.
 As seen in these tables, the highest weighted transitions have a low count of entries, most of them around the 10 counts limit. 
 This is no surprise,
 as the ASHE dataset represents only 1% of the total employee jobs in the HMRC PAYE records, the resulting transition samples are low in the
@@ -256,10 +254,10 @@ It is important to have in mind that due to the typical low count of the samples
 present in the UK economy can be missing completely in the resulting matrices (eg. the average count in the pair of industries is 9, not passing statistical
 disclosure control from the UK data service).
 
-Table 7. Top 5 transitions with highest *SR* average weight observed in the ASHE dataset in the period of 2009 to 2018
+Table 7. Top 5 transitions with highest $SR_{sym}$  weight observed in the ASHE dataset in the period of 2009 to 2018
 for both the **flows** and **connections** algorithms.
 
-|Stating Industry|	Final Industry |Avg. Counts | Avg. SR Weight|
+|Stating Industry|	Final Industry |Avg. Counts | $SR_{sym}$ weight|
 |-------------------------|-------------------------|--------------------------|-------------|
 |   **Flows**             |                         |                          |             |
 |-------------------------|-------------------------|--------------------------|-------------|
@@ -280,10 +278,10 @@ for both the **flows** and **connections** algorithms.
 
 
 
-Table 8. Top 5 transitions with highest *SR* average weight observed in the ASHE dataset in the period of 2009 to 2018
+Table 8. Top 5 transitions with highest $SR_{sym}$  weight observed in the ASHE dataset in the period of 2009 to 2018
 for both the **flows** and **connections** algorithms.
 
-|Stating Industry|	Final Industry |Avg. Counts | Avg. SR Weight|
+|Stating Industry|	Final Industry |Avg. Counts |  $SR_{sym}$ weight|
 |-------------------------|-------------------------|--------------------------|------------|
 | **Flows**               |                         |                          |            |
 |-------------------------|-------------------------|--------------------------|------------|
@@ -312,7 +310,7 @@ for both the **flows** and **connections** algorithms.
 
 The adjacency matrix for the UK skill-relatedness network constructed with both the connection and flows algorithms is
 shown in Figures \ref{Adjacency1997_2008} and Figures \ref{Adjacency2009_2018}. The matrices are sorted by their 4-digit classification code, and only
-entries with **SR** values higher than zero are kept. As expected, the matrix is sparse and clusters of values are observed 
+entries with $SR_{sym}$ weight values higher than zero are kept. As expected, the matrix is sparse and clusters of values are observed 
 near the diagonals, showing that there is a high degree of skill-relatedness between industries in similar sectors.The largest 
 clusters are observed in the right inferior part of the figure, where the services and public administration 
 industries are found.
@@ -322,7 +320,7 @@ industries are found.
 \begin{figure}[!h]
 \caption{The adjacency matrix of the skill-relatedness network of the period from 1997 to 2008. The matrix built with the
  the **flows** algorithm is shown on the left, and **connections** algorithm on the right.The matrix only contains
-only positive **SR** weight values.}
+only positive $SR_{sym}$ weight values.}
 \label{Adjacency1997_2008}
 \end{figure}
 
@@ -331,7 +329,7 @@ only positive **SR** weight values.}
 \begin{figure}[!h]
 \caption{The adjacency matrix of the skill-relatedness network of the period from 2009 to 2018. The matrix built with the
  the **flows** algorithm is shown on the left, and **connections** algorithm on the right. The matrix only contains
-only positive **SR** weight values.}
+only positive $SR_{sym}$ weight  values.}
 \label{Adjacency2009_2018}
 \end{figure}
 
@@ -339,7 +337,7 @@ only positive **SR** weight values.}
 ### Comparison between "flows" and "connections"
 
 As seen in the previous tables, both connections and flows have compatible general results, the correlation between the
-SR weight between transition pairs observed in both samples for the same period of time is in the order of 0.98.
+$SR_{sym}$ weight values between transition pairs observed in both samples for the same period of time is in the order of 0.98.
 
 The connection algorithm provides around 350 more pairs of industries than the **flow** algorithm (undirected transitions), this is caused by the
  property of the **connection** algorithm of considering all possible transitions in the period of 2 years, then increasing the probability of
@@ -348,14 +346,14 @@ pairs of industries with more than 10 counts.
 Figure \ref{Missing} shows the distribution of weights for the transitions found on the **connection** matrix but non existing on the **flows** matrix,
 for the period form 2009 to 2018. In this sample 95% of the missing entries have less than 15 counts.
 
-Table 9 shows the top transitions in the **connection** matrix and missing in the **flow** matrix (ordered by **SR** weight).
+Table 9 shows the top transitions in the **connection** matrix and missing in the **flow** matrix (ordered by $SR_{sym}$ weight).
 
 [Missing]: figures/MissingWeightsFlowsConns.png
 ![Distribution of weights for the transitions found on the **connection** matrix and non existing on the **flows** matrix, \label{Missing}][Missing]
 
 Table 9. Top transitions observed in the **connection** matrix and missing in the **flow** matrix
 
-|Stating Industry|	Final Industry | Avg. SR Weight|
+|Stating Industry|	Final Industry |  $SR_{sym}$ weight|
 |-----------------------------------|-------------------------------|---------------------|---|
 |Raising of dairy cattle	| Raising of other cattle, buffaloes | 0.99|
 |Manufacture tobacco products |	Retail of tobacco products| 0.99|
@@ -373,7 +371,7 @@ In order to avoid over-loading this report with information, all results corresp
 The skill-relatedness matrices are used  to construct an undirected weighted network. This network can now be used 
 to identify industry clusters.
 
-In this section the skill-relatedness networks built using the **flows** algorithm for the periods of 1997-2008 and 
+In this Section the skill-relatedness networks built using the **flows** algorithm for the periods of 1997-2008 and 
  2009-2018 are discussed. The equivalent networks built with the **connection** algorithm are presented Annex \ref{Annex}.
 
 ### Network descriptors 
