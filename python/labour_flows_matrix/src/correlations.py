@@ -6,7 +6,19 @@ import numpy as np
 
 
 def correlation_industry_pairs(df_industry1, df_industry2, label = 'weights'):
+    '''Given two edge list matrices, estimate correlation between common pairs of industries
 
+
+     Args:
+        df_industry1 (dataframe): A input edge list data
+        df_industry2 (dataframe): Another input edge list data
+
+        label (str): The name of the weight variable to use (Counts or weight)
+
+    Returns:
+        A figure.
+
+    '''
 
     df_industry1['id'] = df_industry1.groupby(['StartIndst', 'FinalIndst']).ngroup()
 
@@ -24,6 +36,20 @@ def correlation_industry_pairs(df_industry1, df_industry2, label = 'weights'):
 
 
 def correlation_network_degree(Gm_simple_1,Gm_simple_2,label):
+
+    '''Given two networks, estimate correlation node degree
+
+
+        Args:
+           Gm_simple_1 (dataframe): A input network
+           Gm_simple_2 (dataframe): Another input network
+
+           label (str): The name of the weight variable to use (Counts or weight)
+
+       Returns:
+           A figure.
+
+       '''
 
     df_1 = pd.DataFrame([Gm_simple_1.vs['name'], Gm_simple_1.degree(),Gm_simple_1.strength(weights=Gm_simple_1.es['weight'])])
     df_1 = df_1.transpose()
@@ -47,6 +73,21 @@ def correlation_network_degree(Gm_simple_1,Gm_simple_2,label):
     plt.show()
 
 def correlation_adjacency_matrix(reduced_matrix1, reduced_matrix2,label):
+
+    '''Given two edge list matrices, estimate correlation between adjacency matrices
+
+
+     Args:
+        df_industry1 (dataframe): A input edge list data
+        df_industry2 (dataframe): Another input edge list data
+
+        label (str): The name of the weight variable to use (Counts or weight)
+
+    Returns:
+        A figure.
+        Two dataframes of with the correlations
+
+    '''
 
     selected_reduced_matrix1 = reduced_matrix1[['StartIndst', 'FinalIndst', 'MainIndustry_StartIndst', 'weight','Counts']]
     reduced_matrix_sorted1 = selected_reduced_matrix1.sort_values(by=['StartIndst', 'FinalIndst','Counts'], ascending=True)

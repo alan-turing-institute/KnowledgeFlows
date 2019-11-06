@@ -7,6 +7,17 @@ import igraph
 
 def draw_network_by_classification(network,classification,output):
 
+    '''
+
+    Draw a network, coling nodes by their classification
+
+    :param network: input igraph network
+    :param classification: a list with the nodes classification
+    :param output: network edges (??)
+    :return: a figure
+
+    '''
+
 
     # get classes for drawing
     unique_classes = list(np.unique(network.vs[classification]))
@@ -43,6 +54,12 @@ def draw_network_by_classification(network,classification,output):
     return  0
 
 def compare_degrees_strength(Gm_simple):
+    '''
+    Given a network, plot the distribution of node degrees and weighted node degree
+
+    :param Gm_simple: input network
+    :return: a figure
+    '''
     # the histogram of the data
     plt.hist(Gm_simple.degree(),bins=30,label='degree')
     plt.hist(Gm_simple.strength(weights=Gm_simple.es['weight']),bins=30,label='weighted degree')

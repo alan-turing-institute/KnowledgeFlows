@@ -7,6 +7,24 @@ import pandas as pd
 
 def draw_adjacency_matrix(reduced_matrix, columns_to_be_sorted, label,axis_label='MainActivity',sic07=True):
 
+
+    '''Given an edge list, draw a adjacency matrix
+
+
+        Args:
+           reduced_matrix (dataframe): An edge list
+           columns_to_be_sorted (list str): The ordered column list that will sort the adjacency matrix
+
+           label (str): The name of the weight variable to use (Counts or weight)
+
+           axis_label (str): The industry classification agregation level
+           sic07 (bool): Is a sic07 classification
+
+       Returns:
+           A figure.
+    '''
+
+
     if sic07 == True:
         label_matrix = pd.read_csv('../data/sic-industry-structure.csv')
 
@@ -78,6 +96,21 @@ def draw_adjacency_matrix(reduced_matrix, columns_to_be_sorted, label,axis_label
 
 
 def draw_adjacency_matrix_nolabel(reduced_matrix, columns_to_be_sorted, label,min_value=0):
+
+    '''Given an edge list, draw a adjacency matrix
+
+
+        Args:
+           reduced_matrix (dataframe): An edge list
+           columns_to_be_sorted (list str): The ordered column list that will sort the adjacency matrix
+
+           label (str): The name of the weight variable to use (Counts or weight)
+
+           min_value z(int): Min value to be shown in the adjacency matrix
+
+       Returns:
+           A figure.
+    '''
 
 
     selected_reduced_matrix = reduced_matrix[['StartIndst', 'FinalIndst', 'MainIndustry_StartIndst', 'weight','MainActivity_StartIndst','SubActivity_StartIndst']]

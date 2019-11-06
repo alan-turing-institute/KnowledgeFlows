@@ -5,6 +5,18 @@ import matplotlib.pyplot as plt
 
 
 def draw_and_print_communities(network, net_community, output, activity = 'subactivity'):
+
+    '''
+
+    Visualise a network and its comunities
+
+    :param network: input network
+    :param net_community: A community list
+    :param output: input network edges (? not sure)
+    :param activity:  The aggregation level on the classification
+    :return: A figure and a list of communities
+
+    '''
     layout = network.layout("fr")
     pal = igraph.drawing.colors.ClusterColoringPalette(len(net_community))
     network.vs['color'] = pal.get_many(net_community.membership)
@@ -30,6 +42,19 @@ def draw_and_print_communities(network, net_community, output, activity = 'subac
 
 
 def compare_comunity_intersection(community_set1, community_set2, titley='', titlex=''):
+    '''
+    Given the two community classification of a network check communalities
+
+    :param community_set1: list of communities
+
+    :param community_set2: list of communities
+
+    :param titley: Title for the x axis
+
+    :param titlex: Title for the y axis
+
+    :return: A figure
+    '''
     ratio_sets = []
 
     for community in community_set1:

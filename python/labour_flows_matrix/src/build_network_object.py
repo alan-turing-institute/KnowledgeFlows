@@ -3,6 +3,21 @@ import pandas as pd
 
 
 def build_network_object(matrix_df, label):
+    '''Build a network based on edged list
+
+
+     Args:
+        matrix_df (dataframe): The input edge list data (with columns 'StartIndst', 'FinalIndst', 'SubActivity_StartIndst', 'MainActivity_StartIndst', 'MainIndustry_StartIndst',
+         'SubActivity_FinalIndst', 'MainActivity_FinalIndst', 'MainIndustry_FinalIndst', 'Counts', weight' )
+        label (str): The name of the weight variable to use (Counts or weight)
+
+    Returns:
+        An igraph network.
+
+    '''
+
+
+
     # select only connections that are relevant
     matrix_df_connections = matrix_df.loc[matrix_df[label] != 1]
     matrix_df_connections_no_noise = matrix_df_connections.loc[matrix_df_connections[label] > 0]

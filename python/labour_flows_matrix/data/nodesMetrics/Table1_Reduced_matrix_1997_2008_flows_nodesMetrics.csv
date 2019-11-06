@@ -1,0 +1,534 @@
+Id,Label,timeset,subactivity,mainindustry,componentnumber,modularity_class,mainactivity,clustering,triangles,Degree,Weighted Degree,Eccentricity,closnesscentrality,harmonicclosnesscentrality,betweenesscentrality,eigencentrality
+7415,,,"Management activities of other non-financial holding companies,production holding companies, construction holding companies, wholesale holding companies, motor trades holding companies, retail holding companies",Buisness activities,0,5,Other Business Activities,0.036565,43,49,17.987916,5,0.431902,0.501136,12096.66408,0.782153
+7450,,,Labour recruitment and provision of personnel,Buisness activities,0,0,Other Business Activities,0.046122,66,54,10.225564,5,0.430318,0.501515,11146.36915,1
+4521,,,Construction of commercial buildings,Construction,0,4,Construction,0.086207,35,29,13.574289,5,0.37931,0.431676,4883.101412,0.436219
+7487,,,Other business activities not elsewhere classified,Buisness activities,0,3,Other Business Activities,0.168091,59,27,12.781887,5,0.394619,0.447964,3909.716203,0.73418
+7484,,,,,0,3,,0.108374,44,29,10.575407,5,0.400455,0.452462,3724.816332,0.690065
+5540,,,"Licensed clubs,Independent public houses and bars,Tenanted public houses and bars,Managed public houses and bars",Hotels and Restaurants,0,1,Hotels and Restaurants,0.118227,48,29,9.867187,5,0.353769,0.410843,3215.390186,0.490783
+5211,,,"Retail sale by confectioners, tobacconists and newsagents (CTNs), non-specialised stores holding an alcohol licence, with food, beverages or tobacco predominating",Retail,0,1,"Retail Trade, Not Motors; Repairs",0.05848,10,19,4.994124,6,0.337488,0.383428,3106.619697,0.244492
+5248,,,"Retail sale of photographic, optical and precision equipment, office supplies and equipment (incl. computers),Retail sale of sports goods, games and toys, stamps and coins, Retail sale of mobile telephones",Retail,0,9,"Retail Trade, Not Motors; Repairs",0.108374,44,29,10.764268,6,0.358452,0.415294,2942.465496,0.522376
+6024,,,"Freight transport by road n.e.c.,Furniture removal activities",Transport,0,0,Transport,0.07619,16,21,8.82349,5,0.362513,0.409186,2884.510128,0.315473
+3430,,,Manufacture of parts and accessories for motor vehicles and their engines,Manufacture of Transport Equipment,0,7,Manufacture of Transport Equipment,0.105263,20,20,12.35657,5,0.374867,0.420597,2583.546427,0.333068
+7420,,,"Architectural,Urban planning and landscape architectural activities, Engineering design activities for industrial process and production, Engineering related scientific and technical consulting activities,Engineering consultative and design activities",Buisness activities,0,4,Other Business Activities,0.15,45,25,9.467135,5,0.372487,0.423248,2529.924992,0.556024
+2222,,,Other printing,Manufacture Paper; Publishing; Printing,0,9,Manufacture Paper; Publishing; Printing,0.10989,10,14,9.838791,6,0.315978,0.352509,2359.583365,0.180051
+5147,,,"""Wholesale of photographic goods",Retail,0,9,Wholesale of other household goods n.e.c.,0.138528,32,22,12.044951,5,0.361396,0.409754,2048.426315,0.457253
+5165,,,,,0,7,,0.103896,24,22,11.960225,5,0.358087,0.406297,1858.48071,0.366828
+2852,,,General mechanical engineering,Metals,0,7,"Manufacture Fabricated Metal, Not Machines",0.161765,22,17,11.261939,5,0.332389,0.375994,1823.587717,0.23578
+5242,,,"Retail sale of adults' fur and leather clothing, children's and infants' clothing, other women's clothing, other men's clothing",Retail,0,5,"Retail Trade, Not Motors; Repairs",0.197628,50,23,8.673566,5,0.365524,0.415294,1806.0668,0.475371
+130,,,Growing of crops combined with farming of animals (mixed farming),"Agriculture, Hunting and Forestry",0,10,"Agriculture, Hunting and Forestry",0.027778,1,9,8.116903,6,0.282731,0.312216,1692.387074,0.04408
+1589,,,Manufacture of soups Manufacture of other food products n.e.c.,Manufacture of Food,0,2,Manufacture of Food; Beverages & Tobacco,0.153846,14,14,11.941884,5,0.34886,0.389299,1691.085981,0.225982
+9133,,,Activities of other membership organizations n.e.c.,Services,0,3,Membership Organisations,0.133333,16,16,5.654181,5,0.338462,0.380729,1669.231914,0.259272
+8010,,,Primary education,Gouverment,0,3,Education,0.139706,19,17,3.546674,6,0.292602,0.336222,1651.844158,0.137054
+6312,,,"Storage and warehousing of frozen and refrigerated goods, liquids or gases, Storage and warehousing of grain, Storage and warehousing n.e.c.",Transport,0,0,Transport,0.116667,14,16,8.930528,5,0.3717,0.413352,1621.818316,0.337333
+3320,,,"Manufacture of electronic instruments and appliances for measuring, checking, testing, navigating and other purposes, except industrial process control equipment","Manufacture of Machinery, Electrical",0,7,Manufacture Medical & Precision Instruments,0.142857,30,21,13.359271,5,0.354481,0.403598,1543.768601,0.424323
+7414,,,"Business and management consultancy activities, n.e.c.",Buisness activities,0,3,Other Business Activities,0.215385,70,26,11.228167,5,0.380541,0.431155,1536.556744,0.735387
+7310,,,Research and experimental development on natural sciences and engineering,Research and Development,0,8,Research and Development,0.114286,12,15,8.541378,5,0.354839,0.393608,1487.355207,0.30603
+7222,,,Other software consultancy and supply,Computer and Related Activities,0,9,Computer and Related Activities,0.205534,52,23,13.824523,6,0.365524,0.414205,1485.401768,0.575996
+1513,,,"Bacon and ham production,Other meat and poultry meat processing",Manufacture of Food,0,2,Manufacture of Food; Beverages & Tobacco,0.131868,12,14,11.53757,6,0.32264,0.362737,1474.696166,0.165373
+7470,,,"Traditional cleaning services,Window cleaning services,Specialised cleaning services,Furnace and chimney cleaning services,Cleaning activities not elsewhere classified,Disinfecting and exterminating services",Buisness activities,0,1,Other Business Activities,0.142857,30,21,7.449061,5,0.347826,0.392519,1458.146985,0.353596
+1421,,,Operation of gravel and sand pits,Minning,0,5,Mining and Quarrying,0.047619,1,7,6.360415,5,0.330206,0.358428,1432.398858,0.120907
+4531,,,Installation of electrical wiring and fittings,Construction,0,7,Construction,0.157895,30,20,9.499051,5,0.358452,0.404309,1419.024977,0.442807
+5153,,,"Wholesale of wood, construction materials and sanitary equipment",Retail,0,4,Wholesale of other household goods n.e.c.,0.153846,14,14,9.942916,6,0.326228,0.363684,1368.690072,0.165382
+5244,,,"Retail sale of furniture, lighting equipment and household articles n.e.c.",Retail,0,4,"Retail Trade, Not Motors; Repairs",0.166667,20,16,9.617179,5,0.338787,0.37893,1337.445544,0.279026
+5030,,,Sale of motor vehicle parts and accessories,Construction,0,6,Construction,0.155556,7,10,5.962411,6,0.326228,0.362879,1314.529149,0.166578
+2524,,,Manufacture of other plastic products,Manufacture Chemicals/Plastics,0,7,Manufacture of Rubber & Plastic Products,0.095238,10,15,11.933708,6,0.317403,0.359422,1272.680626,0.17973
+2811,,,Manufacture of metal structures and parts of structures,Metals,0,4,"Manufacture Fabricated Metal, Not Machines",0.163636,9,11,8.038483,5,0.323827,0.360417,1250.138437,0.17625
+6713,,,Activities auxiliary to financial intermediation n.e.c.,Finance,0,3,Finance,0.330882,45,17,9.055244,5,0.361396,0.40464,1204.352906,0.456909
+7032,,,Management of real estate on a fee or contract basis,Buisness activities,0,3,"Real Estate, Renting & Business",0.190476,20,15,8.672244,5,0.340755,0.380871,1123.358271,0.335206
+9262,,,Other sporting activities not elsewhere classified,Services,0,1,"Recreational, Cultural & Sporting",0.285714,30,15,6.530747,5,0.342412,0.382812,1105.512708,0.333946
+6330,,,"Activities of travel agencies, organisers,tour guides,Other tourist assistance activities n.e.c.",Transport,0,0,Transport,0.111111,5,10,4.127335,5,0.34817,0.38215,1057.562063,0.221005
+2940,,,,,0,7,,0.2,3,6,5.656283,6,0.254335,0.279025,1050,0.036319
+2442,,,Manufacture of medicaments,Manufacture Chemicals/Plastics,0,8,"Manufacture Chemicals, Prods & Man-Made",0.109091,6,11,8.988049,6,0.322344,0.355824,1009.164949,0.147028
+2416,,,Manufacture of plastics in primary forms,Manufacture Chemicals/Plastics,0,8,"Manufacture Chemicals, Prods & Man-Made",0.177778,8,10,8.045902,5,0.346457,0.382386,1003.420653,0.205559
+9305,,,Other service activities n.e.c.,Services,0,3,Other Service Activities,0.30303,20,12,4.942446,5,0.372093,0.40928,1002.708488,0.417159
+5020,,,Maintenance and repair of motor vehicles,Construction,0,6,Construction,0.136364,9,12,6.469541,5,0.33145,0.366998,909.572774,0.174881
+7011,,,Development and selling of real estate,Buisness activities,0,3,"Real Estate, Renting & Business",0.266667,12,10,4.295292,5,0.366667,0.400994,904.105295,0.292745
+2523,,,"Manufacture of plastic floor covering,Manufacture of other builders' ware of plastic",Manufacture Chemicals/Plastics,0,4,Manufacture of Rubber & Plastic Products,0.155556,7,10,8.053363,6,0.322344,0.358191,893.865053,0.136176
+8042,,,Other adult and other education n.e.c.,Gouverment,0,3,Education,0.311111,14,10,2.632569,6,0.338787,0.37571,882.383898,0.251746
+8532,,,"Charitable social work activities without accommodation,Non-charitable social work activities without accommodation",Gouverment,0,3,Health and Social Work,0.164835,15,14,4.886029,6,0.314286,0.354451,870.66937,0.202428
+4100,,,"Collection, purification and distribution of water","Electricity, Gas and Water Supply",0,0,"Electricity, Gas and Water Supply",0.095238,2,7,4.439328,5,0.333966,0.362453,861.118153,0.115083
+5139,,,"Non-specialised wholesale of food, beverages and tobacco",Retail,0,2,"Wholesale, Retail; Certain Repair (cont.)",0.095238,2,7,4.486817,6,0.303972,0.335275,856.88383,0.098185
+7440,,,"Planning, creation and placement of advertising activities, Advertising activities not elsewhere classified,Sale or leasing activities of advertising space or time",Buisness activities,0,3,Other Business Activities,0.291667,35,16,7.009648,5,0.374468,0.416146,840.677958,0.510574
+7412,,,"Accounting and auditing activities,Book-keeping activities,Tax consultancy",Buisness activities,0,3,Other Business Activities,0.393939,26,12,4.301191,6,0.325023,0.361648,827.454544,0.327199
+4010,,,,,0,0,,0.083333,3,9,5.272703,5,0.334919,0.367282,819.655013,0.151814
+2212,,,Publishing of newspapers,Manufacture Paper; Publishing; Printing,0,3,Manufacture Paper; Publishing; Printing,0.285714,8,8,4.671342,5,0.343415,0.376515,804.592648,0.217924
+3220,,,Manufacture of telegraph and telephone apparatus and equipment,"Manufacture of Machinery, Electrical",0,7,"Manufacture of Radio, TV & Equipment",0.179487,14,13,9.277176,5,0.324125,0.362831,789.712017,0.25649
+6512,,,"Banks,Building societies",Finance,0,3,Finance,0.285714,8,8,4.28463,6,0.290909,0.316193,771.737544,0.124893
+3120,,,Manufacture of electricity distribution and control apparatus,"Manufacture of Machinery, Electrical",0,7,Manufacture of Electrical Machinery etc.,0.197802,18,14,10.053315,5,0.350249,0.389725,770.634069,0.286142
+8514,,,Other human health activities,Gouverment,0,8,Health and Social Work,0.177778,8,10,3.640178,6,0.324424,0.358996,759.264893,0.157545
+6522,,,"Credit granting by non-deposit taking finance houses and other specialist consumer credit grantors,Activities of mortgage finance companies,Other credit granting not elsewhere classified",Finance,0,3,Finance,0.320513,25,13,6.532945,5,0.32928,0.363873,757.982609,0.24734
+4020,,,,,0,7,,0,0,3,1.861353,5,0.313725,0.338021,729.559412,0.086826
+4533,,,Plumbing,Construction,0,7,Construction,0.2,9,10,5.830506,5,0.335238,0.368182,727.247505,0.17135
+6523,,,"""Activities of bank holding companies Financial intermediation not elsewhere classified""",Finance,0,3,Finance,0.545455,30,11,6.105167,5,0.355915,0.393134,707.71745,0.362757
+2931,,,Manufacture of agricultural tractors,"Manufacture of Machinery, Electrical",0,4,Manufacture of Machinery & Equipment,0,0,2,1.671425,6,0.276078,0.295312,700,0.034445
+7511,,,General (overall) public service activities,Gouverment,0,3,Public Administration & Defence,0.121212,8,12,6.089016,6,0.268908,0.306581,657.009052,0.076225
+6340,,,Activities of other transport agencies,Transport,0,0,Transport,0.138889,5,9,6.909612,6,0.329588,0.362453,634.710822,0.153801
+2430,,,"Manufacture of paints, varnishes and similar coatings, Manufacture of mastics and sealants,Manufacture of printing ink",Manufacture Chemicals/Plastics,0,8,"Manufacture Chemicals, Prods & Man-Made",0.1,1,5,4.093182,6,0.309859,0.337405,613.127342,0.077306
+5510,,,Hotels and motels with restaurant (licensed and unlicensed) and without restaurant,Hotels and Restaurants,0,1,Hotels and Restaurants,0.409091,27,12,5.358868,6,0.361026,0.399669,612.922267,0.379542
+9000,,,,,0,0,,0.095238,2,7,4.902977,5,0.31178,0.340578,609.293241,0.095343
+7512,,,"Regulation of the activities of agencies that provide health care, education, cultural services and other social services, excluding social security",Gouverment,0,3,Public Administration & Defence,0.133333,6,10,3.133148,5,0.306087,0.339678,585.165417,0.111711
+2521,,,"Manufacture of plastic plates, sheets, tubes and profiles",Manufacture Chemicals/Plastics,0,7,Manufacture of Rubber & Plastic Products,0.321429,9,8,6.296557,6,0.34308,0.377509,582.567088,0.187626
+4525,,,Other construction work involving special trades,Construction,0,4,Construction,0.25,9,9,5.448045,5,0.330516,0.362784,580.920684,0.190507
+2414,,,Manufacture of other organic basic chemicals,Manufacture Chemicals/Plastics,0,8,"Manufacture Chemicals, Prods & Man-Made",0.142857,3,7,6.232937,6,0.326228,0.355256,577.912331,0.115848
+7460,,,Security and related activities,Buisness activities,0,1,Other Business Activities,0.25,9,9,2.470622,5,0.352,0.386364,573.405389,0.278207
+5142,,,"Wholesale of adults' fur and leather clothing,Wholesale of children's and infants' clothing,Wholesale of footwear, Wholesale of clothing n.e.c.",Retail,0,5,"Wholesale, Retail; Certain Repair (cont.)",0.277778,10,9,6.468307,6,0.332703,0.366051,555.193176,0.187083
+9261,,,"Operation of ice rinks and roller skating rinks,Operation of other sports arenas and stadiums not elsewhere classified",Services,0,1,"Recreational, Cultural & Sporting",0.416667,15,9,4.943669,6,0.298052,0.334612,534.151109,0.161042
+5245,,,Retail sale of electrical household appliances and radio and television goods,Retail,0,9,"Retail Trade, Not Motors; Repairs",0.212121,14,12,4.643775,6,0.337488,0.375994,523.120659,0.279208
+5170,,,,,0,7,,0.194444,7,9,5.461049,6,0.335238,0.370597,520.158764,0.189592
+5530,,,"Licensed restaurants,Unlicensed restaurants and cafes,Take-away food shops,Take-away mobile food stands",Hotels and Restaurants,0,1,Hotels and Restaurants,0.294118,40,17,5.715143,6,0.330206,0.373627,509.5612,0.343013
+9272,,,Other recreational activities not elsewhere classified,Services,0,1,"Recreational, Cultural & Sporting",0.285714,6,7,4.083883,6,0.298558,0.332244,506.415782,0.112171
+5190,,,Other wholesale,Retail,0,2,Wholesale of other household goods n.e.c.,0.266667,4,6,3.9509,6,0.337488,0.368182,498.314605,0.161187
+1822,,,Manufacture of other men's outerwear Manufacture of other women's outerwear,Manufacture of Textiles and Leather,0,5,Manufacture of Textiles & Textile Products,0.238095,5,7,5.427136,6,0.297046,0.325663,497.637227,0.104397
+5164,,,,,0,9,,0.304762,32,15,10.804788,6,0.333649,0.374006,494.916124,0.343608
+7260,,,Other computer related activities,Computer and Related Activities,0,9,Computer and Related Activities,0.346154,27,13,7.980232,5,0.368586,0.405587,492.49228,0.448556
+5010,,,Sale of new and used motor vehicles,Construction,0,6,Construction,0.285714,6,7,4.074467,5,0.338462,0.365294,481.166816,0.13983
+8022,,,Technical and vocational secondary education,Gouverment,0,3,Education,0.466667,7,6,2.203664,6,0.316547,0.347822,480.25544,0.130064
+1581,,,Manufacture of bread; manufacture of fresh pastry goods and cakes,Manufacture of Food,0,2,Manufacture of Food; Beverages & Tobacco,0.25,9,9,4.693748,5,0.35736,0.391004,478.182394,0.241976
+5233,,,Retail sale of cosmetic and toilet articles,Retail,0,5,"Retail Trade, Not Motors; Repairs",0.305556,11,9,5.722517,6,0.338462,0.37429,475.234218,0.230036
+7031,,,Real estate agencies,Buisness activities,0,3,"Real Estate, Renting & Business",0.290909,16,11,4.370187,6,0.331762,0.366998,474.578113,0.278943
+7230,,,Data processing,Computer and Related Activities,0,9,Computer and Related Activities,0.30303,20,12,7.123954,5,0.326531,0.362405,468.361243,0.29697
+5511,,,,,0,1,,0.355556,16,10,4.562044,6,0.304762,0.339157,467.082791,0.188406
+5212,,,Other retail sale in non-specialised stores,Retail,0,5,"Retail Trade, Not Motors; Repairs",0.222222,38,19,6.868275,6,0.325323,0.371544,456.882873,0.341999
+8030,,,Sub-degree level higher education,Gouverment,0,3,Education,0.047619,1,7,3.176259,6,0.282958,0.309375,454.828416,0.068985
+5050,,,Retail sale of automotive fuel,Construction,0,5,Construction,0.166667,6,9,4.808153,5,0.347826,0.381487,451.074821,0.220265
+2956,,,Manufacture of other special purpose machinery n.e.c.,"Manufacture of Machinery, Electrical",0,7,Manufacture of Machinery & Equipment,0.214286,6,8,7.022132,6,0.288288,0.323437,448.495558,0.110511
+3614,,,Manufacture of other furniture,Manufacture Other,0,4,Manufacturing nec,0.266667,4,6,4.601218,6,0.325323,0.355824,446.92052,0.143432
+7483,,,,,0,3,,0,0,4,3.053753,5,0.320875,0.347254,431.45823,0.126359
+2213,,,Publishing of journals and periodicals,Manufacture Paper; Publishing; Printing,0,3,Manufacture Paper; Publishing; Printing,0.422222,19,10,5.704545,5,0.353414,0.388778,421.961497,0.31426
+5261,,,Retail sale via mail order houses,Retail,0,0,"Retail Trade, Not Motors; Repairs",0.272727,15,11,4.382911,5,0.376068,0.410085,420.063813,0.396727
+5552,,,Catering,Hotels and Restaurants,0,1,Hotels and Restaurants,0.381818,21,11,4.040384,6,0.321461,0.358428,418.81715,0.241794
+3410,,,Manufacture of motor vehicles,Manufacture of Transport Equipment,0,7,Manufacture of Transport Equipment,0.238095,5,7,4.000042,5,0.338462,0.368371,417.112607,0.14574
+7132,,,Renting of construction and civil engineering machinery and equipment,Buisness activities,0,4,Renting Equipment Without Operator,0.285714,8,8,4.522073,5,0.362887,0.395928,416.511313,0.242291
+6712,,,Security broking and fund management,Finance,0,3,Finance,0.5,33,12,5.456305,5,0.33652,0.374148,415.058511,0.323491
+141,,,Agricultural service activities; landscape gardening,"Agriculture, Hunting and Forestry",0,10,"Agriculture, Hunting and Forestry",0,0,3,2.013976,6,0.298052,0.322917,413.106358,0.064698
+4523,,,"Construction of motorways, roads, airfields and sport facilities",Construction,0,4,Construction,0.333333,12,9,4.516196,5,0.358452,0.392235,404.227199,0.262217
+2522,,,Manufacture of plastic packing goods,Manufacture Chemicals/Plastics,0,9,Manufacture of Rubber & Plastic Products,0.166667,1,4,3.783864,7,0.268908,0.290415,399.413823,0.033352
+3230,,,"Manufacture of television and radio receivers, sound or video recording or reproducing apparatus and associated goods","Manufacture of Machinery, Electrical",0,7,"Manufacture of Radio, TV & Equipment",0.355556,16,10,7.370826,5,0.352705,0.387879,399.338954,0.276182
+5187,,,"Wholesale of other machinery for use in industry, trade and navigation",Retail,0,7,Wholesale of other household goods n.e.c.,0.190476,4,7,5.724067,6,0.326228,0.358049,388.754744,0.146335
+9220,,,Radio activities,Services,0,3,"Recreational, Cultural & Sporting",0.333333,5,6,3.294949,6,0.301887,0.329167,384.793458,0.135848
+5146,,,Wholesale of pharmaceutical goods,Retail,0,7,"Wholesale, Retail; Certain Repair (cont.)",0.25,9,9,5.565294,6,0.337488,0.372633,384.589391,0.1993
+6323,,,Other supporting air transport activities,Transport,0,0,Transport,0.066667,1,6,3.665556,5,0.328665,0.358002,381.301455,0.149434
+7486,,,Call centre activities,Buisness activities,0,0,Other Business Activities,0.218182,12,11,8.031016,5,0.352352,0.388352,376.375855,0.331817
+7220,,,,,0,9,,0.285714,26,14,7.448739,5,0.332703,0.372112,375.402276,0.364707
+2710,,,Manufacture of basic iron and steel and of ferro-alloys,Metals,0,4,Basic Metals & Fabricated Products,0,0,3,2.637164,6,0.245467,0.263116,373.826779,0.017355
+5523,,,"Holiday centres and holiday villages, Other self-catering holiday accommodation,Other tourist or short-stay accommodation",Hotels and Restaurants,0,1,Hotels and Restaurants,0,0,3,1.668245,6,0.280926,0.305019,370.64228,0.057096
+2952,,,Manufacture of machinery for mining,"Manufacture of Machinery, Electrical",0,7,Manufacture of Machinery & Equipment,0,0,5,4.589121,6,0.274357,0.29678,370.637934,0.040215
+5247,,,"Retail sale of books, newspapers and stationery",Retail,0,9,"Retail Trade, Not Motors; Repairs",0.311111,14,10,4.255108,6,0.323827,0.360843,367.543429,0.256983
+9112,,,Activities of professional organizations,Services,0,3,Membership Organisations,0,0,3,2.126888,7,0.251788,0.271618,359.499899,0.030282
+7525,,,Fire service activities,Gouverment,0,3,Public Administration & Defence,0,0,3,0.700881,7,0.232804,0.253653,359.231846,0.016901
+1582,,,Manufacture of rusks and biscuits; manufacture of preserved pastry goods and cakes,Manufacture of Food,0,2,Manufacture of Food; Beverages & Tobacco,0.380952,8,7,5.666269,6,0.323529,0.353125,359.074103,0.130154
+3001,,,Manufacture of office machinery,"Manufacture of Machinery, Electrical",0,7,Manufacture Electrical & Optical Equipment,0,0,3,2.913673,6,0.25107,0.270313,357.020863,0.026485
+6601,,,Life insurance,Finance,0,3,Finance,0.642857,18,8,4.351167,6,0.288288,0.313589,355.816166,0.151353
+1584,,,Manufacture of cocoa and  chocolate confectionery Manufacture of sugar confectionery,Manufacture of Food,2,0,Manufacture of Food; Beverages & Tobacco,0,0,2,0.542916,5,0.366736,0.391925,354,0.025346
+5134,,,"Wholesale of wine, beer, spirits and other alcoholic beverages",Retail,0,1,"Wholesale, Retail; Certain Repair (cont.)",0.333333,1,3,2.206729,6,0.2621,0.284612,351,0.041228
+2612,,,Shaping and processing of flat glass,Manufacture Other,0,4,Manufacture Other Non-Metal Mineral Products,0.333333,1,3,2.840179,7,0.262883,0.282698,351,0.026305
+5182,,,"Wholesale of mining, construction and civil engineering machinery",Retail,0,6,Wholesale of other household goods n.e.c.,0,0,2,1.965477,7,0.246499,0.262744,351,0.014348
+4021,,,Manufacture of gas,"Electricity, Gas and Water Supply",0,7,"Electricity, Gas and Water Supply",0,0,2,1.983214,6,0.239293,0.251752,351,0.007822
+5166,,,,,0,4,,0,0,2,1.988656,7,0.216749,0.227868,351,0.004321
+2030,,,Manufacture of builders' carpentry and joinery,Manufacture of Wood & Wood Product,0,4,Manufacture of Wood & Wood Product,0.285714,8,8,6.363195,5,0.312611,0.342708,347.184731,0.114085
+7110,,,Renting of automobiles,Buisness activities,0,6,Renting Equipment Without Operator,0.133333,2,6,3.309016,5,0.353059,0.383759,326.389314,0.195144
+112,,,"Growing of vegetables, horticultural specialities and nursery products","Agriculture, Hunting and Forestry",0,10,"Agriculture, Hunting and Forestry",0.333333,1,3,2.515349,6,0.272657,0.296591,319.860102,0.045152
+3530,,,Manufacture of aircraft and spacecraft,Manufacture of Transport Equipment,0,3,Manufacture of Other Transport Equipment,0.138889,5,9,5.980983,6,0.299574,0.333286,319.36655,0.127347
+7430,,,Technical testing and analysis,Buisness activities,0,8,Other Business Activities,0.214286,6,8,5.043605,5,0.353059,0.38518,318.184987,0.252108
+5151,,,Wholesale of petroleum and petroleum products other fuels and related products,Retail,0,5,Wholesale of other household goods n.e.c.,0.133333,2,6,4.860348,6,0.322049,0.349811,313.752818,0.120833
+2121,,,Manufacture of other containers,Manufacture Paper; Publishing; Printing,0,9,Manufacture Paper; Publishing; Printing,0.3,3,5,3.468151,6,0.316832,0.343987,294.199107,0.090913
+7134,,,Renting of other machinery and equipment n.e.c.,Buisness activities,0,1,Renting Equipment Without Operator,0.2,3,6,4.282707,5,0.328972,0.357718,291.05517,0.138172
+3002,,,Manufacture of computers and other information processing equipment,"Manufacture of Machinery, Electrical",0,9,Manufacture Electrical & Optical Equipment,0.4,22,11,8.674972,6,0.333966,0.370786,280.373137,0.307007
+2912,,,Manufacture of pumps and compressors,"Manufacture of Machinery, Electrical",0,7,Manufacture of Machinery & Equipment,0.066667,1,6,4.868754,6,0.305291,0.333097,275.414142,0.100088
+5224,,,"Retail sale of bread, cakes, flour confectionery and sugar confectionery",Retail,0,2,"Retail Trade, Not Motors; Repairs",0.333333,12,9,3.613247,6,0.314567,0.35,258.466697,0.226544
+2451,,,"Manufacture of soap and detergents,  cleaning and polishing preparations , perfumes and toilet preparations",Manufacture Chemicals/Plastics,0,2,"Manufacture Chemicals, Prods & Man-Made",0.1,1,5,4.60055,6,0.291874,0.316809,241.412936,0.064074
+5241,,,Retail sale of textiles,Retail,0,5,"Retail Trade, Not Motors; Repairs",0.4,4,5,3.953261,6,0.322049,0.351705,240.726173,0.142516
+2911,,,"Manufacture of engines and turbines, except aircraft, vehicle and cycle engines","Manufacture of Machinery, Electrical",0,7,Manufacture of Machinery & Equipment,0.190476,4,7,6.126229,5,0.333333,0.364394,237.431267,0.158733
+8531,,,Charitable social work activities with accommodation,Gouverment,0,3,Health and Social Work,0.25,7,8,2.729378,6,0.294069,0.320076,235.555689,0.092129
+4013,,,Distribution and trade of electricity,"Electricity, Gas and Water Supply",0,0,"Electricity, Gas and Water Supply",0.3,3,5,3.925043,6,0.327442,0.354972,226.26047,0.160977
+2320,,,Mineral oil refining,Manufacture Chemicals/Plastics,0,5,"Manufacture Chemicals, Prods & Man-Made",0.3,3,5,4.45011,6,0.316262,0.34233,223.912544,0.093296
+2112,,,"Manufacture of paper and paperboard, cartons, boxes and cases of corrugated paper and paperboard,and similar containers of paper and paperboard specifically designed for carrying liquids, whether or not waxed",Manufacture Paper; Publishing; Printing,0,9,Manufacture Paper; Publishing; Printing,0.2,3,6,5.009278,6,0.319419,0.347443,214.899316,0.112534
+7020,,,"Other letting of own property, Letting of conference and exhibition centres",Buisness activities,0,3,"Real Estate, Renting & Business",0.25,7,8,3.943039,6,0.312611,0.344271,213.556599,0.162511
+6420,,,Telecommunications,Post and Telecommunications,0,9,Post and Telecommunications,0.155556,7,10,3.869653,5,0.331762,0.365483,213.142804,0.265385
+6010,,,Inter-city services and Other transport via railways,Transport,0,0,Transport,0.166667,1,4,2.631144,6,0.295054,0.317282,205.816591,0.068809
+1533,,,Processing and preserving of fruit and vegetables n.e.c.,Manufacture of Food,0,2,Manufacture of Food; Beverages & Tobacco,0.4,4,5,4.065709,6,0.311504,0.340436,202.555547,0.109749
+6321,,,Other supporting land transport activities,Transport,0,0,Transport,0.2,2,5,3.74486,5,0.287347,0.3116,200.302012,0.06549
+6411,,,National post activities,Post and Telecommunications,0,3,Post and Telecommunications,0,0,3,1.096955,6,0.260163,0.280114,196.619014,0.031576
+9231,,,"Live theatrical presentations,Other artistic and literary creation and interpretation,Library and archives activities",Services,0,3,"Recreational, Cultural & Sporting",0.166667,1,4,2.787724,6,0.294807,0.32036,180.363882,0.111516
+7140,,,"Renting of sporting and recreational equipment,Renting of records and other pre-recorded media,Renting of video tapes and DVDs,Renting of radios, televisions and video recorders and DVD players, Renting of other personal and household goods not elsewhere classified",Buisness activities,0,8,Renting Equipment Without Operator,0.2,2,5,3.560898,6,0.321755,0.350237,179.680322,0.117125
+2923,,,Manufacture of non-domestic cooling and ventilation equipment,"Manufacture of Machinery, Electrical",0,7,Manufacture of Machinery & Equipment,0.2,2,5,4.125213,5,0.292116,0.315956,175.873821,0.065747
+3110,,,"Manufacture of electric motors, generators and transformers","Manufacture of Machinery, Electrical",0,7,Manufacture of Electrical Machinery etc.,0.2,9,10,8.156681,6,0.311504,0.346922,175.413217,0.177249
+5144,,,"Wholesale of china and glassware, wallpaper and cleaning materials",Retail,0,8,"Wholesale, Retail; Certain Repair (cont.)",0.2,2,5,4.421833,6,0.300085,0.324195,173.600685,0.0639
+2875,,,Manufacture of other fabricated metal products n.e.c.,Metals,0,7,"Manufacture Fabricated Metal, Not Machines",0.4,4,5,3.611691,5,0.326834,0.355256,171.199607,0.131291
+9002,,,Collection and treatment of other waste,Services,0,0,Other Social & Personal Services,0.333333,2,4,2.567328,5,0.333966,0.363352,170.323933,0.137226
+2924,,,Manufacture of other general purpose machinery n.e.c.,"Manufacture of Machinery, Electrical",0,7,Manufacture of Machinery & Equipment,0.25,7,8,6.421092,5,0.309859,0.340862,166.662214,0.134221
+2452,,,,,0,5,,0.166667,1,4,2.62714,6,0.314848,0.341383,166.659071,0.094828
+4542,,,Joinery installation,Construction,0,4,Construction,0.285714,8,8,6.639097,5,0.305291,0.333807,160.931385,0.117581
+5185,,,Wholesale of other office machinery and equipment,Retail,0,9,Wholesale of other household goods n.e.c.,0.5,3,4,3.8888,6,0.278481,0.302131,156.436525,0.078161
+1771,,,Manufacture of knitted and crocheted hosiery,Manufacture of Textiles and Leather,0,5,Manufacture of Textiles & Textile Products,0.333333,2,4,3.585741,6,0.31513,0.341619,152.380236,0.093075
+1823,,,Manufacture of men's underwear Manufacture of women's underwear,Manufacture of Textiles and Leather,0,5,Manufacture of Textiles & Textile Products,0.333333,1,3,2.32664,6,0.313167,0.337642,148.917558,0.094652
+7413,,,Market research and public opinion polling,Buisness activities,0,3,Other Business Activities,0.428571,9,7,2.753445,6,0.351648,0.384612,148.790843,0.318575
+5154,,,"Wholesale of hardware, plumbing and heating equipment and supplies",Retail,0,7,Wholesale of other household goods n.e.c.,0.238095,5,7,5.771211,6,0.297549,0.325142,139.123691,0.090782
+7250,,,"Maintenance and repair of office, accounting and computing machinery",Computer and Related Activities,0,9,Computer and Related Activities,0.52381,11,7,4.798088,6,0.328665,0.362311,135.544969,0.230359
+9251,,,,,0,3,,0,0,3,2.159819,7,0.280255,0.304999,134.600451,0.056981
+5246,,,"Retail sale of hardware, paints and glass",Retail,0,4,"Retail Trade, Not Motors; Repairs",0.464286,13,8,3.549107,6,0.313446,0.346686,131.21514,0.185768
+9271,,,Gambling and betting activities,Services,0,1,"Recreational, Cultural & Sporting",0.333333,7,7,2.507672,5,0.322936,0.35303,121.463533,0.182102
+3612,,,Manufacture of other office and shop furniture,Manufacture Other,0,4,Manufacturing nec,0.333333,2,4,2.983595,5,0.313725,0.339536,116.933567,0.101966
+5143,,,"Wholesale of gramophone records, audio tapes, compact discs and video tapes and of the equipment on which these are played, radios and televisions; wholesale of electrical household appliances n.e.c",Retail,0,7,"Wholesale, Retail; Certain Repair (cont.)",0.2,3,6,4.26604,6,0.333649,0.364962,116.9129,0.183635
+3210,,,Manufacture of electronic valves and tubes and other electronic components,"Manufacture of Machinery, Electrical",0,7,"Manufacture of Radio, TV & Equipment",0.318182,21,12,10.324506,6,0.307962,0.342803,106.294147,0.214655
+3161,,,Manufacture of electrical equipment for engines and vehicles n.e.c.,"Manufacture of Machinery, Electrical",0,7,Manufacture of Electrical Machinery etc.,0.2,3,6,5.495007,6,0.291391,0.318608,100.719572,0.07639
+5184,,,"Wholesale of computers, computer peripheral equipment and software",Retail,0,9,Wholesale of other household goods n.e.c.,0.472222,17,9,7.500939,6,0.321461,0.353883,100.357143,0.242555
+7513,,,Regulation of and contribution to more efficient operation of business,Gouverment,0,3,Public Administration & Defence,0.2,2,5,2.863204,6,0.28502,0.312121,96.754253,0.071344
+5133,,,"Wholesale of dairy produce, Wholesale of eggs,edible oils and fats",Retail,0,0,"Wholesale, Retail; Certain Repair (cont.)",0.3,3,5,3.673391,6,0.325323,0.352273,96.592083,0.11896
+7482,,,Packaging activities,Buisness activities,0,9,Other Business Activities,0,0,3,2.580417,6,0.309315,0.333239,93.799469,0.083075
+2922,,,Manufacture of lifting and handling equipment,"Manufacture of Machinery, Electrical",0,7,Manufacture of Machinery & Equipment,0.333333,2,4,3.185752,5,0.292602,0.318939,91.779599,0.082927
+2953,,,"Manufacture of machinery for food, beverage and tobacco processing","Manufacture of Machinery, Electrical",0,7,Manufacture of Machinery & Equipment,0.333333,1,3,2.611618,6,0.310132,0.334233,89.849444,0.074977
+7530,,,Compulsory social security activities,Gouverment,0,3,Public Administration & Defence,0.2,2,5,1.7398,6,0.264662,0.290436,89.566908,0.061517
+8513,,,Dental practice activities,Gouverment,0,8,Health and Social Work,0.5,3,4,0.841274,6,0.280032,0.305161,89.305272,0.057468
+6412,,,Courier activities other than national post activities,Post and Telecommunications,0,0,Post and Telecommunications,0.380952,8,7,4.020737,6,0.316262,0.346402,88.359859,0.17323
+124,,,Farming of poultry,"Agriculture, Hunting and Forestry",0,2,"Agriculture, Hunting and Forestry",0.333333,1,3,2.948309,6,0.267274,0.287973,84.124284,0.028056
+5551,,,Canteens,Hotels and Restaurants,0,3,Hotels and Restaurants,0.2,2,5,2.518168,6,0.261905,0.288778,83.569094,0.048684
+2840,,,"Forging, pressing, stamping and roll forming of metal; powder metallurgy",Metals,0,7,"Manufacture Fabricated Metal, Not Machines",0.5,5,5,3.544327,6,0.328052,0.356345,83.445761,0.154601
+3611,,,Manufacture of chairs and seats,Manufacture Other,0,4,Manufacturing nec,0.5,3,4,2.656781,6,0.327442,0.355161,83.174546,0.129702
+6603,,,Non-life insurance,Finance,0,3,Finance,0.428571,12,8,3.316421,6,0.299065,0.328125,79.338143,0.15895
+9301,,,Washing and dry-cleaning of textile and fur products,Services,0,8,Other Service Activities,0.333333,2,4,2.886556,5,0.328665,0.354025,76.298726,0.118149
+7522,,,Defence activities,Gouverment,0,3,Public Administration & Defence,0.2,2,5,1.770141,6,0.294314,0.319602,75.82737,0.082284
+2441,,,Manufacture of basic pharmaceutical products,Manufacture Chemicals/Plastics,0,8,"Manufacture Chemicals, Prods & Man-Made",0.166667,1,4,3.547053,6,0.294069,0.315862,73.697795,0.056564
+9213,,,Motion picture projection,Services,0,1,"Recreational, Cultural & Sporting",0.5,3,4,2.554365,6,0.292359,0.319508,73.476587,0.107811
+2971,,,Manufacture of electric domestic appliances,"Manufacture of Machinery, Electrical",0,7,Manufacture of Machinery & Equipment,0.466667,7,6,4.279484,5,0.342412,0.373343,68.063243,0.203086
+1512,,,Production and preserving of poultry meat,Manufacture of Food,0,2,Manufacture of Food; Beverages & Tobacco,0.333333,2,4,3.741314,6,0.285946,0.309612,64.006015,0.05965
+2420,,,Manufacture of pesticides and other agro-chemical products,Manufacture Chemicals/Plastics,0,8,"Manufacture Chemicals, Prods & Man-Made",0.333333,1,3,2.73832,6,0.291391,0.312831,62.994726,0.054256
+5250,,,"Retail sale of antiques, including antique books, in stores",Retail,0,3,"Retail Trade, Not Motors; Repairs",0,0,2,1.501765,6,0.282051,0.305256,61.51091,0.054412
+3310,,,Manufacture of medical and surgical equipment and orthopaedic appliances,"Manufacture of Machinery, Electrical",0,7,Manufacture Medical & Precision Instruments,0.333333,5,6,5.052276,6,0.299065,0.326752,59.155633,0.112999
+9252,,,"Museums activities,Preservation of historical sites and buildings",Services,0,3,"Recreational, Cultural & Sporting",0,0,4,2.129019,6,0.267274,0.291951,57.6103,0.039192
+7521,,,Foreign affairs,Gouverment,0,3,Public Administration & Defence,0,0,2,1.85527,6,0.282504,0.304025,53.798094,0.058477
+3520,,,Manufacture of railway and tramway locomotives and rolling stock,Manufacture of Transport Equipment,0,7,Manufacture of Other Transport Equipment,0.166667,1,4,3.791998,6,0.279365,0.303314,53.472801,0.058334
+1511,,,"Slaughtering of animals other than poultry and rabbits,Animal by-product processing,Fellmongery",Manufacture of Food,0,2,Manufacture of Food; Beverages & Tobacco,0.333333,1,3,2.016758,6,0.269732,0.293182,52.524616,0.03577
+5156,,,Wholesale of other intermediate products,Retail,0,9,Wholesale of other household goods n.e.c.,0.166667,1,4,2.901581,5,0.33145,0.358428,50.034208,0.162654
+6023,,,"Renting of buses and coaches, Other land passenger transport n.e.c.",Transport,0,0,Transport,0,0,2,1.746905,6,0.259779,0.275331,48.724683,0.018469
+9302,,,Hairdressing and other beauty treatment,Services,0,5,Other Service Activities,0.6,9,6,2.788746,6,0.304762,0.333807,48.55206,0.157511
+5152,,,Wholesale of metals and metal ores,Retail,0,4,Wholesale of other household goods n.e.c.,0,0,2,1.683242,7,0.246844,0.263237,47.848221,0.016141
+2862,,,Manufacture of tools,Metals,0,7,"Manufacture Fabricated Metal, Not Machines",0.666667,4,4,3.652942,6,0.261516,0.28608,47.701581,0.046496
+8021,,,General secondary education,Gouverment,0,3,Education,0.4,4,5,1.761793,7,0.260355,0.284497,45.950774,0.049546
+7523,,,Justice and judicial activities,Gouverment,0,3,Public Administration & Defence,0.333333,1,3,1.019212,6,0.270353,0.290672,45.508375,0.033212
+2125,,,Manufacture of unprinted labels Manufacture of other articles of paper and paperboard n.e.c. Manufacture of printed labels,Manufacture Paper; Publishing; Printing,0,9,Manufacture Paper; Publishing; Printing,0.333333,1,3,2.710867,6,0.262883,0.28125,42.272876,0.025298
+1520,,,Freezing of fish Other fish processing and preserving,Manufacture of Food,0,2,Manufacture of Food; Beverages & Tobacco,0.333333,1,3,2.8748,7,0.244784,0.263474,39.921796,0.024256
+6322,,,Other supporting water transport activities,Transport,0,0,Transport,0.333333,1,3,2.088287,6,0.308231,0.332528,39.546358,0.091201
+6720,,,Activities auxiliary to insurance and pension funding,Finance,0,3,Finance,0.666667,24,9,4.671791,6,0.300598,0.330682,37.824528,0.2194
+6110,,,"Passenger sea and coastal water transport, Freight sea and coastal water transport",Transport,0,0,Transport,0.333333,2,4,3.33943,6,0.305026,0.328646,37.398913,0.092358
+3162,,,Manufacture of other electrical equipment n.e.c.,"Manufacture of Machinery, Electrical",0,7,Manufacture of Electrical Machinery etc.,0.52381,11,7,5.56839,5,0.306888,0.336174,36.974362,0.169976
+2466,,,Manufacture of other chemical products n.e.c.,Manufacture Chemicals/Plastics,0,8,"Manufacture Chemicals, Prods & Man-Made",0,0,4,3.897999,7,0.252692,0.271144,35.879925,0.017331
+5243,,,"Retail sale of footwear, leather goods",Retail,0,5,"Retail Trade, Not Motors; Repairs",0.5,5,5,2.266447,6,0.308231,0.338021,35.195281,0.161583
+1551,,,"Liquid milk and cream production,Butter and cheese production Manufacture of other milk products",Manufacture of Food,0,2,Manufacture of Food; Beverages & Tobacco,0.333333,2,4,3.254711,6,0.279809,0.304877,32.347012,0.065106
+2413,,,Manufacture of other inorganic basic chemicals,Manufacture Chemicals/Plastics,0,8,"Manufacture Chemicals, Prods & Man-Made",0.333333,1,3,2.947677,6,0.263868,0.281818,27.68497,0.027816
+5222,,,Retail sale of meat and meat products,Retail,0,2,"Retail Trade, Not Motors; Repairs",0,0,2,1.104721,7,0.254335,0.273559,27.500528,0.02205
+5132,,,Wholesale of meat and meat products,Retail,0,2,"Wholesale, Retail; Certain Repair (cont.)",0.333333,1,3,2.836163,7,0.247539,0.266883,24.247429,0.01995
+8512,,,Medical practice activities,Gouverment,0,8,Health and Social Work,0.5,3,4,1.460979,6,0.272025,0.293229,22.378173,0.042256
+5131,,,Wholesale of fruit and vegetables,Retail,0,9,"Wholesale, Retail; Certain Repair (cont.)",0,0,3,2.427027,6,0.272235,0.292756,21.421455,0.039666
+2464,,,Manufacture of photographic chemical material,Manufacture Chemicals/Plastics,0,9,"Manufacture Chemicals, Prods & Man-Made",0.333333,1,3,2.554538,6,0.289712,0.313589,21.326573,0.080555
+5225,,,Retail sale of alcoholic and other beverages,Retail,0,1,"Retail Trade, Not Motors; Repairs",0,0,2,0.955737,6,0.280478,0.303125,19.64228,0.055902
+5231,,,Dispensing chemists,Retail,0,5,"Retail Trade, Not Motors; Repairs",0.666667,4,4,1.78343,6,0.32,0.346402,19.147618,0.135626
+6021,,,"Urban and suburban passenger railway transportation by underground, metro and similar systems, Other scheduled passenger land transport n.e.c.",Transport,0,0,Transport,0.333333,1,3,2.342816,6,0.241096,0.25715,18.67839,0.013786
+2211,,,Publishing of books,Manufacture Paper; Publishing; Printing,0,9,Manufacture Paper; Publishing; Printing,0.666667,4,4,3.367474,6,0.291874,0.316004,18.638172,0.088561
+4012,,,Transmission of electricity,"Electricity, Gas and Water Supply",0,0,"Electricity, Gas and Water Supply",0.666667,2,3,2.945833,6,0.267884,0.283996,17.784627,0.0257
+5272,,,Repair of electrical household goods,Retail,0,8,"Retail Trade, Not Motors; Repairs",0,0,3,2.827619,6,0.286879,0.306581,17.696327,0.043725
+2932,,,Manufacture of other agricultural and forestry machinery,"Manufacture of Machinery, Electrical",0,7,Manufacture of Machinery & Equipment,0,0,2,1.698959,6,0.318264,0.341477,15.397193,0.089317
+7210,,,Hardware consultancy,Computer and Related Activities,0,9,Computer and Related Activities,0.7,7,5,4.542282,6,0.2816,0.304688,15.177881,0.112246
+2330,,,Processing of nuclear fuel,Manufacture Chemicals/Plastics,0,4,"Manufacture Chemicals, Prods & Man-Made",0.333333,1,3,2.485417,6,0.287817,0.308286,14.607444,0.057975
+1740,,,"Manufacture of soft furnishings, manufacture of canvas goods, sacks, etc.,Manufacture of household textiles",Manufacture of Textiles and Leather,0,5,Manufacture of Textiles & Textile Products,0,0,2,1.833361,7,0.266062,0.284828,13.491421,0.025839
+8511,,,"Public sector hospital activities, including NHS trusts, Private sector hospital activities,Medical nursing home activities",Gouverment,0,8,Health and Social Work,0.5,5,5,1.478308,6,0.264264,0.287216,12.993759,0.03985
+9232,,,Operation of arts facilities,Services,0,3,"Recreational, Cultural & Sporting",0.333333,1,3,2.101681,7,0.25107,0.274459,12.266182,0.033672
+3130,,,Manufacture of insulated wire and cable,"Manufacture of Machinery, Electrical",0,7,Manufacture of Electrical Machinery etc.,0.333333,2,4,3.779661,6,0.273292,0.295881,11.629144,0.061088
+3511,,,Building and repairing of ships,Manufacture of Transport Equipment,0,3,Manufacture of Other Transport Equipment,0.666667,2,3,2.312922,6,0.271396,0.292188,11.361781,0.041541
+9253,,,Botanical and zoological gardens and nature reserves activities,Services,0,3,"Recreational, Cultural & Sporting",0.666667,2,3,1.700551,6,0.260163,0.283996,11.260295,0.040628
+5186,,,Wholesale of other electronic parts and equipment,Retail,0,7,Wholesale of other household goods n.e.c.,0.3,3,5,4.601542,6,0.293333,0.317282,11.134698,0.094589
+4544,,,Painting and glazing,Construction,0,4,Construction,0.666667,2,3,2.266586,5,0.282277,0.303598,11.066996,0.054253
+4545,,,Other building completion,Construction,0,4,Construction,0,0,2,1.853305,5,0.281375,0.301326,11.066996,0.044575
+4511,,,Demolition and wrecking of buildings; earth moving,Construction,0,4,Construction,0.666667,2,3,2.442354,6,0.29115,0.313352,11.064103,0.077796
+7514,,,Supporting service activities for the government as a whole,Gouverment,0,3,Public Administration & Defence,0,0,2,1.353323,7,0.234198,0.252347,10.544912,0.014042
+5138,,,"Wholesale of other food, including fish, crustaceans and molluscs",Retail,0,2,"Wholesale, Retail; Certain Repair (cont.)",0,0,2,1.962351,7,0.233732,0.249087,10.35276,0.011199
+4534,,,Other building installation,Construction,0,7,Construction,0.666667,4,4,3.492299,5,0.298812,0.322538,9.616368,0.088515
+5114,,,"Agents involved in the sale of machinery, industrial equipment, ships and aircraft",Retail,0,9,"Wholesale, Commission, Not Motors",0.666667,2,3,2.796448,6,0.275,0.296449,7.885928,0.060918
+2874,,,"Manufacture of fasteners, screw machine products, chain and springs",Metals,0,7,"Manufacture Fabricated Metal, Not Machines",0,0,2,1.810659,6,0.27673,0.295833,7.846721,0.033617
+7411,,,"Barristers at law,Solicitors,Activities of patent and copyright agents,Other legal activities not elsewhere classified",Buisness activities,0,3,Other Business Activities,0,0,3,0.899589,6,0.267274,0.285464,5.67904,0.052363
+7121,,,Renting of other land transport equipment,Buisness activities,0,6,Renting Equipment Without Operator,0,0,2,1.81457,6,0.280702,0.298627,4.665446,0.038846
+5145,,,Wholesale of perfume and cosmetics,Retail,0,5,"Wholesale, Retail; Certain Repair (cont.)",0.666667,4,4,3.638333,6,0.274357,0.295975,3.821061,0.062154
+9131,,,Activities of religious organizations,Services,0,3,Membership Organisations,0.333333,1,3,0.81282,6,0.244784,0.263352,3.561352,0.028852
+5155,,,Wholesale of chemical products,Retail,0,8,Wholesale of other household goods n.e.c.,0,0,2,1.940894,7,0.247539,0.261533,3.548671,0.011982
+9500,,,Activities of households as employers of domestic staff,Services,0,3,Other Service Activities,0.666667,2,3,2.004022,6,0.247887,0.269555,3.095833,0.036606
+6220,,,Other non-scheduled air transport,Transport,0,0,Transport,0.666667,2,3,2.764979,6,0.273504,0.290199,2.857779,0.030842
+6210,,,"Scheduled passenger air transport,Other scheduled air transport",Transport,0,0,Transport,0.666667,2,3,1.985284,6,0.273504,0.290199,2.857779,0.030842
+2913,,,Manufacture of taps and valves,"Manufacture of Machinery, Electrical",0,7,Manufacture of Machinery & Equipment,0,0,2,1.907994,6,0.246326,0.260843,2.769125,0.014091
+2812,,,Manufacture of builders' carpentry and joinery of metal,Metals,0,4,"Manufacture Fabricated Metal, Not Machines",0.333333,1,3,2.85998,6,0.26506,0.284896,2.665773,0.035262
+2914,,,"Manufacture of bearings, gears, gearing and driving elements","Manufacture of Machinery, Electrical",0,7,Manufacture of Machinery & Equipment,0,0,2,1.774548,6,0.286179,0.307528,1.933052,0.056885
+7240,,,Database activities,Computer and Related Activities,0,9,Computer and Related Activities,1,3,3,2.858275,6,0.286412,0.305634,0,0.092505
+1120,,,"Service activities incidental to oil and gas extraction, excluding surveying",Minning,0,4,Mining and Quarrying,1,1,2,1.547964,6,0.29019,0.310985,0,0.072907
+3150,,,Manufacture of lighting equipment and electric lamps,"Manufacture of Machinery, Electrical",0,0,Manufacture of Electrical Machinery etc.,0,0,1,0.261113,6,0.301112,0.322301,0,0.071738
+2661,,,Manufacture of concrete products for construction purposes,Manufacture Other,0,5,Manufacture Other Non-Metal Mineral Products,1,1,2,1.654156,6,0.306087,0.328693,0,0.067813
+5263,,,Other non-store retail sale,Retail,0,0,"Retail Trade, Not Motors; Repairs",1,1,2,1.642553,6,0.305026,0.327273,0,0.067616
+7221,,,Publishing of software,Computer and Related Activities,0,9,Computer and Related Activities,1,1,2,1.925284,6,0.277384,0.295881,0,0.066014
+3330,,,Manufacture of electronic industrial process control equipment,"Manufacture of Machinery, Electrical",0,7,Manufacture Medical & Precision Instruments,1,1,2,1.87753,6,0.281375,0.299621,0,0.053591
+4550,,,Renting of construction or demolition equipment with operator,Construction,0,4,Construction,1,1,2,1.673589,5,0.286645,0.305398,0,0.051059
+8520,,,Veterinary activities,Gouverment,1,0,Health and Social Work,0,0,2,-0.586569,5,0.384199,0.409437,0,0.050593
+5116,,,"Agents involved in the sale of textiles, clothing, footwear and leather goods",Retail,0,5,"Wholesale, Retail; Certain Repair (cont.)",1,1,2,1.941712,6,0.269319,0.288778,0,0.049129
+2960,,,Manufacture of weapons and ammunition,"Manufacture of Machinery, Electrical",0,3,Manufacture of Machinery & Equipment,1,1,2,1.747145,6,0.267071,0.2875,0,0.041568
+2513,,,Manufacture of other rubber products,Manufacture Chemicals/Plastics,0,7,Manufacture of Rubber & Plastic Products,1,1,2,1.699965,6,0.279144,0.299527,0,0.040762
+1596,,,Manufacture of beer,Manufacture of Food,0,1,Manufacture of Food; Beverages & Tobacco,1,1,2,1.790212,6,0.261905,0.283191,0,0.040301
+113,,,"Growing of wine grapes and table grapes and production of wine from self - produced grapes, Growing of other fruit, nuts, beverage and spice crops","Agriculture, Hunting and Forestry",0,4,"Agriculture, Hunting and Forestry",0,0,1,0.932827,6,0.271605,0.28911,0,0.039763
+7133,,,"Renting of office machinery and equipment, including computers",Buisness activities,0,9,Renting Equipment Without Operator,0,0,1,0.9172,7,0.264066,0.283692,0,0.03839
+3340,,,Manufacture of spectacles and unmounted lenses,"Manufacture of Machinery, Electrical",0,9,Manufacture Medical & Precision Instruments,0,0,1,0.634047,7,0.264066,0.283692,0,0.03839
+3420,,,Manufacture of bodies (coachwork) for motor vehicles (except caravans),Manufacture of Transport Equipment,0,7,Manufacture of Transport Equipment,1,1,2,1.68332,6,0.273717,0.291667,0,0.037342
+1730,,,Finishing of textiles,Manufacture of Textiles and Leather,0,5,Manufacture of Textiles & Textile Products,0,0,1,0.719717,6,0.267884,0.285417,0,0.034777
+4524,,,Construction of water projects,Construction,0,4,Construction,0,0,1,0.893584,6,0.275215,0.292708,0,0.033144
+1010,,,Deep coal mines Open cast coal working,Minning,0,4,Mining and Quarrying,0,0,1,0.664716,6,0.275215,0.292708,0,0.033144
+4522,,,Erection of roof covering and frames,Construction,0,4,Construction,0,0,1,0.534918,6,0.275215,0.292708,0,0.033144
+142,,,"Farm animal boarding and care,Animal husbandry service activities except veterinary activities n.e.c.","Agriculture, Hunting and Forestry",0,3,"Agriculture, Hunting and Forestry",0,0,1,0.975951,6,0.271396,0.285322,0,0.029327
+6521,,,Financial leasing,Finance,0,3,Finance,1,1,2,1.505289,6,0.248763,0.264299,0,0.028123
+1561,,,"Grain milling, Manufacture of breakfast cereals and cereals-based food",Manufacture of Food,0,2,Manufacture of Food; Beverages & Tobacco,1,1,2,1.911338,6,0.261516,0.278409,0,0.028092
+5040,,,"Sale, maintenance and repair of motorcycles and related parts and accessories",Construction,0,6,Construction,1,1,2,1.776446,6,0.268702,0.283191,0,0.025177
+6120,,,"Passenger inland water transport, Other inland water transport",Transport,0,1,Transport,0,0,1,0.980493,6,0.255257,0.270502,0,0.024444
+9304,,,Physical well-being activities,Services,0,1,Other Service Activities,0,0,1,0.974551,6,0.255257,0.270502,0,0.024444
+1531,,,Processing and preserving of potatoes,Manufacture of Food,0,2,Manufacture of Food; Beverages & Tobacco,1,1,2,1.919754,6,0.25997,0.277509,0,0.02414
+2010,,,Sawmilling and planing of wood; impregnation of wood,Manufacture of Wood & Wood Product,0,4,Manufacture of Wood & Wood Product,1,1,2,1.887358,6,0.253055,0.270076,0,0.023428
+1824,,,Manufacture of hats Cut make and trim for clothing manufacturers Manufacture of other wearing apparel and accessories n.e.c.,Manufacture of Textiles and Leather,0,5,Manufacture of Textiles & Textile Products,1,1,2,1.922954,6,0.256186,0.271212,0,0.022914
+7320,,,Research and experimental development on social sciences and humanities,Research and Development,0,8,Research and Development,0,0,1,0.953898,6,0.2621,0.276468,0,0.022539
+3613,,,Manufacture of other kitchen furniture,Manufacture Other,0,4,Manufacturing nec,0,0,1,0.934542,6,0.253237,0.268277,0,0.02124
+2621,,,Manufacture of ceramic household and ornamental articles,Manufacture Other,0,4,Manufacture Other Non-Metal Mineral Products,0,0,1,0.783112,6,0.253237,0.268277,0,0.02124
+5262,,,Retail sale via stalls and markets,Retail,0,1,"Retail Trade, Not Motors; Repairs",0,0,1,0.660104,7,0.252511,0.269535,0,0.019488
+5226,,,Retail sale of tobacco products,Retail,0,1,"Retail Trade, Not Motors; Repairs",0,0,1,0.6558,7,0.252511,0.269535,0,0.019488
+5227,,,"Other retail sale of food, beverages and tobacco in specialised stores",Retail,0,1,"Retail Trade, Not Motors; Repairs",0,0,1,0.599434,7,0.252511,0.269535,0,0.019488
+5221,,,Retail sale of fruit and vegetables,Retail,0,1,"Retail Trade, Not Motors; Repairs",0,0,1,0.558028,7,0.252511,0.269535,0,0.019488
+9303,,,Funeral and related activities,Services,0,1,Other Service Activities,0,0,1,0.258464,7,0.252511,0.269535,0,0.019488
+1543,,,Manufacture of margarine and similar edible fats,Manufacture of Food,0,2,Manufacture of Food; Beverages & Tobacco,0,0,1,0.996128,6,0.258824,0.274148,0,0.017671
+1587,,,Manufacture of condiments and seasonings,Manufacture of Food,0,2,Manufacture of Food; Beverages & Tobacco,0,0,1,0.988326,6,0.258824,0.274148,0,0.017671
+9001,,,Collection and treatment of sewage,Services,0,0,Other Social & Personal Services,1,1,2,1.972092,6,0.261321,0.276515,0,0.017398
+1110,,,Extraction of crude petroleum and natural gas,Minning,0,5,Mining and Quarrying,1,1,2,1.970127,7,0.257122,0.271476,0,0.017148
+2225,,,Ancillary activities related to printing,Manufacture Paper; Publishing; Printing,0,9,Manufacture Paper; Publishing; Printing,1,1,2,1.946539,7,0.240437,0.255946,0,0.016306
+2224,,,Pre-press activities,Manufacture Paper; Publishing; Printing,0,9,Manufacture Paper; Publishing; Printing,1,1,2,1.898495,7,0.240437,0.255946,0,0.016306
+2221,,,Printing of newspapers,Manufacture Paper; Publishing; Printing,0,3,Manufacture Paper; Publishing; Printing,0,0,1,0.978715,6,0.255814,0.269129,0,0.015931
+9240,,,News agency activities,Services,0,3,"Recreational, Cultural & Sporting",0,0,1,0.91073,6,0.255814,0.269129,0,0.015931
+2412,,,Manufacture of dyes and pigments,Manufacture Chemicals/Plastics,0,8,"Manufacture Chemicals, Prods & Man-Made",0,0,1,0.978992,6,0.257498,0.271591,0,0.015834
+3663,,,Other manufacturing n.e.c.,Manufacture Other,0,7,Manufacturing nec,0,0,1,0.90765,7,0.241096,0.25744,0,0.014954
+4011,,,Production of electricity,"Electricity, Gas and Water Supply",0,0,"Electricity, Gas and Water Supply",1,1,2,1.966351,6,0.251249,0.265483,0,0.014777
+4532,,,Insulation work activities,Construction,0,4,Construction,0,0,1,0.977364,6,0.248588,0.261553,0,0.014571
+5512,,,,,0,1,,0,0,1,0.979879,7,0.233732,0.247984,0,0.014356
+2223,,,Bookbinding,Manufacture Paper; Publishing; Printing,0,9,Manufacture Paper; Publishing; Printing,0,0,1,0.948424,7,0.240273,0.254525,0,0.014172
+2123,,,Manufacture of paper stationery,Manufacture Paper; Publishing; Printing,0,9,Manufacture Paper; Publishing; Printing,0,0,1,0.945955,7,0.240273,0.254525,0,0.014172
+2215,,,Other publishing,Manufacture Paper; Publishing; Printing,0,9,Manufacture Paper; Publishing; Printing,0,0,1,0.932983,7,0.240273,0.254525,0,0.014172
+7481,,,"Portrait photographic activities,Other specialist photography,Film processing,Photographic activities not elsewhere classified",Buisness activities,0,9,Other Business Activities,0,0,1,0.769729,7,0.240273,0.254525,0,0.014172
+1552,,,Manufacture of ice cream,Manufacture of Food,0,2,Manufacture of Food; Beverages & Tobacco,0,0,1,0.97341,7,0.244105,0.259686,0,0.01372
+2511,,,Manufacture of rubber tyres and tubes,Manufacture Chemicals/Plastics,0,6,Manufacture of Rubber & Plastic Products,0,0,1,0.943217,7,0.246154,0.26085,0,0.013343
+9132,,,Activities of political organizations,Services,0,3,Membership Organisations,0,0,1,0.362855,7,0.226512,0.243669,0,0.012606
+6022,,,Taxi operation,Transport,0,3,Transport,0,0,1,0.049915,7,0.226512,0.243669,0,0.012606
+6311,,,Cargo handling,Transport,0,0,Transport,0,0,1,0.972154,7,0.248062,0.261391,0,0.012166
+5232,,,Retail sale of hearing aids,Retail,0,8,"Retail Trade, Not Motors; Repairs",0,0,1,0.977604,7,0.243936,0.257271,0,0.011921
+2122,,,Manufacture of household and sanitary goods and of toilet requisites,Manufacture Paper; Publishing; Printing,0,8,Manufacture Paper; Publishing; Printing,0,0,1,0.909598,7,0.243936,0.257271,0,0.011921
+6602,,,Pension funding,Finance,0,3,Finance,0,0,1,0.957471,7,0.223919,0.234855,0,0.011381
+3615,,,Manufacture of mattresses,Manufacture Other,0,4,Manufacturing nec,0,0,1,0.976688,7,0.245639,0.258455,0,0.010916
+9211,,,"Motion picture production on film or video, Other motion picture and video production activities",Services,0,3,"Recreational, Cultural & Sporting",0,0,1,0.958732,7,0.232037,0.243994,0,0.010128
+6711,,,Administration of financial markets,Finance,0,3,Finance,0,0,1,0.814266,7,0.225496,0.236391,0,0.00974
+6511,,,Central banking,Finance,0,3,Finance,0,0,1,0.813643,7,0.225496,0.236391,0,0.00974
+1412,,,"Quarrying of limestone, gypsum and chalk",Minning,0,5,Mining and Quarrying,0,0,1,0.996738,6,0.248412,0.260133,0,0.009572
+1411,,,Quarrying of  ornamental and building stone,Minning,0,5,Mining and Quarrying,0,0,1,0.996338,6,0.248412,0.260133,0,0.009572
+1422,,,Mining of clays and kaolin,Minning,0,5,Mining and Quarrying,0,0,1,0.990041,6,0.248412,0.260133,0,0.009572
+2663,,,Manufacture of ready-mixed concrete,Manufacture Other,0,5,Manufacture Other Non-Metal Mineral Products,0,0,1,0.989609,6,0.248412,0.260133,0,0.009572
+7485,,,Secretarial and translation activities,Buisness activities,0,3,Other Business Activities,0,0,1,0.997836,6,0.243094,0.254593,0,0.009432
+4200,,,,,0,0,,0,0,1,0.995081,6,0.250534,0.262263,0,0.009394
+111,,,Growing of cereals and other crops n.e.c.,"Agriculture, Hunting and Forestry",0,10,"Agriculture, Hunting and Forestry",1,1,2,1.949622,7,0.23219,0.247639,0,0.009273
+1772,,,"Manufacture of knitted and crocheted pullovers, cardigans and similar articles",Manufacture of Textiles and Leather,0,5,Manufacture of Textiles & Textile Products,0,0,1,0.943164,7,0.229167,0.241592,0,0.008562
+5135,,,Wholesale of tobacco products,Retail,0,2,"Wholesale, Retail; Certain Repair (cont.)",0,0,1,0.974746,7,0.233267,0.246719,0,0.008371
+9003,,,"Sanitation, remediation and similar activities",Services,0,0,Other Social & Personal Services,0,0,1,0.996917,6,0.237838,0.250047,0,0.008004
+8041,,,Driving school activities,Gouverment,0,3,Education,0,0,1,0.689156,7,0.212048,0.227976,0,0.007808
+2462,,,Manufacture of glues and gelatines,Manufacture Chemicals/Plastics,0,8,"Manufacture Chemicals, Prods & Man-Made",0,0,1,0.98525,7,0.236718,0.248823,0,0.006681
+123,,,Farming of swine,"Agriculture, Hunting and Forestry",0,10,"Agriculture, Hunting and Forestry",0,0,1,0.993893,7,0.220551,0.233252,0,0.005053
+125,,,Other farming of animals,"Agriculture, Hunting and Forestry",0,10,"Agriculture, Hunting and Forestry",0,0,1,0.98847,7,0.220551,0.233252,0,0.005053
+122,,,"Farming of sheep, goats, horses, asses, mules and hinnies","Agriculture, Hunting and Forestry",0,10,"Agriculture, Hunting and Forestry",0,0,1,0.98132,7,0.220551,0.233252,0,0.005053
+121,,,"Farming of cattle, dairy farming","Agriculture, Hunting and Forestry",0,10,"Agriculture, Hunting and Forestry",0,0,1,0.981192,7,0.220551,0.233252,0,0.005053
+5522,,,"Camping sites, including caravan sites",Hotels and Restaurants,0,1,Hotels and Restaurants,0,0,1,0.996733,7,0.219451,0.230851,0,0.005008
+2722,,,Manufacture of steel tubes,Metals,0,7,Basic Metals & Fabricated Products,0,0,1,0.981145,7,0.215422,0.225913,0,0.004121
+2943,,,Manufacture of other machine tools n.e.c.,"Manufacture of Machinery, Electrical",0,7,Manufacture of Machinery & Equipment,0,0,1,0.997829,7,0.202882,0.214421,0,0.00412
+2942,,,Manufacture of other metalworking machine tools,"Manufacture of Machinery, Electrical",0,7,Manufacture of Machinery & Equipment,0,0,1,0.997829,7,0.202882,0.214421,0,0.00412
+2941,,,Manufacture of portable hand held power tools,"Manufacture of Machinery, Electrical",0,7,Manufacture of Machinery & Equipment,0,0,1,0.997829,7,0.202882,0.214421,0,0.00412
+1591,,,Manufacture of distilled potable alcoholic beverages,Manufacture of Food,0,1,Manufacture of Food; Beverages & Tobacco,0,0,1,0.961843,7,0.207792,0.218811,0,0.003886
+2872,,,Manufacture of light metal packaging,Metals,0,9,"Manufacture Fabricated Metal, Not Machines",0,0,1,0.97467,8,0.212048,0.222447,0,0.003581
+9120,,,Activities of trade unions,Services,0,3,Membership Organisations,0,0,1,0.984467,8,0.201258,0.211279,0,0.003098
+2611,,,Manufacture of flat glass,Manufacture Other,0,4,Manufacture Other Non-Metal Mineral Products,0,0,1,0.996596,8,0.208284,0.218138,0,0.003007
+2951,,,Manufacture of machinery for metallurgy,"Manufacture of Machinery, Electrical",0,7,Manufacture of Machinery & Equipment,0,0,1,0.995428,7,0.200799,0.210552,0,0.002881
+7524,,,"Public security, law and order activities",Gouverment,0,3,Public Administration & Defence,0,0,1,0.344356,8,0.188943,0.199669,0,0.002418
+2732,,,Cold rolling of narrow strip,Metals,0,4,Basic Metals & Fabricated Products,0,0,1,0.987499,7,0.197199,0.206311,0,0.002347
+5162,,,,,0,6,,0,0,1,0.999135,8,0.197864,0.206581,0,0.001983
+4022,,,Distribution and trade of gaseous fuels through mains,"Electricity, Gas and Water Supply",0,7,"Electricity, Gas and Water Supply",0,0,1,0.999348,7,0.193194,0.20023,0,0.00151
+5188,,,"Wholesale of agricultural machinery and accessories and implements, including tractors",Retail,0,4,Wholesale of other household goods n.e.c.,0,0,1,0.998408,8,0.178228,0.184798,0,0.001301
+1586,,,Tea processing Production of coffee and coffee substitutes,Manufacture of Food,2,0,Manufacture of Food; Beverages & Tobacco,0,0,1,0.98282,6,0.268533,0.279155,0,0.0009
+5161,,,,,38,0,,0,0,1,0.999635,1,1,1,0,0.000284
+5181,,,Wholesale of machine tools,Retail,38,0,Wholesale of other household goods n.e.c.,0,0,1,0.999635,1,1,1,0,0.000284
+5274,,,Repair n.e.c.,Retail,65,0,"Retail Trade, Not Motors; Repairs",0,0,1,0.999182,1,1,1,0,0.000284
+5271,,,"Repair of boots, shoes and other articles of leather",Retail,65,0,"Retail Trade, Not Motors; Repairs",0,0,1,0.999182,1,1,1,0,0.000284
+2754,,,Casting of other non-ferrous metals,Metals,22,0,Basic Metals & Fabricated Products,0,0,1,0.99776,1,1,1,0,0.000284
+2753,,,Casting of light metals,Metals,22,0,Basic Metals & Fabricated Products,0,0,1,0.99776,1,1,1,0,0.000284
+2822,,,Manufacture of central heating radiators and boilers,Metals,19,0,"Manufacture Fabricated Metal, Not Machines",0,0,1,0.997211,1,1,1,0,0.000284
+2622,,,Manufacture of ceramic sanitary fixtures,Manufacture Other,19,0,Manufacture Other Non-Metal Mineral Products,0,0,1,0.997211,1,1,1,0,0.000284
+1754,,,Manufacture of narrow fabricsManufacture of other textiles n.e.c.Manufacture of lace,Manufacture of Textiles and Leather,6,0,Manufacture of Textiles & Textile Products,0,0,1,0.995911,1,1,1,0,0.000284
+1724,,,Silk-type weaving,Manufacture of Textiles and Leather,6,0,Manufacture of Textiles & Textile Products,0,0,1,0.995911,1,1,1,0,0.000284
+1571,,,Manufacture of prepared feeds for farm animals,Manufacture of Food,13,0,Manufacture of Food; Beverages & Tobacco,0,0,1,0.989592,1,1,1,0,0.000284
+5121,,,"Wholesale of grain, seeds and animal feeds",Retail,13,0,"Wholesale, Retail; Certain Repair (cont.)",0,0,1,0.989592,1,1,1,0,0.000284
+2851,,,Treatment and coating of metals,Metals,3,0,"Manufacture Fabricated Metal, Not Machines",0,0,0,0,0,0,0,0,0
+1751,,,Manufacture of woven/tufted/other carpets and rugs,Manufacture of Textiles and Leather,4,0,Manufacture of Textiles & Textile Products,0,0,0,0,0,0,0,0,0
+2751,,,Casting of iron,Metals,5,0,Basic Metals & Fabricated Products,0,0,0,0,0,0,0,0,0
+1598,,,Production of mineral waters and soft drinks,Manufacture of Food,7,0,Manufacture of Food; Beverages & Tobacco,0,0,0,0,0,0,0,0,0
+1930,,,Manufacture of footwear,Manufacture of Textiles and Leather,8,0,Manufacture of Leather & Leather Products,0,0,0,0,0,0,0,0,0
+2863,,,Manufacture of locks and hinges,Metals,9,0,"Manufacture Fabricated Metal, Not Machines",0,0,0,0,0,0,0,0,0
+2613,,,Manufacture of hollow glass,Manufacture Other,10,0,Manufacture Other Non-Metal Mineral Products,0,0,0,0,0,0,0,0,0
+2742,,,Aluminium production,Metals,11,0,Basic Metals & Fabricated Products,0,0,0,0,0,0,0,0,0
+5141,,,Wholesale of textiles,Retail,12,0,"Wholesale, Retail; Certain Repair (cont.)",0,0,0,0,0,0,0,0,0
+2640,,,"Manufacture of bricks, tiles and construction products, in baked clay",Manufacture Other,14,0,Manufacture Other Non-Metal Mineral Products,0,0,0,0,0,0,0,0,0
+9111,,,Activities of business and employers' organizations,Services,15,0,Membership Organisations,0,0,0,0,0,0,0,0,0
+2972,,,Manufacture of non-electric domestic appliances,"Manufacture of Machinery, Electrical",16,0,Manufacture of Machinery & Equipment,0,0,0,0,0,0,0,0,0
+2830,,,"Manufacture of steam generators, except central heating hot water boilers",Metals,17,0,"Manufacture Fabricated Metal, Not Machines",0,0,0,0,0,0,0,0,0
+2682,,,manufacture of asbestos,Manufacture Other,18,0,Manufacture Other Non-Metal Mineral Products,0,0,0,0,0,0,0,0,0
+4543,,,Floor and wall covering,Construction,20,0,Construction,0,0,0,0,0,0,0,0,0
+5157,,,Wholesale of waste and scrap,Retail,21,0,Wholesale of other household goods n.e.c.,0,0,0,0,0,0,0,0,0
+3650,,,"Manufacture of other games and toys, n.e.c.",Manufacture Other,23,0,Manufacturing nec,0,0,0,0,0,0,0,0,0
+3512,,,Building and repairing of pleasure and sporting boats,Manufacture of Transport Equipment,24,0,Manufacture of Other Transport Equipment,0,0,0,0,0,0,0,0,0
+2744,,,Copper production,Metals,25,0,Basic Metals & Fabricated Products,0,0,0,0,0,0,0,0,0
+2626,,,Manufacture of refractory ceramic products,Manufacture Other,26,0,Manufacture Other Non-Metal Mineral Products,0,0,0,0,0,0,0,0,0
+2040,,,Manufacture of wooden containers,Manufacture of Wood & Wood Product,27,0,Manufacture of Wood & Wood Product,0,0,0,0,0,0,0,0,0
+2051,,,Manufacture of other products of wood,Manufacture of Wood & Wood Product,28,0,Manufacture of Wood & Wood Product,0,0,0,0,0,0,0,0,0
+3710,,,Recycling of metal waste and scrap,Recycling,29,0,Recycling,0,0,0,0,0,0,0,0,0
+1600,,,Manufacture of tobacco products,Manufacture of Textiles,30,0,Manufacture of Textiles & Textile Products,0,0,0,0,0,0,0,0,0
+2873,,,Manufacture of wire products,Metals,31,0,"Manufacture Fabricated Metal, Not Machines",0,0,0,0,0,0,0,0,0
+2821,,,"Manufacture of tanks, reservoirs and containers of metal",Metals,32,0,"Manufacture Fabricated Metal, Not Machines",0,0,0,0,0,0,0,0,0
+1821,,,Manufacture of workwear,Manufacture of Textiles and Leather,33,0,Manufacture of Textiles & Textile Products,0,0,0,0,0,0,0,0,0
+201,,,Forestry and logging,"Agriculture, Hunting and Forestry",34,0,"Agriculture, Hunting and Forestry",0,0,0,0,0,0,0,0,0
+3640,,,Manufacture of sports goods,Manufacture Other,35,0,Manufacturing nec,0,0,0,0,0,0,0,0,0
+5118,,,Agents specializing in the sale of particular products or ranges of products n.e.c.,Retail,36,0,"Wholesale, Retail; Certain Repair (cont.)",0,0,0,0,0,0,0,0,0
+2020,,,"Manufacture of veneer sheets; manufacture of plywood, laminboard, particle board, fibre board and other panels and boards",Manufacture of Wood & Wood Product,37,0,Manufacture of Wood & Wood Product,0,0,0,0,0,0,0,0,0
+2651,,,Manufacture of cement,Manufacture Other,39,0,Manufacture Other Non-Metal Mineral Products,0,0,0,0,0,0,0,0,0
+1713,,,Preparation and spinning of worsted-type fibres,Manufacture of Textiles and Leather,40,0,Manufacture of Textiles & Textile Products,0,0,0,0,0,0,0,0,0
+1920,,,"Manufacture of luggage, handbags and the like, saddlery and harness",Manufacture of Textiles and Leather,41,0,Manufacture of Leather & Leather Products,0,0,0,0,0,0,0,0,0
+2615,,,"Manufacture and processing of other glass, including technical glassware",Manufacture Other,42,0,Manufacture Other Non-Metal Mineral Products,0,0,0,0,0,0,0,0,0
+1712,,,Preparation and spinning of woollen-type fibres,Manufacture of Textiles and Leather,43,0,Manufacture of Textiles & Textile Products,0,0,0,0,0,0,0,0,0
+3140,,,"Manufacture of accumulators, primary cells and primary batteries","Manufacture of Machinery, Electrical",44,0,Manufacture of Electrical Machinery etc.,0,0,0,0,0,0,0,0,0
+3622,,,Manufacture of jewellery and related articles n.e.c.,Manufacture Other,45,0,Manufacturing nec,0,0,0,0,0,0,0,0,0
+4541,,,Plastering,Construction,46,0,Construction,0,0,0,0,0,0,0,0,0
+5122,,,Wholesale of flowers and plants,Retail,47,0,"Wholesale, Retail; Certain Repair (cont.)",0,0,0,0,0,0,0,0,0
+2752,,,Casting of steel,Metals,48,0,Basic Metals & Fabricated Products,0,0,0,0,0,0,0,0,0
+9212,,,Motion picture and video distribution,Services,49,0,"Recreational, Cultural & Sporting",0,0,0,0,0,0,0,0,0
+1572,,,Manufacture of prepared pet foods,Manufacture of Food,50,0,Manufacture of Food; Beverages & Tobacco,0,0,0,0,0,0,0,0,0
+2614,,,Manufacture of glass fibres,Manufacture Other,51,0,Manufacture Other Non-Metal Mineral Products,0,0,0,0,0,0,0,0,0
+2124,,,Manufacture of wallpaper,Manufacture Paper; Publishing; Printing,52,0,Manufacture Paper; Publishing; Printing,0,0,0,0,0,0,0,0,0
+1760,,,Manufacture of knitted and crocheted fabrics,Manufacture of Textiles and Leather,53,0,Manufacture of Textiles & Textile Products,0,0,0,0,0,0,0,0,0
+2681,,,Production of abrasive products,Manufacture Other,54,0,Manufacture Other Non-Metal Mineral Products,0,0,0,0,0,0,0,0,0
+1910,,,Tanning and dressing of leather,Manufacture of Textiles and Leather,55,0,Manufacture of Leather & Leather Products,0,0,0,0,0,0,0,0,0
+2734,,,Wire drawing,Metals,56,0,Basic Metals & Fabricated Products,0,0,0,0,0,0,0,0,0
+2745,,,Other non-ferrous metal production,Metals,57,0,Basic Metals & Fabricated Products,0,0,0,0,0,0,0,0,0
+1721,,,Cotton-type weaving,Manufacture of Textiles and Leather,58,0,Manufacture of Textiles & Textile Products,0,0,0,0,0,0,0,0,0
+5136,,,Wholesale of sugar and chocolate and sugar confectionery,Retail,59,0,"Wholesale, Retail; Certain Repair (cont.)",0,0,0,0,0,0,0,0,0
+2721,,,Manufacture of cast iron tubes,Metals,60,0,Basic Metals & Fabricated Products,0,0,0,0,0,0,0,0,0
+9233,,,Fair and amusement park activities,Services,61,0,"Recreational, Cultural & Sporting",0,0,0,0,0,0,0,0,0
+2954,,,"Manufacture of machinery for textile, apparel and leather production","Manufacture of Machinery, Electrical",62,0,Manufacture of Machinery & Equipment,0,0,0,0,0,0,0,0,0
+2955,,,Manufacture of machinery for paper and paperboard production,"Manufacture of Machinery, Electrical",63,0,Manufacture of Machinery & Equipment,0,0,0,0,0,0,0,0,0
+2921,,,Manufacture of furnaces and furnace burners,"Manufacture of Machinery, Electrical",64,0,Manufacture of Machinery & Equipment,0,0,0,0,0,0,0,0,0
+1583,,,Manufacture of sugar,Manufacture of Food,66,0,Manufacture of Food; Beverages & Tobacco,0,0,0,0,0,0,0,0,0
+2415,,,Manufacture of fertilizers and nitrogen compounds,Manufacture Chemicals/Plastics,67,0,"Manufacture Chemicals, Prods & Man-Made",0,0,0,0,0,0,0,0,0
+2231,,,Reproduction of sound recording,Manufacture Paper; Publishing; Printing,68,0,Manufacture Paper; Publishing; Printing,0,0,0,0,0,0,0,0,0
+2670,,,"Cutting, shaping and finishing of ornamental and building stone",Manufacture Other,69,0,Manufacture Other Non-Metal Mineral Products,0,0,0,0,0,0,0,0,0
+3662,,,Manufacture of brooms and brushes,Manufacture Other,70,0,Manufacturing nec,0,0,0,0,0,0,0,0,0
+2861,,,Manufacture of cutlery,Metals,71,0,"Manufacture Fabricated Metal, Not Machines",0,0,0,0,0,0,0,0,0
+2463,,,Manufacture of essential oils,Manufacture Chemicals/Plastics,72,0,"Manufacture Chemicals, Prods & Man-Made",0,0,0,0,0,0,0,0,0
+2630,,,Manufacture of ceramic tiles and flags,Manufacture Other,73,0,Manufacture Other Non-Metal Mineral Products,0,0,0,0,0,0,0,0,0
+2417,,,Manufacture of synthetic rubber in primary forms,Manufacture Chemicals/Plastics,74,0,"Manufacture Chemicals, Prods & Man-Made",0,0,0,0,0,0,0,0,0
+2871,,,Manufacture of steel drums and similar containers,Metals,75,0,"Manufacture Fabricated Metal, Not Machines",0,0,0,0,0,0,0,0,0
+5117,,,"Agents involved in the sale of food, beverages and tobacco",Retail,76,0,"Wholesale, Retail; Certain Repair (cont.)",0,0,0,0,0,0,0,0,0
+1723,,,Worsted-type weaving,Manufacture of Textiles and Leather,77,0,Manufacture of Textiles & Textile Products,0,0,0,0,0,0,0,0,0
+1753,,,"Manufacture of non-wovens and articles made from non-wovens, except apparel",Manufacture of Textiles and Leather,78,0,Manufacture of Textiles & Textile Products,0,0,0,0,0,0,0,0,0
+502,,,Fish farming,"Agriculture, Hunting and Forestry",79,0,Fishing,0,0,0,0,0,0,0,0,0
+3542,,,Manufacture of bicycles,Manufacture of Transport Equipment,80,0,Manufacture of Other Transport Equipment,0,0,0,0,0,0,0,0,0
+5137,,,"Wholesale of coffee, tea, cocoa and spices",Retail,81,0,"Wholesale, Retail; Certain Repair (cont.)",0,0,0,0,0,0,0,0,0
+3720,,,Recycling of non-metal waste and scrap,Recycling,82,0,Recycling,0,0,0,0,0,0,0,0,0
+1532,,,Manufacture of fruit and vegetable juice,Manufacture of Food,83,0,Manufacture of Food; Beverages & Tobacco,0,0,0,0,0,0,0,0,0
+5119,,,Agents involved in the sale of a variety of goods,Retail,84,0,"Wholesale, Retail; Certain Repair (cont.)",0,0,0,0,0,0,0,0,0
+1725,,,Other textile weaving,Manufacture of Textiles and Leather,85,0,Manufacture of Textiles & Textile Products,0,0,0,0,0,0,0,0,0
+1722,,,Woollen-type weaving,Manufacture of Textiles and Leather,86,0,Manufacture of Textiles & Textile Products,0,0,0,0,0,0,0,0,0
+2662,,,Manufacture of plaster products for construction purposes,Manufacture Other,87,0,Manufacture Other Non-Metal Mineral Products,0,0,0,0,0,0,0,0,0
+9234,,,Other entertainment activities not elsewhere classified,Services,88,0,"Recreational, Cultural & Sporting",0,0,0,0,0,0,0,0,0
+1597,,,Manufacture of malt,Manufacture of Food,89,0,Manufacture of Food; Beverages & Tobacco,0,0,0,0,0,0,0,0,0
+2512,,,Retreading and rebuilding of rubber tyres,Manufacture Chemicals/Plastics,90,0,Manufacture of Rubber & Plastic Products,0,0,0,0,0,0,0,0,0
+5163,,,,,91,0,,0,0,0,0,0,0,0,0,0
+2470,,,Manufacture of man-made fibres,Manufacture Chemicals/Plastics,92,0,"Manufacture Chemicals, Prods & Man-Made",0,0,0,0,0,0,0,0,0
+5111,,,"Agents involved in the sale of agricultural raw materials, live animals, textile raw materials and semi-finished goods",Retail,93,0,"Wholesale, Commission, Not Motors",0,0,0,0,0,0,0,0,0
+1585,,,"Manufacture of macaroni, noodles, couscous and similar farinaceous products",Manufacture of Food,94,0,Manufacture of Food; Beverages & Tobacco,0,0,0,0,0,0,0,0,0
+5521,,,Youth hostels and mountain refuges,Hotels and Restaurants,95,0,Hotels and Restaurants,0,0,0,0,0,0,0,0,0
+2233,,,Reproduction of computer media,Manufacture Paper; Publishing; Printing,96,0,Manufacture Paper; Publishing; Printing,0,0,0,0,0,0,0,0,0
+1716,,,Manufacture of sewing threads,Manufacture of Textiles and Leather,97,0,Manufacture of Textiles & Textile Products,0,0,0,0,0,0,0,0,0
+1711,,,Preparation and spinning of cotton-type fibres,Manufacture of Textiles and Leather,98,0,Manufacture of Textiles & Textile Products,0,0,0,0,0,0,0,0,0
+501,,,Fishing,"Agriculture, Hunting and Forestry",99,0,Fishing,0,0,0,0,0,0,0,0,0
+5112,,,"Agents involved in the sale of fuels, ores, metals and industrial chemicals",Retail,100,0,"Wholesale, Commission, Not Motors",0,0,0,0,0,0,0,0,0
+1594,,,Manufacture of cider and perry Manufacture of other fermented fruit beverages,Manufacture of Food,101,0,Manufacture of Food; Beverages & Tobacco,0,0,0,0,0,0,0,0,0
+5113,,,Agents involved in the sale of timber and building materials,Retail,102,0,"Wholesale, Commission, Not Motors",0,0,0,0,0,0,0,0,0
+2232,,,Reproduction of video recording,Manufacture Paper; Publishing; Printing,103,0,Manufacture Paper; Publishing; Printing,0,0,0,0,0,0,0,0,0
+2461,,,Manufacture of explosives,Manufacture Chemicals/Plastics,104,0,"Manufacture Chemicals, Prods & Man-Made",0,0,0,0,0,0,0,0,0
+2310,,,Manufacture of coke oven products,Manufacture Paper; Publishing; Printing,105,0,Manufacture Paper; Publishing; Printing,0,0,0,0,0,0,0,0,0
+2743,,,"Lead, zinc and tin production",Metals,106,0,Basic Metals & Fabricated Products,0,0,0,0,0,0,0,0,0
+2733,,,Cold forming or folding,Metals,107,0,Basic Metals & Fabricated Products,0,0,0,0,0,0,0,0,0
+1562,,,Manufacture of starches and starch products,Manufacture of Food,108,0,Manufacture of Food; Beverages & Tobacco,0,0,0,0,0,0,0,0,0
+2411,,,Manufacture of industrial gases,Manufacture Chemicals/Plastics,109,0,"Manufacture Chemicals, Prods & Man-Made",0,0,0,0,0,0,0,0,0
+3543,,,Manufacture of invalid carriages,Manufacture of Transport Equipment,110,0,Manufacture of Other Transport Equipment,0,0,0,0,0,0,0,0,0
+3630,,,Manufacture of musical instruments,Manufacture Other,111,0,Manufacturing nec,0,0,0,0,0,0,0,0,0
+2741,,,Precious metals production,Metals,112,0,Basic Metals & Fabricated Products,0,0,0,0,0,0,0,0,0
+2666,,,"Manufacture of other articles of concrete, plaster and cement",Manufacture Other,113,0,Manufacture Other Non-Metal Mineral Products,0,0,0,0,0,0,0,0,0
+2735,,,,,114,0,,0,0,0,0,0,0,0,0,0
+5115,,,"Agents involved in the sale of furniture, household goods, hardware and ironmongery",Retail,115,0,"Wholesale, Retail; Certain Repair (cont.)",0,0,0,0,0,0,0,0,0
+1752,,,"Manufacture of cordage, rope, twine and netting",Manufacture of Textiles and Leather,116,0,Manufacture of Textiles & Textile Products,0,0,0,0,0,0,0,0,0
+202,,,Forestry and logging related service activities,"Agriculture, Hunting and Forestry",117,0,"Agriculture, Hunting and Forestry",0,0,0,0,0,0,0,0,0
+2624,,,Manufacture of other technical ceramic products,Manufacture Other,118,0,Manufacture Other Non-Metal Mineral Products,0,0,0,0,0,0,0,0,0
+5124,,,Wholesale of furskins,Retail,119,0,"Wholesale, Retail; Certain Repair (cont.)",0,0,0,0,0,0,0,0,0
+3350,,,Manufacture of watches and clocks,"Manufacture of Machinery, Electrical",120,0,Manufacture Medical & Precision Instruments,0,0,0,0,0,0,0,0,0
+2665,,,Manufacture of fibre cement,Manufacture Other,121,0,Manufacture Other Non-Metal Mineral Products,0,0,0,0,0,0,0,0,0
+1715,,,"Throwing and preparation of silk, including from noils, and throwing and texturing of synthetic or artificial filament yarns",Manufacture of Textiles and Leather,122,0,Manufacture of Textiles & Textile Products,0,0,0,0,0,0,0,0,0
+1430,,,Mining of chemical and fertilizer minerals,Minning,123,0,Mining and Quarrying,0,0,0,0,0,0,0,0,0
+1588,,,Manufacture of homogenized food preparations and dietetic food,Manufacture of Food,124,0,Manufacture of Food; Beverages & Tobacco,0,0,0,0,0,0,0,0,0
+7131,,,Renting of agricultural machinery and equipment,Buisness activities,125,0,Renting Equipment Without Operator,0,0,0,0,0,0,0,0,0
+1542,,,Manufacture of refined oils and fats,Manufacture of Food,126,0,Manufacture of Food; Beverages & Tobacco,0,0,0,0,0,0,0,0,0
+4512,,,Test drilling and boring,Construction,127,0,Construction,0,0,0,0,0,0,0,0,0
+0,,,,,128,0,,0,0,0,0,0,0,0,0,0
+150,,,"Hunting, trapping and game propagation, including related service activities","Agriculture, Hunting and Forestry",129,0,"Agriculture, Hunting and Forestry",0,0,0,0,0,0,0,0,0
+1020,,,Mining and agglomeration of lignite,Minning,130,0,Mining and Quarrying,0,0,0,0,0,0,0,0,0
+1030,,,Extraction and agglomeration of peat,Minning,131,0,Mining and Quarrying,0,0,0,0,0,0,0,0,0
+1200,,,Mining of uranium and thorium ores,Minning,132,0,Mining and Quarrying,0,0,0,0,0,0,0,0,0
+1310,,,Mining of iron ores,Minning,133,0,Mining and Quarrying,0,0,0,0,0,0,0,0,0
+1320,,,"Mining of non-ferrous metal ores, except uranium and thorium ores",Minning,134,0,Mining and Quarrying,0,0,0,0,0,0,0,0,0
+1413,,,Quarrying of slate,Minning,135,0,Mining and Quarrying,0,0,0,0,0,0,0,0,0
+1440,,,Production of salt,Minning,136,0,Mining and Quarrying,0,0,0,0,0,0,0,0,0
+1450,,,Other mining and quarrying n.e.c.,Minning,137,0,Mining and Quarrying,0,0,0,0,0,0,0,0,0
+1541,,,Manufacture of crude oils and fats,Manufacture of Food,138,0,Manufacture of Food; Beverages & Tobacco,0,0,0,0,0,0,0,0,0
+1592,,,Production of ethyl alcohol from fermented materials,Manufacture of Food,139,0,Manufacture of Food; Beverages & Tobacco,0,0,0,0,0,0,0,0,0
+1593,,,Manufacture of wine of fresh grapes and grape juice Manufacture of wine based on concentrated grape must,Manufacture of Food,140,0,Manufacture of Food; Beverages & Tobacco,0,0,0,0,0,0,0,0,0
+1595,,,Manufacture of other non-distilled fermented beverages,Manufacture of Food,141,0,Manufacture of Food; Beverages & Tobacco,0,0,0,0,0,0,0,0,0
+1714,,,Preparation and spinning of flax-type fibres,Manufacture of Textiles and Leather,142,0,Manufacture of Textiles & Textile Products,0,0,0,0,0,0,0,0,0
+1717,,,Preparation and spinning of other textile fibres,Manufacture of Textiles and Leather,143,0,Manufacture of Textiles & Textile Products,0,0,0,0,0,0,0,0,0
+1810,,,Manufacture of leather clothes,Manufacture of Textiles and Leather,144,0,Manufacture of Textiles & Textile Products,0,0,0,0,0,0,0,0,0
+1830,,,Dressing and dyeing of fur; manufacture of articles of fur,Manufacture of Textiles and Leather,145,0,Manufacture of Textiles & Textile Products,0,0,0,0,0,0,0,0,0
+2052,,,"Manufacture of articles of cork, straw and plaiting materials",Manufacture Paper; Publishing; Printing,146,0,Manufacture Paper; Publishing; Printing,0,0,0,0,0,0,0,0,0
+2111,,,Manufacture of pulp,Manufacture Paper; Publishing; Printing,147,0,Manufacture Paper; Publishing; Printing,0,0,0,0,0,0,0,0,0
+2214,,,Publishing of sound recordings,Manufacture Paper; Publishing; Printing,148,0,Manufacture Paper; Publishing; Printing,0,0,0,0,0,0,0,0,0
+2465,,,Manufacture of prepared unrecorded media,Manufacture Chemicals/Plastics,149,0,"Manufacture Chemicals, Prods & Man-Made",0,0,0,0,0,0,0,0,0
+2623,,,Manufacture of ceramic insulators and insulating fittings,Manufacture Other,150,0,Manufacture Other Non-Metal Mineral Products,0,0,0,0,0,0,0,0,0
+2625,,,Manufacture of other ceramic products,Manufacture Other,151,0,Manufacture Other Non-Metal Mineral Products,0,0,0,0,0,0,0,0,0
+2652,,,Manufacture of lime,Manufacture Other,152,0,Manufacture Other Non-Metal Mineral Products,0,0,0,0,0,0,0,0,0
+2653,,,Manufacture of plaster,Manufacture Other,153,0,Manufacture Other Non-Metal Mineral Products,0,0,0,0,0,0,0,0,0
+2664,,,Manufacture of mortars,Manufacture Other,154,0,Manufacture Other Non-Metal Mineral Products,0,0,0,0,0,0,0,0,0
+2731,,,Cold drawing,Metals,155,0,Basic Metals & Fabricated Products,0,0,0,0,0,0,0,0,0
+3541,,,Manufacture of motorcycles,Manufacture of Transport Equipment,156,0,Manufacture of Other Transport Equipment,0,0,0,0,0,0,0,0,0
+3550,,,Manufacture of other transport equipment n.e.c.,Manufacture of Transport Equipment,157,0,Manufacture of Other Transport Equipment,0,0,0,0,0,0,0,0,0
+3621,,,Striking of coins,Manufacture Other,158,0,Manufacturing nec,0,0,0,0,0,0,0,0,0
+3661,,,Manufacture of imitation jewellery,Manufacture Other,159,0,Manufacturing nec,0,0,0,0,0,0,0,0,0
+4030,,,Steam and hot water supply,"Electricity, Gas and Water Supply",160,0,"Electricity, Gas and Water Supply",0,0,0,0,0,0,0,0,0
+5123,,,Wholesale of live animals,Retail,161,0,"Wholesale, Retail; Certain Repair (cont.)",0,0,0,0,0,0,0,0,0
+5125,,,Wholesale of unmanufactured tobacco,Retail,162,0,"Wholesale, Retail; Certain Repair (cont.)",0,0,0,0,0,0,0,0,0
+5183,,,Wholesale of machinery for the textile industry and of sewing and knitting machines,Retail,163,0,Wholesale of other household goods n.e.c.,0,0,0,0,0,0,0,0,0
+5223,,,"Retail sale of fish, crustaceans and molluscs",Retail,164,0,"Retail Trade, Not Motors; Repairs",0,0,0,0,0,0,0,0,0
+5273,,,"Repair of watches, clocks and jewellery",Retail,165,0,"Retail Trade, Not Motors; Repairs",0,0,0,0,0,0,0,0,0
+6030,,,Transport via pipelines,Transport,166,0,Transport,0,0,0,0,0,0,0,0,0
+6230,,,Space transport,Transport,167,0,Transport,0,0,0,0,0,0,0,0,0
+7012,,,Buying and selling of own real estate,Buisness activities,168,0,"Real Estate, Renting & Business",0,0,0,0,0,0,0,0,0
+7122,,,"Renting of passenger water transport equipment,Renting of other water transport equipment",Buisness activities,169,0,Renting Equipment Without Operator,0,0,0,0,0,0,0,0,0
+7123,,,"Renting of passenger air transport equipment,Renting of other air transport equipment",Buisness activities,170,0,Renting Equipment Without Operator,0,0,0,0,0,0,0,0,0
+9600,,,Undifferentiated goods producing activities of private households for own use,Services,171,0,Other Service Activities,0,0,0,0,0,0,0,0,0
+9700,,,Undifferentiated services producing activities of private households for own use,Services,172,0,Other Service Activities,0,0,0,0,0,0,0,0,0
+9900,,,Extra-territorial organizations and bodies,Services,173,0,Other Service Activities,0,0,0,0,0,0,0,0,0
