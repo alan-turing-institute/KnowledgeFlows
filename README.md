@@ -19,12 +19,12 @@ The existing directories are the following.
 
 ### securelab_data_outputs
 
-Contains the data exported from the secure lab, these are the matrices reflecting worker mobility between industries for
+Contains the data exported from the secure lab, these are the matrices reflecting labour flows matrices between industries for
 different time periods and industrial classifications.
 
 ### R 
 
-This repo contains the *rkf* that processes the worker mobility matrices and secure lab (found in the **SecureLab_data_outputs** 
+This repo contains the *rkf* that processes the labour flows matrices exported from the secure lab (found in the **Securelab_data_outputs** 
 directory) to build the skill relatedness matrices relevant to this project.
 
 ### python
