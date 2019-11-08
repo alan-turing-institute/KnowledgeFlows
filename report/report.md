@@ -117,7 +117,7 @@ are dominated by female workers (number of transition of female workers is X tim
  [WRITE OBSERVATION ABOUT THE TABLES]
 
 
-Table 3. Number of labour transitions observed between 4-digit industries every year from 1997 to 2018 in the ASHE dataset using the **flows**
+Table 3. Number of labour transitions observed between 4-digit industries every year from 1997 to 2018 in the ASHE dataset using the **connections**
 algorithm. Counts are presented by gender, region and total values. 
         
 | Year | Total workers observed | Number Female Transitions | Number Male Transitions | N. Regions |Total transitions observed |
@@ -229,7 +229,7 @@ present in the UK economy can be missing completely in the resulting matrices (i
 pair of industries is 9, not passing statistical disclosure control from the UKDS).
 
 Table 7. Top 20 transitions with highest $SR_{sym}$  weight observed in the ASHE dataset in the period of 2009 to 2018
-for both the **flows** and **connections** algorithms.  In this table, the transitions are undirected.
+for both the **connections** algorithm.  In this table, the transitions are undirected.
 
 
 | Industry                            |   Industry                         | Total counts | $SR_{sym}$    |
@@ -289,7 +289,7 @@ which is obtained using the open access Business Register and Employment Survey 
 ![Visualisation of the skill-relatedness network for the United Kingdom using the **connection** algorithm in the period from
 2009 to 2018. Each node represents a 4-digit industry and each edge the skill-relatedness between the corresponding industry pair. Nodes are sized by the total
 employment size in the United Kingdom during 2015 and coloured according to their industry classification. Only positive edges are shown. The node layout is based on a spring
-algorithm called ‘Force Atlas’ in Gephi. \label{Network20092018_conn}][Network20092018_conn]
+algorithm called ‘Force Atlas’ in Gephi. \label{Network20092018_conn_inds}][Network20092018_conn_inds]
 
 
 ## Skill-related industry clusters for the 2009 - 2018 period
@@ -315,7 +315,7 @@ by the Markov Stability Algorithm at different Markov times. \label{MarkovTimeco
 
   
 Figure \ref{MarkovTimeFlows} shows  the number of communities, the stability function and the variance in information obtained when 
-running the Markov Stability algorithm on the **flows** network for the 2009-2018 period for different time resolution
+running the Markov Stability algorithm on the **connections** network for the 2009-2018 period for different time resolution
 parameters. The information variation figure shows 
 that there are several Markov times where there are local minimum, where are relative stable partition is found (eg. times 4, 15). 
 
@@ -332,29 +332,26 @@ algorithm called ‘Force Atlas’ in Gephi. \label{Network20092018_conn}][Netwo
  
 According to the methodology of O’Clery et al. the different node partitions obtained at different markov time resolutions are
 used to understand the nested structure of the UK labour market, this is shown in Figure \ref{CommunityEvolution} for markov times 1, 4,
-25 and 50. This evolution shows how first, most clusters contain very similar industries and is generally compatible with 
-their SIC 2007 classification. In the next step, the government and services industries join together into a larger group, whilst finance, law, technology
-and other business activities are now part of another bigger group. In the other
-hand, food manufacture and agriculture and retail become another larger group. In the final step, the network is split  in two parts, one
-containing services, government and general business activities and the other covering the manufacturing industries. 
- 
+15 and 20. This evolution shows how first, most clusters contain very similar industries and is generally compatible with 
+their SIC 2007 classification. In the next step, the government and services industries join together into a larger group and finance, law, technology
+and other business activities are now part of another group, whilst in the other
+hand heavy manufacture (chemicals, plastics, metals), construction and mining become another larger group. In the final step, the network is splits in 4 parts:
+one large group containing services, government and general business activities and another covering the manufacturing industries, a third small
+ group is representing agriculture activities plus a final group with the transportation industries. 
 
 
-![Caption of 1](figures/2009_2018_conns_1.png){width=50%}
+
+![](figures/2009_2018_conns_1.png){width=50%}
 ![](figures/2009_2018_conn_4.png){width=50%}
 ![](figures/2009_2018_conn_15.png){width=50%}
 ![](figures/2009_2018_conn_20.png){width=50%}
 \begin{figure}[!h]
 \caption{Visualisation of the skill-relatedness network for the United Kingdom using the \textbf{connection} algorithm in the period from
 2009 to 2018. The communities are coloured according to their industry cluster detected according to the Markov
-Stability Algorithm which is estimated at different resolutions (t=1, 4, 25 and 50).  Each node represents a 4-digit industry and each 
+Stability Algorithm which is estimated at different resolutions (t=1, 4, 15 and 20).  Each node represents a 4-digit industry and each 
 edge the skill-relatedness between the corresponding industry pair. Nodes are sized by the total
 employment size in the United Kingdom during 2015. Only positive edges are shown. The node layout is based on a spring
 algorithm called ‘Force Atlas’ in Gephi.}
 \label{CommunityEvolution_conn}
 \end{figure}
-
-
-    
-
 

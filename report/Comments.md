@@ -26,6 +26,8 @@
 
 * Transition that exceed 10 counts or >= than 10 ? [FIXED]
 
+* Make clear to explain what is symmetrical counts or not
+
 * Be clear of what the tables of total flows show (what are we counting).
 
 * Talk about percentage of non-zero entries. [DONE]
@@ -54,7 +56,7 @@ Add a counts adjacency matrix.
 
 * Draw lines on the minimums of information corresponding to the times that we chose. [DONE]
 
-* Label tau on the figures and the sectors labeling all the figures.
+* Label tau on the figures and the sectors labeling all the figures. [DONE]
 
 * Dendrogram 
 

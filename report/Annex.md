@@ -330,14 +330,15 @@ by the Markov Stability Algorithm at different Markov times. \label{MarkovTimecf
 
 The different node partitions obtained at different markov time resolutions are
 used to understand the nested structure of the UK labour market, this is shown in Figure \ref{CommunityEvolution}.
-
-Following the same pattern as the results using the **flows** network, at first, most clusters contain very similar industries and is generally compatible with 
-their nominal industrial classification. In the next step, the government and services industries join together into a larger group and finance, law, technology
-and other business activities are now part of another group, whilst in the other
-hand heavy manufacture (chemicals, plastics, metals), construction and mining become another larger group. In the final step, the network is splits in 4 parts:
-one large group containing services, government and general business activities and another covering the manufacturing industries, a third small
- group is representing agriculture activities plus a final group with the transportation industries. 
-
+ 
+According to the methodology of O’Clery et al. the different node partitions obtained at different markov time resolutions are
+used to understand the nested structure of the UK labour market, this is shown in Figure \ref{CommunityEvolution} for markov times 1, 4,
+15 and 20. This evolution shows how first, most clusters contain very similar industries and is generally compatible with 
+their SIC 2007 classification. In the next step, the government and services industries join together into a larger group, whilst finance, law, technology
+and other business activities are now part of another bigger group. In the other
+hand, food manufacture and agriculture and retail become another larger group. In the final step, the network is split  in two parts, one
+containing services, government and general business activities and the other covering the manufacturing industries. 
+ 
  
 ![](figures/2009_2018_flows.png){width=50%}
 ![](figures/2009_2018_flows_4.png){width=50%}
