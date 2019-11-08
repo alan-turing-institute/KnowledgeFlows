@@ -51,6 +51,7 @@ add_labels_to_reduced_matrix <- function(reduced_matrix,previous_matrix,ind_clas
    }
    else{
      counts <- old_count$Counts
+
    }
 
    # find labels for that entry (subactivity, activity, etc)

@@ -35,7 +35,7 @@ def draw_adjacency_matrix(reduced_matrix, columns_to_be_sorted, label,axis_label
 
 
 
-    selected_reduced_matrix = reduced_matrix[['StartIndst', 'FinalIndst', 'MainIndustry_StartIndst', 'weight','MainActivity_StartIndst','SubActivity_StartIndst']]
+    selected_reduced_matrix = reduced_matrix[['StartIndst', 'FinalIndst', 'MainIndustry_StartIndst', 'weight','MainActivity_StartIndst','SubActivity_StartIndst','Counts']]
 
     reduced_matrix_sorted = selected_reduced_matrix.sort_values(by=columns_to_be_sorted, ascending=True)
 
@@ -75,7 +75,7 @@ def draw_adjacency_matrix(reduced_matrix, columns_to_be_sorted, label,axis_label
     x_axis = sorted_inds
 
     fig, ax = plt.subplots(figsize=(180, 180))
-    im = ax.imshow(list_row)
+    im = ax.imshow(list_row,cmap='RdBu')
 
     # We want to show all ticks...
     ax.set_xticks(np.arange(len(x_axis)))
@@ -113,7 +113,7 @@ def draw_adjacency_matrix_nolabel(reduced_matrix, columns_to_be_sorted, label,mi
     '''
 
 
-    selected_reduced_matrix = reduced_matrix[['StartIndst', 'FinalIndst', 'MainIndustry_StartIndst', 'weight','MainActivity_StartIndst','SubActivity_StartIndst']]
+    selected_reduced_matrix = reduced_matrix[['StartIndst', 'FinalIndst', 'MainIndustry_StartIndst', 'weight','MainActivity_StartIndst','SubActivity_StartIndst','Counts']]
 
     reduced_matrix_sorted = selected_reduced_matrix.sort_values(by=columns_to_be_sorted, ascending=True)
 
@@ -143,7 +143,7 @@ def draw_adjacency_matrix_nolabel(reduced_matrix, columns_to_be_sorted, label,mi
 
     fig, ax = plt.subplots(figsize=(30, 30))
 
-    im = ax.imshow(list_row)
+    im = ax.imshow(list_row,cmap='BuPu',vmax=200)
     cb = fig.colorbar(im, ax=ax)
     cb.ax.tick_params(labelsize=20, width=2)
     ax.set(ylabel='Industries',xlabel='Industries')

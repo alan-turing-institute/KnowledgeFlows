@@ -62,7 +62,7 @@ fill_industry_transition_matrix_from_reduced <- function(reduced_matrix,algorith
       }
       # assign the counts to the adjacency matrix
       transition_matrix[row_label, column_label] <-  (count1+count2)
-      transition_matrix[column_label, row_label] <-  (count1+count2)
+      transition_matrix[column_label, row_label] <-  transition_matrix[row_label, column_label]
     }
     else {
 

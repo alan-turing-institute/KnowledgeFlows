@@ -42,6 +42,12 @@ create_normalised_transition_matrix_from_reduced <- function(reduced_matrix,minc
   # reduce adjacency matrix to a 3-column sample with source/target type
   new_reduced_matrix <- create_reduced_transition_matrix(SR_normalised_transformed,mincuts)
 
+  if (algorithm=='CONN'){
+
+    reduced_matrix <- create_reduced_transition_matrix(transition_matrix,9)
+    reduced_matrix$Counts <- reduced_matrix$weight
+
+  }
   # add labels to reduced matrix (activity labels)
   reduced_matrix_withlabels <- add_labels_to_reduced_matrix(new_reduced_matrix,reduced_matrix,ind_class)
 
