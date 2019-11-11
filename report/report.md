@@ -55,12 +55,13 @@ measurement of job transitions is kept to the minimum. The selection criteria ar
 
 ## Data description
 
-[TODO]: Add information on number of workers, ASHE/BRES ratio, etc.
+TODO: ADD INFORMATION ABOUT DATA: NUMBER OF WORKERS, ASHE/BRES RATIO, ETC.
 
 # Method
  \label{method}
  
-The job transitions are measured in a per-worker basis. 
+The job transitions are measured in a per-worker basis and are defined as any two jobs observed for a particular worker in
+a determined period of time.  
 
 For each worker found in the ASHE dataset that passes the selection
 steps described in Section \ref{dataselection}, a table of all the jobs recorded is extracted. This *job table* contains 
@@ -71,22 +72,22 @@ post code of the work establishment associated to that job.
         
 | Id | Year | Industrial Classification    | Work Post code       |
 |----|------|----------------|-------------|
-| 1  | 2009 | A              | A1          |
-| 1  | 2010 | A              | A1          |
-| 1  | 2010 | B              | B1          |
-| 1  | 2011 | C              | C1          |
-| 1  | 2013 | D              | D1          |
-| 1  | 2013 | D              | D2          |
+| 1  | 2009 | IndustryA              | A1          |
+| 1  | 2010 | IndustryA              | A1          |
+| 1  | 2010 | IndustryB              | B1          |
+| 1  | 2011 | IndustryC              | C1          |
+| 1  | 2013 | IndustryD              | D1          |
+| 1  | 2013 | IndustryD              | D2          |
 
 
 Using this table, two approaches can be followed to measure the actual job transition. In this section, the method of **connections**
-is explained next. An alternative method for estimating the transitions so-called the **flows** method is described in section ~\ref{flows} of
+is explained next. An alternative method for estimating the transitions so-called the **flows** method is described in section \ref{flows} of
  the Annex. 
  
 
 
 ## Transitions as "connections"
-
+\label{connections}
 Define a **connection** as all possible unique combinations found in the *job table* for that individual worker, that comply with the following rules:
 
    * A valid **connection** can not be separated by more than 2 years.
@@ -97,27 +98,33 @@ In the example case of Table 1, the **connections** will be the following:
 
 | Id    | Connection | Year Difference    |Work  Postcodes   |
 |-------|------------|----------|---------|
-| 1     | A-B        |2009-2010 | A1-B1   | 
-| 1     | A-C        |2009-2011 | A1-C1   | 
-| 1     | B-C        |2010-2011 | B1-C1   | 
-| 1     | C-D        |2011-2013 | C1-D1   | 
-| 1     | C-D        |2011-2013 | C1-D2   | 
-| 1     | D-D        |2013-2013 | D1-D2   | 
+| 1     | IndustryA - IndustryB        |2009-2010 | A1-B1   | 
+| 1     | IndustryA - IndustryC        |2009-2011 | A1-C1   | 
+| 1     | IndustryB - IndustryC        |2010-2011 | B1-C1   | 
+| 1     | IndustryC - IndustryD        |2011-2013 | C1-D1   | 
+| 1     | IndustryC - IndustryD        |2011-2013 | C1-D2   | 
+| 1     | IndustryD - IndustryD        |2013-2013 | D1-D2   | 
         
+        
+The **connections** are undirected intrinsically (eg. a connection from IndustryA - IndustryB is the same as the connection
+from IndustryB - IndustryA). In the data, both cases can be found, therefore, a further symmetrical step needs to be applied:
+
+$(IndustryA - IndustryB)_{unidirected} =   #(IndustryA - IndustryB) + #(IndustryB - IndustryA)$
 
 ## Result: a matrix of transition counts
-\label{countmatrices}
+\label{countmatrices_flows}
 
 For each time period (1997-2008 and 2009-2018) and worker observed in the ASHE dataset, the transitions are obtained with the process explained above.
 Then, industry classifications are aggregated into a 4-digit code and all transitions tables are added into a single matrix.
 
-The total number of transitions observed from 1997 to 2018 for the **connection** algorithms are shown in Tables 3. An interesting observation 
+The total number of transitions observed from 1997 to 2018 for the **connection** algorithms are shown in Table 2. An interesting observation 
 shown in these tables is that the transitions 
 are dominated by female workers (number of transition of female workers is X times larger than the male workers on average).
- [WRITE OBSERVATION ABOUT THE TABLES]
+
+TODO: WRITE OBSERVATION ABOUT THE TABLES
 
 
-Table 3. Number of labour transitions observed between 4-digit industries every year from 1997 to 2018 in the ASHE dataset using the **connections**
+Table 2. Number of labour transitions observed between 4-digit industries every year from 1997 to 2018 in the ASHE dataset using the **connections**
 algorithm. Counts are presented by gender, region and total values. 
         
 | Year | Total workers observed | Number Female Transitions | Number Male Transitions | N. Regions |Total transitions observed |
@@ -131,8 +138,9 @@ For this report, four matrices have been exported from the UKDS Secure Lab. Thes
 observed transitions between pairs of industries (including transitions within the same industry), with at least 10 counts. Some general characteristics of
 these matrices are the following:
 
-* For the period of 2009-2018 the resulting skill relatedness matrix contain a total of 5141 individual directed transitions between 445 industries in the 
-**connections** algorithms (representing 2.6% of non null values on the adjacency matrix). These results include transitions within the same industry.
+* For the period of 2009-2018 the resulting skill relatedness matrix contain a total of 5141 individual transitions between 445 industries in the 
+**connections** algorithms (representing 2.6% of non null values on the adjacency matrix and the symmetrical counterpart of the
+the industry pair). These results include transitions within the same industry.
 
 * For the period of 1997-2008 the resulting skill relatedness matrix contain a total of 6947 individual directed transitions between 497 industries in the 
  **connections** algorithms (representing 2.8% of non null values on the adjacency matrix). These results include transitions within the same industry.
@@ -140,11 +148,13 @@ these matrices are the following:
 As the ASHE dataset represents only 1% of the total employee jobs in the HMRC PAYE records, the resulting transition matrices are low in the
 observation count (eg. 80% of the transitions between different industries have less than 35 counts). This can be observed in the
 distribution of counts for case of the **connections** algorithm for Figure \ref{CountsFlows} (for illustration purposes the 'Count' axis in this figure 
-has been cut at 200, around 2.6% of the entries have more than 200 Counts and are not shown).
+has been cut at 200, around 2.6% of the entries have more than 200 Counts and are not shown, the counts are the ones obtained before the symmetrisation
+step explained in \ref{connections}).
 
 
 [CountsFlows]: figures/CountsIndustriesBetweenTransitions.png
-![Distribution of the observed transitions between industries in the period from 2009 to 2018 and using the connection algorithm (this figure does not include transitions between the same industry).   \label{CountsFlows}][CountsFlows]
+![Distribution of the observed transitions between industries in the period from 2009 to 2018 and using the connection algorithm (the counts are the ones obtained before the
+symmetrisation step explained in \ref{connections}, this figure does not include transitions between the same industry).  \label{CountsFlows}][CountsFlows]
 
 
 In order to not overload this report, all results associated to the **flows** algorithm or the period of time between 1997-2008 are 
@@ -154,7 +164,7 @@ presented in the Annex \ref{annex}.
 \label{SR} 
 
 
-The resulting matrices described in Section \ref{countmatrices} contain the directed raw counts of transitions observed between pairs
+The resulting matrices described in Section \ref{countmatrices_flows} contain the raw counts of transitions observed between pairs
 industries. In order to infer how related two industries are in terms of skill- relatedness, a statistical procedure is
 applied to the matrices. The mathematical details of this method are found in [@GermanyMatricesReport], in this section
 a high level general description of the method is presented.
@@ -187,17 +197,18 @@ only positive $SR_{sym}$ weight values.
 
 
 # Skill relatedness networks
+\label{results}
 
-The top 20 transitions observed in the periods of 1997 to 2008  and 2009 to 2018 are shown in Tables 5 and 6. As shown in these tables,
+The top 20 transitions based on the number of counts observed in the period of 2009 to 2018 are shown in Table 3. As shown in these tables,
 industries with higher number of transitions belong to the education and health sectors. This is expected ad these industries are the
 ones with highest employment in the UK. 
 
-The top 20 transitions with top $SR_{sym}$  weights observed in both periods of interest are shown in Tables 7 and 8.
+The top 20 transitions with top $SR_{sym}$  weights observed in both periods of interest are shown in Tables 4.
 As seen in these tables, the highest weighted transitions have low observation counts, most of them around the 10 counts limit. 
 
-Table 5. Top 20 transitions observed in the ASHE dataset in the period of 2009 to 2018 for the **connections**
-algorithm, sorted by undirected count observations.  In this table, the transitions are undirected.
-
+Table 3. Top 20 transitions observed in the ASHE dataset in the period of 2009 to 2018 for the **connections**
+algorithm, sorted by undirected count observations.  In this table, the transitions counts are undirected
+(have been symmetrised according to \ref{connections}).
 
 | Industry                          |   Industry                      | Total Counts | $SR_{sym}$    |
 |-----------------------------------|---------------------------------------|--------|----------|

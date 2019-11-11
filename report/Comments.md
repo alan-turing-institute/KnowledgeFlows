@@ -14,9 +14,18 @@
 
 * Discuss data in more detail (SECURE LAB):
 
+   - Total number of workers:
+        * 330K (2009 - 20018)
+        * Pt/Ft: 28/72 %
+        * Fm/Ml : 50/50
+        
+        * 348K
+        * Pt/Ft: 32/68 %
+        * Fm/Ml : 52/48
+
    - Coverage on industry and regions (ratios between ASHE/BRES dataset)
     
-   - Check out who is the people that we leave out (after collection)
+   - Check out who is the people that we leave out (after selection)
      
    - Tables with number of people we have in the sample (per year, in total) 
    

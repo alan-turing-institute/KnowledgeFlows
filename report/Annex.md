@@ -66,7 +66,7 @@ these matrices are the following:
 ### Adjacency matrices
 
 The adjacency matrix for the UK skill-relatedness network constructed with both the **connections** and **flows** algorithms is
-shown in Figures \ref{Adjacency1997_2008} and \ref{Adjacency2009_2018}. The matrices are sorted by their 4-digit classification code, and only
+shown in Figures \ref{Adjacency1997_2008} and \ref{Adjacency2009_2018_flows}. The matrices are sorted by their 4-digit classification code, and only
 entries with $SR_{sym}$ weight values higher than zero are kept. As expected, the matrix is sparse and clusters of values are observed 
 near the diagonals, showing that there is a high degree of skill-relatedness between industries in similar sectors.
 
@@ -84,7 +84,7 @@ only positive $SR_{sym}$ weight values.}
 \caption{The adjacency matrix of the skill-relatedness network of the period from 2009 to 2018. The matrix built with the
  \textbf{flows} algorithm is shown on the left, and \textbf{connections} algorithm on the right. The matrix only contains
 only positive $SR_{sym}$ weight  values.}
-\label{Adjacency2009_2018}
+\label{Adjacency2009_2018_flows}
 \end{figure}
 
 
