@@ -16,14 +16,16 @@
 
    - Total number of workers:
         * 330K (2009 - 20018)
-        * Pt/Ft: 28/72 %
+        * Pt/Ft: 3/7 %
         * Fm/Ml : 50/50
         
         * 348K
-        * Pt/Ft: 32/68 %
+        * Pt/Ft: 32/68 
         * Fm/Ml : 52/48
 
    - Coverage on industry and regions (ratios between ASHE/BRES dataset)
+   
+        * ASHE/BRES ratio 2009, a normal distribution long tailed to higher values with mean of ~0.7% and standard deviation of ~0.2%. 
     
    - Check out who is the people that we leave out (after selection)
      
@@ -35,9 +37,9 @@
 
 * Transition that exceed 10 counts or >= than 10 ? [FIXED]
 
-* Make clear to explain what is symmetrical counts or not
+* Make clear to explain what is symmetrical counts or not [FIXED]
 
-* Be clear of what the tables of total flows show (what are we counting).
+* Be clear of what the tables of total flows show (what are we counting). [FIXED]
 
 * Talk about percentage of non-zero entries. [DONE]
 

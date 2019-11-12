@@ -1,0 +1,18 @@
+Id,Label,timeset,Size,Degree,Weighted Degree,componentnumber,eigencentrality
+1,"Agriculture, Forestry, Fishing, Veterinary",,8,8,19.073059,0,0.406015
+2,All other Manufacturing,,39,13,123.625638,0,0.740909
+3,"Manufacture machinery, vehicle, transport",,16,11,59.749826,0,0.672444
+4,"Manufacture computer, electronic, light electrical",,12,9,27.119739,0,0.597766
+5,"Manufacture food, drink, tobacco",,20,6,72.661996,0,0.324843
+6,"Wholesale and retail,motor vehicle repair,sale of fuel",,65,17,342.227357,0,0.972445
+7,Machinery repair excluding motor vehicles,,6,10,23.248312,0,0.66095
+8,Construction (including development of real estate),,15,13,96.125266,0,0.83572
+9,"Utilities, sewerage, waste and recycling",,11,8,29.663567,0,0.526008
+10,"Manufacture coke, petroleum, chemicals, pharmaceuticals",,11,8,35.388352,0,0.470666
+11,"Mining, Quarrying (inc extraction of petroleum and gas)",,4,4,7.860964,0,0.282583
+12,Business services,,56,18,430.208795,0,1
+13,Transportation and Storage,,16,10,69.193243,0,0.648808
+14,Other Service activities,,30,10,167.519206,0,0.597075
+15,Information and Communication,,18,10,88.290364,0,0.648658
+16,"Manufacture textiles, leather",,3,2,2.950039,0,0.167556
+17,"Government administrative functions, Education, Health",,30,11,156.68353,0,0.662335

@@ -1,7 +1,13 @@
 # Annex
 \label{Annex}
 
-# Alternative method
+This annex contains all the complementary information and results not included in the main body of the report. There are:
+
+* Methodology and results of the **flows** algorithm
+* Results of the time period from 1997 to 2008, for both the **connections** and **flows** algorithm.
+
+
+# Complementary method
  \label{flows}
  
 Two approaches can be followed to measure the jobs transition. In the report, the main method of **connections**
@@ -15,30 +21,30 @@ defined as any two consecutive job entries that comply with the following rules:
    * A valid **flow** can not be separated by more than 2 years.
    * A **flow** can not happen within the same job in 2 different years.
 
-For Table 1, the resulting **flows** would be the following:
+For Table 1 from the main report, the resulting **flows** would be the following:
 
 | Id    | Flow | Year   Difference  |Work  Postcodes   |
 |-------|------|----------|---------|
-| 1     | A-B  |2010-2010 | A1-B1   | 
-| 1     | B-C  |2010-2011 | B1-C1   | 
-| 1     | C-D  |2011-2013 | C1-D1   | 
+| 1     | IndustryA-IndustryB  |2010-2010 | A1-B1   | 
+| 1     | IndustryB-IndustryC  |2010-2011 | B1-C1   | 
+| 1     | IndustryC-IndustryD  |2011-2013 | C1-D1   | 
 
 
 The **flow** approach does not handle properly the case of a worker having more than one job at the same time (eg. two part time jobs
  then transitioning to one full time job), given that 
- it does not considers all combination between the jobs. The **connection** algorithm addresses this multiple part-time 
+ it does not consider all combination between the jobs. The **connection** algorithm addresses this multiple part-time 
  job issue. Furthermore, the **connection** approach creates an undirected network and increases the size of the sample.
  
  
- ## Result: a matrix of transition counts
+## Result: a matrix of transition counts
 \label{countmatrices}
 
 The total number of transitions observed from 1997 to 2018 for the
-**flows** algorithms are shown in Tables X. The number of connections is
+**flows** algorithms are shown in Tables 8. The number of connections is
 larger than the number of flows by a factor of X, which is expected. 
 
 
-Table X. Number of labour transitions observed between 4-digit industries every year from 1997 to 2018 in the ASHE dataset using the **flows**
+Table 8. Number of labour transitions observed between 4-digit industries every year from 1997 to 2018 in the ASHE dataset using the **flows**
 algorithm. Counts are presented by gender, region and total values. 
         
 | Year | Total workers observed | Number Female Transitions | Number Male Transitions | N. Regions |Total transitions observed |
@@ -52,11 +58,11 @@ algorithm. Counts are presented by gender, region and total values.
 observed transitions between pairs of industries (including transitions within the same industry), with at least 10 counts. Some general characteristics of
 these matrices are the following:
 
-* For the period of 2009-2018 the resulting skill relatedness matrix contain a total of 4341 (5141) individual directed transitions between 439  industries in the **flows**
- algorithms. These results include transitions within the same industry.
+* For the period of 2009-2018 the resulting skill relatedness matrix contain a total of 4341 individual directed transitions between 439  industries in the **flows**
+ algorithms (2.25% non zero entries on the adjacency matrix). These results include transitions within the same industry.
 
-* For the period of 1997-2008 the resulting skill relatedness matrix contain a total of 4828 (6947) individual directed transitions between 488 industries in the **flows**
- algorithms. These results include transitions within the same industry.
+* For the period of 1997-2008 the resulting skill relatedness matrix contain a total of 4828 individual directed transitions between 488 industries in the **flows**
+ algorithms (2% non zero entries on the adjacency matrix). These results include transitions within the same industry.
 
 
 
@@ -66,7 +72,8 @@ these matrices are the following:
 ### Adjacency matrices
 
 The adjacency matrix for the UK skill-relatedness network constructed with both the **connections** and **flows** algorithms is
-shown in Figures \ref{Adjacency1997_2008} and \ref{Adjacency2009_2018_flows}. The matrices are sorted by their 4-digit classification code, and only
+shown in Figures \ref{Adjacency1997_2008} for the period of  1998 to 2008. Figure \ref{Adjacency2009_2018_flows} shows the 2009 - 2018 matrix built with the **flows** algorithm.
+The matrices are sorted by their 4-digit classification code, and only
 entries with $SR_{sym}$ weight values higher than zero are kept. As expected, the matrix is sparse and clusters of values are observed 
 near the diagonals, showing that there is a high degree of skill-relatedness between industries in similar sectors.
 
@@ -91,7 +98,7 @@ only positive $SR_{sym}$ weight  values.}
 ### Comparison between the "flows" and "connections" algorithms
 
 As seen in the previous tables, both connections and flows give compatible results. The correlation between the
-$SR_{sym}$ weight values between industry pairs observed in both samples for the same period of time is in the order of 0.98.
+$SR_{sym}$ weight values between industry pairs observed in both samples for the same period of time is in the order of 0.92.
 
 The connection algorithm provides around 350 more pairs of industries than the **flow** algorithm (undirected transitions), this is caused by the
  property of the **connection** algorithm of considering all possible transitions in the period of 2 years, therefore increasing the probability of
@@ -118,14 +125,12 @@ Table 9. Top transitions observed in the **connection** matrix and missing in th
 
 ## Top flows
 
-The top 5 transitions observed in the periods of 1997 to 2008  and 2009 to 2018 are shown in Tables X and X. As shown in these tables,
+The top 5 transitions observed in the periods of 1997 to 2008  and 2009 to 2018 are shown in Tables 10 and 11. As shown in these tables,
 industries with higher number of transitions belong to the education and health sectors. This is expected ad these industries are the
 ones with highest employment in the UK.
 
-The five transitions with top $SR_{sym}$  weights observed in both periods of interest are shown in Tables 7 and 8.
-As seen in these tables, the highest weighted transitions have low observation counts, most of them around the 10 counts limit. 
 
-Table 5. Top 5 transitions observed in the ASHE dataset in the period of 2009 to 2018 for both the **flows** 
+Table 10. Top 5 transitions observed in the ASHE dataset in the period of 2009 to 2018 for both the **flows** 
 algorithms.
 
 |Stating Industry             |	Final Industry          |Counts                 |$SR_{sym}$ weight|
@@ -140,9 +145,7 @@ algorithms.
 
 
 
-
-
-Table 6. Top 5 transitions observed in the ASHE dataset in the period of 1997 to 2008 for both the **flows** and **connections**
+Table 11. Top 5 transitions observed in the ASHE dataset in the period of 1997 to 2008 for both the **flows** and **connections**
 algorithms.
 
 |Stating Industry             |	Final Industry          |Counts                 |$SR_{sym}$ weight|
@@ -164,12 +167,14 @@ algorithms.
 |Management of holding company |Retail food drink tobacco |3838|0.76|
 
 
+The five transitions with top $SR_{sym}$  weights observed in both periods of interest are shown in Tables 12 and 13.
+As seen in these tables, the highest weighted transitions have low observation counts, most of them around the 10 counts limit. 
 
 It is important to have in mind that due to the typical low count of the samples some highly related pair of industries
 present in the UK economy can be missing completely in the resulting matrices (i.e. the average count in the pair of industries is 9, not passing statistical
 disclosure control from the UKDS).
 
-Table 7. Top 5 transitions with highest $SR_{sym}$  weight observed in the ASHE dataset in the period of 2009 to 2018
+Table 12. Top 5 transitions with highest $SR_{sym}$  weight observed in the ASHE dataset in the period of 2009 to 2018
 for both the **flows** algorithm.
 
 |Stating Industry|	Final Industry |Avg. Counts | $SR_{sym}$ weight|
@@ -185,7 +190,7 @@ for both the **flows** algorithm.
 
 
 
-Table 8. Top 5 transitions with highest $SR_{sym}$  weight observed in the ASHE dataset in the period of 1997 to 2008
+Table 13. Top 5 transitions with highest $SR_{sym}$  weight observed in the ASHE dataset in the period of 1997 to 2008
 for both the **flows** and **connections** algorithms.
 
 |Stating Industry|	Final Industry |Avg. Counts |  $SR_{sym}$ weight|
@@ -219,12 +224,12 @@ In this section annex the skill-relatedness networks built using the **connectio
 ### Network descriptors 
 
 
-The top 5 industry nodes by degree, centrality and betweeness are shown in Tables 10, 11, 12, 13 for both time periods and algorithms. As expected,
+The top 5 industry nodes by degree, centrality and betweeness are shown in Tables 14, 15, 16, 17 for both time periods and algorithms. As expected,
 in each time period there is a consistency in which are the nodes ranking higher in these metrics. However, an interesting 
  point to notice that the top nodes in the 1997-2008 period are different to the 2009-2018 one.
 
 
-Table 10. Top five nodes for the network of the period from 1997 to 2008 using the **flows** algorithm in different
+Table 14. Top five nodes for the network of the period from 1997 to 2008 using the **flows** algorithm in different
 degrees and centrality metrics.
 
 |Degree |	Weighted Degree	| Centrality |	Betweeness |
@@ -236,7 +241,7 @@ degrees and centrality metrics.
 |Retail sale |	Other business activities not elsewhere classified	|Clubs, public houses and bars|Other software consultancy and supply|
 
 
-Table 11. Top five nodes for the network of the period from 2009 to 2018 using the **flows** algorithm in different
+Table 15. Top five nodes for the network of the period from 2009 to 2018 using the **flows** algorithm in different
 degrees and centrality metrics.
 
 |Degree |	Weighted Degree	| Centrality |	Betweeness |
@@ -248,7 +253,7 @@ degrees and centrality metrics.
 |Office admin, business support|	Head office activities|	Restaurants, mobile food service|	Engineering/tech consultancy|
 
 
-Table 12. Top five nodes for the network of the period from 1997 to 2008 using the **connection** algorithm in different
+Table 16. Top five nodes for the network of the period from 1997 to 2008 using the **connection** algorithm in different
 degrees and centrality metrics.
 
 |Degree |	Weighted Degree	| Centrality |	Betweeness |
@@ -261,7 +266,7 @@ degrees and centrality metrics.
 
 
 
-Table 13. Top five nodes for the network of the period from 2009 to 2018 using the **connections** algorithm in different
+Table 17. Top five nodes for the network of the period from 2009 to 2018 using the **connections** algorithm in different
 degrees and centrality metrics.
 
 |Degree |	Weighted Degree	| Centrality |	Betweeness |
@@ -321,7 +326,7 @@ community detection algorithm to subdivide industries into groups with high skil
 Figure \ref{MarkovTimecflow} shows  the number of communities, the stability function and the variance in information obtained when 
 running the Markov Stability algorithm on the **flows** network for the 2009-2018 period for different time resolution
 parameters. The information variation figure shows 
-that there are several Markov times where there are local minimum, where are relative stable partition is found (eg. times 3, 7, 15). 
+that there are several Markov times where there are local minimum, where are relative stable partition is found (eg. times 4, 7, 15). 
    
     
 [MarkovTimecflow]: figures/MarkovTimeFigureFlows2009_2018_flows.jpg

@@ -60,6 +60,8 @@ TODO: ADD INFORMATION ABOUT DATA: NUMBER OF WORKERS, ASHE/BRES RATIO, ETC.
 # Method
  \label{method}
  
+ 
+ 
 The job transitions are measured in a per-worker basis and are defined as any two jobs observed for a particular worker in
 a determined period of time.  
 
@@ -90,8 +92,8 @@ is explained next. An alternative method for estimating the transitions so-calle
 \label{connections}
 Define a **connection** as all possible unique combinations found in the *job table* for that individual worker, that comply with the following rules:
 
-   * A valid **connection** can not be separated by more than 2 years.
-   * A "**connection**" can not happen within the same job in 2 different years (if the industry code and the work postcode,
+   * A valid **connection** cannot be separated by more than 2 years.
+   * A "**connection**" cannot happen within the same job in 2 different years (if the industry code and the work postcode,
     it is assumed that it is the same job).
 
 In the example case of Table 1, the **connections** will be the following:
@@ -109,7 +111,7 @@ In the example case of Table 1, the **connections** will be the following:
 The **connections** are undirected intrinsically (eg. a connection from IndustryA - IndustryB is the same as the connection
 from IndustryB - IndustryA). In the data, both cases can be found, therefore, a further symmetrical step needs to be applied:
 
-$(IndustryA - IndustryB)_{unidirected} =   #(IndustryA - IndustryB) + #(IndustryB - IndustryA)$
+$(IndustryA - IndustryB)_{unidirected}$ =   #(IndustryA - IndustryB) + #(IndustryB - IndustryA)
 
 ## Result: a matrix of transition counts
 \label{countmatrices_flows}
@@ -139,8 +141,7 @@ observed transitions between pairs of industries (including transitions within t
 these matrices are the following:
 
 * For the period of 2009-2018 the resulting skill relatedness matrix contain a total of 5141 individual transitions between 445 industries in the 
-**connections** algorithms (representing 2.6% of non null values on the adjacency matrix and the symmetrical counterpart of the
-the industry pair). These results include transitions within the same industry.
+**connections** algorithms (representing 2.6% of non null values on the adjacency matrix). These results include transitions within the same industry.
 
 * For the period of 1997-2008 the resulting skill relatedness matrix contain a total of 6947 individual directed transitions between 497 industries in the 
  **connections** algorithms (representing 2.8% of non null values on the adjacency matrix). These results include transitions within the same industry.
@@ -180,7 +181,7 @@ problem the the metric is symmetrised around 0, for a final weight variable $SR_
 
 The adjacency matrix for the UK skill-relatedness network constructed with the **connections**  algorithm is
 shown in Figure \ref{Adjacency2009_2018}. The matrices are sorted by their 4-digit classification code, and only
-entries with $SR_{sym}$ weight values higher than zero are kept. As expected, the matrix is sparse and clusters of values are observed 
+entries with $SR_{sym}$ weight values higher than zero are kept (leaving the matrix with 1.7% of non-zero entries). As expected, the matrix is sparse and clusters of values are observed 
 near the diagonals, showing that there is a high degree of skill-relatedness between industries in similar sectors.
 
 
@@ -199,6 +200,8 @@ only positive $SR_{sym}$ weight values.
 # Skill relatedness networks
 \label{results}
 
+
+
 The top 20 transitions based on the number of counts observed in the period of 2009 to 2018 are shown in Table 3. As shown in these tables,
 industries with higher number of transitions belong to the education and health sectors. This is expected ad these industries are the
 ones with highest employment in the UK. 
@@ -212,31 +215,31 @@ algorithm, sorted by undirected count observations.  In this table, the transiti
 
 | Industry                          |   Industry                      | Total Counts | $SR_{sym}$    |
 |-----------------------------------|---------------------------------------|--------|----------|
-| Primary                           | General secondary                     | 4623   | 0.668283 |
-| General public administration     | Primary                               | 4619   | 0.566564 |
-| Other human health activities     | Hospital activities                   | 3579   | 0.653861 |
-| Temporary employment agencies     | Hospital activities                   | 2158   | 0.166941 |
-| Regulation business efficient ops | Compulsory social security activities | 2158   | 0.988218 |
-| Primary                           | Other non residential social work     | 1759   | 0.294834 |
-| Other food service                | Event catering                        | 1276   | 0.95219  |
-| Hospital activities               | Residential nursing care              | 1010   | 0.412515 |
-| Beverage serving                  | Restaurants, mobile food service      | 1009   | 0.609474 |
-| Restaurants, mobile food service  | Food, beverages, tobacco mainly       | 959    | 0.212035 |
-| General medical practices         | Hospital activities                   | 899    | 0.61838  |
-| Child day-care                    | Primary                               | 856    | 0.373542 |
-| Combined facilities support       | General cleaning of buildings         | 834    | 0.751101 |
-| Residential nursing care          | Elderly, disabled                     | 785    | 0.821    |
-| Elderly, disabled                 | Residential nursing care              | 761    | 0.776868 |
-| Elderly, disabled                 | Other residential care activities     | 745    | 0.809218 |
-| Electricity production            | Electricity distribution              | 719    | 0.989247 |
-| Temporary employment agencies     | Employment placement agencies         | 712    | 0.734126 |
-| Health care, education etc        | Other human health activities         | 693    | 0.865261 |
-| Food, beverages, tobacco mainly   | Clothing                              | 661    | 0.171283 |
+| Primary                           | General secondary                     | 4623   | 0.67 |
+| General public administration     | Primary                               | 4619   | 0.57 |
+| Other human health activities     | Hospital activities                   | 3579   | 0.657 |
+| Temporary employment agencies     | Hospital activities                   | 2158   | 0.17 |
+| Regulation business efficient ops | Compulsory social security activities | 2158   | 0.99 |
+| Primary                           | Other non residential social work     | 1759   | 0.29 |
+| Other food service                | Event catering                        | 1276   | 0.95  |
+| Hospital activities               | Residential nursing care              | 1010   | 0.41|
+| Beverage serving                  | Restaurants, mobile food service      | 1009   | 0.61 |
+| Restaurants, mobile food service  | Food, beverages, tobacco mainly       | 959    | 0.21 |
+| General medical practices         | Hospital activities                   | 899    | 0.62  |
+| Child day-care                    | Primary                               | 856    | 0.38 |
+| Combined facilities support       | General cleaning of buildings         | 834    | 0.75 |
+| Residential nursing care          | Elderly, disabled                     | 785    | 0.82   |
+| Elderly, disabled                 | Residential nursing care              | 761    | 0.77 |
+| Elderly, disabled                 | Other residential care activities     | 745    | 0.81 |
+| Electricity production            | Electricity distribution              | 719    | 0.99 |
+| Temporary employment agencies     | Employment placement agencies         | 712    | 0.73 |
+| Health care, education etc        | Other human health activities         | 693    | 0.87 |
+| Food, beverages, tobacco mainly   | Clothing                              | 661    | 0.17 |
 
 
 
 It is important to have in mind that due to the typical low count of the samples some highly related pair of industries
-present in the UK economy can be missing completely in the resulting matrices (i.e. the average directed count in the 
+present in the UK economy can be missing completely in the resulting matrices (i.e. the directed count in the 
 pair of industries is 9, not passing statistical disclosure control from the UKDS).
 
 Table 7. Top 20 transitions with highest $SR_{sym}$  weight observed in the ASHE dataset in the period of 2009 to 2018
@@ -245,49 +248,49 @@ for both the **connections** algorithm.  In this table, the transitions are undi
 
 | Industry                            |   Industry                         | Total counts | $SR_{sym}$    |
 |-------------------------------------|------------------------------------|--------|----------|
-| Agriculture, animals, raw goods     | Live animals                       | 21     | 0.999919 |
-| Fibre optic cables                  | Other electronic, electric wires   | 22     | 0.999858 |
-| Raising of dairy cattle             | Raising of other cattle, buffaloes | 21     | 0.999789 |
-| Pre-press, pre-media services       | Paper, paperboard                  | 28     | 0.999712 |
-| Gravel, sand pits; clays, kaolin    | Plaster products for construction  | 35     | 0.999663 |
-| Military fighting vehicles          | Fabricated metal products          | 46     | 0.99965  |
-| Other special purpose machinery     | Computers, peripheral equipment    | 27     | 0.999604 |
-| Wholesale Tobacco products          | Manufacutring tobacco products     | 23     | 0.999598 |
-| Flat glass manufacture              | Flat glass shaping, processing     | 21     | 0.99955  |
-| Plastics, rubber machinery          | Other special purpose machinery    | 21     | 0.999533 |
-| Other taps, valves                  | Fluid power equipment              | 28     | 0.999529 |
-| Irradiation, electromedical equip   | Electronic, optical equipment      | 21     | 0.999477 |
-| Light metal packaging               | Plastic packing goods              | 21     | 0.999374 |
-| Mixed farming                       | Raising of sheep, goats            | 23     | 0.99935  |
-| Electronic components               | Loaded electronic boards           | 39     | 0.999283 |
-| Raising of poultry                  | Prepared farm animals feeds        | 26     | 0.999197 |
-| Soft drinks; waters                 | Fruit, vegetable juice             | 20     | 0.999196 |
-| Transport equipment nec             | Railways, underground railways     | 35     | 0.999161 |
-| Non-domestic cooling/ventilation eq | Wiring devices                     | 47     | 0.999005 |
-| Music, video recordings             | Books                              | 89     | 0.998983 |
+| Agriculture, animals, raw goods     | Live animals                       | 21     | 0.99 |
+| Fibre optic cables                  | Other electronic, electric wires   | 22     | 0.99 |
+| Raising of dairy cattle             | Raising of other cattle, buffaloes | 21     | 0.99 |
+| Pre-press, pre-media services       | Paper, paperboard                  | 28     | 0.99 |
+| Gravel, sand pits; clays, kaolin    | Plaster products for construction  | 35     | 0.99 |
+| Military fighting vehicles          | Fabricated metal products          | 46     | 0.99  |
+| Other special purpose machinery     | Computers, peripheral equipment    | 27     | 0.99 |
+| Wholesale Tobacco products          | Manufacutring tobacco products     | 23     | 0.99 |
+| Flat glass manufacture              | Flat glass shaping, processing     | 21     | 0.99  |
+| Plastics, rubber machinery          | Other special purpose machinery    | 21     | 0.99 |
+| Other taps, valves                  | Fluid power equipment              | 28     | 0.99 |
+| Irradiation, electromedical equip   | Electronic, optical equipment      | 21     | 0.99 |
+| Light metal packaging               | Plastic packing goods              | 21     | 0.99 |
+| Mixed farming                       | Raising of sheep, goats            | 23     | 0.99  |
+| Electronic components               | Loaded electronic boards           | 39     | 0.99 |
+| Raising of poultry                  | Prepared farm animals feeds        | 26     | 0.99 |
+| Soft drinks; waters                 | Fruit, vegetable juice             | 20     | 0.99 |
+| Transport equipment nec             | Railways, underground railways     | 35     | 0.99 |
+| Non-domestic cooling/ventilation eq | Wiring devices                     | 47     | 0.99 |
+| Music, video recordings             | Books                              | 89     | 0.99 |
 
 ## Network analysis
 
 The skill-relatedness matrices are used  to construct an undirected weighted network. This network can now be used 
 to identify industry clusters.
 
-[WRITE ABOUT CENTRALITY, WEIGHTED DEGREES]
+TODO: WRITE ABOUT CENTRALITY, WEIGHTED DEGREES
+
+Figure \ref{CentralityDegree} shows the weighed degree and Eigencentraliy metrics for the **connections** network in the 2009-2018 time
+ period.
+
 
 ![](figures/EighCentrality_1digit.png){width=50%}
 ![](figures/Weighted_degree_1digit.png){width=50%}
 \begin{figure}[!h]
-\caption{Visualisation of the skill-relatedness network for the United Kingdom using the \textbf{connection} algorithm in the period from
-2009 to 2018. The communities are coloured according to their industry cluster detected according to the Markov
-Stability Algorithm which is estimated at different resolutions (t=1, 4, 25 and 50).  Each node represents a 4-digit industry and each 
-edge the skill-relatedness between the corresponding industry pair. Nodes are sized by the total
-employment size in the United Kingdom during 2015. Only positive edges are shown. The node layout is based on a spring
-algorithm called ‘Force Atlas’ in Gephi.}
-\label{CommunityEvolution_conn}
+\caption{Weighed degree (left) and Eigencentraliy metrics for the **connections** network in the 2009-2018 time
+ period.}
+\label{CentralityDegree}
 \end{figure}
 
 
 
-The UK skill-relatedness networks are illustrated in Figure \ref{Network20092018_conn_inds}. In this figure each node 
+The UK skill-relatedness networks is illustrated in Figure \ref{Network20092018_conn_inds}. In this figure each node 
 represents an industry and each edge its skill-relatedness $SR_{sym}$ weight. The node layout is
 built with a spring algorithm named "Force Atlas" in Gephi.  Labels indicating the general
 position of different industries are shown, and it is possible to observe that industries that are more skill-related
@@ -316,20 +319,10 @@ The time resolution parameter allows for the algorithm to produce network partit
  
 
 Figure \ref{Network20092018_conn} shows the skill-relatedness network with nodes coloured according to their industry 
-cluster detected according to the Markov
-Stability Algorithm (t=1).    
+cluster detected according to the Markov Stability Algorithm (t=1). As expected, it is possible to observe the similarity in the clustering of both this network 
+and the industry colored network (\ref{Network20092018_conn_inds}).
 
   
-[MarkovTimeconnection]: figures/MarkovTimeFigureFlows2009_2018_conns.jpg
-![A graph showing the number of communities and the variation of information of the node partition generated
-by the Markov Stability Algorithm at different Markov times. \label{MarkovTimeconnection}][MarkovTimeconnection]
-
-  
-Figure \ref{MarkovTimeFlows} shows  the number of communities, the stability function and the variance in information obtained when 
-running the Markov Stability algorithm on the **connections** network for the 2009-2018 period for different time resolution
-parameters. The information variation figure shows 
-that there are several Markov times where there are local minimum, where are relative stable partition is found (eg. times 4, 15). 
-
 
 
 [Network20092018_conn]: figures/network_2009_2018_conns.png
@@ -340,9 +333,19 @@ Stability Algorithm (t=1). Only positive edges are shown. The node layout is bas
 algorithm called ‘Force Atlas’ in Gephi. \label{Network20092018_conn}][Network20092018_conn]
 
  
+  
+Figure \ref{MarkovTimeconnection} shows  the number of communities, the stability function and the variance in information obtained when 
+running the Markov Stability algorithm on the **connections** network for the 2009-2018 period for different time resolution
+parameters. The information variation figure shows 
+that there are several Markov times where there are local minimum, where are relative stable partition is found (eg. times 7, 15, 20, highlighted with yellow lines
+in the figure). 
+
+[MarkovTimeconnection]: figures/MarkovTimeFigureFlows2009_2008_conns.jpg
+![A graph showing the number of communities and the variation of information of the node partition generated
+by the Markov Stability Algorithm at different Markov times, times which local minimum in the information variation are highlighted with yellow lines. \label{MarkovTimeconnection}][MarkovTimeconnection]
  
 According to the methodology of O’Clery et al. the different node partitions obtained at different markov time resolutions are
-used to understand the nested structure of the UK labour market, this is shown in Figure \ref{CommunityEvolution} for markov times 1, 4,
+used to understand the nested structure of the UK labour market, this is shown in Figure \ref{CommunityEvolution} for markov times 1, 7,
 15 and 20. This evolution shows how first, most clusters contain very similar industries and is generally compatible with 
 their SIC 2007 classification. In the next step, the government and services industries join together into a larger group and finance, law, technology
 and other business activities are now part of another group, whilst in the other
@@ -353,13 +356,13 @@ one large group containing services, government and general business activities 
 
 
 ![](figures/2009_2018_conns_1.png){width=50%}
-![](figures/2009_2018_conn_4.png){width=50%}
+![](figures/2009_2018_conn_7.png){width=50%}
 ![](figures/2009_2018_conn_15.png){width=50%}
 ![](figures/2009_2018_conn_20.png){width=50%}
 \begin{figure}[!h]
 \caption{Visualisation of the skill-relatedness network for the United Kingdom using the \textbf{connection} algorithm in the period from
 2009 to 2018. The communities are coloured according to their industry cluster detected according to the Markov
-Stability Algorithm which is estimated at different resolutions (t=1, 4, 15 and 20).  Each node represents a 4-digit industry and each 
+Stability Algorithm which is estimated at different resolutions (t=1, 7, 15 and 20).  Each node represents a 4-digit industry and each 
 edge the skill-relatedness between the corresponding industry pair. Nodes are sized by the total
 employment size in the United Kingdom during 2015. Only positive edges are shown. The node layout is based on a spring
 algorithm called ‘Force Atlas’ in Gephi.}

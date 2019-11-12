@@ -74,8 +74,11 @@ def draw_adjacency_matrix(reduced_matrix, columns_to_be_sorted, label,axis_label
     y_axis = sorted_inds
     x_axis = sorted_inds
 
-    fig, ax = plt.subplots(figsize=(180, 180))
+    fig, ax = plt.subplots(figsize=(130, 130))
     im = ax.imshow(list_row,cmap='RdBu')
+
+    cb = fig.colorbar(im, ax=ax)
+    cb.set_ticklabels([0, 0.2, 0.4, 0.6, 0.8, 1.0])
 
     # We want to show all ticks...
     ax.set_xticks(np.arange(len(x_axis)))
@@ -84,15 +87,12 @@ def draw_adjacency_matrix(reduced_matrix, columns_to_be_sorted, label,axis_label
     ax.set_xticklabels(list_industry)
     ax.set_yticklabels(list_industry)
 
-    ax.xaxis.set_major_locator(plt.MaxNLocator(100))
-    ax.yaxis.set_major_locator(plt.MaxNLocator(100))
-
-    plt.xticks(fontsize=110, rotation=90)
-    plt.yticks(fontsize=110, rotation=0)
+    plt.xticks(fontsize=5, rotation=90)
+    plt.yticks(fontsize=5, rotation=0)
 
     plt.show()
 
-    return (list_row,sorted_inds)
+    return (0)
 
 
 def draw_adjacency_matrix_nolabel(reduced_matrix, columns_to_be_sorted, label,min_value=0):
@@ -143,7 +143,8 @@ def draw_adjacency_matrix_nolabel(reduced_matrix, columns_to_be_sorted, label,mi
 
     fig, ax = plt.subplots(figsize=(30, 30))
 
-    im = ax.imshow(list_row,cmap='BuPu',vmax=200)
+    im = ax.imshow(list_row,cmap='BuPu')
+
     cb = fig.colorbar(im, ax=ax)
     cb.ax.tick_params(labelsize=20, width=2)
     ax.set(ylabel='Industries',xlabel='Industries')
@@ -152,8 +153,8 @@ def draw_adjacency_matrix_nolabel(reduced_matrix, columns_to_be_sorted, label,mi
     ax.tick_params(axis='both', which='both', length=0)
     cb.set_ticklabels([0,0.2,0.4,0.6,0.8,1.0])
 
-    ax.xaxis.label.set_size(30)
-    ax.yaxis.label.set_size(30)
+    ax.xaxis.label.set_size(20)
+    ax.yaxis.label.set_size(20)
 
     # We want to show all ticks...
     plt.show()
