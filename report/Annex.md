@@ -7,13 +7,13 @@ This annex contains all the complementary information and results not included i
 * Results of the time period from 1997 to 2008, for both the **connections** and **flows** algorithm.
 
 
-# Complementary method
+## Complementary method
  \label{flows}
  
 Two approaches can be followed to measure the jobs transition. In the report, the main method of **connections**
 is explained. There is an alternative method for estimating the transitions named the **flows** method, which is described next.
  
-## Transitions as "flows" 
+### Transitions as "flows" 
 
 For a particular *job table* belonging to an individual, the table is sorted by time (the *Year* variable) and a **flow** is 
 defined as any two consecutive job entries that comply with the following rules:
@@ -36,7 +36,7 @@ The **flow** approach does not handle properly the case of a worker having more 
  job issue. Furthermore, the **connection** approach creates an undirected network and increases the size of the sample.
  
  
-## Result: a matrix of transition counts
+### Result: a matrix of transition counts
 \label{countmatrices}
 
 The total number of transitions observed from 1997 to 2018 for the
@@ -66,6 +66,34 @@ these matrices are the following:
 
 
 
+### Comparison between the "flows" and "connections" algorithms
+
+As seen in the previous tables, both connections and flows give compatible results. The correlation between the
+$SR_{sym}$ weight values between industry pairs observed in both samples for the same period of time is in the order of 0.92.
+
+The connection algorithm provides around 350 more pairs of industries than the **flow** algorithm (undirected transitions), this is caused by the
+ property of the **connection** algorithm of considering all possible transitions in the period of 2 years, therefore increasing the probability of
+pairs of industries with more than 10 counts.
+
+Figure \ref{Missing} shows the distribution of weights for the transitions found on the **connection** matrix but non existing on the **flows** matrix,
+for the period form 2009 to 2018. In this sample 95% of the missing entries have less than 15 counts.
+
+Table 8 shows the top transitions in the **connection** matrix that are missing in the **flow** matrix (ordered by $SR_{sym}$ weight).
+
+[Missing]: figures/MissingWeightsFlowsConns.png
+![Distribution of $SR_{sym}$ weights for the transitions of industry pairs found on the **connection** matrix and non existing on the **flows** matrix, \label{Missing}][Missing]
+
+Table 8. Top transitions observed in the **connection** matrix and missing in the **flow** matrix
+
+|Stating Industry|	Final Industry |  $SR_{sym}$ weight|
+|------------------------------|-------------------------------|----------------------|
+|Raising of dairy cattle	| Raising of other cattle, buffaloes | 0.99|
+|Manufacture tobacco products |	Retail of tobacco products| 0.99|
+|Special purpose machinery | Other	Special purpose machinery Plastics, rubber|0.99|
+|Irradiation, electro-medical equipment|	Electronic, optical equipment|0.99|
+|Manufacture Fruit, vegetable juice	| Manufacture Soft drinks; waters|0.99|
+ 
+
 ## Skill-relatedness networks using the "flows" algorithm
 
 
@@ -94,36 +122,7 @@ only positive $SR_{sym}$ weight  values.}
 \label{Adjacency2009_2018_flows}
 \end{figure}
 
-
-### Comparison between the "flows" and "connections" algorithms
-
-As seen in the previous tables, both connections and flows give compatible results. The correlation between the
-$SR_{sym}$ weight values between industry pairs observed in both samples for the same period of time is in the order of 0.92.
-
-The connection algorithm provides around 350 more pairs of industries than the **flow** algorithm (undirected transitions), this is caused by the
- property of the **connection** algorithm of considering all possible transitions in the period of 2 years, therefore increasing the probability of
-pairs of industries with more than 10 counts.
-
-Figure \ref{Missing} shows the distribution of weights for the transitions found on the **connection** matrix but non existing on the **flows** matrix,
-for the period form 2009 to 2018. In this sample 95% of the missing entries have less than 15 counts.
-
-Table 9 shows the top transitions in the **connection** matrix that are missing in the **flow** matrix (ordered by $SR_{sym}$ weight).
-
-[Missing]: figures/MissingWeightsFlowsConns.png
-![Distribution of $SR_{sym}$ weights for the transitions of industry pairs found on the **connection** matrix and non existing on the **flows** matrix, \label{Missing}][Missing]
-
-Table 9. Top transitions observed in the **connection** matrix and missing in the **flow** matrix
-
-|Stating Industry|	Final Industry |  $SR_{sym}$ weight|
-|------------------------------|-------------------------------|----------------------|
-|Raising of dairy cattle	| Raising of other cattle, buffaloes | 0.99|
-|Manufacture tobacco products |	Retail of tobacco products| 0.99|
-|Special purpose machinery | Other	Special purpose machinery Plastics, rubber|0.99|
-|Irradiation, electro-medical equipment|	Electronic, optical equipment|0.99|
-|Manufacture Fruit, vegetable juice	| Manufacture Soft drinks; waters|0.99|
- 
-
-## Top flows
+### Top flows
 
 The top 5 transitions observed in the periods of 1997 to 2008  and 2009 to 2018 are shown in Tables 10 and 11. As shown in these tables,
 industries with higher number of transitions belong to the education and health sectors. This is expected ad these industries are the
@@ -190,6 +189,9 @@ for both the **flows** algorithm.
 
 
 
+
+
+
 Table 13. Top 5 transitions with highest $SR_{sym}$  weight observed in the ASHE dataset in the period of 1997 to 2008
 for both the **flows** and **connections** algorithms.
 
@@ -220,6 +222,8 @@ to identify industry clusters.
 
 In this section annex the skill-relatedness networks built using the **connection** algorithm for the periods of 1997-2008 and 
  2009-2018 are discussed. 
+ 
+ 
 
 ### Network descriptors 
 

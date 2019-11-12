@@ -46,7 +46,7 @@
 * Discuss the sparsity earlier on, show adjacency matrices earlier. [DONE]
 
 * Adjacency matrix change color from white to dark. Add a grid with the sectors. 
-Add a counts adjacency matrix. 
+Add a counts adjacency matrix. [DONE]
 
 
 * Top 20 tables in Counts and Weights. [DONE]

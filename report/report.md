@@ -123,7 +123,7 @@ The total number of transitions observed from 1997 to 2018 for the **connection*
 shown in these tables is that the transitions 
 are dominated by female workers (number of transition of female workers is X times larger than the male workers on average).
 
-TODO: WRITE OBSERVATION ABOUT THE TABLES
+TODO: WRITE OBSERVATION ABOUT THE TABLES ONCE THEY ARE OUT OF THE SECURE LAB.
 
 
 Table 2. Number of labour transitions observed between 4-digit industries every year from 1997 to 2018 in the ASHE dataset using the **connections**
